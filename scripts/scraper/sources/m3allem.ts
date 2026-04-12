@@ -14,25 +14,19 @@ async function getProIdsFromServicePage(
   serviceId: number,
   pageNum: number
 ): Promise<string[]> {
-  const url =
-    pageNum === 1
-      ? `${BASE_URL}/service.php?specialite=${serviceId}&PageNum=1`
-      : `${BASE_URL}/service.php?specialite=${serviceId}&PageNum=${pageNum}`;
+  const url = `${BASE_URL}/service.php?specialite=${serviceId}&PageNum=${pageNum}`;
 
   await page.goto(url, { waitUntil: "domcontentloaded", timeout: 15000 });
   await sleep(DELAY_MS);
 
-  const ids = await page.evaluate(() => {
-    const links = document.querySelectorAll('a[href*="/fichem3allem/"]');
-    const idSet = new Set<string>();
-    links.forEach((link) => {
-      const match = link.getAttribute("href")?.match(/\/fichem3allem\/[^/]+\/(\d+)\.html/);
-      if (match) idSet.add(match[1]);
-    });
-    return [...idSet];
-  });
-
-  return ids;
+  const html = await page.content();
+  const ids = new Set<string>();
+  const regex = /\/fichem3allem\/[^/]+\/(\d+)\.html/g;
+  let match;
+  while ((match = regex.exec(html)) !== null) {
+    ids.add(match[1]);
+  }
+  return [...ids];
 }
 
 async function getMaxPage(page: Page, serviceId: number): Promise<number> {
@@ -40,17 +34,15 @@ async function getMaxPage(page: Page, serviceId: number): Promise<number> {
   await page.goto(url, { waitUntil: "domcontentloaded", timeout: 15000 });
   await sleep(DELAY_MS);
 
-  const maxPage = await page.evaluate(() => {
-    const links = document.querySelectorAll('a[href*="PageNum="]');
-    let max = 1;
-    links.forEach((link) => {
-      const match = link.getAttribute("href")?.match(/PageNum=(\d+)/);
-      if (match) max = Math.max(max, parseInt(match[1], 10));
-    });
-    return max;
-  });
-
-  return maxPage;
+  const html = await page.content();
+  let max = 1;
+  const regex = /PageNum=(\d+)/g;
+  let match;
+  while ((match = regex.exec(html)) !== null) {
+    const num = parseInt(match[1], 10);
+    if (num > max) max = num;
+  }
+  return max;
 }
 
 async function scrapeProProfile(page: Page, proId: string): Promise<RawPro | null> {
@@ -64,45 +56,38 @@ async function scrapeProProfile(page: Page, proId: string): Promise<RawPro | nul
     return null;
   }
 
-  const data = await page.evaluate(() => {
-    const getText = (th: string): string => {
-      const rows = document.querySelectorAll("tr");
-      for (const row of rows) {
-        const header = row.querySelector("th");
-        if (header && header.textContent?.trim() === th) {
-          const td = row.querySelector("td");
-          return td?.textContent?.trim() ?? "";
-        }
-      }
-      return "";
-    };
+  const html = await page.content();
 
-    const titleMatch = document.title.match(/Fiche du m3allem\s*:\s*(.+)/);
-    const fullName = titleMatch?.[1]?.trim() ?? "";
+  // Extract name from title
+  const titleMatch = html.match(/Fiche du m3allem\s*:\s*([^<]+)/);
+  const fullName = titleMatch?.[1]?.trim() ?? "";
+  if (!fullName) return null;
 
-    const services: string[] = [];
-    const specImages = document.querySelectorAll('img[src*="/specialites/"]');
-    specImages.forEach((img) => {
-      const src = img.getAttribute("src") ?? "";
-      const match = src.match(/specialites\/(.+?)\.png/);
-      if (match) {
-        const name = match[1].charAt(0).toUpperCase() + match[1].slice(1);
-        services.push(name);
-      }
-    });
+  // Extract fields from <th>Label</th><td>Value</td> pattern
+  function getField(label: string): string {
+    const regex = new RegExp(
+      `<th>${label}</th>\\s*<td[^>]*>([^<]+)</td>`,
+      "s"
+    );
+    const match = html.match(regex);
+    return match?.[1]?.trim() ?? "";
+  }
 
-    return {
-      fullName,
-      phone: getText("Téléphone"),
-      ville: getText("Ville"),
-      quartier: getText("Quartier"),
-      services,
-    };
-  });
+  const phone = getField("Téléphone");
+  const ville = getField("Ville");
+  const quartier = getField("Quartier");
 
-  if (!data.fullName) return null;
+  // Extract services from speciality images
+  const services: string[] = [];
+  const specRegex = /specialites\/(.+?)\.png/g;
+  let specMatch;
+  while ((specMatch = specRegex.exec(html)) !== null) {
+    const name = specMatch[1].charAt(0).toUpperCase() + specMatch[1].slice(1);
+    if (!services.includes(name)) services.push(name);
+  }
 
-  const nameParts = data.fullName.split(/\s+/);
+  // Parse "LASTNAME Firstname" format
+  const nameParts = fullName.split(/\s+/);
   let lastName = "";
   let firstName = "";
 
@@ -118,7 +103,7 @@ async function scrapeProProfile(page: Page, proId: string): Promise<RawPro | nul
       firstName = nameParts.slice(1).join(" ");
     }
   } else {
-    firstName = data.fullName;
+    firstName = fullName;
   }
 
   return {
@@ -126,19 +111,19 @@ async function scrapeProProfile(page: Page, proId: string): Promise<RawPro | nul
     externalId: proId,
     firstName,
     lastName,
-    phone: data.phone || null,
+    phone: phone || null,
     photo: null,
     gender: null,
-    services: data.services,
-    city: data.ville || null,
-    quartier: data.quartier || null,
+    services,
+    city: ville || null,
+    quartier: quartier || null,
     lat: null,
     lng: null,
     experience: null,
     mediaCount: null,
     description: null,
     verified: false,
-    showPhone: !!data.phone,
+    showPhone: !!phone,
   };
 }
 

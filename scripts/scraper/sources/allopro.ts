@@ -41,54 +41,53 @@ export async function scrapeAllopro(): Promise<RawPro[]> {
         await page.goto(urls[i], { waitUntil: "domcontentloaded", timeout: 20000 });
         await sleep(DELAY_MS);
 
-        const data = await page.evaluate(() => {
-          const title = document.querySelector("h1")?.textContent?.trim() ?? "";
+        const html = await page.content();
 
-          const categories: string[] = [];
-          document.querySelectorAll(".rz--category, .rz-listing-category").forEach((el) => {
-            const text = el.textContent?.trim();
-            if (text) categories.push(text);
-          });
+        // Extract title from h1
+        const titleMatch = html.match(/<h1[^>]*>([^<]+)<\/h1>/);
+        const title = titleMatch?.[1]?.trim() ?? "";
+        if (!title) continue;
 
-          const location =
-            document.querySelector(".rz--location, .rz-listing-location")?.textContent?.trim() ?? "";
+        // Extract categories
+        const categories: string[] = [];
+        const catRegex = /class="[^"]*rz--category[^"]*"[^>]*>([^<]+)</g;
+        let catMatch;
+        while ((catMatch = catRegex.exec(html)) !== null) {
+          const text = catMatch[1].trim();
+          if (text) categories.push(text);
+        }
 
-          const description =
-            document.querySelector(".rz--description, .rz-listing-description")?.textContent?.trim() ?? "";
+        // Extract location
+        const locMatch = html.match(/class="[^"]*rz--location[^"]*"[^>]*>([^<]+)</);
+        const location = locMatch?.[1]?.trim() ?? "";
 
-          const ratingEl = document.querySelector(".rz-overall .rz--score, .rz--review span");
-          const rating = ratingEl ? parseFloat(ratingEl.textContent ?? "0") : 0;
+        // Extract description
+        const descMatch = html.match(/class="[^"]*rz--description[^"]*"[^>]*>([\s\S]*?)<\//);
+        const description = descMatch?.[1]?.trim() ?? "";
 
-          const images: string[] = [];
-          document.querySelectorAll(".rz-gallery img, .rz--media img").forEach((img) => {
-            const src = img.getAttribute("src");
-            if (src) images.push(src);
-          });
+        // Count images
+        const imageMatches = html.match(/class="[^"]*rz-gallery[^"]*"[\s\S]*?<\/div>/);
+        const imageCount = imageMatches ? (imageMatches[0].match(/<img/g) || []).length : 0;
 
-          return { title, categories, location, description, rating, imageCount: images.length };
-        });
-
-        if (!data.title) continue;
-
-        const cityMatch = data.location.match(/^([^,]+)/);
+        const cityMatch = location.match(/^([^,]+)/);
         const city = cityMatch?.[1]?.trim() ?? null;
 
         allPros.push({
           platform: "allopro",
           externalId: urls[i].split("/listing/")[1]?.replace(/\/$/, "") ?? urls[i],
-          firstName: data.title,
+          firstName: title,
           lastName: "",
           phone: null,
           photo: null,
           gender: null,
-          services: data.categories,
+          services: categories,
           city,
           quartier: null,
           lat: null,
           lng: null,
           experience: null,
-          mediaCount: data.imageCount,
-          description: data.description || null,
+          mediaCount: imageCount,
+          description: description || null,
           verified: false,
           showPhone: false,
         });
