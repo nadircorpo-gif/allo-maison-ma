@@ -1,23 +1,9 @@
 import Link from "next/link";
+import { SERVICES } from "@/lib/data/services";
+import { CITIES } from "@/lib/data/cities";
 
-// Placeholder data — will be replaced in Task 2 when lib/data/services.ts and lib/data/cities.ts exist
-const PLACEHOLDER_SERVICES = [
-  { slug: "plomberie", label: "Plomberie" },
-  { slug: "electricite", label: "Electricite" },
-  { slug: "menage", label: "Menage" },
-  { slug: "jardinage", label: "Jardinage" },
-  { slug: "peinture", label: "Peinture" },
-  { slug: "climatisation", label: "Climatisation" },
-];
-
-const PLACEHOLDER_CITIES = [
-  { slug: "casablanca", label: "Casablanca" },
-  { slug: "rabat", label: "Rabat" },
-  { slug: "marrakech", label: "Marrakech" },
-  { slug: "fes", label: "Fes" },
-  { slug: "tanger", label: "Tanger" },
-  { slug: "agadir", label: "Agadir" },
-];
+const FOOTER_SERVICES = SERVICES.slice(0, 6);
+const FOOTER_CITIES = CITIES;
 
 const ABOUT_LINKS = [
   { href: "/a-propos", label: "A propos" },
@@ -56,13 +42,13 @@ export default function Footer() {
               Services
             </h3>
             <ul className="space-y-2">
-              {PLACEHOLDER_SERVICES.map((service) => (
+              {FOOTER_SERVICES.map((service) => (
                 <li key={service.slug}>
                   <Link
                     href={`/services/${service.slug}`}
                     className="text-sm text-gray-400 hover:text-white transition-colors"
                   >
-                    {service.label}
+                    {service.name}
                   </Link>
                 </li>
               ))}
@@ -75,13 +61,13 @@ export default function Footer() {
               Villes
             </h3>
             <ul className="space-y-2">
-              {PLACEHOLDER_CITIES.map((city) => (
+              {FOOTER_CITIES.map((city) => (
                 <li key={city.slug}>
                   <Link
                     href={`/villes/${city.slug}`}
                     className="text-sm text-gray-400 hover:text-white transition-colors"
                   >
-                    {city.label}
+                    {city.name}
                   </Link>
                 </li>
               ))}
