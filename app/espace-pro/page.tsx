@@ -55,7 +55,7 @@ const REGISTRATION_STEPS = [
     step: "02",
     icon: <UserCheck className="w-6 h-6 text-trust" />,
     title: "Verification",
-    description: "Notre equipe verifie votre CIN, casier judiciaire et vos certifications professionnelles. Processus completement en 48 a 72 heures.",
+    description: "Notre equipe verifie votre identite, vos competences et vos references. Processus complete en 48 a 72 heures.",
   },
   {
     step: "03",

@@ -10,12 +10,12 @@ import { CheckCircle, Users, Star, Shield } from "lucide-react";
 export const metadata: Metadata = {
   title: "Services a domicile au Maroc | Artisans Verifies | allo-maison.ma",
   description:
-    "Tous nos services a domicile au Maroc : plomberie, electricite, menage, renovation et plus. 500+ artisans verifies CIN + casier judiciaire. Devis gratuit via WhatsApp.",
+    "Tous nos services a domicile au Maroc : plomberie, electricite, menage, renovation et plus. 500+ artisans verifies et encadres. Devis gratuit via WhatsApp.",
   alternates: { canonical: "https://allo-maison.ma/services" },
   openGraph: {
     title: "Services a domicile au Maroc | Artisans Verifies | allo-maison.ma",
     description:
-      "Tous nos services a domicile au Maroc : plomberie, electricite, menage, renovation et plus. 500+ artisans verifies CIN + casier judiciaire.",
+      "Tous nos services a domicile au Maroc : plomberie, electricite, menage, renovation et plus. 500+ artisans verifies et encadres.",
     url: "https://allo-maison.ma/services",
     siteName: "Allo-Maison",
     locale: "fr_MA",
@@ -70,7 +70,7 @@ const FAQ_ITEMS = [
   {
     question: "Les artisans sont-ils vraiment verifies ?",
     answer:
-      "Oui, chaque artisan passe par notre processus de verification en 6 etapes : verification de la CIN, extrait de casier judiciaire, certificats OFPPT ou equivalents, verifications des references clients, entretien individuel et photo professionnelle. Seuls 1 artisan sur 3 est accepte.",
+      "Oui, chaque artisan passe par notre processus de verification : identite, competences, references clients et entretien individuel. Seuls 1 artisan sur 3 est accepte.",
   },
   {
     question: "Quels sont les delais d'intervention ?",

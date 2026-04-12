@@ -62,9 +62,9 @@ export default function ArtisanCard({
 
       {/* Trust badges */}
       <div className="flex flex-wrap gap-1.5 mb-4">
-        {artisan.verified.cin && <TrustBadge type="cin" />}
-        {artisan.verified.casier && <TrustBadge type="casier" />}
+        {artisan.verified.identite && <TrustBadge type="identite" />}
         {artisan.verified.competences && <TrustBadge type="competences" />}
+        {artisan.verified.references && <TrustBadge type="references" />}
         {artisan.verified.elite && <TrustBadge type="elite" />}
       </div>
 

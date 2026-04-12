@@ -11,7 +11,7 @@ export function getServiceCityFAQ(serviceName: string, cityName: string): FaqIte
     },
     {
       question: `Comment trouver un bon ${serviceName.toLowerCase()} a ${cityName} ?`,
-      answer: `Sur Allo-Maison, chaque professionnel de ${cityName} est verifie (CIN, extrait du casier judiciaire, competences). Vous pouvez consulter les avis clients avant de choisir.`,
+      answer: `Sur Allo-Maison, chaque professionnel de ${cityName} est verifie par notre equipe : identite, competences et references controlees. Vous pouvez consulter les avis clients avant de choisir.`,
     },
     {
       question: `Les ${serviceName.toLowerCase()}s de ${cityName} sont-ils disponibles le week-end ?`,

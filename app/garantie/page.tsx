@@ -246,7 +246,7 @@ export default function GarantiePage() {
               </thead>
               <tbody className="divide-y divide-gray-100">
                 {[
-                  ["Artisan verifie CIN + casier", true, false],
+                  ["Artisan verifie et encadre", true, false],
                   ["Avis clients authentiques", true, false],
                   ["Garantie satisfaction 7 jours", true, false],
                   ["Remboursement en cas de probleme", true, false],

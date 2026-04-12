@@ -8,7 +8,7 @@ import { CheckCircle, Search, UserCheck, CreditCard, Shield, Star, Clock } from 
 export const metadata: Metadata = {
   title: "Comment trouver un artisan de confiance au Maroc | allo-maison.ma",
   description:
-    "Decouvrez comment trouver un artisan de confiance au Maroc en 3 etapes simples. Verification CIN, casier judiciaire, certificats OFPPT. Garantie satisfaction ou remboursement.",
+    "Decouvrez comment trouver un artisan de confiance au Maroc en 3 etapes simples. Artisans verifies et encadres. Garantie satisfaction ou remboursement.",
   alternates: { canonical: "https://allo-maison.ma/comment-ca-marche" },
   openGraph: {
     title: "Comment trouver un artisan de confiance au Maroc | allo-maison.ma",
@@ -25,7 +25,7 @@ const FAQ_ITEMS = [
   {
     question: "Comment verifier qu'un artisan est bien certifie sur Allo-Maison ?",
     answer:
-      "Chaque profil affiche un badge 'Verifie' vert. Ce badge signifie que l'artisan a passe les 6 etapes de notre processus : CIN, casier judiciaire, diplomes OFPPT, references clients, entretien et photo. Vous pouvez cliquer sur le badge pour voir les details de la verification.",
+      "Chaque profil affiche un badge 'Verifie' vert. Ce badge signifie que l'artisan a passe notre processus de verification : identite, competences, references clients et entretien. Vous pouvez cliquer sur le badge pour voir les details.",
   },
   {
     question: "Combien de temps prend la mise en relation ?",
@@ -81,21 +81,21 @@ const HOWTO_SCHEMA = {
 const VERIFICATION_STEPS = [
   {
     number: "01",
-    title: "Verification de la CIN",
+    title: "Verification d'identite",
     description:
-      "Nous verifions l'authenticite de la Carte d'Identite Nationale de chaque artisan aupres des autorites competentes. Aucun profil anonyme n'est accepte.",
+      "Nous verifions l'identite de chaque artisan. Aucun profil anonyme n'est accepte sur la plateforme.",
   },
   {
     number: "02",
-    title: "Extrait de casier judiciaire",
+    title: "Competences professionnelles",
     description:
-      "Chaque artisan doit fournir un extrait de casier judiciaire datant de moins de 3 mois. Les artisans avec des antecedents sont automatiquement refuses.",
+      "Nous evaluons les competences de chaque artisan : experience, certifications professionnelles et maitrise du metier.",
   },
   {
     number: "03",
-    title: "Certificats OFPPT",
+    title: "References clients",
     description:
-      "Nous verifions les diplomes et certifications professionnelles (OFPPT, CAP, BTP) pour s'assurer que l'artisan dispose des competences requises pour son metier.",
+      "Chaque artisan doit fournir des references de clients precedents. Nous les contactons pour verifier la qualite du travail.",
   },
   {
     number: "04",

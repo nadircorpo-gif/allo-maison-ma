@@ -8,7 +8,7 @@ export function generateServiceCityMetadata(
   priceMin: number
 ): Metadata {
   const title = `${serviceName} a ${cityName} | Pros verifies | Allo-Maison`;
-  const description = `Trouvez un ${serviceName.toLowerCase()} verifie a ${cityName} a partir de ${priceMin} DH. CIN + casier controles. Disponible 7j/7. Devis gratuit via WhatsApp.`;
+  const description = `Trouvez un ${serviceName.toLowerCase()} verifie a ${cityName} a partir de ${priceMin} DH. Pros verifies et encadres. Disponible 7j/7. Devis gratuit via WhatsApp.`;
   const url = `https://allo-maison.ma/${serviceSlug}-${citySlug}`;
 
   return {

@@ -21,7 +21,7 @@ export const TESTIMONIALS: Testimonial[] = [
     city: "Rabat",
     quarter: "Agdal",
     rating: 5,
-    text: "Premiere plateforme serieuse au Maroc. On voit le CIN et le casier du pro avant de reserver. Ca change tout.",
+    text: "Premiere plateforme serieuse au Maroc. Les pros sont verifies avant d'etre acceptes. Ca change tout.",
     service: "Electricite",
   },
   {

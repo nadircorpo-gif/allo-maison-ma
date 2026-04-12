@@ -33,7 +33,7 @@ const VALUES = [
     icon: <Shield className="w-8 h-8 text-primary" />,
     title: "Confiance",
     description:
-      "Chaque artisan sur notre plateforme a passe un processus de verification rigoureux en 6 etapes : CIN, casier judiciaire, diplomes, references et entretien. Seul 1 candidat sur 3 est accepte. La confiance n'est pas un slogan, c'est notre promesse.",
+      "Chaque artisan sur notre plateforme passe par un processus de verification rigoureux : identite, competences, references et entretien. Seul 1 candidat sur 3 est accepte. La confiance n'est pas un slogan, c'est notre promesse.",
   },
   {
     icon: <Heart className="w-8 h-8 text-red-500" />,
@@ -53,7 +53,7 @@ const DIFFERENCES = [
   {
     title: "Verification totale, pas juste une inscription",
     description:
-      "Contrairement a d'autres plateformes qui acceptent tout le monde, nous verifions chaque artisan manuellement : CIN, casier judiciaire, diplomes OFPPT, references clients et entretien en personne.",
+      "Contrairement a d'autres plateformes qui acceptent tout le monde, nous verifions chaque artisan manuellement : identite, competences, references clients et entretien en personne.",
   },
   {
     title: "Garantie financiere concrete",

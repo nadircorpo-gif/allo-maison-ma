@@ -118,7 +118,7 @@ export default async function ServiceCityPage({
             {/* Trust badge */}
             <div className="inline-flex items-center gap-2 bg-trust-light border border-trust-border text-trust-text text-xs font-medium px-3 py-1.5 rounded-badge mb-4">
               <CheckCircle className="w-3.5 h-3.5 flex-shrink-0" />
-              Depuis 2017, pros verifies : CIN + casier judiciaire
+              Depuis 2017, pros verifies et encadres
             </div>
 
             {/* H1 */}

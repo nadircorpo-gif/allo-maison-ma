@@ -213,7 +213,7 @@ export const SERVICES: Service[] = [
     name: "Nounou et babysitter",
     slug: "nounou",
     icon: "👶",
-    description: "Nounou, babysitter et educatrice a domicile. Personnel diplome, references verifiees et casier controle.",
+    description: "Nounou, babysitter et educatrice a domicile. Personnel diplome et references verifiees.",
     priceMin: 150,
     priceLabel: "A partir de 150 DH/jour",
     rating: 4.9,

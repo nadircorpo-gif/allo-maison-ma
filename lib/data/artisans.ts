@@ -7,9 +7,9 @@ export type Artisan = {
   reviewCount: number;
   priceRange: string;
   verified: {
-    cin: boolean;
-    casier: boolean;
+    identite: boolean;
     competences: boolean;
+    references: boolean;
     elite: boolean;
   };
   experience: number; // years
@@ -24,7 +24,7 @@ export const ARTISANS: Artisan[] = [
     rating: 4.9,
     reviewCount: 127,
     priceRange: "150–400 DH",
-    verified: { cin: true, casier: true, competences: true, elite: false },
+    verified: { identite: true, competences: true, references: true, elite: false },
     experience: 8,
   },
   {
@@ -35,7 +35,7 @@ export const ARTISANS: Artisan[] = [
     rating: 4.8,
     reviewCount: 94,
     priceRange: "150–350 DH",
-    verified: { cin: true, casier: true, competences: true, elite: true },
+    verified: { identite: true, competences: true, references: true, elite: true },
     experience: 12,
   },
   {
@@ -46,7 +46,7 @@ export const ARTISANS: Artisan[] = [
     rating: 4.7,
     reviewCount: 88,
     priceRange: "200–500 DH",
-    verified: { cin: true, casier: true, competences: true, elite: false },
+    verified: { identite: true, competences: true, references: true, elite: false },
     experience: 6,
   },
   {
@@ -57,7 +57,7 @@ export const ARTISANS: Artisan[] = [
     rating: 5.0,
     reviewCount: 213,
     priceRange: "120–200 DH",
-    verified: { cin: true, casier: true, competences: false, elite: true },
+    verified: { identite: true, competences: false, references: true, elite: true },
     experience: 5,
   },
   {
@@ -68,7 +68,7 @@ export const ARTISANS: Artisan[] = [
     rating: 4.6,
     reviewCount: 56,
     priceRange: "300–800 DH",
-    verified: { cin: true, casier: true, competences: true, elite: false },
+    verified: { identite: true, competences: true, references: true, elite: false },
     experience: 10,
   },
   {
@@ -79,7 +79,7 @@ export const ARTISANS: Artisan[] = [
     rating: 4.9,
     reviewCount: 142,
     priceRange: "200–450 DH",
-    verified: { cin: true, casier: true, competences: true, elite: true },
+    verified: { identite: true, competences: true, references: true, elite: true },
     experience: 15,
   },
   {
@@ -90,7 +90,7 @@ export const ARTISANS: Artisan[] = [
     rating: 4.7,
     reviewCount: 63,
     priceRange: "150–400 DH",
-    verified: { cin: true, casier: true, competences: true, elite: false },
+    verified: { identite: true, competences: true, references: true, elite: false },
     experience: 7,
   },
   {
@@ -101,7 +101,7 @@ export const ARTISANS: Artisan[] = [
     rating: 4.8,
     reviewCount: 97,
     priceRange: "120–200 DH",
-    verified: { cin: true, casier: true, competences: false, elite: false },
+    verified: { identite: true, competences: false, references: true, elite: false },
     experience: 4,
   },
   {
@@ -112,7 +112,7 @@ export const ARTISANS: Artisan[] = [
     rating: 4.6,
     reviewCount: 44,
     priceRange: "200–500 DH",
-    verified: { cin: true, casier: false, competences: true, elite: false },
+    verified: { identite: true, competences: true, references: false, elite: false },
     experience: 9,
   },
   {
@@ -123,7 +123,7 @@ export const ARTISANS: Artisan[] = [
     rating: 4.8,
     reviewCount: 78,
     priceRange: "250–600 DH",
-    verified: { cin: true, casier: true, competences: true, elite: false },
+    verified: { identite: true, competences: true, references: true, elite: false },
     experience: 11,
   },
 ];

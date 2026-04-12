@@ -1,19 +1,19 @@
 import { CheckCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-type BadgeType = "cin" | "casier" | "competences" | "elite";
+type BadgeType = "identite" | "competences" | "references" | "elite";
 
 const BADGE_CONFIG: Record<BadgeType, { label: string; color: string }> = {
-  cin: {
-    label: "CIN Verifie",
-    color: "bg-trust-light border-trust-border text-trust-text",
-  },
-  casier: {
-    label: "Casier Verifie",
+  identite: {
+    label: "Identite Verifiee",
     color: "bg-trust-light border-trust-border text-trust-text",
   },
   competences: {
     label: "Competences Verifiees",
+    color: "bg-trust-light border-trust-border text-trust-text",
+  },
+  references: {
+    label: "References Verifiees",
     color: "bg-trust-light border-trust-border text-trust-text",
   },
   elite: {

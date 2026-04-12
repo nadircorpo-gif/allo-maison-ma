@@ -6,7 +6,7 @@ const TRUST_CARDS = [
     iconBg: "bg-trust-light",
     iconColor: "text-trust",
     title: "Identite verifiee",
-    description: "CIN et casier judiciaire verifies. Pas de mauvaise surprise.",
+    description: "Chaque pro est verifie par notre equipe. Pas de mauvaise surprise.",
   },
   {
     icon: Star,
