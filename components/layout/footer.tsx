@@ -20,7 +20,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         {/* 4-column grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-          {/* Column 1 — Brand */}
+          {/* Brand */}
           <div>
             <Link href="/" className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 rounded-btn bg-primary flex items-center justify-center">
@@ -36,7 +36,7 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Column 2 — Services */}
+          {/* Services */}
           <div>
             <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
               Services
@@ -45,7 +45,7 @@ export default function Footer() {
               {FOOTER_SERVICES.map((service) => (
                 <li key={service.slug}>
                   <Link
-                    href={`/services/${service.slug}`}
+                    href={`/${service.slug}-casablanca`}
                     className="text-sm text-gray-400 hover:text-white transition-colors"
                   >
                     {service.name}
@@ -55,7 +55,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 3 — Villes */}
+          {/* Villes */}
           <div>
             <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
               Villes
@@ -64,7 +64,7 @@ export default function Footer() {
               {FOOTER_CITIES.map((city) => (
                 <li key={city.slug}>
                   <Link
-                    href={`/villes/${city.slug}`}
+                    href={`/plombier-${city.slug}`}
                     className="text-sm text-gray-400 hover:text-white transition-colors"
                   >
                     {city.name}
@@ -74,7 +74,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 4 — A propos */}
+          {/* A propos */}
           <div>
             <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
               A propos
@@ -98,7 +98,7 @@ export default function Footer() {
         <div className="border-t border-white/10 mt-12 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           {/* Copyright */}
           <p className="text-xs text-gray-500">
-            &copy; 2017-2026 allo-maison.ma — Tous droits reserves
+            &copy; 2017-2026 allo-maison.ma. Tous droits reserves
           </p>
 
           {/* Trust badges */}
