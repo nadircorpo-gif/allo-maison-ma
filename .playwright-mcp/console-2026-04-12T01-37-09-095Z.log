@@ -1,0 +1,57 @@
+[   18474ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://web.archive.org/web/20190708033508if_/http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fm3allem.ma&width&height=258&colorscheme=dark&show_faces=true&header=false&stream=false&show_border=false&appId=611300792286071:0
+[   18486ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://web.archive.org/web/20190708033508/http://web.archive.org/screenshot/http://www.m3allem.ma/fichem3allem/Hassan/68.html:0
+[   21253ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   22256ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   23254ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   23255ms] [LOG] player el=%o %o JSHandle@node p @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   23255ms] [LOG] players=%o [p] @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   24253ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   25256ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   26253ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   27257ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   27685ms] [LOG] Response:  {formats: Array(0), status_code: 3, status: Attempt to archive failed} @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   27686ms] [LOG] Returned from video info server:  {formats: Array(0), status_code: 3, status: Attempt to archive failed} @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   27784ms] [ERROR] Failed to load resource: net::ERR_FAILED @ chrome-extension://invalid/:0
+[   27785ms] [ERROR] Failed to load resource: net::ERR_FAILED @ chrome-extension://invalid/:0
+[   27785ms] [ERROR] Failed to load resource: net::ERR_FAILED @ chrome-extension://invalid/:0
+[   27785ms] [ERROR] Failed to load resource: net::ERR_FAILED @ chrome-extension://invalid/:0
+[   27785ms] [ERROR] Failed to load resource: net::ERR_FAILED @ chrome-extension://invalid/:0
+[   27786ms] [ERROR] Failed to load resource: net::ERR_FAILED @ chrome-extension://invalid/:0
+[   27872ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://web.archive.org/web/2oe_/http://wayback-fakeurl.archive.org/yt/fqeYXZK2aPQ:0
+[   27873ms] [LOG] %s -> %s /web/2oe_/http://wayback-fakeurl.archive.org/yt/fqeYXZK2aPQ 404 @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   28254ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   28820ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://web.archive.org/web/20161113013527/https://i1.ytimg.com/vi/fqeYXZK2aPQ/default.jpg:0
+[   29254ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   30254ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   31255ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   32254ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   33126ms] [LOG] Error setting href =  @ https://web-static.archive.org/_static/js/wombat.js?v=txqj7nKC:20
+[   33254ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   33585ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://web.archive.org/web/20190708033433/https://v1.addthisedge.com/live/boost/ra-4d99a65b13ed2a12/_ate.track.config_resp:0
+[   34177ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://web.archive.org/web/20190708033433/https://v1.addthis.com/live/red_lojson/300lo.json?si=5d22ba0a1ade5bb9&bkl=0&bl=1&pdt=2882&sid=5d22ba0a1ade5bb9&pub=ra-4d99a65b13ed2a12&rev=v8.4.11-wp&ln=en&pc=men&cb=0&ab=-&dp=www.m3allem.ma&fp=fichem3allem%2FHassan%2F68.html&fr=&of=0&pd=0&irt=0&vcl=0&md=0&ct=1&tct=0&abt=0&cdn=0&pi=1&rb=0&gen=100&chr=UTF-8&colc=1562556938148&jsl=1&uvs=5d22ba0a13e8f6a8000&skipb=1&callback=addthis.cbs.vqsl_53899176954732510:0
+[   34177ms] [ERROR] undefined @ https://web.archive.org/web/20190708033508js_/http://s7.addthis.com/js/300/addthis_widget.js:10
+[   34254ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   35254ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   36254ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   37255ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   38254ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   39256ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   39584ms] [WARNING] Google Maps JavaScript API warning: NoApiKeys https://developers.google.com/maps/documentation/javascript/error-messages#no-api-keys @ https://web.archive.org/web/20190708034346/https://maps.googleapis.com/maps-api-v3/api/js/37/6/util.js:235
+[   39584ms] [WARNING] Google Maps JavaScript API warning: SensorNotRequired https://developers.google.com/maps/documentation/javascript/error-messages#sensor-not-required @ https://web.archive.org/web/20190708034346/https://maps.googleapis.com/maps-api-v3/api/js/37/6/util.js:235
+[   40254ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   40612ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://web.archive.org/web/20190708034346/https://maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate?1shttp%3A%2F%2Fwww.m3allem.ma%2Ffichem3allem%2FHassan%2F68.html&5shttp%3A%2F%2Fwww.m3allem.ma%2Ffichem3allem%2FHassan%2F68.html&callback=_xdc_._x8efdh&token=95697:0
+[   40661ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://web.archive.org/web/20190708034346/https://maps.googleapis.com/maps/api/js/ViewportInfoService.GetViewportInfo?1m6&1m2&1d38.88463324406836&2d-77.04981159277929&2m2&1d38.90534178794587&2d-77.02375890854626&2u16&4sen-US&5e0&6sm%40473000000&7b0&8e0&callback=_xdc_._yugzys&token=107722:0
+[   41184ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://web.archive.org/web/20190708034346/https://maps.googleapis.com/maps/api/js/GeocodeService.Search?4sAvenue%20Bordeaux%20Casablanca%2C%20Maroc&7sUS&9sen-US&callback=_xdc_._j3o2ht&token=127550:0
+[   41357ms] TypeError: Cannot read properties of null (reading '0')
+    at https://web.archive.org/web/20190708033508/http://www.m3allem.ma/fichem3allem/Hassan/68.html:640:28
+    at Function.apply (https://web-static.archive.org/_static/js/wombat.js?v=txqj7nKC:21:64701)
+    at https://web.archive.org/web/20190708034346/https://maps.googleapis.com/maps-api-v3/api/js/37/6/geocoder.js:13:479
+    at Vn.c [as j] (https://web.archive.org/web/20190708034346/https://maps.googleapis.com/maps-api-v3/api/js/37/6/geocoder.js:11:249)
+    at Un.c.Lb (https://web.archive.org/web/20190708034346/https://maps.googleapis.com/maps-api-v3/api/js/37/6/common.js:86:204)
+[   41253ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   42255ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   43254ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   44254ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   45254ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   46254ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   47254ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1

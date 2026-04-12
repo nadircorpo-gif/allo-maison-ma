@@ -1,0 +1,220 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e8]:
+      - link "m3allem au maroc" [ref=e11] [cursor=pointer]:
+        - /url: /web/20190706020115/http://www.m3allem.ma/index.html
+        - img "m3allem au maroc" [ref=e12]
+      - generic [ref=e13]:
+        - generic [ref=e14]:
+          - generic [ref=e16]:
+            - generic [ref=e18]: +Contactez-Nous
+            - link:
+              - /url: javascript:;
+          - generic [ref=e20]: M3allem.ma le premier annuaire des professionnels des metiers au maroc
+        - generic [ref=e21]:
+          - navigation [ref=e22]:
+            - paragraph:
+              - generic [ref=e23]: le passage de m3allem.ma sur
+          - navigation [ref=e25]:
+            - paragraph:
+              - generic [ref=e26]: Un an après sur
+          - navigation [ref=e28]:
+            - list [ref=e29]:
+              - listitem [ref=e30]:
+                - link "Accueil" [ref=e31] [cursor=pointer]:
+                  - /url: /web/20190706020115/http://www.m3allem.ma/index.html
+              - listitem [ref=e32]:
+                - link "Inscription" [ref=e33] [cursor=pointer]:
+                  - /url: /web/20190706020115/http://www.m3allem.ma/inscription.html
+              - listitem [ref=e34]:
+                - link "Services" [ref=e35] [cursor=pointer]:
+                  - /url: /web/20190706020115/http://www.m3allem.ma/services.html
+              - listitem [ref=e36]:
+                - link "Contacts" [ref=e37] [cursor=pointer]:
+                  - /url: /web/20190706020115/http://www.m3allem.ma/contact.html
+  - generic [ref=e40]:
+    - generic [ref=e44]:
+      - combobox [ref=e46]:
+        - option "Séléctionner une spécialité" [selected]
+        - option "Plomberie"
+        - option "Electricité"
+        - option "Menuiserie"
+        - option "Électronique"
+        - option "Maçonnerie"
+        - option "Peinture"
+        - option "Parabole"
+        - option "Vitrerie - Aluminium"
+        - option "Clim et froid"
+        - option "Serrurerie"
+        - option "plâtrier"
+        - option "Ferronnerie"
+        - option "Surveillance et alarmes"
+        - option "Etanchéité"
+        - option "Carrelage"
+        - option "Electro - ménager"
+        - option "Mécanique"
+        - option "Transport"
+        - option "Electricité-Auto"
+        - option "Tapisserie"
+        - option "Ascenseurs"
+        - option "Jardinier"
+        - option "Démolition"
+        - option "Encadrement"
+        - option "pneumatiques"
+        - option "Marbre"
+        - option "Dépannage"
+        - option "piscine"
+      - combobox [ref=e48]:
+        - option "Séléctionner une ville" [selected]
+        - option "Agadir"
+        - option "Amizmiz"
+        - option "Assilah"
+        - option "Béni Mellal"
+        - option "Benslimane"
+        - option "Bouznika"
+        - option "Casablanca"
+        - option "Chichaoua"
+        - option "El Kelaâ des Sraghna"
+        - option "Fès"
+        - option "Ifrane"
+        - option "Kenitra"
+        - option "Khemisset"
+        - option "Laâyoune"
+        - option "Larache"
+        - option "Marrakech"
+        - option "Meknès"
+        - option "Mohammedia"
+        - option "Rabat"
+        - option "Safi"
+        - option "Salé"
+        - option "Séfrou"
+        - option "Settat"
+        - option "Sidi Bennour"
+        - option "Skhirat"
+        - option "Tamesna"
+        - option "Tanger"
+        - option "Tarfaya"
+        - option "Temara"
+        - option "Tetouan"
+        - option "Zagora"
+      - button "Trouvez" [ref=e50] [cursor=pointer]
+    - generic [ref=e51]:
+      - generic [ref=e53]:
+        - generic [ref=e54]:
+          - link "Accueil" [ref=e55] [cursor=pointer]:
+            - /url: /web/20190706020115/http://www.m3allem.ma/index.html
+          - text: "-"
+        - generic [ref=e56]: "Liste des m3allem : Plomberie"
+      - generic [ref=e58]:
+        - heading "Plomberie" [level=2] [ref=e59]
+        - paragraph [ref=e60]:
+          - text: La plomberie s’intéresse à la circulation de l’eau dans votre maison.
+          - text: Elle regroupe la zinguerie, le chauffage central et la plomberie sanitaire.
+          - text: Elle intervient dès l’arrivée d’eau et s’arrête au raccordement des canalisations au réseau collectif d’évacuation.
+          - text: Si ce raccordement n’est pas possible, elle intègre aussi la « fosse toutes eaux » ou toute autre solution choisie
+          - text: pour traiter les eaux usées. Son rôle est donc capital tant pour assurer un confort aux occupants (alimentation en eau potable, eau chaude sanitaire) que pour leur garantir une sécurité d’utilisation. L’explosion des nouveaux matériaux et des nouvelles propositions en matière de chauffage a bouleversé sa pratique, qui d’ailleurs devient souvent plus facile à mettre en œuvre.
+      - generic [ref=e61]:
+        - generic [ref=e64]:
+          - heading "ELWARDI Hassan" [level=5] [ref=e65]:
+            - link "ELWARDI Hassan" [ref=e66] [cursor=pointer]:
+              - /url: /web/20190706020115/http://www.m3allem.ma/fichem3allem/m3allem/68.html
+          - paragraph [ref=e67]:
+            - generic [ref=e68]: "Service : Plomberie"
+            - generic [ref=e69]: "Téléphone : 06 53 69 87 70"
+            - generic [ref=e70]: "Ville : Casablanca"
+            - generic [ref=e71]: "Quartier : Avenue Bordeaux"
+          - link "Voir la fiche du m3allem" [ref=e73] [cursor=pointer]:
+            - /url: /web/20190706020115/http://www.m3allem.ma/fichem3allem/Hassan/68.html
+        - generic [ref=e75]:
+          - heading "EDDAIF Abdelmajid" [level=5] [ref=e76]:
+            - link "EDDAIF Abdelmajid" [ref=e77] [cursor=pointer]:
+              - /url: /web/20190706020115/http://www.m3allem.ma/fichem3allem/m3allem/75.html
+          - paragraph [ref=e78]:
+            - generic [ref=e79]: "Service : Plomberie"
+            - generic [ref=e80]: "Téléphone : 06 68 17 27 07"
+            - generic [ref=e81]: "Ville : Casablanca"
+            - generic [ref=e82]: "Quartier : Anfa"
+          - link "Voir la fiche du m3allem" [ref=e84] [cursor=pointer]:
+            - /url: /web/20190706020115/http://www.m3allem.ma/fichem3allem/Abdelmajid/75.html
+        - generic [ref=e86]:
+          - heading "FADLI Abdelkarim" [level=5] [ref=e87]:
+            - link "FADLI Abdelkarim" [ref=e88] [cursor=pointer]:
+              - /url: /web/20190706020115/http://www.m3allem.ma/fichem3allem/m3allem/76.html
+          - paragraph [ref=e89]:
+            - generic [ref=e90]: "Service : Plomberie"
+            - generic [ref=e91]: "Téléphone : 06 42 75 38 93"
+            - generic [ref=e92]: "Ville : Casablanca"
+            - generic [ref=e93]: "Quartier : Verdin"
+          - link "Voir la fiche du m3allem" [ref=e95] [cursor=pointer]:
+            - /url: /web/20190706020115/http://www.m3allem.ma/fichem3allem/Abdelkarim/76.html
+        - generic [ref=e97]:
+          - heading "KOKAJI Simohamed" [level=5] [ref=e98]:
+            - link "KOKAJI Simohamed" [ref=e99] [cursor=pointer]:
+              - /url: /web/20190706020115/http://www.m3allem.ma/fichem3allem/m3allem/77.html
+          - paragraph [ref=e100]:
+            - generic [ref=e101]: "Service : Plomberie"
+            - generic [ref=e102]: "Téléphone : 06 65 83 19 61"
+            - generic [ref=e103]: "Ville : Casablanca"
+            - generic [ref=e104]: "Quartier : Bourgogne"
+          - link "Voir la fiche du m3allem" [ref=e106] [cursor=pointer]:
+            - /url: /web/20190706020115/http://www.m3allem.ma/fichem3allem/Simohamed/77.html
+        - generic [ref=e108]:
+          - heading "ELGARMA Said" [level=5] [ref=e109]:
+            - link "ELGARMA Said" [ref=e110] [cursor=pointer]:
+              - /url: /web/20190706020115/http://www.m3allem.ma/fichem3allem/m3allem/84.html
+          - paragraph [ref=e111]:
+            - generic [ref=e112]: "Service : Plomberie"
+            - generic [ref=e113]: "Téléphone : 06 75 47 64 51"
+            - generic [ref=e114]: "Ville : Casablanca"
+            - generic [ref=e115]: "Quartier : Bourgogne"
+          - link "Voir la fiche du m3allem" [ref=e117] [cursor=pointer]:
+            - /url: /web/20190706020115/http://www.m3allem.ma/fichem3allem/Said/84.html
+        - generic [ref=e119]:
+          - heading "MOURAD Rachid" [level=5] [ref=e120]:
+            - link "MOURAD Rachid" [ref=e121] [cursor=pointer]:
+              - /url: /web/20190706020115/http://www.m3allem.ma/fichem3allem/m3allem/139.html
+          - paragraph [ref=e122]:
+            - generic [ref=e123]: "Service : Plomberie"
+            - generic [ref=e124]: "Téléphone : 06 14 63 87 87"
+            - generic [ref=e125]: "Ville : Casablanca"
+            - generic [ref=e126]: "Quartier : Sidi Bernoussi"
+          - link "Voir la fiche du m3allem" [ref=e128] [cursor=pointer]:
+            - /url: /web/20190706020115/http://www.m3allem.ma/fichem3allem/Rachid/139.html
+        - generic [ref=e130]:
+          - heading "AMROUG Hamid" [level=5] [ref=e131]:
+            - link "AMROUG Hamid" [ref=e132] [cursor=pointer]:
+              - /url: /web/20190706020115/http://www.m3allem.ma/fichem3allem/m3allem/141.html
+          - paragraph [ref=e133]:
+            - generic [ref=e134]: "Service : Plomberie"
+            - generic [ref=e135]: "Téléphone : 06 10 88 35 16"
+            - generic [ref=e136]: "Ville : Casablanca"
+            - generic [ref=e137]: "Quartier : Sidi Bernoussi"
+          - link "Voir la fiche du m3allem" [ref=e139] [cursor=pointer]:
+            - /url: /web/20190706020115/http://www.m3allem.ma/fichem3allem/Hamid/141.html
+        - generic [ref=e141]:
+          - heading "ARGAZ Said" [level=5] [ref=e142]:
+            - link "ARGAZ Said" [ref=e143] [cursor=pointer]:
+              - /url: /web/20190706020115/http://www.m3allem.ma/fichem3allem/m3allem/194.html
+          - paragraph [ref=e144]:
+            - generic [ref=e145]: "Service : Plomberie"
+            - generic [ref=e146]: "Téléphone : 06 00 57 29 47"
+            - generic [ref=e147]: "Ville : Casablanca"
+            - generic [ref=e148]: "Quartier : Ain Sebaa"
+          - link "Voir la fiche du m3allem" [ref=e150] [cursor=pointer]:
+            - /url: /web/20190706020115/http://www.m3allem.ma/fichem3allem/Said/194.html
+      - list [ref=e152]:
+        - listitem:
+          - link "1" [ref=e153]:
+            - /url: javascript:;
+        - listitem:
+          - link "2" [ref=e154] [cursor=pointer]:
+            - /url: /web/20190706020115/http://www.m3allem.ma/service.php?specialite=1&PageNum=2
+        - listitem:
+          - link "3" [ref=e155] [cursor=pointer]:
+            - /url: /web/20190706020115/http://www.m3allem.ma/service.php?PageNum=3
+        - listitem:
+          - link "4" [ref=e156] [cursor=pointer]:
+            - /url: /web/20190706020115/http://www.m3allem.ma/service.php?specialite=1&PageNum=4
+        - listitem:
+          - link "5" [ref=e157] [cursor=pointer]:
+            - /url: /web/20190706020115/http://www.m3allem.ma/service.php?PageNum=5

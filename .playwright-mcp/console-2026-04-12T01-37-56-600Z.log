@@ -1,0 +1,48 @@
+[     749ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[    1750ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[    6004ms] [INFO] Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: https://web.archive.org/web/20250725100112im_/https://www.m3allem.ma/views/m3allem/css/fonts/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff @ https://web.archive.org/web/20250428023930/https://www.m3allem.ma/servicesvilles/Casablanca.html:0
+[    6004ms] [INFO] Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: https://web.archive.org/web/20250725100112im_/https://www.m3allem.ma/views/m3allem/css/fonts/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff @ https://web.archive.org/web/20250428023930/https://www.m3allem.ma/servicesvilles/Casablanca.html:0
+[    6467ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://web.archive.org/web/20250428023930if_/https://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fm3allem.ma&width&height=258&colorscheme=dark&show_faces=true&header=false&stream=false&show_border=false&appId=611300792286071:0
+[    6503ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://web.archive.org/web/20250428023930/http://web.archive.org/screenshot/https://www.m3allem.ma/servicesvilles/Casablanca.html:0
+[    7851ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[    8836ms] Unexpected token '<'
+[    8836ms] ReferenceError: addthis is not defined
+    at https://web.archive.org/web/20250428023930/https://www.m3allem.ma/servicesvilles/Casablanca.html:822:3
+[    8857ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[    9852ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[    9853ms] [LOG] player el=%o %o JSHandle@node p @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[    9853ms] [LOG] players=%o [p] @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   10480ms] [LOG] Response:  {formats: Array(0), status_code: 3, status: Attempt to archive failed} @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   10480ms] [LOG] Returned from video info server:  {formats: Array(0), status_code: 3, status: Attempt to archive failed} @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   10690ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://web.archive.org/web/2oe_/http://wayback-fakeurl.archive.org/yt/fqeYXZK2aPQ:0
+[   10690ms] [LOG] %s -> %s /web/2oe_/http://wayback-fakeurl.archive.org/yt/fqeYXZK2aPQ 404 @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   10855ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   11851ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   12852ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   13852ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   14854ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   15852ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   16852ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   17855ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   18855ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   19851ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   20851ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   21855ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   22854ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   23856ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   24852ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   25852ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   26852ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   26892ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://web.archive.org/web/20250725101756///www.youtube.com/api/stats/qoe?cpn=PDP9ynLRpmJ93GPp&el=embedded&ns=yt&fexp=v1%2C24004644%2C131298%2C430745%2C26443548%2C53408%2C34656%2C47716%2C58314%2C18644%2C14869%2C75925%2C26895%2C9252%2C3479%2C4082%2C8948%2C23206%2C15179%2C2%2C20221%2C31597%2C2796%2C13393%2C4414%2C2673%2C3727%2C591%2C5345%2C699%2C65%2C4324%2C2313%2C3083%2C5385%2C1563%2C4095%2C8293%2C840%2C4176%2C1995%2C354%2C2646%2C374%2C134%2C589%2C1671%2C1638%2C1924%2C2038%2C6%2C3485%2C979%2C602%2C1750%2C757%2C532%2C191&cl=786081487&seq=1&event=streamingstats&docid=fqeYXZK2aPQ&cbr=Chrome&cbrver=134.0.0.0&c=WEB_EMBEDDED_PLAYER&cver=1.20250722.00.00&cplayer=UNIPLAYER&cos=Windows&cosver=10.0&cplatform=DESKTOP&vps=0.000:N,0.000:ER&cmt=0.000:0.000,0.000:0.000&error=0.000:auth::0.000:1;a6s.0;r.This_video_is_private&vis=0.000:0&bh=0.000:0.000&qclc=ChBQRFA5eW5MUnBtSjkzR1BwEAE:0
+[   27852ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   28851ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   29851ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   30851ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   31852ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   32851ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   33850ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   34851ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   35851ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   36851ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   37851ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   38852ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1

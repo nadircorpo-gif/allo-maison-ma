@@ -1,0 +1,293 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e8]:
+        - link "m3allem au maroc" [ref=e11] [cursor=pointer]:
+          - /url: /web/20190708033508/http://www.m3allem.ma/index.html
+          - img "m3allem au maroc" [ref=e12]
+        - generic [ref=e13]:
+          - generic [ref=e14]:
+            - generic [ref=e16]:
+              - generic [ref=e18]: +Contactez-Nous
+              - link:
+                - /url: javascript:;
+            - generic [ref=e20]: M3allem.ma le premier annuaire des professionnels des metiers au maroc
+          - generic [ref=e21]:
+            - navigation [ref=e22]:
+              - paragraph:
+                - generic [ref=e23]: le passage de m3allem.ma sur
+            - navigation [ref=e25]:
+              - paragraph:
+                - generic [ref=e26]: Un an après sur
+            - navigation [ref=e28]:
+              - list [ref=e29]:
+                - listitem [ref=e30]:
+                  - link "Accueil" [ref=e31] [cursor=pointer]:
+                    - /url: /web/20190708033508/http://www.m3allem.ma/index.html
+                - listitem [ref=e32]:
+                  - link "Inscription" [ref=e33] [cursor=pointer]:
+                    - /url: /web/20190708033508/http://www.m3allem.ma/inscription.html
+                - listitem [ref=e34]:
+                  - link "Services" [ref=e35] [cursor=pointer]:
+                    - /url: /web/20190708033508/http://www.m3allem.ma/services.html
+                - listitem [ref=e36]:
+                  - link "Contacts" [ref=e37] [cursor=pointer]:
+                    - /url: /web/20190708033508/http://www.m3allem.ma/contact.html
+    - generic [ref=e40]:
+      - generic [ref=e44]:
+        - combobox [ref=e46]:
+          - option "Séléctionner une spécialité" [selected]
+          - option "Plomberie"
+          - option "Electricité"
+          - option "Menuiserie"
+          - option "Électronique"
+          - option "Maçonnerie"
+          - option "Peinture"
+          - option "Parabole"
+          - option "Vitrerie - Aluminium"
+          - option "Clim et froid"
+          - option "Serrurerie"
+          - option "plâtrier"
+          - option "Ferronnerie"
+          - option "Surveillance et alarmes"
+          - option "Etanchéité"
+          - option "Carrelage"
+          - option "Electro - ménager"
+          - option "Mécanique"
+          - option "Transport"
+          - option "Electricité-Auto"
+          - option "Tapisserie"
+          - option "Ascenseurs"
+          - option "Jardinier"
+          - option "Démolition"
+          - option "Encadrement"
+          - option "pneumatiques"
+          - option "Marbre"
+          - option "Dépannage"
+          - option "piscine"
+        - combobox [ref=e48]:
+          - option "Séléctionner une ville" [selected]
+          - option "Agadir"
+          - option "Amizmiz"
+          - option "Assilah"
+          - option "Béni Mellal"
+          - option "Benslimane"
+          - option "Bouznika"
+          - option "Casablanca"
+          - option "Chichaoua"
+          - option "El Kelaâ des Sraghna"
+          - option "Fès"
+          - option "Ifrane"
+          - option "Kenitra"
+          - option "Khemisset"
+          - option "Laâyoune"
+          - option "Larache"
+          - option "Marrakech"
+          - option "Meknès"
+          - option "Mohammedia"
+          - option "Rabat"
+          - option "Safi"
+          - option "Salé"
+          - option "Séfrou"
+          - option "Settat"
+          - option "Sidi Bennour"
+          - option "Skhirat"
+          - option "Tamesna"
+          - option "Tanger"
+          - option "Tarfaya"
+          - option "Temara"
+          - option "Tetouan"
+          - option "Zagora"
+        - button "Trouvez" [ref=e50] [cursor=pointer]
+      - generic [ref=e51]:
+        - generic [ref=e53]:
+          - generic [ref=e54]:
+            - link "Accueil" [ref=e55] [cursor=pointer]:
+              - /url: /web/20190708033508/http://www.m3allem.ma/index.html
+            - text: "-"
+          - generic [ref=e56]: "Fiche du m3allem : ELWARDI Hassan"
+        - generic [ref=e59]:
+          - heading "ELWARDI Hassan" [level=5] [ref=e62]
+          - table [ref=e65]:
+            - rowgroup [ref=e66]:
+              - row "Téléphone 06 53 69 87 70" [ref=e67]:
+                - rowheader "Téléphone" [ref=e68]
+                - cell "06 53 69 87 70" [ref=e69]
+              - row "Quartier Avenue Bordeaux" [ref=e70]:
+                - rowheader "Quartier" [ref=e71]
+                - cell "Avenue Bordeaux" [ref=e72]
+              - row "Ville Casablanca" [ref=e73]:
+                - rowheader "Ville" [ref=e74]
+                - cell "Casablanca" [ref=e75]
+              - row "1 Spécialités Plomberie Plomberie" [ref=e76]:
+                - rowheader "1 Spécialités" [ref=e77]
+                - cell "Plomberie Plomberie" [ref=e78]:
+                  - img "Plomberie" [ref=e79]
+                  - text: Plomberie
+              - row "Réferences" [ref=e80]:
+                - columnheader "Réferences" [ref=e81]
+                - cell [ref=e82]
+              - row "Sur la carte" [ref=e83]:
+                - rowheader "Sur la carte" [ref=e84]
+                - cell [ref=e85]
+              - row "Je donne une note à ce m3allem" [ref=e88]:
+                - rowheader "Je donne une note à ce m3allem" [ref=e89]
+                - cell [ref=e90]:
+                  - form [ref=e91]:
+                    - combobox [ref=e94]:
+                      - option "Votre note" [selected]
+                      - option "★"
+                      - option "★★"
+                      - option "★★★"
+                      - option "★★★★"
+                      - option "★★★★★"
+                    - textbox "Votre nom" [ref=e97]
+                    - textbox "Votre prénom" [ref=e100]
+                    - textbox "Votre e-mail" [ref=e103]
+                    - textbox "Sujet (obligatoire)" [ref=e106]
+                    - textbox "Votre commentaire (obligatoire)" [ref=e109]
+                    - button "Envoyer" [ref=e112] [cursor=pointer]
+            - rowgroup
+  - contentinfo [ref=e115]:
+    - generic [ref=e118]:
+      - generic [ref=e119]:
+        - generic [ref=e121]:
+          - heading "A propos de m3allem" [level=4] [ref=e122]
+          - generic [ref=e123]:
+            - text: M3allem.ma est le 1er site Internet de son genre au maroc. Notre objectif est d'accompagner les particuliers et les professionnels dans la recherche d'un service adapté à leur besoin.
+            - link "Lire la suite" [ref=e124] [cursor=pointer]:
+              - /url: /web/20190708033508/http://www.m3allem.ma/presentation.html
+        - generic [ref=e126]:
+          - heading "Ils nous aiment sur facebook" [level=4] [ref=e127]
+          - iframe [ref=e128]:
+            - generic [active] [ref=f17e1]:
+              - heading "404 Not Found" [level=1] [ref=f17e3]
+              - separator [ref=f17e4]
+              - generic [ref=f17e5]: nginx
+        - generic [ref=e129]:
+          - heading "Publicité" [level=4] [ref=e130]
+          - iframe [ref=e132]:
+            - generic [ref=f18e2]:
+              - generic [ref=f18e3]: We have not been able to archive the video associated with this YouTube page.
+              - generic "YouTube Video Player" [ref=f18e4]:
+                - link "la deuxième Interview de m3allem.ma sur medi1 Radio 2015" [ref=f18e9] [cursor=pointer]:
+                  - /url: https://web.archive.org/web/20161113013527mp_/https://www.youtube.com/watch?v=fqeYXZK2aPQ
+                - button "Watch la deuxième Interview de m3allem.ma sur medi1 Radio 2015" [ref=f18e12] [cursor=pointer]:
+                  - img
+        - generic [ref=e134]:
+          - heading "Follow us" [level=4] [ref=e135]
+          - list [ref=e136]:
+            - listitem [ref=e137]:
+              - link [ref=e138] [cursor=pointer]:
+                - /url: https://web.archive.org/web/20190708033508/https://www.facebook.com/m3allem.ma
+            - listitem [ref=e140]:
+              - link [ref=e141] [cursor=pointer]:
+                - /url: https://web.archive.org/web/20190708033508/https://twitter.com/m3allemaumaroc
+            - listitem [ref=e143]:
+              - link [ref=e144] [cursor=pointer]:
+                - /url: https://web.archive.org/web/20190708033508/https://plus.google.com/101423341698603608593/
+          - paragraph [ref=e146]:
+            - text: Installer la version mobile
+            - link "Installer la version mobile" [ref=e147] [cursor=pointer]:
+              - /url: /web/20190708033508/http://www.m3allem.ma/downloads/m3allem.apk
+              - img "Installer la version mobile" [ref=e148]
+      - generic [ref=e150]:
+        - list:
+          - listitem [ref=e151]:
+            - link "Agadir" [ref=e152] [cursor=pointer]:
+              - /url: /web/20190708033508/http://www.m3allem.ma/servicesvilles/Agadir.html
+          - listitem [ref=e153]:
+            - link "Amizmiz" [ref=e154] [cursor=pointer]:
+              - /url: /web/20190708033508/http://www.m3allem.ma/servicesvilles/Amizmiz.html
+          - listitem [ref=e155]:
+            - link "Assilah" [ref=e156] [cursor=pointer]:
+              - /url: /web/20190708033508/http://www.m3allem.ma/servicesvilles/Assilah.html
+          - listitem [ref=e157]:
+            - link "Béni Mellal" [ref=e158] [cursor=pointer]:
+              - /url: /web/20190708033508/http://www.m3allem.ma/servicesvilles/Béni Mellal.html
+          - listitem [ref=e159]:
+            - link "Benslimane" [ref=e160] [cursor=pointer]:
+              - /url: /web/20190708033508/http://www.m3allem.ma/servicesvilles/Benslimane.html
+          - listitem [ref=e161]:
+            - link "Bouznika" [ref=e162] [cursor=pointer]:
+              - /url: /web/20190708033508/http://www.m3allem.ma/servicesvilles/Bouznika .html
+          - listitem [ref=e163]:
+            - link "Casablanca" [ref=e164] [cursor=pointer]:
+              - /url: /web/20190708033508/http://www.m3allem.ma/servicesvilles/Casablanca.html
+          - listitem [ref=e165]:
+            - link "Chichaoua" [ref=e166] [cursor=pointer]:
+              - /url: /web/20190708033508/http://www.m3allem.ma/servicesvilles/Chichaoua.html
+          - listitem [ref=e167]:
+            - link "El Kelaâ des Sraghna" [ref=e168] [cursor=pointer]:
+              - /url: /web/20190708033508/http://www.m3allem.ma/servicesvilles/El Kelaâ des Sraghna.html
+          - listitem [ref=e169]:
+            - link "Fès" [ref=e170] [cursor=pointer]:
+              - /url: /web/20190708033508/http://www.m3allem.ma/servicesvilles/Fès.html
+          - listitem [ref=e171]:
+            - link "Ifrane" [ref=e172] [cursor=pointer]:
+              - /url: /web/20190708033508/http://www.m3allem.ma/servicesvilles/Ifrane.html
+          - listitem [ref=e173]:
+            - link "Kenitra" [ref=e174] [cursor=pointer]:
+              - /url: /web/20190708033508/http://www.m3allem.ma/servicesvilles/Kenitra.html
+          - listitem [ref=e175]:
+            - link "Khemisset" [ref=e176] [cursor=pointer]:
+              - /url: /web/20190708033508/http://www.m3allem.ma/servicesvilles/Khemisset.html
+          - listitem [ref=e177]:
+            - link "Laâyoune" [ref=e178] [cursor=pointer]:
+              - /url: /web/20190708033508/http://www.m3allem.ma/servicesvilles/Laâyoune.html
+          - listitem [ref=e179]:
+            - link "Larache" [ref=e180] [cursor=pointer]:
+              - /url: /web/20190708033508/http://www.m3allem.ma/servicesvilles/Larache.html
+          - listitem [ref=e181]:
+            - link "Marrakech" [ref=e182] [cursor=pointer]:
+              - /url: /web/20190708033508/http://www.m3allem.ma/servicesvilles/Marrakech.html
+          - listitem [ref=e183]:
+            - link "Meknès" [ref=e184] [cursor=pointer]:
+              - /url: /web/20190708033508/http://www.m3allem.ma/servicesvilles/Meknès.html
+          - listitem [ref=e185]:
+            - link "Mohammedia" [ref=e186] [cursor=pointer]:
+              - /url: /web/20190708033508/http://www.m3allem.ma/servicesvilles/Mohammedia.html
+          - listitem [ref=e187]:
+            - link "Rabat" [ref=e188] [cursor=pointer]:
+              - /url: /web/20190708033508/http://www.m3allem.ma/servicesvilles/Rabat.html
+          - listitem [ref=e189]:
+            - link "Safi" [ref=e190] [cursor=pointer]:
+              - /url: /web/20190708033508/http://www.m3allem.ma/servicesvilles/Safi.html
+          - listitem [ref=e191]:
+            - link "Salé" [ref=e192] [cursor=pointer]:
+              - /url: /web/20190708033508/http://www.m3allem.ma/servicesvilles/Salé.html
+          - listitem [ref=e193]:
+            - link "Séfrou" [ref=e194] [cursor=pointer]:
+              - /url: /web/20190708033508/http://www.m3allem.ma/servicesvilles/Séfrou.html
+          - listitem [ref=e195]:
+            - link "Settat" [ref=e196] [cursor=pointer]:
+              - /url: /web/20190708033508/http://www.m3allem.ma/servicesvilles/Settat.html
+          - listitem [ref=e197]:
+            - link "Sidi Bennour" [ref=e198] [cursor=pointer]:
+              - /url: /web/20190708033508/http://www.m3allem.ma/servicesvilles/Sidi Bennour.html
+          - listitem [ref=e199]:
+            - link "Skhirat" [ref=e200] [cursor=pointer]:
+              - /url: /web/20190708033508/http://www.m3allem.ma/servicesvilles/Skhirat.html
+          - listitem [ref=e201]:
+            - link "Tamesna" [ref=e202] [cursor=pointer]:
+              - /url: /web/20190708033508/http://www.m3allem.ma/servicesvilles/Tamesna.html
+          - listitem [ref=e203]:
+            - link "Tanger" [ref=e204] [cursor=pointer]:
+              - /url: /web/20190708033508/http://www.m3allem.ma/servicesvilles/Tanger.html
+          - listitem [ref=e205]:
+            - link "Tarfaya" [ref=e206] [cursor=pointer]:
+              - /url: /web/20190708033508/http://www.m3allem.ma/servicesvilles/Tarfaya.html
+          - listitem [ref=e207]:
+            - link "Temara" [ref=e208] [cursor=pointer]:
+              - /url: /web/20190708033508/http://www.m3allem.ma/servicesvilles/Temara.html
+          - listitem [ref=e209]:
+            - link "Tetouan" [ref=e210] [cursor=pointer]:
+              - /url: /web/20190708033508/http://www.m3allem.ma/servicesvilles/Tetouan.html
+          - listitem [ref=e211]:
+            - link "Zagora" [ref=e212] [cursor=pointer]:
+              - /url: /web/20190708033508/http://www.m3allem.ma/servicesvilles/Zagora.html
+      - separator [ref=e213]
+      - generic [ref=e216]:
+        - text: M3allem.ma © 2014
+        - link "by m3Allem.ma" [ref=e217] [cursor=pointer]:
+          - /url: https://web.archive.org/web/20190708033508/http://www.m3allem.ma/

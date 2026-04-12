@@ -1,0 +1,2 @@
+[    1684ms] [LOG] donation-banner loaded {version: 1.1.1} @ https://archive.org/includes/build/js/archive.min.js?v=d98a3070:400
+[    1742ms] [INFO] Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: https://archive.org/includes/fonts/Iconochive-Regular.woff @ https://web.archive.org/web/2024*/m3allem.ma:3005

@@ -1,0 +1,65 @@
+[    2761ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://web.archive.org/web/20241102110601/http://web.archive.org/screenshot/https://www.m3allem.ma/:0
+[    2925ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://web.archive.org/web/20241102110601if_/https://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fm3allem.ma&width&height=258&colorscheme=dark&show_faces=true&header=false&stream=false&show_border=false&appId=611300792286071:0
+[    5754ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[    6758ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[    7758ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[    7758ms] [LOG] player el=%o %o JSHandle@node p @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[    7758ms] [LOG] players=%o [p] @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[    8322ms] [LOG] Response:  {formats: Array(0), status_code: 3, status: Attempt to archive failed} @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[    8323ms] [LOG] Returned from video info server:  {formats: Array(0), status_code: 3, status: Attempt to archive failed} @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[    8506ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://web.archive.org/web/2oe_/http://wayback-fakeurl.archive.org/yt/fqeYXZK2aPQ:0
+[    8506ms] [LOG] %s -> %s /web/2oe_/http://wayback-fakeurl.archive.org/yt/fqeYXZK2aPQ 404 @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[    8754ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[    9045ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://web.archive.org/web/20250725101756///www.youtube.com/api/stats/qoe?cpn=PDP9ynLRpmJ93GPp&el=embedded&ns=yt&fexp=v1%2C24004644%2C131298%2C430745%2C26443548%2C53408%2C34656%2C47716%2C58314%2C18644%2C14869%2C75925%2C26895%2C9252%2C3479%2C4082%2C8948%2C23206%2C15179%2C2%2C20221%2C31597%2C2796%2C13393%2C4414%2C2673%2C3727%2C591%2C5345%2C699%2C65%2C4324%2C2313%2C3083%2C5385%2C1563%2C4095%2C8293%2C840%2C4176%2C1995%2C354%2C2646%2C374%2C134%2C589%2C1671%2C1638%2C1924%2C2038%2C6%2C3485%2C979%2C602%2C1750%2C757%2C532%2C191&cl=786081487&seq=1&event=streamingstats&docid=fqeYXZK2aPQ&cbr=Chrome&cbrver=134.0.0.0&c=WEB_EMBEDDED_PLAYER&cver=1.20250722.00.00&cplayer=UNIPLAYER&cos=Windows&cosver=10.0&cplatform=DESKTOP&vps=0.000:N,0.000:ER&cmt=0.000:0.000,0.000:0.000&error=0.000:auth::0.000:1;a6s.0;r.This_video_is_private&vis=0.000:0&bh=0.000:0.000&qclc=ChBQRFA5eW5MUnBtSjkzR1BwEAE:0
+[    9756ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   10755ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   11755ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   12754ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   13755ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   14754ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   15755ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   16756ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   17755ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   18756ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   19754ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   20755ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   21755ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   22754ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   23756ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   24418ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://web.archive.org/web/20241102111059js_/https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4d99a65b13ed2a12:0
+[   24423ms] ReferenceError: addthis is not defined
+    at https://web.archive.org/web/20241102110601/https://www.m3allem.ma/:613:3
+[   24754ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   24905ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://web.archive.org/save/_embed/https://www.m3allem.ma/images/slides/artigiani-1500x430.jpg:0
+[   24905ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://web.archive.org/save/_embed/https://www.m3allem.ma/images/slides/slide2-96x41.jpg:0
+[   24905ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://web.archive.org/save/_embed/https://www.m3allem.ma/images/slides/slide11-96x41.jpg:0
+[   24905ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://web.archive.org/save/_embed/https://www.m3allem.ma/images/slides/slide3-96x41.jpg:0
+[   25754ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   26754ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   27755ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   28754ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   29754ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   30758ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   31057ms] [WARNING] The resource https://web.archive.org/web/20250725101756/https://www.youtube.com/s/player/a1f2424c/player_ias.vflset/en_US/embed.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://web.archive.org/web/20250725101756if_/https://www.youtube.com/embed/fqeYXZK2aPQ:0
+[   31754ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   32755ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   33763ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   34756ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   35757ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   36757ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   37754ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   38755ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   39755ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   40112ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://web.archive.org/save/_embed/https://www.m3allem.ma/images/slides/slide3.jpg?1730545599697:0
+[   40756ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   40768ms] [WARNING] The resource https://web.archive.org/web/20250725101756/https://www.youtube.com/s/player/a1f2424c/player_ias.vflset/en_US/embed.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://web.archive.org/web/20250725101756if_/https://www.youtube.com/embed/fqeYXZK2aPQ:0
+[   41757ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   42758ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   43759ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   43780ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://web.archive.org/save/_embed/https://www.m3allem.ma/images/slides/slide3.jpg?1730545599697:0
+[   44563ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://web.archive.org/save/_embed/https://www.m3allem.ma/images/slides/slide4.jpg?1730545603447:0
+[   44760ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   45761ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   46403ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://web.archive.org/save/_embed/https://www.m3allem.ma/images/slides/slide4.jpg?1730545603447:0
+[   46756ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
+[   47755ms] [LOG] this is a embed for %s fqeYXZK2aPQ @ https://web-static.archive.org/_static/js/bundle-video.js?v=ErsAmzgF:1
