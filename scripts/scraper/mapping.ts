@@ -39,6 +39,7 @@ const M3ALLEM_SERVICE_MAP: Record<string, string> = {
 
 const BRICOOL_SERVICE_MAP: Record<string, string> = {
   "plomberie-installation sanitaire": "plombier",
+  plomberie: "plombier",
   "électricité doméstique": "electricien",
   "femme de ménage": "femme-de-menage",
   peinture: "peintre",
