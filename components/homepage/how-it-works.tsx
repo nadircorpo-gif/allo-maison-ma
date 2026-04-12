@@ -44,7 +44,7 @@ export default function HowItWorks() {
                 <p className="text-muted text-sm leading-relaxed">{step.description}</p>
               </div>
 
-              {/* Arrow between steps — desktop only */}
+              {/* Arrow between steps, desktop only */}
               {index < STEPS.length - 1 && (
                 <ChevronRight className="hidden sm:block w-6 h-6 text-muted/40 flex-shrink-0 self-start mt-3 -mr-2 -ml-2" />
               )}

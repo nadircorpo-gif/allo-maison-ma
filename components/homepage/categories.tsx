@@ -12,6 +12,9 @@ const CATEGORIES = [
   { emoji: "🌾", name: "Jardinage", slug: "jardinier" },
   { emoji: "💻", name: "Informatique", slug: "technicien-informatique" },
   { emoji: "🚚", name: "Demenagement", slug: "demenagement" },
+  { emoji: "👶", name: "Nounou", slug: "nounou" },
+  { emoji: "👩‍🍳", name: "Cuisiniere", slug: "cuisiniere" },
+  { emoji: "🏢", name: "Concierge", slug: "concierge" },
 ];
 
 export default function Categories() {

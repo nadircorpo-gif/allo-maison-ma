@@ -1,0 +1,61 @@
+- generic [ref=e4]:
+  - navigation [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - link "Accueil Unsplash" [ref=e8] [cursor=pointer]:
+          - /url: /fr
+          - img "Accueil Unsplash" [ref=e9]
+        - link "Photos" [ref=e11] [cursor=pointer]:
+          - /url: /fr
+          - img [ref=e12]
+        - link "Illustrations" [ref=e14] [cursor=pointer]:
+          - /url: /fr/illustrations
+          - img [ref=e15]
+      - generic [ref=e17]:
+        - button "Explorer" [ref=e18] [cursor=pointer]:
+          - img [ref=e19]
+        - link "Collections" [ref=e21] [cursor=pointer]:
+          - /url: /fr/connexion?referrer=%2Ffr%2Fs%2Fphotos%2Frabat-morocco-tower
+          - img [ref=e22]
+        - link "Historique de téléchargement" [ref=e24] [cursor=pointer]:
+          - /url: /fr/connexion?referrer=%2Ffr%2Ft%25C3%25A9l%25C3%25A9chargements
+          - img [ref=e25]
+      - link "Favoris" [ref=e28] [cursor=pointer]:
+        - /url: /fr/connexion?referrer=%2Ffr%2Fs%2Fphotos%2Frabat-morocco-tower
+        - img [ref=e29]
+    - generic [ref=e31]:
+      - link "Connexion / S’inscrire" [ref=e32] [cursor=pointer]:
+        - /url: /fr/connexion?referrer=%2Ffr%2Fs%2Fphotos%2Frabat-morocco-tower
+        - img [ref=e33]
+      - button "Langue" [ref=e35] [cursor=pointer]:
+        - img [ref=e36]
+      - button "Menu" [ref=e38] [cursor=pointer]:
+        - img [ref=e39]
+  - generic [ref=e41]:
+    - generic [ref=e42]:
+      - navigation [ref=e43]:
+        - search "Rechercher des visuels sur tout le site" [ref=e45]:
+          - button "Rechercher sur Unsplash" [ref=e46] [cursor=pointer]
+          - combobox [ref=e49]
+          - button "Effacer" [ref=e51] [cursor=pointer]
+          - button "Recherche de visuels" [ref=e55] [cursor=pointer]
+        - generic [ref=e58]:
+          - link "Abonnez-vous à Unsplash+" [ref=e59] [cursor=pointer]:
+            - /url: /fr/plus
+          - link "Se connecter" [ref=e60] [cursor=pointer]:
+            - /url: /fr/connexion?referrer=%2Ffr%2Fs%2Fphotos%2Frabat-morocco-tower
+        - button "Soumettre une image" [ref=e62] [cursor=pointer]
+      - generic [ref=e63]:
+        - generic [ref=e69]:
+          - list [ref=e70]
+          - button "Filtres" [ref=e80] [cursor=pointer]
+        - generic [ref=e84]:
+          - heading "Rabat morocco tower" [level=1] [ref=e86]
+          - generic [ref=e88]
+        - generic [ref=e120]:
+          - generic [ref=e124]
+          - button "Plus de résultats" [ref=e273] [cursor=pointer]
+          - generic [ref=e276]
+          - generic [ref=e300]
+    - generic:
+      - region "Notifications"

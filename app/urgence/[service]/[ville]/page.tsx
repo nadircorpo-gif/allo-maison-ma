@@ -94,7 +94,7 @@ export default async function UrgencePage({
       <div className="sticky top-0 z-50 bg-amber border-b border-amber/60 shadow-md">
         <div className="max-w-5xl mx-auto px-4 py-3 flex flex-col sm:flex-row items-center gap-3">
           <p className="font-bold text-ink text-sm sm:text-base flex-1 text-center sm:text-left">
-            SOS {service.name} {city.name} — Intervention en 30 min
+            SOS {service.name} {city.name} : Intervention en 30 min
           </p>
           <div className="flex gap-2 flex-shrink-0">
             <a

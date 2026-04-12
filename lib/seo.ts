@@ -7,7 +7,7 @@ export function generateServiceCityMetadata(
   citySlug: string,
   priceMin: number
 ): Metadata {
-  const title = `${serviceName} a ${cityName} — Pros verifies | Allo-Maison`;
+  const title = `${serviceName} a ${cityName} | Pros verifies | Allo-Maison`;
   const description = `Trouvez un ${serviceName.toLowerCase()} verifie a ${cityName} a partir de ${priceMin} DH. CIN + casier controles. Disponible 7j/7. Devis gratuit via WhatsApp.`;
   const url = `https://allo-maison.ma/${serviceSlug}-${citySlug}`;
 
@@ -37,7 +37,7 @@ export function generateUrgenceMetadata(
   serviceSlug: string,
   citySlug: string
 ): Metadata {
-  const title = `${serviceName} Urgence ${cityName} — Intervention 30 min | Allo-Maison`;
+  const title = `${serviceName} Urgence ${cityName} | Intervention 30 min | Allo-Maison`;
   const description = `Besoin d'un ${serviceName.toLowerCase()} en urgence a ${cityName} ? Intervention en moins de 30 minutes. Professionnels verifies disponibles 24h/24 et 7j/7.`;
   const url = `https://allo-maison.ma/urgence/${serviceSlug}-${citySlug}`;
 

@@ -8,7 +8,7 @@ export default function Hero() {
         {/* Trust badge pill */}
         <div className="inline-flex items-center gap-2 bg-trust-light border border-trust-border text-trust-text text-xs font-medium px-4 py-2 rounded-badge mb-6">
           <span className="w-2 h-2 rounded-full bg-trust animate-pulse flex-shrink-0" />
-          Depuis 2017 — Chaque pro est verifie : CIN, casier judiciaire, competences
+          Depuis 2017, chaque pro est verifie : CIN, casier judiciaire, competences
         </div>
 
         {/* H1 */}
@@ -19,7 +19,7 @@ export default function Hero() {
 
         {/* Subtitle */}
         <p className="text-lg text-muted mb-8 max-w-xl mx-auto">
-          Plombier, electricien, femme de menage — trouvez le bon pro en quelques clics et payez uniquement apres satisfaction.
+          Plombier, electricien, femme de menage : trouvez le bon pro en quelques clics et payez uniquement apres satisfaction.
         </p>
 
         {/* Search bar */}

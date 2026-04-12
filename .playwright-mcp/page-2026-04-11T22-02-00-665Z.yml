@@ -1,0 +1,270 @@
+- generic [ref=e4]:
+  - navigation [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - link "Accueil Unsplash" [ref=e8] [cursor=pointer]:
+          - /url: /fr
+          - img "Accueil Unsplash" [ref=e9]
+        - link "Photos" [ref=e11] [cursor=pointer]:
+          - /url: /fr
+          - img [ref=e12]
+        - link "Illustrations" [ref=e14] [cursor=pointer]:
+          - /url: /fr/illustrations
+          - img [ref=e15]
+      - generic [ref=e17]:
+        - button "Explorer" [ref=e18] [cursor=pointer]:
+          - img [ref=e19]
+        - link "Collections" [ref=e21] [cursor=pointer]:
+          - /url: /fr/connexion?referrer=%2Ffr%2Fs%2Fphotos%2Frabat-morocco-tower
+          - img [ref=e22]
+        - link "Historique de téléchargement" [ref=e24] [cursor=pointer]:
+          - /url: /fr/connexion?referrer=%2Ffr%2Ft%25C3%25A9l%25C3%25A9chargements
+          - img [ref=e25]
+      - link "Favoris" [ref=e28] [cursor=pointer]:
+        - /url: /fr/connexion?referrer=%2Ffr%2Fs%2Fphotos%2Frabat-morocco-tower
+        - img [ref=e29]
+    - generic [ref=e31]:
+      - link "Connexion / S’inscrire" [ref=e32] [cursor=pointer]:
+        - /url: /fr/connexion?referrer=%2Ffr%2Fs%2Fphotos%2Frabat-morocco-tower
+        - img [ref=e33]
+      - button "Langue" [ref=e35] [cursor=pointer]:
+        - img [ref=e36]
+      - button "Menu" [ref=e38] [cursor=pointer]:
+        - img [ref=e39]
+  - generic [ref=e41]:
+    - generic [ref=e42]:
+      - navigation [ref=e43]:
+        - search "Rechercher des visuels sur tout le site" [ref=e45]:
+          - button "Rechercher sur Unsplash" [ref=e46] [cursor=pointer]:
+            - img [ref=e47]
+          - combobox [ref=e49]:
+            - searchbox "Rechercher sur Unsplash" [ref=e50]: rabat morocco tower
+            - listbox
+          - button "Effacer" [ref=e51] [cursor=pointer]:
+            - img [ref=e52]
+          - button "Recherche de visuels" [ref=e55] [cursor=pointer]:
+            - img [ref=e56]
+        - generic [ref=e58]:
+          - link "Abonnez-vous à Unsplash+" [ref=e59] [cursor=pointer]:
+            - /url: /fr/plus
+          - link "Se connecter" [ref=e60] [cursor=pointer]:
+            - /url: /fr/connexion?referrer=%2Ffr%2Fs%2Fphotos%2Frabat-morocco-tower
+        - button "Soumettre une image" [ref=e62] [cursor=pointer]
+      - generic [ref=e63]:
+        - generic [ref=e69]:
+          - list [ref=e70]:
+            - listitem [ref=e71]:
+              - link "Photos 84":
+                - /url: /fr/s/photos/rabat-morocco-tower
+                - img
+                - text: Photos
+                - generic: "84"
+            - listitem [ref=e72]:
+              - link "Illustrations 0" [ref=e73] [cursor=pointer]:
+                - /url: /fr/s/illustrations/rabat-morocco-tower
+                - img [ref=e74]
+                - text: Illustrations
+                - generic [ref=e76]: "0"
+            - listitem [ref=e77]:
+              - button "Plus" [ref=e78] [cursor=pointer]
+          - button "Filtres" [ref=e80] [cursor=pointer]:
+            - img [ref=e82]
+            - text: Filtres
+        - generic [ref=e84]:
+          - heading "Rabat morocco tower" [level=1] [ref=e86]
+          - generic [ref=e88]:
+            - button "faire défiler la liste vers la droite" [ref=e90] [cursor=pointer]:
+              - img [ref=e91]
+            - generic [ref=e94]:
+              - link "Maroc" [ref=e96] [cursor=pointer]:
+                - /url: /fr/s/photos/maroc
+              - link "Rabat" [ref=e98] [cursor=pointer]:
+                - /url: /fr/s/photos/rabat
+              - link "Tour Hassan" [ref=e100] [cursor=pointer]:
+                - /url: /fr/s/photos/tour-hassan
+              - link "tour" [ref=e102] [cursor=pointer]:
+                - /url: /fr/s/photos/tour
+              - link "dehor" [ref=e104] [cursor=pointer]:
+                - /url: /fr/s/photos/dehor
+              - link "ville" [ref=e106] [cursor=pointer]:
+                - /url: /fr/s/photos/ville
+              - link "architecture" [ref=e108] [cursor=pointer]:
+                - /url: /fr/s/photos/architecture
+              - link "monument" [ref=e110] [cursor=pointer]:
+                - /url: /fr/s/photos/monument
+              - link "repère" [ref=e112] [cursor=pointer]:
+                - /url: /fr/s/photos/rep%C3%A8re
+              - link "urbain" [ref=e114] [cursor=pointer]:
+                - /url: /fr/s/photos/urbain
+              - link "mosquée" [ref=e116] [cursor=pointer]:
+                - /url: /fr/s/photos/mosqu%C3%A9e
+              - link "héritage culturel" [ref=e118] [cursor=pointer]:
+                - /url: /fr/s/photos/h%C3%A9ritage-culturel
+        - generic [ref=e120]:
+          - generic [ref=e124]:
+            - generic [ref=e125]:
+              - figure [ref=e126]:
+                - generic [ref=e128]:
+                  - link "Une vue verticale de l’emblème historique de la tour Hassan à Rabat, au Maroc" [ref=e129]:
+                    - /url: /fr/photos/une-vue-verticale-de-lembleme-historique-de-la-tour-hassan-a-rabat-au-maroc-TWQAsScaC9s
+                    - img "Une vue verticale de l’emblème historique de la tour Hassan à Rabat, au Maroc" [ref=e130]
+                  - link [ref=e131] [cursor=pointer]:
+                    - /url: /fr/plus?referrer=%2Ffr%2Fphotos%2Fune-vue-verticale-de-lembleme-historique-de-la-tour-hassan-a-rabat-au-maroc-TWQAsScaC9s
+                    - img [ref=e132]
+              - generic [ref=e134]:
+                - heading "Images sponsorisées" [level=4] [ref=e135]:
+                  - generic [ref=e136]: Images sponsorisées
+                  - link [ref=e137] [cursor=pointer]:
+                    - /url: https://www.istockphoto.com/search/2/image?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Ffr%2Fs%2Fphotos%2Frabat-morocco-tower&utm_term=rabat+morocco+tower%3A%3Aaffiliate-layout-optim%3Ab%3Ae4f1f20d-ce57-461a-b9ed-15cbc3455853&phrase=rabat+morocco+tower&alloweduse=availableforalluses&excludenudity=true&sort=best&mediatype=photography
+                    - img [ref=e138]
+                - generic [ref=e140]:
+                  - link "Tour Hassan de Rabat, Maroc," [ref=e141] [cursor=pointer]:
+                    - /url: https://www.istockphoto.com/photo/hassan-tower-rabat-morocco-gm478200362-67595685?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Ffr%2Fs%2Fphotos%2Frabat-morocco-tower&utm_term=rabat+morocco+tower%3A%3Aaffiliate-layout-optim%3Ab%3A15cf3307-b0d0-420a-a7e5-27ae0b43e26c
+                    - img "Tour Hassan de Rabat, Maroc," [ref=e142]
+                  - link "Rabat, Maroc. Tour Hassan" [ref=e143] [cursor=pointer]:
+                    - /url: https://www.istockphoto.com/photo/rabat-morocco-hassan-tower-gm2149359391-570593272?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Ffr%2Fs%2Fphotos%2Frabat-morocco-tower&utm_term=rabat+morocco+tower%3A%3Aaffiliate-layout-optim%3Ab%3A2fda46a6-73bb-4b46-b8c8-806dfd2d69ad
+                    - img "Rabat, Maroc. Tour Hassan" [ref=e144]
+                  - link "Ville marocaine surplombant les vallées et champs désertiques" [ref=e145] [cursor=pointer]:
+                    - /url: https://www.istockphoto.com/photo/moroccan-town-overlooking-desert-valleys-and-fields-gm2248688535-662522088?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Ffr%2Fs%2Fphotos%2Frabat-morocco-tower&utm_term=rabat+morocco+tower%3A%3Aaffiliate-layout-optim%3Ab%3Af3d61102-3899-4acf-9085-029c3b26d5eb
+                    - img "Ville marocaine surplombant les vallées et champs désertiques" [ref=e146]
+                  - link "Uncompleted Mosquée à Rabat" [ref=e147] [cursor=pointer]:
+                    - /url: https://www.istockphoto.com/photo/uncompleted-mosque-in-rabat-gm157573013-12295712?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Ffr%2Fs%2Fphotos%2Frabat-morocco-tower&utm_term=rabat+morocco+tower%3A%3Aaffiliate-layout-optim%3Ab%3A6c7563f7-2eef-444f-bf3f-f0a4d7a9897f
+                    - img "Uncompleted Mosquée à Rabat" [ref=e148]
+                - link "Économisez 20 % avec le code UNSPLASH20" [ref=e149] [cursor=pointer]:
+                  - /url: https://www.istockphoto.com/search/2/image?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Ffr%2Fs%2Fphotos%2Frabat-morocco-tower&utm_term=rabat+morocco+tower%3A%3Aaffiliate-layout-optim%3Ab%3Ae4f1f20d-ce57-461a-b9ed-15cbc3455853&phrase=rabat+morocco+tower&alloweduse=availableforalluses&excludenudity=true&sort=best&mediatype=photography
+              - figure [ref=e150]:
+                - link "une entrée fermée à un bâtiment" [ref=e153]:
+                  - /url: /fr/photos/une-entree-fermee-a-un-batiment-zPg0jc-gJ-w
+                  - img "une entrée fermée à un bâtiment" [ref=e154]
+              - figure [ref=e155]:
+                - link "Un homme faisant de la planche à roulettes sur le côté d’une rampe" [ref=e158]:
+                  - /url: /fr/photos/un-homme-faisant-de-la-planche-a-roulettes-sur-le-cote-dune-rampe-VwV3lDxbzfM
+                  - img "Un homme faisant de la planche à roulettes sur le côté d’une rampe" [ref=e159]
+              - figure [ref=e160]:
+                - link "Un grand bâtiment blanc avec des balcons verts" [ref=e163]:
+                  - /url: /fr/photos/un-grand-batiment-blanc-avec-des-balcons-verts-93tk_pSkDsM
+                  - img "Un grand bâtiment blanc avec des balcons verts" [ref=e164]
+              - figure [ref=e165]:
+                - link "Tour Hassan et palmiers sous un ciel dégagé" [ref=e168]:
+                  - /url: /fr/photos/tour-hassan-et-palmiers-sous-un-ciel-degage-ePPkzDnExt0
+                  - img "Tour Hassan et palmiers sous un ciel dégagé" [ref=e169]
+              - figure [ref=e170]:
+                - generic [ref=e172]:
+                  - link "Femme en lunettes de soleil se tient devant la tour hassan" [ref=e173]:
+                    - /url: /fr/photos/femme-en-lunettes-de-soleil-se-tient-devant-la-tour-hassan-ZtwdKvrME2E
+                    - img "Femme en lunettes de soleil se tient devant la tour hassan" [ref=e174]
+                  - link [ref=e175] [cursor=pointer]:
+                    - /url: /fr/plus?referrer=%2Ffr%2Fphotos%2Ffemme-en-lunettes-de-soleil-se-tient-devant-la-tour-hassan-ZtwdKvrME2E
+                    - img [ref=e176]
+              - figure [ref=e178]:
+                - link "Deux hommes à cheval en tenue cérémonielle près du bâtiment." [ref=e181]:
+                  - /url: /fr/photos/deux-hommes-a-cheval-en-tenue-ceremonielle-pres-du-batiment-LRozkQVFUGI
+                  - img "Deux hommes à cheval en tenue cérémonielle près du bâtiment." [ref=e182]
+            - generic [ref=e183]:
+              - figure [ref=e184]:
+                - link "brown brick building under blue sky" [ref=e187]:
+                  - /url: /fr/photos/brown-brick-building-under-blue-sky-eoY93dm3UvQ
+                  - img "brown brick building under blue sky" [ref=e188]
+              - figure [ref=e189]:
+                - link "Immeuble de grande hauteur brun pendant la journée" [ref=e192]:
+                  - /url: /fr/photos/immeuble-de-grande-hauteur-brun-pendant-la-journee-PqX7EELWjh0
+                  - img "Immeuble de grande hauteur brun pendant la journée" [ref=e193]
+              - figure [ref=e194]:
+                - generic [ref=e196]:
+                  - link "une haute tour située à côté d’un parc verdoyant" [ref=e197]:
+                    - /url: /fr/photos/une-haute-tour-situee-a-cote-dun-parc-verdoyant-7sfMjG7uqi0
+                    - img "une haute tour située à côté d’un parc verdoyant" [ref=e198]
+                  - link [ref=e199] [cursor=pointer]:
+                    - /url: /fr/plus?referrer=%2Ffr%2Fphotos%2Fune-haute-tour-situee-a-cote-dun-parc-verdoyant-7sfMjG7uqi0
+                    - img [ref=e200]
+              - figure [ref=e202]:
+                - link "un grand bâtiment dominant un champ verdoyant" [ref=e205]:
+                  - /url: /fr/photos/un-grand-batiment-dominant-un-champ-verdoyant-JMx0E2gg_c8
+                  - img "un grand bâtiment dominant un champ verdoyant" [ref=e206]
+              - figure [ref=e207]:
+                - generic [ref=e209]:
+                  - link "un grand bâtiment avec une horloge sur le côté" [ref=e210]:
+                    - /url: /fr/photos/un-grand-batiment-avec-une-horloge-sur-le-cote-7YaAU2t4Xq4
+                    - img "un grand bâtiment avec une horloge sur le côté" [ref=e211]
+                  - link [ref=e212] [cursor=pointer]:
+                    - /url: /fr/plus?referrer=%2Ffr%2Fphotos%2Fun-grand-batiment-avec-une-horloge-sur-le-cote-7YaAU2t4Xq4
+                    - img [ref=e213]
+              - figure [ref=e215]:
+                - link "un grand bâtiment avec une tour au milieu" [ref=e218]:
+                  - /url: /fr/photos/un-grand-batiment-avec-une-tour-au-milieu-puyEHDyx5uQ
+                  - img "un grand bâtiment avec une tour au milieu" [ref=e219]
+            - generic [ref=e220]:
+              - contentinfo [ref=e225]:
+                - generic [ref=e231]: –– ––– ––– –– ––– – ––– ––– –––– – – –– ––– – – ––– –– –– –––– ––
+              - figure [ref=e233]:
+                - link "Un groupe de piliers assis à côté d’un grand bâtiment" [ref=e236]:
+                  - /url: /fr/photos/un-groupe-de-piliers-assis-a-cote-dun-grand-batiment-QOse_cZFWzo
+                  - img "Un groupe de piliers assis à côté d’un grand bâtiment" [ref=e237]
+              - figure [ref=e238]:
+                - link "une haute tour surmontée d’une horloge" [ref=e241]:
+                  - /url: /fr/photos/une-haute-tour-surmontee-dune-horloge-whlfWQG9kU4
+                  - img "une haute tour surmontée d’une horloge" [ref=e242]
+              - figure [ref=e243]:
+                - generic [ref=e245]:
+                  - link "Femme marchant vers la tour Hassan à Rabat, Maroc" [ref=e246]:
+                    - /url: /fr/photos/femme-marchant-vers-la-tour-hassan-a-rabat-maroc-uQBpKM7Zoys
+                    - img "Femme marchant vers la tour Hassan à Rabat, Maroc" [ref=e247]
+                  - link [ref=e248] [cursor=pointer]:
+                    - /url: /fr/plus?referrer=%2Ffr%2Fphotos%2Ffemme-marchant-vers-la-tour-hassan-a-rabat-maroc-uQBpKM7Zoys
+                    - img [ref=e249]
+              - figure [ref=e251]:
+                - link "une grande porte en pierre" [ref=e254]:
+                  - /url: /fr/photos/une-grande-porte-en-pierre-kqGF5JFLUvA
+                  - img "une grande porte en pierre" [ref=e255]
+              - figure [ref=e256]:
+                - link "une grande tour de pierre avec la tour Hassan en arrière-plan" [ref=e259]:
+                  - /url: /fr/photos/une-grande-tour-de-pierre-avec-la-tour-hassan-en-arriere-plan-Wo4MNLDb4RU
+                  - img "une grande tour de pierre avec la tour Hassan en arrière-plan" [ref=e260]
+              - figure [ref=e261]:
+                - link "Tour Hassan avec des palmiers sur un ciel bleu" [ref=e264]:
+                  - /url: /fr/photos/tour-hassan-avec-des-palmiers-sur-un-ciel-bleu-b8j8m_D5jj8
+                  - img "Tour Hassan avec des palmiers sur un ciel bleu" [ref=e265]
+              - figure [ref=e266]:
+                - link "Porte dorée ornée sur un bâtiment couleur sable" [ref=e269]:
+                  - /url: /fr/photos/porte-doree-ornee-sur-un-batiment-couleur-sable--MemTfX7VqQ
+                  - img "Porte dorée ornée sur un bâtiment couleur sable" [ref=e270]
+          - button "Plus de résultats" [ref=e273] [cursor=pointer]
+          - generic [ref=e276]:
+            - heading "Parcourez des images premium sur iStock | Obtenez votre réduction dès maintenant" [level=2] [ref=e277]:
+              - text: Parcourez des images premium sur iStock
+              - generic [ref=e278]: "| Obtenez votre réduction dès maintenant"
+            - generic [ref=e280]:
+              - link "Rabat, Maroc. La Kasbah de la forteresse d’Oudayas au coucher du soleil." [ref=e281] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/rabat-morocco-the-kasbah-of-the-udayas-fortress-at-sunset-gm2209706020-626804393?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Ffr%2Fs%2Fphotos%2Frabat-morocco-tower&utm_term=rabat+morocco+tower%3A%3Aaffiliate-layout-optim%3Ab%3A71c1f504-e3c9-4062-b24b-3722efa3c12b
+                - img "Rabat, Maroc. La Kasbah de la forteresse d’Oudayas au coucher du soleil." [ref=e282]
+              - link "Kasbah des Oudayas, anciens bastions et tours, avec vieille médina, ville et place promenade, Rabat, Maroc" [ref=e283] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/kasbah-of-the-udayas-ancient-bastion-walls-and-towers-with-old-medina-town-and-gm2218141329-634698363?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Ffr%2Fs%2Fphotos%2Frabat-morocco-tower&utm_term=rabat+morocco+tower%3A%3Aaffiliate-layout-optim%3Ab%3A0639b131-c29e-4a9c-9c75-1f5a8e74e1a6
+                - img "Kasbah des Oudayas, anciens bastions et tours, avec vieille médina, ville et place promenade, Rabat, Maroc" [ref=e284]
+              - link "Vue sur le port de Rabat depuis la forteresse de la Kasbah au-dessus de l’Atlantique" [ref=e285] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/rabat-harbor-view-from-kasbah-fortress-over-atlantic-gm2268301056-680897033?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Ffr%2Fs%2Fphotos%2Frabat-morocco-tower&utm_term=rabat+morocco+tower%3A%3Aaffiliate-layout-optim%3Ab%3Ad90e6dd0-0b6b-4024-aa3f-af993c5b4a18
+                - img "Vue sur le port de Rabat depuis la forteresse de la Kasbah au-dessus de l’Atlantique" [ref=e286]
+              - link "Plage côtière de Rabat et paysage urbain le long de l’Atlantique" [ref=e287] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/rabat-coastal-beach-and-cityscape-along-the-atlantic-gm2268301094-680897084?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Ffr%2Fs%2Fphotos%2Frabat-morocco-tower&utm_term=rabat+morocco+tower%3A%3Aaffiliate-layout-optim%3Ab%3Ac715a19f-43ab-4a0b-a252-6aa55ddde873
+                - img "Plage côtière de Rabat et paysage urbain le long de l’Atlantique" [ref=e288]
+              - link "Le gratte-ciel de la Tour Mohammed VI à Rabat-Salé, Maroc" [ref=e289] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/the-mohammed-vi-tower-skyscraper-in-rabat-sale-morocco-gm2219072005-635577220?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Ffr%2Fs%2Fphotos%2Frabat-morocco-tower&utm_term=rabat+morocco+tower%3A%3Aaffiliate-layout-optim%3Ab%3A0f17aea8-0a71-4013-a16f-12c01c13d4d1
+                - img "Le gratte-ciel de la Tour Mohammed VI à Rabat-Salé, Maroc" [ref=e290]
+              - link "Rabat, Maroc, paysage urbain de Raba avec la célèbre tour Mohammed VI, le plus haut bâtiment d’Afrique" [ref=e291] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/rabat-morocco-rabat%C3%A2s-cityscape-featuring-the-iconic-mohammed-vi-tower-the-tallest-gm2268260661-680859601?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Ffr%2Fs%2Fphotos%2Frabat-morocco-tower&utm_term=rabat+morocco+tower%3A%3Aaffiliate-layout-optim%3Ab%3Ab2951125-532a-45c3-9b80-9415ef4c132e
+                - img "Rabat, Maroc, paysage urbain de Raba avec la célèbre tour Mohammed VI, le plus haut bâtiment d’Afrique" [ref=e292]
+              - link "Tour Mohammed VI, Rabat, Maroc" [ref=e293] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/mohammed-vi-tower-rabat-morocco-gm2198969686-616811537?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Ffr%2Fs%2Fphotos%2Frabat-morocco-tower&utm_term=rabat+morocco+tower%3A%3Aaffiliate-layout-optim%3Ab%3A6eec5766-8ae3-4fd3-bf08-dade7c6c2844
+                - img "Tour Mohammed VI, Rabat, Maroc" [ref=e294]
+              - generic [ref=e295]:
+                - link "Kasbah de la forteresse d’Oudayas avec croissant à Rabat au Maroc. La Kasbah Udayas est une ancienne attraction de Rabat au Maroc" [ref=e296] [cursor=pointer]:
+                  - /url: https://www.istockphoto.com/photo/kasbah-of-udayas-fortress-with-crescent-in-rabat-morocco-kasbah-udayas-is-ancient-gm1972038402-558483754?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Ffr%2Fs%2Fphotos%2Frabat-morocco-tower&utm_term=rabat+morocco+tower%3A%3Aaffiliate-layout-optim%3Ab%3A484ddcce-734d-4a78-9163-32efbf044bea
+                  - img "Kasbah de la forteresse d’Oudayas avec croissant à Rabat au Maroc. La Kasbah Udayas est une ancienne attraction de Rabat au Maroc" [ref=e297]
+                - link "Rendez-vous sur iStock ↗" [ref=e298] [cursor=pointer]:
+                  - /url: https://www.istockphoto.com/search/2/image?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Ffr%2Fs%2Fphotos%2Frabat-morocco-tower&utm_term=rabat+morocco+tower%3A%3Aaffiliate-layout-optim%3Ab%3A19cc07bf-8c67-45e2-89e0-81017915f25e&phrase=rabat+morocco+tower&alloweduse=availableforalluses&excludenudity=true&sort=best&mediatype=photography
+          - generic [ref=e300]:
+            - link [ref=e301] [cursor=pointer]:
+              - /url: /fr
+              - img [ref=e302]
+            - paragraph [ref=e304]: Créez quelque chose d’incroyable
+    - generic:
+      - region "Notifications"

@@ -11,6 +11,6 @@ export function buildBookingWhatsAppUrl(service: string, city: string): string {
 }
 
 export function buildUrgenceWhatsAppUrl(service: string, city: string): string {
-  const message = `URGENCE — J'ai besoin d'un ${service} a ${city} immediatement. Merci de me contacter rapidement.`;
+  const message = `URGENCE : J'ai besoin d'un ${service} a ${city} immediatement. Merci de me contacter rapidement.`;
   return buildWhatsAppUrl(message);
 }

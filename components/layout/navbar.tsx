@@ -48,10 +48,10 @@ export default function Navbar() {
 
             {/* CTA */}
             <Link
-              href="/connexion"
+              href="/espace-pro"
               className="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-primary rounded-btn hover:bg-primary-deep transition-colors"
             >
-              Connexion
+              Espace PRO
             </Link>
           </div>
         </div>

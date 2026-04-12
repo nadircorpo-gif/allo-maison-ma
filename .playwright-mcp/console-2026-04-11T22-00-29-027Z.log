@@ -1,0 +1,3 @@
+[    3594ms] [LOG] %cmetric: color:gray {name: TTFB, entries: Array(1), value: 1865.800000000745, rating: poor, delta: 1865.800000000745} @ https://unsplash.com/a/fr-FR/4142.9b883bb0.js:13
+[    3595ms] [LOG] %cusr: color:gray {locale: fr-FR} @ https://unsplash.com/a/fr-FR/4142.9b883bb0.js:13
+[    3595ms] [LOG] %croute_data: color:gray Search-Photos @ https://unsplash.com/a/fr-FR/4142.9b883bb0.js:13

@@ -20,8 +20,8 @@ import {
 import { buildBookingWhatsAppUrl } from "@/lib/whatsapp";
 import { CheckCircle, MapPin } from "lucide-react";
 
-// --- Static params: 6 services × 6 cities = 36 pages ---
-const SERVICE_SLUGS = ["plombier", "electricien", "femme-de-menage", "peintre", "climatisation", "serrurier"];
+// --- Static params: 9 services × 6 cities = 54 pages ---
+const SERVICE_SLUGS = ["plombier", "electricien", "femme-de-menage", "peintre", "climatisation", "serrurier", "cuisiniere", "concierge", "nounou"];
 const CITY_SLUGS = ["casablanca", "rabat", "marrakech", "tanger", "fes", "agadir"];
 
 export function generateStaticParams() {
@@ -114,7 +114,7 @@ export default async function ServiceCityPage({
 
             {/* H1 */}
             <h1 className="text-3xl font-extrabold text-ink mb-3">
-              {service.name} a {city.name} — Pros verifies
+              {service.name} a {city.name} | Pros verifies
             </h1>
 
             {/* Description */}

@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://allo-maison.ma";
-const MVP_SERVICES = ["plombier", "electricien", "femme-de-menage", "peintre", "climatisation", "serrurier"];
+const MVP_SERVICES = ["plombier", "electricien", "femme-de-menage", "peintre", "climatisation", "serrurier", "cuisiniere", "concierge", "nounou"];
 const MVP_CITIES = ["casablanca", "rabat", "marrakech", "tanger", "fes", "agadir"];
 const URGENCE_SLUGS = ["plombier", "electricien", "serrurier"];
 

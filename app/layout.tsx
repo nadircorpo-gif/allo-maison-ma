@@ -12,7 +12,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://allo-maison.ma"),
-  title: "allo-maison.ma — Services a domicile de confiance au Maroc",
+  title: "allo-maison.ma | Services a domicile de confiance au Maroc",
   description:
     "Trouvez des professionnels de confiance pour tous vos services a domicile au Maroc : plomberie, electricite, menage, jardinage et plus encore.",
 };

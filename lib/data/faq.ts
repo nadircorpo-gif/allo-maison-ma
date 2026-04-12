@@ -40,7 +40,7 @@ export function getUrgenceFAQ(serviceName: string, cityName: string): FaqItem[] 
     },
     {
       question: `Le prix d'urgence est-il plus eleve a ${cityName} ?`,
-      answer: `Un supplement urgence peut s'appliquer la nuit ou le week-end a ${cityName}. Le tarif est toujours annonce avant l'intervention — aucune surprise.`,
+      answer: `Un supplement urgence peut s'appliquer la nuit ou le week-end a ${cityName}. Le tarif est toujours annonce avant l'intervention, sans aucune surprise.`,
     },
   ];
 }

@@ -1,0 +1,245 @@
+- generic [ref=e4]:
+  - navigation [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - link "Accueil Unsplash" [ref=e8] [cursor=pointer]:
+          - /url: /fr
+          - img "Accueil Unsplash" [ref=e9]
+        - link "Photos" [ref=e11] [cursor=pointer]:
+          - /url: /fr
+          - img [ref=e12]
+        - link "Illustrations" [ref=e14] [cursor=pointer]:
+          - /url: /fr/illustrations
+          - img [ref=e15]
+      - generic [ref=e17]:
+        - button "Explorer" [ref=e18] [cursor=pointer]:
+          - img [ref=e19]
+        - link "Collections" [ref=e21] [cursor=pointer]:
+          - /url: /fr/connexion?referrer=%2Ffr%2Fs%2Fphotos%2Fcasablanca-hassan-ii-mosque
+          - img [ref=e22]
+        - link "Historique de téléchargement" [ref=e24] [cursor=pointer]:
+          - /url: /fr/connexion?referrer=%2Ffr%2Ft%25C3%25A9l%25C3%25A9chargements
+          - img [ref=e25]
+      - link "Favoris" [ref=e28] [cursor=pointer]:
+        - /url: /fr/connexion?referrer=%2Ffr%2Fs%2Fphotos%2Fcasablanca-hassan-ii-mosque
+        - img [ref=e29]
+    - generic [ref=e31]:
+      - link "Connexion / S’inscrire" [ref=e32] [cursor=pointer]:
+        - /url: /fr/connexion?referrer=%2Ffr%2Fs%2Fphotos%2Fcasablanca-hassan-ii-mosque
+        - img [ref=e33]
+      - button "Langue" [ref=e35] [cursor=pointer]:
+        - img [ref=e36]
+      - button "Menu" [ref=e38] [cursor=pointer]:
+        - img [ref=e39]
+  - generic [ref=e41]:
+    - generic [ref=e42]:
+      - navigation [ref=e43]:
+        - search "Rechercher des visuels sur tout le site" [ref=e45]:
+          - button "Rechercher sur Unsplash" [ref=e46] [cursor=pointer]:
+            - img [ref=e47]
+          - combobox [ref=e49]:
+            - searchbox "Rechercher sur Unsplash" [ref=e50]: casablanca hassan ii mosque
+            - listbox
+          - button "Effacer" [ref=e51] [cursor=pointer]:
+            - img [ref=e52]
+        - generic [ref=e54]:
+          - link "Abonnez-vous à Unsplash+" [ref=e55] [cursor=pointer]:
+            - /url: /fr/plus
+          - link "Se connecter" [ref=e56] [cursor=pointer]:
+            - /url: /fr/connexion?referrer=%2Ffr%2Fs%2Fphotos%2Fcasablanca-hassan-ii-mosque
+        - button "Soumettre une image" [ref=e58] [cursor=pointer]
+      - generic [ref=e59]:
+        - generic [ref=e65]:
+          - list [ref=e66]:
+            - listitem [ref=e67]:
+              - link "Photos 99":
+                - /url: /fr/s/photos/casablanca-hassan-ii-mosque
+                - img
+                - text: Photos
+                - generic: "99"
+            - listitem [ref=e68]:
+              - link "Illustrations 0" [ref=e69] [cursor=pointer]:
+                - /url: /fr/s/illustrations/casablanca-hassan-ii-mosque
+                - img [ref=e70]
+                - text: Illustrations
+                - generic [ref=e72]: "0"
+            - listitem [ref=e73]:
+              - button "Plus" [ref=e74] [cursor=pointer]
+          - button "Filtres" [ref=e76] [cursor=pointer]:
+            - img [ref=e78]
+            - text: Filtres
+        - generic [ref=e80]:
+          - heading "Casablanca hassan ii mosque" [level=1] [ref=e82]
+          - generic [ref=e86]:
+            - link "Casablanca" [ref=e88] [cursor=pointer]:
+              - /url: /fr/s/photos/casablanca
+            - link "Maroc" [ref=e90] [cursor=pointer]:
+              - /url: /fr/s/photos/maroc
+            - link "mosquée" [ref=e92] [cursor=pointer]:
+              - /url: /fr/s/photos/mosqu%C3%A9e
+            - link "mosquée hassan ii" [ref=e94] [cursor=pointer]:
+              - /url: /fr/s/photos/mosqu%C3%A9e-hassan-ii
+            - link "Photographie de voyage" [ref=e96] [cursor=pointer]:
+              - /url: /fr/s/photos/photographie-de-voyage
+            - link "architecture" [ref=e98] [cursor=pointer]:
+              - /url: /fr/s/photos/architecture
+            - link "tourisme religieux" [ref=e100] [cursor=pointer]:
+              - /url: /fr/s/photos/tourisme-religieux
+            - link "Destination de voyage" [ref=e102] [cursor=pointer]:
+              - /url: /fr/s/photos/destination-de-voyage
+            - link "Merveille architecturale" [ref=e104] [cursor=pointer]:
+              - /url: /fr/s/photos/merveille-architecturale
+            - link "Site historique" [ref=e106] [cursor=pointer]:
+              - /url: /fr/s/photos/site-historique
+            - link "Architecture islamique" [ref=e108] [cursor=pointer]:
+              - /url: /fr/s/photos/architecture-islamique
+            - link "Édifice religieux" [ref=e110] [cursor=pointer]:
+              - /url: /fr/s/photos/%C3%A9difice-religieux
+        - generic [ref=e112]:
+          - generic [ref=e116]:
+            - generic [ref=e117]:
+              - figure [ref=e118]:
+                - link "Vue verticale de la mosquée Hassan II à Casablanca, Maroc" [ref=e121]:
+                  - /url: /fr/photos/vue-verticale-de-la-mosquee-hassan-ii-a-casablanca-maroc-eS5TeKCBhmM
+                  - img "Vue verticale de la mosquée Hassan II à Casablanca, Maroc" [ref=e122]
+              - generic [ref=e123]:
+                - heading "Images sponsorisées" [level=4] [ref=e124]:
+                  - generic [ref=e125]: Images sponsorisées
+                  - link [ref=e126] [cursor=pointer]:
+                    - /url: https://www.istockphoto.com/search/2/image?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Ffr%2Fs%2Fphotos%2Fcasablanca-hassan-ii-mosque&utm_term=casablanca+hassan+ii+mosque%3A%3Aaffiliate-layout-optim%3Ab%3A&phrase=casablanca+hassan+ii+mosque&alloweduse=availableforalluses&excludenudity=true&sort=best&mediatype=photography
+                    - img [ref=e127]
+                - generic [ref=e129]:
+                  - link "Façade de la Mosquée Hassan II. Bain d’ablution." [ref=e130] [cursor=pointer]:
+                    - /url: https://www.istockphoto.com/photo/facade-of-the-hassan-ii-mosque-ablution-bath-gm1154034438-313640494?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Ffr%2Fs%2Fphotos%2Fcasablanca-hassan-ii-mosque&utm_term=casablanca+hassan+ii+mosque%3A%3Aaffiliate-layout-optim%3Ab%3A
+                    - img "Façade de la Mosquée Hassan II. Bain d’ablution." [ref=e131]
+                  - link "Coucher de soleil éclatant de la mosquée Hassan II" [ref=e132] [cursor=pointer]:
+                    - /url: https://www.istockphoto.com/photo/glowing-sunset-of-the-hassan-ii-mosque-gm543475836-97531903?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Ffr%2Fs%2Fphotos%2Fcasablanca-hassan-ii-mosque&utm_term=casablanca+hassan+ii+mosque%3A%3Aaffiliate-layout-optim%3Ab%3A
+                    - img "Coucher de soleil éclatant de la mosquée Hassan II" [ref=e133]
+                  - link "Mosquée Hassan II à Casablanca, Maroc" [ref=e134] [cursor=pointer]:
+                    - /url: https://www.istockphoto.com/photo/two-women-walk-in-hasan-ii-mosque-in-casablanca-morocco-gm91777155-9604713?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Ffr%2Fs%2Fphotos%2Fcasablanca-hassan-ii-mosque&utm_term=casablanca+hassan+ii+mosque%3A%3Aaffiliate-layout-optim%3Ab%3A
+                    - img "Mosquée Hassan II à Casablanca, Maroc" [ref=e135]
+                  - link "Façade et portes d’entrée de la Mosquée Hassan II à Casablanca" [ref=e136] [cursor=pointer]:
+                    - /url: https://www.istockphoto.com/photo/facade-and-entrance-doors-of-the-hassan-ii-mosque-in-casablanca-gm1155615491-314661194?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Ffr%2Fs%2Fphotos%2Fcasablanca-hassan-ii-mosque&utm_term=casablanca+hassan+ii+mosque%3A%3Aaffiliate-layout-optim%3Ab%3A
+                    - img "Façade et portes d’entrée de la Mosquée Hassan II à Casablanca" [ref=e137]
+                - link "Économisez 20 % avec le code UNSPLASH20" [ref=e138] [cursor=pointer]:
+                  - /url: https://www.istockphoto.com/search/2/image?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Ffr%2Fs%2Fphotos%2Fcasablanca-hassan-ii-mosque&utm_term=casablanca+hassan+ii+mosque%3A%3Aaffiliate-layout-optim%3Ab%3A&phrase=casablanca+hassan+ii+mosque&alloweduse=availableforalluses&excludenudity=true&sort=best&mediatype=photography
+              - figure [ref=e139]:
+                - link "Bâtiment en béton blanc sous le ciel bleu pendant la journée" [ref=e142]:
+                  - /url: /fr/photos/batiment-en-beton-blanc-sous-le-ciel-bleu-pendant-la-journee-q5_S5y3Y-c0
+                  - img "Bâtiment en béton blanc sous le ciel bleu pendant la journée" [ref=e143]
+              - figure [ref=e144]:
+                - link "un grand bâtiment avec une tour d’horloge au milieu" [ref=e147]:
+                  - /url: /fr/photos/un-grand-batiment-avec-une-tour-dhorloge-au-milieu-eHPwDSGdEBM
+                  - img "un grand bâtiment avec une tour d’horloge au milieu" [ref=e148]
+              - figure [ref=e149]:
+                - link "La belle mosquée Hassan II avec son reflet sur l’eau à Casablanca, Maroc" [ref=e152]:
+                  - /url: /fr/photos/la-belle-mosquee-hassan-ii-avec-son-reflet-sur-leau-a-casablanca-maroc-ABWzLDO4Y4Y
+                  - img "La belle mosquée Hassan II avec son reflet sur l’eau à Casablanca, Maroc" [ref=e153]
+              - figure [ref=e154]:
+                - link "le plafond d’un bâtiment avec un design circulaire" [ref=e157]:
+                  - /url: /fr/photos/le-plafond-dun-batiment-avec-un-design-circulaire-kTF1UwDqigU
+                  - img "le plafond d’un bâtiment avec un design circulaire" [ref=e158]
+            - generic [ref=e159]:
+              - figure [ref=e160]:
+                - link "personnes marchant près d’un bâtiment en béton brun pendant la nuit" [ref=e163]:
+                  - /url: /fr/photos/personnes-marchant-pres-dun-batiment-en-beton-brun-pendant-la-nuit-aBywMnV7ibk
+                  - img "personnes marchant près d’un bâtiment en béton brun pendant la nuit" [ref=e164]
+              - figure [ref=e165]:
+                - link "Bâtiment en béton brun sous le ciel bleu pendant la journée" [ref=e168]:
+                  - /url: /fr/photos/batiment-en-beton-brun-sous-le-ciel-bleu-pendant-la-journee-18fvXEV1R_A
+                  - img "Bâtiment en béton brun sous le ciel bleu pendant la journée" [ref=e169]
+              - figure [ref=e170]:
+                - link "Un grand bâtiment blanc avec un toit vert à côté de l’océan" [ref=e173]:
+                  - /url: /fr/photos/un-grand-batiment-blanc-avec-un-toit-vert-a-cote-de-locean-ymEGRkA25zQ
+                  - img "Un grand bâtiment blanc avec un toit vert à côté de l’océan" [ref=e174]
+              - figure [ref=e175]:
+                - link "Bâtiment en béton vert et blanc sous ciel bleu pendant la journée" [ref=e178]:
+                  - /url: /fr/photos/batiment-en-beton-vert-et-blanc-sous-ciel-bleu-pendant-la-journee-EJSGszHvVGI
+                  - img "Bâtiment en béton vert et blanc sous ciel bleu pendant la journée" [ref=e179]
+              - figure [ref=e180]:
+                - link "personnes marchant à côté de l’arc de triomphe" [ref=e183]:
+                  - /url: /fr/photos/personnes-marchant-a-cote-de-larc-de-triomphe-37Cn6ixyyvs
+                  - img "personnes marchant à côté de l’arc de triomphe" [ref=e184]
+              - figure [ref=e185]:
+                - link "Un grand bâtiment en pierre avec des piliers" [ref=e188]:
+                  - /url: /fr/photos/un-grand-batiment-en-pierre-avec-des-piliers-EAdacV29j_I
+                  - img "Un grand bâtiment en pierre avec des piliers" [ref=e189]
+              - figure [ref=e190]:
+                - link "Un très grand bâtiment avec une horloge sur le côté" [ref=e193]:
+                  - /url: /fr/photos/un-tres-grand-batiment-avec-une-horloge-sur-le-cote-XqQt1Wdb8OI
+                  - img "Un très grand bâtiment avec une horloge sur le côté" [ref=e194]
+              - figure [ref=e195]:
+                - link "Tour en béton gris pendant la journée" [ref=e198]:
+                  - /url: /fr/photos/tour-en-beton-gris-pendant-la-journee-LsoO6jmWGRQ
+                  - img "Tour en béton gris pendant la journée" [ref=e199]
+            - generic [ref=e200]:
+              - contentinfo [ref=e205]:
+                - generic [ref=e211]: –– ––– ––– –– ––– – ––– ––– –––– – – –– ––– – – ––– –– –– –––– ––
+              - figure [ref=e213]:
+                - link "un grand bâtiment avec une haute tour avec la mosquée Hassan II en arrière-plan" [ref=e216]:
+                  - /url: /fr/photos/un-grand-batiment-avec-une-haute-tour-avec-la-mosquee-hassan-ii-en-arriere-plan-uu-YGo9YVDw
+                  - img "un grand bâtiment avec une haute tour avec la mosquée Hassan II en arrière-plan" [ref=e217]
+              - figure [ref=e218]:
+                - link "un grand bâtiment avec une grande porte et une horloge sur le mur" [ref=e221]:
+                  - /url: /fr/photos/un-grand-batiment-avec-une-grande-porte-et-une-horloge-sur-le-mur-J0yCd3dtJuU
+                  - img "un grand bâtiment avec une grande porte et une horloge sur le mur" [ref=e222]
+              - figure [ref=e223]:
+                - link "un grand bâtiment blanc avec une tour de l’horloge" [ref=e226]:
+                  - /url: /fr/photos/un-grand-batiment-blanc-avec-une-tour-de-lhorloge-EysHghSWuaE
+                  - img "un grand bâtiment blanc avec une tour de l’horloge" [ref=e227]
+              - figure [ref=e228]:
+                - link "bâtiment en béton pendant la journée" [ref=e231]:
+                  - /url: /fr/photos/batiment-en-beton-pendant-la-journee-qxBkF9UuEmM
+                  - img "bâtiment en béton pendant la journée" [ref=e232]
+              - figure [ref=e233]:
+                - link "une haute tour d’horloge avec un fond de ciel" [ref=e236]:
+                  - /url: /fr/photos/une-haute-tour-dhorloge-avec-un-fond-de-ciel-kXizDxsD8tQ
+                  - img "une haute tour d’horloge avec un fond de ciel" [ref=e237]
+              - figure [ref=e238]:
+                - link "L’intérieur de la mosquée Hassan II à Casablanca, Maroc" [ref=e241]:
+                  - /url: /fr/photos/linterieur-de-la-mosquee-hassan-ii-a-casablanca-maroc-AQPO01a4MJw
+                  - img "L’intérieur de la mosquée Hassan II à Casablanca, Maroc" [ref=e242]
+              - figure [ref=e243]:
+                - link "une vue du plafond d’un bâtiment" [ref=e246]:
+                  - /url: /fr/photos/une-vue-du-plafond-dun-batiment-xUQLMx0bDz4
+                  - img "une vue du plafond d’un bâtiment" [ref=e247]
+          - button "Plus de résultats" [ref=e250] [cursor=pointer]
+          - generic [ref=e253]:
+            - heading "Parcourez des images premium sur iStock | Obtenez votre réduction dès maintenant" [level=2] [ref=e254]:
+              - text: Parcourez des images premium sur iStock
+              - generic [ref=e255]: "| Obtenez votre réduction dès maintenant"
+            - generic [ref=e257]:
+              - link "Casablanca" [ref=e258] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/casablanca-gm484506846-71292331?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Ffr%2Fs%2Fphotos%2Fcasablanca-hassan-ii-mosque&utm_term=casablanca+hassan+ii+mosque%3A%3Aaffiliate-layout-optim%3Ab%3A
+                - img "Casablanca" [ref=e259]
+              - link "Mosquée de Hassan II à Casablanca" [ref=e260] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/mosque-hassan-ii-in-casablanca-gm482675298-70156675?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Ffr%2Fs%2Fphotos%2Fcasablanca-hassan-ii-mosque&utm_term=casablanca+hassan+ii+mosque%3A%3Aaffiliate-layout-optim%3Ab%3A
+                - img "Mosquée de Hassan II à Casablanca" [ref=e261]
+              - link "Casablanca, Maroc" [ref=e262] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/casablanca-morocco-gm174833390-23247673?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Ffr%2Fs%2Fphotos%2Fcasablanca-hassan-ii-mosque&utm_term=casablanca+hassan+ii+mosque%3A%3Aaffiliate-layout-optim%3Ab%3A
+                - img "Casablanca, Maroc" [ref=e263]
+              - link "La mosquée Hassan II à Casablanca, Maroc" [ref=e264] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/the-hassan-ii-mosque-in-casablanca-morocco-gm2267928341-680538708?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Ffr%2Fs%2Fphotos%2Fcasablanca-hassan-ii-mosque&utm_term=casablanca+hassan+ii+mosque%3A%3Aaffiliate-layout-optim%3Ab%3A
+                - img "La mosquée Hassan II à Casablanca, Maroc" [ref=e265]
+              - link "Casablanca, MAROC. 05 juin 2024 La mosquée Hassan II est une mosquée située à Casablanca, au Maroc. C’est la plus grande mosquée du Maroc et la 7ème plus grande du monde." [ref=e266] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/casablanca-morocco-june-05-2024-the-hassan-ii-mosque-is-a-mosque-in-casablanca-gm2189993417-608411190?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Ffr%2Fs%2Fphotos%2Fcasablanca-hassan-ii-mosque&utm_term=casablanca+hassan+ii+mosque%3A%3Aaffiliate-layout-optim%3Ab%3A
+                - img "Casablanca, MAROC. 05 juin 2024 La mosquée Hassan II est une mosquée située à Casablanca, au Maroc. C’est la plus grande mosquée du Maroc et la 7ème plus grande du monde." [ref=e267]
+              - link "La mosquée Hassan II à Casablanca, Maroc" [ref=e268] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/the-hassan-ii-mosque-in-casablanca-morocco-gm2267928274-680538673?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Ffr%2Fs%2Fphotos%2Fcasablanca-hassan-ii-mosque&utm_term=casablanca+hassan+ii+mosque%3A%3Aaffiliate-layout-optim%3Ab%3A
+                - img "La mosquée Hassan II à Casablanca, Maroc" [ref=e269]
+              - link "extérieur de la mosquée Hassan II à Casablanca" [ref=e270] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/exterior-of-hassan-ii-mosque-in-casablanca-gm1482008751-509140908?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Ffr%2Fs%2Fphotos%2Fcasablanca-hassan-ii-mosque&utm_term=casablanca+hassan+ii+mosque%3A%3Aaffiliate-layout-optim%3Ab%3A
+                - img "extérieur de la mosquée Hassan II à Casablanca" [ref=e271]
+              - generic [ref=e272]:
+                - link "Minaret et plafond décoré de la mosquée Hassan II s’élevant vers le ciel bleu clair à Casablanca, Maroc" [ref=e273] [cursor=pointer]:
+                  - /url: https://www.istockphoto.com/photo/minaret-and-decorated-ceiling-of-hassan-ii-mosque-rising-towards-clear-blue-sky-in-gm2215981347-632681840?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Ffr%2Fs%2Fphotos%2Fcasablanca-hassan-ii-mosque&utm_term=casablanca+hassan+ii+mosque%3A%3Aaffiliate-layout-optim%3Ab%3A
+                  - img "Minaret et plafond décoré de la mosquée Hassan II s’élevant vers le ciel bleu clair à Casablanca, Maroc" [ref=e274]
+                - link "Rendez-vous sur iStock ↗" [ref=e275] [cursor=pointer]:
+                  - /url: https://www.istockphoto.com/search/2/image?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Ffr%2Fs%2Fphotos%2Fcasablanca-hassan-ii-mosque&utm_term=casablanca+hassan+ii+mosque%3A%3Aaffiliate-layout-optim%3Ab%3A&phrase=casablanca+hassan+ii+mosque&alloweduse=availableforalluses&excludenudity=true&sort=best&mediatype=photography
+          - generic [ref=e277]:
+            - link [ref=e278] [cursor=pointer]:
+              - /url: /fr
+              - img [ref=e279]
+            - paragraph [ref=e281]: Créez quelque chose d’incroyable
+    - generic:
+      - region "Notifications"
