@@ -12,9 +12,23 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://allo-maison.ma"),
-  title: "allo-maison.ma | Services a domicile de confiance au Maroc",
+  title: {
+    default: "allo-maison.ma | Services a domicile de confiance au Maroc",
+    template: "%s | allo-maison.ma",
+  },
   description:
     "Trouvez des professionnels de confiance pour tous vos services a domicile au Maroc : plomberie, electricite, menage, jardinage et plus encore.",
+  openGraph: {
+    siteName: "Allo-Maison",
+    locale: "fr_MA",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
+  other: {
+    "google-site-verification": process.env.NEXT_PUBLIC_GSC_ID ?? "",
+  },
 };
 
 const GA4_ID = process.env.NEXT_PUBLIC_GA4_ID;
@@ -26,6 +40,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" dir="ltr">
+      <head>
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://images.unsplash.com" />
+        <link rel="preconnect" href="https://images.unsplash.com" crossOrigin="anonymous" />
+      </head>
       <body className={`${inter.variable} font-sans bg-surface text-ink antialiased`}>
         {GA4_ID && GA4_ID !== "G-XXXXXXXXXX" && (
           <>

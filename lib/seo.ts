@@ -39,7 +39,7 @@ export function generateUrgenceMetadata(
 ): Metadata {
   const title = `${serviceName} Urgence ${cityName} | Intervention 30 min | Allo-Maison`;
   const description = `Besoin d'un ${serviceName.toLowerCase()} en urgence a ${cityName} ? Intervention en moins de 30 minutes. Professionnels verifies disponibles 24h/24 et 7j/7.`;
-  const url = `https://allo-maison.ma/urgence/${serviceSlug}-${citySlug}`;
+  const url = `https://allo-maison.ma/urgence/${serviceSlug}/${citySlug}`;
 
   return {
     title,
@@ -67,7 +67,7 @@ export function organizationJsonLd(): Record<string, unknown> {
     "@type": "Organization",
     name: "Allo-Maison",
     url: "https://allo-maison.ma",
-    logo: "https://allo-maison.ma/logo.png",
+    logo: "https://allo-maison.ma/logo.svg",
     foundingDate: "2017",
     description:
       "La plateforme marocaine de confiance pour tous vos services a domicile. Des professionnels verifies, disponibles 7j/7.",
@@ -146,5 +146,39 @@ export function breadcrumbJsonLd(
       name: item.name,
       item: item.url,
     })),
+  };
+}
+
+export function videoObjectJsonLd(
+  videoId: string,
+  title: string,
+  description: string
+): Record<string, unknown> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    name: title,
+    description,
+    thumbnailUrl: `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`,
+    uploadDate: "2024-01-01",
+    contentUrl: `https://www.youtube.com/watch?v=${videoId}`,
+    embedUrl: `https://www.youtube.com/embed/${videoId}`,
+  };
+}
+
+export function websiteJsonLd(): Record<string, unknown> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Allo-Maison",
+    url: "https://allo-maison.ma",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: "https://allo-maison.ma/services?q={search_term_string}",
+      },
+      "query-input": "required name=search_term_string",
+    },
   };
 }

@@ -26,7 +26,7 @@ const LOCAL_BUSINESS_SCHEMA = {
   "@type": "LocalBusiness",
   name: "Allo-Maison",
   url: "https://allo-maison.ma",
-  logo: "https://allo-maison.ma/logo.png",
+  logo: "https://allo-maison.ma/logo.svg",
   description:
     "La plateforme marocaine de confiance pour tous vos services a domicile. Des professionnels verifies, disponibles 7j/7.",
   address: {
@@ -42,7 +42,7 @@ const LOCAL_BUSINESS_SCHEMA = {
     latitude: 33.5731,
     longitude: -7.5898,
   },
-  telephone: "+212600000000",
+  telephone: "+212661409190",
   email: "contact@allo-maison.ma",
   openingHoursSpecification: [
     {
@@ -78,7 +78,7 @@ export default function ContactPage() {
     { name: "Contact", url: "https://allo-maison.ma/contact" },
   ];
 
-  const whatsappUrl = `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "212600000000"}?text=${encodeURIComponent("Bonjour, je souhaite contacter Allo-Maison.")}`;
+  const whatsappUrl = `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "212661409190"}?text=${encodeURIComponent("Bonjour, je souhaite contacter Allo-Maison.")}`;
 
   return (
     <>
@@ -138,10 +138,10 @@ export default function ContactPage() {
                 <div>
                   <div className="text-sm font-semibold text-ink mb-0.5">Telephone / WhatsApp</div>
                   <a
-                    href="tel:+212600000000"
+                    href="tel:+212661409190"
                     className="text-sm text-primary hover:underline"
                   >
-                    +212 6 00 00 00 00
+                    +212 6 61 40 91 90
                   </a>
                   <p className="text-xs text-muted mt-0.5">Lun-Sam 8h30-17h00</p>
                 </div>

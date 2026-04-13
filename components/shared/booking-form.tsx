@@ -27,7 +27,7 @@ export default function BookingForm({ defaultService = "", defaultCity = "" }: B
       : `Bonjour, je cherche un ${serviceName} a ${cityName}.`;
 
     window.open(
-      `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "212600000000"}?text=${encodeURIComponent(message)}`,
+      `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "212661409190"}?text=${encodeURIComponent(message)}`,
       "_blank",
       "noopener,noreferrer"
     );

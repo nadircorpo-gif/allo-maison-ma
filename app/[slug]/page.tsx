@@ -16,6 +16,7 @@ import {
   generateServiceCityMetadata,
   serviceCityJsonLd,
   faqJsonLd,
+  videoObjectJsonLd,
 } from "@/lib/seo";
 import { buildBookingWhatsAppUrl } from "@/lib/whatsapp";
 import { getRichContent } from "@/lib/data/content";
@@ -69,7 +70,19 @@ export async function generateMetadata({
       title: rich.metaTitle,
       description: rich.metaDescription,
       alternates: { canonical: `https://allo-maison.ma/${slug}` },
-      openGraph: { title: rich.metaTitle, description: rich.metaDescription },
+      openGraph: {
+        title: rich.metaTitle,
+        description: rich.metaDescription,
+        url: `https://allo-maison.ma/${slug}`,
+        siteName: "Allo-Maison",
+        locale: "fr_MA",
+        type: "website",
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: rich.metaTitle,
+        description: rich.metaDescription,
+      },
     };
   }
 
@@ -108,6 +121,15 @@ export default async function ServiceCityPage({
         )}
       />
       <JsonLd data={faqJsonLd(faqs)} />
+      {rich?.youtubeVideoId && (
+        <JsonLd
+          data={videoObjectJsonLd(
+            rich.youtubeVideoId,
+            rich.youtubeVideoTitle || `${service.name} a ${city.name} - conseils pratiques`,
+            `Video conseil pour trouver un ${service.name.toLowerCase()} de confiance a ${city.name}.`
+          )}
+        />
+      )}
 
       <div className="max-w-5xl mx-auto px-4 py-6">
         <Breadcrumb items={breadcrumbItems} className="mb-6" />

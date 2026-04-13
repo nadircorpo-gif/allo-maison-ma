@@ -42,3 +42,6 @@ next-env.d.ts
 
 # superpowers
 .superpowers/
+sa-key*.json
+.playwright-mcp/
+submitted-urls.json

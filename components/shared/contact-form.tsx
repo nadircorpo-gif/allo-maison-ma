@@ -27,7 +27,7 @@ export default function ContactForm() {
       .filter(Boolean)
       .join("\n");
 
-    const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "212600000000";
+    const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "212661409190";
     window.open(
       `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`,
       "_blank",

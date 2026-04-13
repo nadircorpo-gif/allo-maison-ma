@@ -10,7 +10,7 @@ import { getCityBySlug } from "@/lib/data/cities";
 import { getUrgenceFAQ } from "@/lib/data/faq";
 import { generateUrgenceMetadata, faqJsonLd } from "@/lib/seo";
 import { buildUrgenceWhatsAppUrl } from "@/lib/whatsapp";
-import { Phone, Shield, CheckCircle } from "lucide-react";
+import { Phone, Shield } from "lucide-react";
 
 // --- Static params: 3 services × 6 cities = 18 pages ---
 const URGENCE_SERVICE_SLUGS = ["plombier", "electricien", "serrurier"];
@@ -76,7 +76,7 @@ export default async function UrgencePage({
 
   const faqs = getUrgenceFAQ(service.name, city.name);
   const whatsappUrl = buildUrgenceWhatsAppUrl(service.name, city.name);
-  const phoneHref = "tel:+212600000000";
+  const phoneHref = `tel:+${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "212661409190"}`;
   const steps = EMERGENCY_STEPS[serviceSlug] ?? EMERGENCY_STEPS.plombier;
 
   const breadcrumbItems = [

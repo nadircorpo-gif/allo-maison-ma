@@ -1,5 +1,5 @@
 import JsonLd from "@/components/seo/json-ld";
-import { organizationJsonLd } from "@/lib/seo";
+import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
 
 import Hero from "@/components/homepage/hero";
 import Categories from "@/components/homepage/categories";
@@ -15,6 +15,7 @@ export default function HomePage() {
   return (
     <>
       <JsonLd data={organizationJsonLd()} />
+      <JsonLd data={websiteJsonLd()} />
       <Hero />
       <Categories />
       <HowItWorks />

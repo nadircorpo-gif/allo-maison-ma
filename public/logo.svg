@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 48" width="200" height="48">
+  <rect x="0" y="4" width="40" height="40" rx="8" fill="#1E40AF"/>
+  <text x="20" y="28" dominant-baseline="middle" text-anchor="middle" fill="white" font-family="system-ui, sans-serif" font-size="22" font-weight="700">A</text>
+  <text x="50" y="30" dominant-baseline="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="700">
+    <tspan fill="#1E40AF">allo-maison</tspan><tspan fill="#F59E0B">.ma</tspan>
+  </text>
+</svg>

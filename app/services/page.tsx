@@ -34,7 +34,7 @@ const CATEGORIES = [
   {
     title: "Entretien",
     description: "Entretien regulier de votre maison",
-    slugs: ["femme-de-menage", "jardinier"],
+    slugs: ["jardinier"],
     color: "bg-green-50 border-green-200",
     badgeColor: "bg-green-100 text-green-700",
   },
@@ -51,6 +51,13 @@ const CATEGORIES = [
     slugs: ["climatisation", "vitrier", "desinsectisation"],
     color: "bg-blue-50 border-blue-200",
     badgeColor: "bg-blue-100 text-blue-700",
+  },
+  {
+    title: "Services a la personne",
+    description: "Aide a domicile, garde d'enfants, cuisine",
+    slugs: ["femme-de-menage", "cuisiniere", "nounou", "concierge"],
+    color: "bg-pink-50 border-pink-200",
+    badgeColor: "bg-pink-100 text-pink-700",
   },
   {
     title: "Autres Services",
@@ -207,7 +214,7 @@ export default function ServicesPage() {
             Reponse garantie en moins de 5 minutes via WhatsApp.
           </p>
           <a
-            href="https://wa.me/212600000000?text=Bonjour%2C%20je%20cherche%20un%20artisan%20verifie."
+            href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "212661409190"}?text=Bonjour%2C%20je%20cherche%20un%20artisan%20verifie.`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-3 bg-white text-primary font-bold rounded-btn hover:bg-gray-100 transition-colors"

@@ -71,7 +71,7 @@ const REGISTRATION_STEPS = [
   },
 ];
 
-const WHATSAPP_PRO_URL = `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "212600000000"}?text=${encodeURIComponent("Bonjour, je suis artisan et je souhaite rejoindre Allo-Maison. Pouvez-vous m'expliquer le processus d'inscription ?")}`;
+const WHATSAPP_PRO_URL = `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "212661409190"}?text=${encodeURIComponent("Bonjour, je suis artisan et je souhaite rejoindre Allo-Maison. Pouvez-vous m'expliquer le processus d'inscription ?")}`;
 
 export default function EspaceProPage() {
   const breadcrumbItems = [

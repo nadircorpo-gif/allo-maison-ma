@@ -1,0 +1,20 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "22"
+  NEXT_PUBLIC_SITE_URL = "https://allo-maison.ma"
+  NEXT_PUBLIC_WHATSAPP_NUMBER = "212661409190"
+  RESEND_API_KEY = "re_pUrso5Vr_5Zqep6YyLxpS1b2FToGc6kFv"
+  RESEND_FROM = "noreply@notification.allo-maison.ma"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# www → non-www redirect
+[[redirects]]
+  from = "https://www.allo-maison.ma/*"
+  to = "https://allo-maison.ma/:splat"
+  status = 301
+  force = true
