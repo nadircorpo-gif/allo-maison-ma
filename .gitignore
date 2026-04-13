@@ -40,6 +40,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# WhatsApp auth session
+.wa-auth/
+
 # superpowers
 .superpowers/
 sa-key*.json
