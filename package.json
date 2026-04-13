@@ -14,8 +14,11 @@
     "test:scraper": "vitest run scripts/scraper/__tests__/"
   },
   "dependencies": {
+    "@hapi/boom": "^10.0.1",
     "@radix-ui/react-separator": "^1.1.8",
     "@radix-ui/react-slot": "^1.2.4",
+    "@supabase/supabase-js": "^2.103.0",
+    "@whiskeysockets/baileys": "^7.0.0-rc.9",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "convex": "^1.35.1",
