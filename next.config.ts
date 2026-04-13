@@ -50,6 +50,15 @@ const nextConfig: NextConfig = {
       { source: "/2020/10/21/bonjour-tout-le-monde/", destination: "/blog", permanent: true },
       { source: "/2020/10/21/bonjour-tout-le-monde", destination: "/blog", permanent: true },
       { source: "/author/:slug", destination: "/a-propos", permanent: true },
+      // URLs encore indexees par Google (trouvees via GSC inspection 2026-04-13)
+      { source: "/agent-de-securite/", destination: "/concierge-casablanca", permanent: true },
+      { source: "/agent-de-securite", destination: "/concierge-casablanca", permanent: true },
+      { source: "/coursier/", destination: "/services", permanent: true },
+      { source: "/coursier", destination: "/services", permanent: true },
+      { source: "/employe-polyvalente/", destination: "/femme-de-menage-casablanca", permanent: true },
+      { source: "/employe-polyvalente", destination: "/femme-de-menage-casablanca", permanent: true },
+      { source: "/femme-de-menage/", destination: "/femme-de-menage-casablanca", permanent: true },
+      { source: "/femme-de-menage", destination: "/femme-de-menage-casablanca", permanent: true },
     ];
   },
 };
