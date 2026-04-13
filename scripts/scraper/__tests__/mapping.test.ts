@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { mapCity, mapService } from "../mapping";
+import { mapCity, mapService, classifyByKeywords } from "../mapping";
 
 describe("mapCity", () => {
   it("maps French city names to slugs", () => {
@@ -54,5 +54,29 @@ describe("mapService", () => {
     expect(mapService("Parabole", "m3allem")).toEqual([]);
     expect(mapService("Unknown Service", "bricool")).toEqual([]);
     expect(mapService("", "m3allem")).toEqual([]);
+  });
+});
+
+describe("mapService avito", () => {
+  it("maps Avito category names", () => {
+    expect(mapService("plombier", "avito")).toEqual(["plombier"]);
+    expect(mapService("climatisation", "avito")).toEqual(["climatisation"]);
+    expect(mapService("jardinage", "avito")).toEqual(["jardinier"]);
+  });
+});
+
+describe("classifyByKeywords", () => {
+  it("classifies by keywords", () => {
+    expect(classifyByKeywords("plombier professionnel")).toContain("plombier");
+    expect(classifyByKeywords("installation climatisation")).toContain("climatisation");
+    expect(classifyByKeywords("femme de ménage")).toContain("femme-de-menage");
+  });
+  it("returns empty for unrelated text", () => {
+    expect(classifyByKeywords("bonjour")).toEqual([]);
+  });
+  it("finds multiple services", () => {
+    const result = classifyByKeywords("plombier et electricien");
+    expect(result).toContain("plombier");
+    expect(result).toContain("electricien");
   });
 });
