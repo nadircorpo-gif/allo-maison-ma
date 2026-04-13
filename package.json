@@ -11,7 +11,12 @@
     "scrape:m3allem": "tsx scripts/scraper/index.ts --source m3allem",
     "scrape:bricool": "tsx scripts/scraper/index.ts --source bricool",
     "scrape:allopro": "tsx scripts/scraper/index.ts --source allopro",
-    "test:scraper": "vitest run scripts/scraper/__tests__/"
+    "test:scraper": "vitest run scripts/scraper/__tests__/",
+    "scrape:v2": "tsx scripts/scraper/index-v2.ts",
+    "scrape:avito": "tsx scripts/scraper/index-v2.ts --phase=avito",
+    "scrape:google-enrich": "tsx scripts/scraper/index-v2.ts --phase=google",
+    "scrape:wa-verify": "tsx scripts/scraper/index-v2.ts --phase=whatsapp",
+    "scrape:rescore": "tsx scripts/scraper/index-v2.ts --phase=rescore"
   },
   "dependencies": {
     "@hapi/boom": "^10.0.1",
