@@ -165,7 +165,7 @@ async function run() {
 
   console.log(`  With phone: ${withPhone}`);
   console.log(`  Multi-platform: ${multiPlatform}`);
-  console.log(`  Status — scraped: ${byStatus.scraped}, rejected: ${byStatus.rejected}`);
+  console.log(`  Status, scraped: ${byStatus.scraped}, rejected: ${byStatus.rejected}`);
   console.log(`  Average Score Maison: ${avgScore.toFixed(2)}/5`);
 
   console.log("\n  By city:");
