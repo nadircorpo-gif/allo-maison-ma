@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import SearchBar from "@/components/shared/search-bar";
 
-const ROTATING_JOBS = ["plombier", "électricien", "peintre", "serrurier", "technicien clim"];
+const ROTATING_JOBS = ["plombier", "électricien", "peintre", "serrurier", "climaticien"];
 
 export default function Hero() {
   const [jobIndex, setJobIndex] = useState(0);
@@ -28,9 +28,11 @@ export default function Hero() {
           </div>
 
           <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-[550] leading-[0.95] tracking-[-0.03em] text-ink mb-6">
-            Le bon{" "}
-            <span className="italic text-terracotta transition-all duration-500">
-              {ROTATING_JOBS[jobIndex]}
+            <span className="whitespace-nowrap">
+              Le bon{" "}
+              <span className="italic text-terracotta transition-all duration-500">
+                {ROTATING_JOBS[jobIndex]}
+              </span>
             </span>
             <br />
             est déjà dans{" "}
