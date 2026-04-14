@@ -22,11 +22,13 @@ export function generateServiceCityMetadata(
       siteName: "Allo-Maison",
       locale: "fr_MA",
       type: "website",
+      images: ["/opengraph-image"],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
+      images: ["/opengraph-image"],
     },
   };
 }
@@ -52,11 +54,13 @@ export function generateUrgenceMetadata(
       siteName: "Allo-Maison",
       locale: "fr_MA",
       type: "website",
+      images: ["/opengraph-image"],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
+      images: ["/opengraph-image"],
     },
   };
 }

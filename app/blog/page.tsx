@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     siteName: "Allo-Maison",
     locale: "fr_MA",
     type: "website",
+    images: ["/opengraph-image"],
   },
 };
 

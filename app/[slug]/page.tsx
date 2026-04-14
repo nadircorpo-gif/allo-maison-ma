@@ -77,8 +77,14 @@ export async function generateMetadata({
         siteName: "Allo-Maison",
         locale: "fr_MA",
         type: "website",
+        images: ["/opengraph-image"],
       },
-      twitter: { card: "summary_large_image", title: rich.metaTitle, description: rich.metaDescription },
+      twitter: {
+        card: "summary_large_image",
+        title: rich.metaTitle,
+        description: rich.metaDescription,
+        images: ["/opengraph-image"],
+      },
     };
   }
 
