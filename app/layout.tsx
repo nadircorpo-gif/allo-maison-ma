@@ -20,18 +20,31 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://allo-maison.ma"),
   title: {
-    default: "allo-maison.ma | Services a domicile de confiance au Maroc",
-    template: "%s | allo-maison.ma",
+    default: "allo-maison.ma | Services à domicile de confiance au Maroc",
+    template: "%s",
   },
   description:
-    "Trouvez des professionnels de confiance pour tous vos services a domicile au Maroc : plomberie, electricite, menage, jardinage et plus encore.",
+    "Trouvez des professionnels de confiance pour tous vos services à domicile au Maroc : plomberie, électricité, ménage, peinture et plus encore.",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     siteName: "Allo-Maison",
     locale: "fr_MA",
     type: "website",
+    url: "https://allo-maison.ma",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Allo Maison — Artisans vérifiés et certifiés depuis 2017",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
+    images: ["/opengraph-image"],
   },
   other: {
     "google-site-verification": process.env.NEXT_PUBLIC_GSC_ID ?? "",
