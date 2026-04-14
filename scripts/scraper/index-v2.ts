@@ -1,6 +1,7 @@
 import { scrapeAvito } from "./sources/avito";
 import { enrichWithGooglePlaces } from "./enrichers/google-places";
 import { verifyWhatsApp } from "./verifiers/whatsapp";
+import { pingWhatsApp } from "./verifiers/wa-ping";
 import { calculateScoreV2 } from "./scoring-v2";
 import { supabase, getAllPros, updatePro, upsertPro } from "./supabase-push";
 import { mapCity, mapServices, classifyByKeywords } from "./mapping";
@@ -138,6 +139,11 @@ async function run() {
   if (!phase || phase === "avito") await phase4Avito(maxPages ? parseInt(maxPages) : undefined);
   if (!phase || phase === "google") await phase5Google();
   if (!phase || phase === "whatsapp") await phase6WhatsApp();
+  if (phase === "wa-ping") {
+    console.log("\n=== Phase 6b: WhatsApp Ping Check ===");
+    const result = await pingWhatsApp();
+    console.log(`  Valid: ${result.valid}, Invalid: ${result.invalid}, Errors: ${result.errors}`);
+  }
   if (!phase || phase === "rescore") await phase7Rescore();
 
   await printSummary();

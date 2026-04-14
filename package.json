@@ -16,6 +16,7 @@
     "scrape:avito": "tsx scripts/scraper/index-v2.ts --phase=avito",
     "scrape:google-enrich": "tsx scripts/scraper/index-v2.ts --phase=google",
     "scrape:wa-verify": "tsx scripts/scraper/index-v2.ts --phase=whatsapp",
+    "scrape:wa-ping": "tsx scripts/scraper/index-v2.ts --phase=wa-ping",
     "scrape:rescore": "tsx scripts/scraper/index-v2.ts --phase=rescore"
   },
   "dependencies": {
