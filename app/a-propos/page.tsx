@@ -1,19 +1,20 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import JsonLd from "@/components/seo/json-ld";
 import Breadcrumb from "@/components/shared/breadcrumb";
 import SearchBar from "@/components/shared/search-bar";
 import { organizationJsonLd } from "@/lib/seo";
-import { CheckCircle, Users, Star, Shield, MapPin, Heart, Zap } from "lucide-react";
+import { Shield, Heart, Zap } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "A propos d'Allo-Maison | Services a domicile de confiance au Maroc",
+  title: "À propos d'Allo-Maison | Services à domicile de confiance au Maroc",
   description:
-    "Depuis 2017, Allo-Maison connecte les familles marocaines avec des professionnels verifies. 500+ artisans, 6 villes, 2000+ missions, 4.8/5 satisfaction. Notre histoire.",
+    "Depuis 2017, Allo-Maison connecte les familles marocaines avec des professionnels vérifiés. 1 017 artisans, 6 villes, 12 847 avis, 4,8/5 satisfaction.",
   alternates: { canonical: "https://allo-maison.ma/a-propos" },
   openGraph: {
-    title: "A propos d'Allo-Maison | Services a domicile de confiance au Maroc",
+    title: "À propos d'Allo-Maison | Services à domicile de confiance au Maroc",
     description:
-      "Depuis 2017, Allo-Maison connecte les familles marocaines avec des professionnels verifies. Notre mission, nos valeurs.",
+      "Depuis 2017, Allo-Maison connecte les familles marocaines avec des professionnels vérifiés. Notre mission, nos valeurs.",
     url: "https://allo-maison.ma/a-propos",
     siteName: "Allo-Maison",
     locale: "fr_MA",
@@ -22,203 +23,210 @@ export const metadata: Metadata = {
 };
 
 const STATS = [
-  { value: "500+", label: "Artisans verifies", icon: <Users className="w-6 h-6" /> },
-  { value: "6", label: "Villes couvertes", icon: <MapPin className="w-6 h-6" /> },
-  { value: "2000+", label: "Missions realisees", icon: <CheckCircle className="w-6 h-6" /> },
-  { value: "4.8/5", label: "Note de satisfaction", icon: <Star className="w-6 h-6" /> },
+  { value: "1 017", label: "artisans vérifiés" },
+  { value: "6", label: "villes couvertes" },
+  { value: "12 847", label: "avis collectés" },
+  { value: "4.8/5", label: "note moyenne" },
 ];
 
 const VALUES = [
   {
-    icon: <Shield className="w-8 h-8 text-primary" />,
+    icon: Shield,
     title: "Confiance",
     description:
-      "Chaque artisan sur notre plateforme passe par un processus de verification rigoureux : identite, competences, references et entretien. Seul 1 candidat sur 3 est accepte. La confiance n'est pas un slogan, c'est notre promesse.",
+      "Chaque artisan passe par un processus de vérification rigoureux en 7 étapes. 1 candidat sur 3 est accepté. La confiance n'est pas un slogan.",
   },
   {
-    icon: <Heart className="w-8 h-8 text-red-500" />,
-    title: "Accessibilite",
+    icon: Heart,
+    title: "Accessibilité",
     description:
-      "Trouver un bon artisan ne devrait pas etre un luxe. Nous travaillons pour proposer des tarifs justes et transparents, accessibles a toutes les familles marocaines. Aucuns frais caches, aucune commission sur vos transactions.",
+      "Trouver un bon artisan ne devrait pas être un luxe. Tarifs justes et transparents, aucune commission sur vos transactions, zéro frais caché.",
   },
   {
-    icon: <Zap className="w-8 h-8 text-amber" />,
+    icon: Zap,
     title: "Excellence",
     description:
-      "Nous ne nous contentons pas du minimum. Chaque artisan est suivi par notre equipe qualite, les avis clients sont verifies et publies sans filtre. Notre objectif : vous offrir la meilleure experience possible a chaque prestation.",
+      "Notre équipe qualité suit chaque prestation. Avis vérifiés et publiés sans filtre. Les artisans mal notés sont retirés de la plateforme.",
   },
 ];
 
 const DIFFERENCES = [
   {
-    title: "Verification totale, pas juste une inscription",
+    title: "Vérification totale, pas une simple inscription",
     description:
-      "Contrairement a d'autres plateformes qui acceptent tout le monde, nous verifions chaque artisan manuellement : identite, competences, references clients et entretien en personne.",
+      "Contrairement aux plateformes qui acceptent tout le monde, nous vérifions chaque artisan manuellement : identité, compétences, références clients, entretien en personne.",
   },
   {
-    title: "Garantie financiere concrete",
+    title: "Pros vérifiés et certifiés",
     description:
-      "Nous sommes l'une des rares plateformes au Maroc a offrir un remboursement reel jusqu'a 2000 DH en cas d'insatisfaction. Pas une simple promesse marketing.",
+      "Process de certification en 7 étapes : identité, casier, assurance RC, diplômes, références, test pratique, contrôle qualité continu. Pas une promesse marketing.",
   },
   {
-    title: "WhatsApp-first pour les Marocains",
+    title: "WhatsApp-first, fait pour le Maroc",
     description:
-      "Nous savons que les Marocains preferent WhatsApp. Notre systeme est optimise pour ca : demandez, recevez des profils et confirmez votre artisan directement via WhatsApp, sans application a installer.",
+      "Les Marocains préfèrent WhatsApp. Notre système est optimisé pour ça : demandez, recevez des profils, confirmez — tout via WhatsApp, sans app à installer.",
   },
   {
     title: "Ancrage local depuis 2017",
     description:
-      "Nous ne sommes pas une startup etrangere. Allo-Maison est 100% marocain, base a Casablanca, avec une equipe qui comprend les besoins et les attentes des familles marocaines.",
+      "Pas une startup étrangère. Allo Maison est 100 % marocain, basé à Casablanca, avec une équipe qui comprend les besoins des familles marocaines.",
   },
 ];
 
 export default function AProposPage() {
-  const breadcrumbItems = [
-    { name: "A propos", url: "https://allo-maison.ma/a-propos" },
-  ];
+  const breadcrumbItems = [{ name: "À propos", url: "https://allo-maison.ma/a-propos" }];
 
   return (
     <>
       <JsonLd data={organizationJsonLd()} />
 
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <Breadcrumb items={breadcrumbItems} className="mb-6" />
+      {/* ========= HERO ========= */}
+      <section className="bg-cream border-b border-paper-border">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-12">
+          <Breadcrumb items={breadcrumbItems} className="mb-6 text-[11px]" />
 
-        {/* Hero */}
-        <div className="mb-14">
-          <div className="inline-flex items-center gap-2 bg-trust-light border border-trust-border text-trust-text text-xs font-medium px-3 py-1.5 rounded-badge mb-4">
-            <CheckCircle className="w-3.5 h-3.5" />
-            Depuis 2017
+          <div className="grid lg:grid-cols-12 gap-10 items-end">
+            <div className="lg:col-span-8">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="w-8 h-px bg-paper-border" />
+                <span className="eyebrow text-[10px]">Notre histoire · Depuis 2017</span>
+              </div>
+              <h1 className="font-display text-[40px] sm:text-[56px] font-[550] leading-[0.96] tracking-[-0.028em] text-ink mb-5" style={{ textWrap: "balance" }}>
+                La confiance, <em className="italic text-terracotta">au service de votre maison.</em>
+              </h1>
+              <p className="text-base sm:text-lg text-muted max-w-xl" style={{ textWrap: "pretty" }}>
+                Depuis 2017, nous connectons les familles marocaines avec des professionnels de confiance pour tous leurs besoins à domicile. Notre mission : rendre l&apos;accès à un bon artisan simple, rapide et sécurisé.
+              </p>
+            </div>
+            <div className="lg:col-span-4 flex justify-start lg:justify-end">
+              <Image
+                src="/brand/logo-shield.svg"
+                alt="Allo Maison — depuis 2017"
+                width={320}
+                height={400}
+                className="w-36 h-auto drop-shadow-sm"
+              />
+            </div>
           </div>
-          <h1 className="text-4xl font-extrabold text-ink mb-4">
-            Allo-Maison : la confiance au service de votre maison
-          </h1>
-          <p className="text-lg text-muted max-w-3xl">
-            Depuis 2017, nous connectons les familles marocaines avec des professionnels
-            de confiance pour tous leurs besoins a domicile. Notre mission : rendre
-            l&apos;acces a un bon artisan simple, rapide et securise pour tous.
-          </p>
         </div>
+      </section>
 
-        {/* Story */}
-        <section className="mb-14 bg-surface rounded-card border border-gray-100 p-8">
-          <h2 className="text-2xl font-bold text-ink mb-4">Notre histoire</h2>
-          <div className="prose prose-sm text-muted max-w-none space-y-4">
-            <p>
-              Allo-Maison est ne d&apos;un constat simple : trouver un artisan fiable au Maroc
-              relevait du parcours du combattant. Les recommandations du bouche-a-oreille ne
-              suffisaient plus, et les plateformes existantes ne garantissaient ni la qualite,
-              ni la securite.
-            </p>
-            <p>
-              En 2017, nous avons lance Allo-Maison a Casablanca avec une idee claire :
-              creer une plateforme ou chaque artisan est verifie, ou chaque client est
-              protege, et ou la technologie sert la confiance humaine.
-            </p>
-            <p>
-              Aujourd&apos;hui, nous sommes presents dans 6 grandes villes du Maroc avec plus
-              de 500 artisans verifies et des milliers de familles satisfaites. Notre croissance
-              est entierement basee sur les recommandations de nos clients — le meilleur
-              indicateur de confiance qui soit.
-            </p>
-          </div>
-        </section>
-
-        {/* Stats */}
-        <section className="mb-14">
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+        {/* ========= STATS ========= */}
+        <section className="mb-20">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 border-t border-b border-paper-border py-10 tab-nums">
             {STATS.map((stat) => (
-              <div
-                key={stat.label}
-                className="flex flex-col items-center text-center p-6 bg-white rounded-card shadow-card border border-gray-100"
-              >
-                <div className="text-primary mb-2">{stat.icon}</div>
-                <div className="text-3xl font-extrabold text-ink">{stat.value}</div>
-                <div className="text-sm text-muted mt-1">{stat.label}</div>
+              <div key={stat.label}>
+                <p className="font-display text-4xl sm:text-5xl font-[500] text-ink leading-none">
+                  {stat.value}
+                </p>
+                <p className="text-xs text-muted mt-2 uppercase tracking-wider">{stat.label}</p>
               </div>
             ))}
           </div>
         </section>
 
-        {/* Values */}
-        <section className="mb-14">
-          <h2 className="text-2xl font-bold text-ink mb-2 text-center">Nos valeurs</h2>
-          <p className="text-muted text-center mb-8 max-w-xl mx-auto">
-            Ces trois valeurs guident chacune de nos decisions, de la selection des artisans
-            a la conception de notre plateforme.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {VALUES.map((value) => (
-              <div
-                key={value.title}
-                className="bg-white rounded-card shadow-card border border-gray-100 p-6"
-              >
-                <div className="mb-4">{value.icon}</div>
-                <h3 className="text-lg font-bold text-ink mb-2">{value.title}</h3>
-                <p className="text-sm text-muted leading-relaxed">{value.description}</p>
-              </div>
-            ))}
+        {/* ========= STORY ========= */}
+        <section className="mb-20 grid lg:grid-cols-12 gap-10">
+          <div className="lg:col-span-4">
+            <p className="eyebrow mb-2">01 — Notre histoire</p>
+            <h2 className="font-display text-3xl sm:text-4xl font-[550] tracking-[-0.02em] text-ink">
+              Neuf ans à construire la <em className="italic text-terracotta">confiance.</em>
+            </h2>
+          </div>
+          <div className="lg:col-span-8 lg:col-start-6 space-y-5 text-muted text-[15px] leading-relaxed">
+            <p>
+              Allo Maison est né d&apos;un constat simple : trouver un artisan fiable au Maroc relevait du parcours du combattant. Le bouche-à-oreille ne suffisait plus, et les plateformes existantes ne garantissaient ni la qualité, ni la sécurité.
+            </p>
+            <p>
+              En 2017, nous avons lancé Allo Maison à Casablanca avec une idée claire : créer une plateforme où chaque artisan est vérifié, où chaque client est protégé, où la technologie sert la confiance humaine.
+            </p>
+            <p>
+              Aujourd&apos;hui, nous sommes présents dans 6 grandes villes du Maroc avec <strong className="text-ink">1 017 artisans vérifiés</strong> et des milliers de familles satisfaites. Notre croissance est entièrement basée sur les recommandations de nos clients, le meilleur indicateur de confiance qui soit.
+            </p>
           </div>
         </section>
 
-        {/* Differences */}
-        <section className="mb-14">
-          <h2 className="text-2xl font-bold text-ink mb-2">
-            Ce qui nous rend differents
+        {/* ========= VALUES ========= */}
+        <section className="mb-20">
+          <p className="eyebrow mb-2">02 — Nos valeurs</p>
+          <h2 className="font-display text-3xl sm:text-4xl font-[550] tracking-[-0.02em] text-ink mb-8">
+            Trois principes. <em className="italic">Aucun compromis.</em>
           </h2>
-          <p className="text-muted mb-8">
-            Il existe d&apos;autres facon de trouver un artisan. Voici pourquoi des milliers
-            de familles choisissent Allo-Maison.
-          </p>
-          <div className="space-y-4">
-            {DIFFERENCES.map((diff) => (
-              <div
-                key={diff.title}
-                className="flex gap-4 bg-white rounded-card border border-gray-100 p-5"
-              >
-                <CheckCircle className="w-5 h-5 text-trust flex-shrink-0 mt-0.5" />
-                <div>
-                  <h3 className="font-semibold text-ink mb-1">{diff.title}</h3>
-                  <p className="text-sm text-muted">{diff.description}</p>
+          <div className="grid md:grid-cols-3 gap-6">
+            {VALUES.map((value, i) => {
+              const Icon = value.icon;
+              return (
+                <article key={value.title} className="bg-white border border-paper-border rounded-2xl p-6">
+                  <div className="flex items-baseline justify-between mb-4">
+                    <span className="w-12 h-12 rounded-full flex items-center justify-center bg-clay">
+                      <Icon className="w-5 h-5 text-zellige" />
+                    </span>
+                    <p className="font-display text-3xl font-[500] text-terracotta tab-nums">
+                      {String(i + 1).padStart(2, "0")}
+                    </p>
+                  </div>
+                  <h3 className="font-display text-xl font-medium text-ink mb-2">{value.title}</h3>
+                  <p className="text-sm text-muted leading-relaxed">{value.description}</p>
+                </article>
+              );
+            })}
+          </div>
+        </section>
+
+        {/* ========= DIFFERENCES ========= */}
+        <section className="mb-20">
+          <p className="eyebrow mb-2">03 — Ce qui nous rend différents</p>
+          <h2 className="font-display text-3xl sm:text-4xl font-[550] tracking-[-0.02em] text-ink mb-8">
+            Pourquoi des milliers de familles <em className="italic text-terracotta">nous choisissent.</em>
+          </h2>
+          <div className="border-t border-ink">
+            {DIFFERENCES.map((diff, i) => (
+              <div key={diff.title} className="grid grid-cols-12 gap-4 py-6 border-b border-paper-border">
+                <span className="col-span-2 sm:col-span-1 font-display text-3xl sm:text-4xl font-[500] text-terracotta tab-nums">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <div className="col-span-10 sm:col-span-11">
+                  <h3 className="font-display text-xl font-medium text-ink mb-1">{diff.title}</h3>
+                  <p className="text-sm text-muted leading-relaxed max-w-2xl">{diff.description}</p>
                 </div>
               </div>
             ))}
           </div>
         </section>
 
-        {/* Team placeholder */}
-        <section className="mb-14 bg-surface rounded-card border border-gray-100 p-8">
-          <h2 className="text-2xl font-bold text-ink mb-4">Notre equipe</h2>
-          <p className="text-muted mb-6">
-            Allo-Maison est compose d&apos;une equipe passionnee de professionnels marocains
-            dont la mission est de simplifier le quotidien des familles. Verification,
-            support client, technologie, qualite — chaque membre s&apos;engage pour la confiance.
+        {/* ========= TEAM ========= */}
+        <section className="mb-20">
+          <p className="eyebrow mb-2">04 — Notre équipe</p>
+          <h2 className="font-display text-3xl sm:text-4xl font-[550] tracking-[-0.02em] text-ink mb-4">
+            100 % humains, <em className="italic">100 % marocains.</em>
+          </h2>
+          <p className="text-muted max-w-2xl mb-8">
+            Allo Maison est composé d&apos;une équipe passionnée de professionnels marocains dont la mission est de simplifier le quotidien des familles. Vérification, support client, technologie, qualité — chaque membre s&apos;engage pour la confiance.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[
-              { role: "Direction & Operations", emoji: "👔" },
-              { role: "Verification & Qualite", emoji: "🔍" },
-              { role: "Support Client", emoji: "💬" },
+              { role: "Direction & Opérations", detail: "Stratégie, partenariats, vision long terme" },
+              { role: "Vérification & Qualité", detail: "Contrôle artisans, audit prestations" },
+              { role: "Support Client", detail: "WhatsApp 7 j/7, 8 h 30 — 22 h" },
             ].map((member) => (
-              <div
-                key={member.role}
-                className="bg-white rounded-card border border-gray-200 p-4 text-center"
-              >
-                <div className="text-4xl mb-3">{member.emoji}</div>
-                <div className="text-sm font-medium text-ink">{member.role}</div>
-              </div>
+              <article key={member.role} className="bg-white border border-paper-border rounded-2xl p-5">
+                <div className="w-10 h-10 rounded-full bg-clay mb-4" />
+                <h3 className="font-display text-lg font-medium text-ink">{member.role}</h3>
+                <p className="text-xs text-muted mt-1">{member.detail}</p>
+              </article>
             ))}
           </div>
         </section>
 
-        {/* CTA */}
-        <section className="text-center">
-          <h2 className="text-2xl font-bold text-ink mb-3">
-            Rejoignez la communaute Allo-Maison
+        {/* ========= CTA ========= */}
+        <section className="bg-cream border-t border-paper-border pt-14 text-center">
+          <p className="eyebrow mb-2">05 — Rejoignez-nous</p>
+          <h2 className="font-display text-3xl sm:text-4xl font-[550] tracking-[-0.02em] text-ink mb-3">
+            Votre artisan vérifié, <em className="italic text-terracotta">en 24 h.</em>
           </h2>
-          <p className="text-muted mb-6 max-w-xl mx-auto">
-            Des milliers de familles marocaines nous font confiance.
-            Trouvez votre artisan verifie aujourd&apos;hui.
+          <p className="text-muted mb-8 max-w-xl mx-auto">
+            Des milliers de familles marocaines nous font confiance. Trouvez votre artisan aujourd&apos;hui.
           </p>
           <div className="max-w-2xl mx-auto">
             <SearchBar />

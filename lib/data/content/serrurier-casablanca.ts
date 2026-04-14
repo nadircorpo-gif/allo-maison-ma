@@ -2,36 +2,36 @@ import { registerRichContent, type RichPageContent } from "./types";
 
 const content: RichPageContent = {
   slug: "serrurier-casablanca",
-  metaTitle: "Serrurier Casablanca — Urgence 24h/24 | Prix & Conseils 2026",
+  metaTitle: "Serrurier Casablanca, Urgence 24h/24 | Prix & Conseils 2026",
   metaDescription:
     "Serrurier à Casablanca disponible 24h/24 et 7j/7. Ouverture de porte, changement de serrure, blindage. Prix transparents en DH, sans arnaque. Intervention rapide dans tous les quartiers.",
-  h1: "Serrurier Casablanca — Urgence, Prix et Comment Éviter les Arnaques",
+  h1: "Serrurier à Casablanca : urgence 24h/24, prix annoncé, zéro arnaque",
   heroText:
-    "Il est 2h du matin, vous rentrez d'une soirée à Bourgogne. Vous fouilllez vos poches — une fois, deux fois, trois fois. Rien. Les clés sont à l'intérieur, ou pire, quelque part dans la nuit casablancaise. Le quartier dort, votre téléphone est à 8% de batterie, et vous ne connaissez pas de serrurier. C'est exactement pour ces moments-là — et pour tout le reste — qu'on a rédigé ce guide complet sur la serrurerie à Casablanca.",
+    "Besoin d'un serrurier de confiance à Casablanca ? Ouverture de porte, changement de serrure, blindage ou dépannage urgent, nos serruriers vérifiés interviennent dans tous les quartiers.",
 
   sections: [
     {
       title: "Urgence serrurerie : les situations les plus courantes à Casa",
       content: `<p>La première chose à savoir : vous n'êtes pas seul. À Casablanca, on estime à plusieurs centaines le nombre d'appels pour serrurerie chaque nuit. Les situations d'urgence les plus fréquentes que les serruriers locaux rencontrent :</p>
 <ul>
-  <li><strong>Clé cassée dans la serrure</strong> — ça arrive surtout avec les vieilles serrures des immeubles anciens de Maarif ou Derb Omar. Un peu de force, une clé fatiguée, et voilà.</li>
-  <li><strong>Porte claquée</strong> — le classique. On sort jeter les poubelles en pyjama, la porte se referme. Surtout fréquent dans les immeubles récents de Sidi Maarouf ou Bouskoura où les portes ferment automatiquement.</li>
-  <li><strong>Serrure bloquée</strong> — le cylindre s'est grippé, souvent par manque de graissage ou après une tentative de crochetage.</li>
-  <li><strong>Perte de clés</strong> — vol de sac, oubli, le quotidien casablancais. Dans ce cas, il faut non seulement ouvrir la porte mais aussi changer le cylindre immédiatement.</li>
-  <li><strong>Serrure forcée après tentative de cambriolage</strong> — malheureusement pas rare dans certains quartiers.</li>
+  <li><strong>Clé cassée dans la serrure</strong>, ça arrive surtout avec les vieilles serrures des immeubles anciens de Maarif ou Derb Omar. Un peu de force, une clé fatiguée, et voilà.</li>
+  <li><strong>Porte claquée</strong>, le classique. On sort jeter les poubelles en pyjama, la porte se referme. Surtout fréquent dans les immeubles récents de Sidi Maarouf ou Bouskoura où les portes ferment automatiquement.</li>
+  <li><strong>Serrure bloquée</strong>, le cylindre s'est grippé, souvent par manque de graissage ou après une tentative de crochetage.</li>
+  <li><strong>Perte de clés</strong>, vol de sac, oubli, le quotidien casablancais. Dans ce cas, il faut non seulement ouvrir la porte mais aussi changer le cylindre immédiatement.</li>
+  <li><strong>Serrure forcée après tentative de cambriolage</strong>, malheureusement pas rare dans certains quartiers.</li>
 </ul>
-<p>Dans tous ces cas, <strong>n'essayez jamais de forcer vous-même</strong>. Un serrurier professionnel peut ouvrir une porte standard en 5 à 15 minutes sans abîmer le bâti. Vous, vous risquez de bloquer définitivement la serrure ou de fissurer le dormant — ce qui multiplie la facture par 3.</p>`,
+<p>Dans tous ces cas, <strong>n'essayez jamais de forcer vous-même</strong>. Un serrurier professionnel peut ouvrir une porte standard en 5 à 15 minutes sans abîmer le bâti. Vous, vous risquez de bloquer définitivement la serrure ou de fissurer le dormant, ce qui multiplie la facture par 3.</p>`,
     },
     {
       title: "Combien coûte un serrurier à Casablanca ? Les vrais tarifs 2026",
       content: `<p>Soyons directs : la serrurerie à Casablanca, c'est un secteur où les prix varient énormément selon qui vous appelez et surtout <em>quand</em> vous appelez. Voici ce qu'un travail honnête devrait coûter :</p>
-<p>Pour une <strong>ouverture de porte simple</strong> (cylindre européen standard, pas de blindage) en journée : entre 150 et 300 DH. La nuit ou le weekend, comptez 300 à 500 DH — c'est le déplacement et l'heure qui justifient la majoration.</p>
+<p>Pour une <strong>ouverture de porte simple</strong> (cylindre européen standard, pas de blindage) en journée : entre 150 et 300 DH. La nuit ou le weekend, comptez 300 à 500 DH, c'est le déplacement et l'heure qui justifient la majoration.</p>
 <p>Pour une <strong>porte blindée</strong> (les appartements récents de Californie, Val d'Anfa, Palmier en sont souvent équipés), l'ouverture coûte 400 à 800 DH car le serrurier doit utiliser un outillage spécifique et prendre plus de temps.</p>
-<p>Le <strong>changement de cylindre</strong> — ce qu'on fait systématiquement après une perte de clés ou un cambriolage — coûte entre 200 et 600 DH pièce incluse, selon la qualité du cylindre. Un cylindre entrée de gamme (Tesa, marque générique) : 80-150 DH. Un cylindre de qualité (Mul-T-Lock, Vachette) : 250-500 DH.</p>
+<p>Le <strong>changement de cylindre</strong>, ce qu'on fait systématiquement après une perte de clés ou un cambriolage, coûte entre 200 et 600 DH pièce incluse, selon la qualité du cylindre. Un cylindre entrée de gamme (Tesa, marque générique) : 80-150 DH. Un cylindre de qualité (Mul-T-Lock, Vachette) : 250-500 DH.</p>
 <p>Important : le prix doit toujours vous être annoncé <strong>avant l'intervention</strong>. Un serrurier sérieux vous dit le montant au téléphone. S'il refuse de vous donner un prix fixe avant de voir la serrure, méfiance.</p>`,
     },
     {
-      title: "Comment éviter les arnaques — le guide anti-faux serruriers",
+      title: "Comment éviter les arnaques, le guide anti-faux serruriers",
       content: `<p>C'est le sujet qui fâche mais qui vous sauvera peut-être 1 000 DH. Les arnaques à la serrurerie existent à Casablanca, et elles suivent toujours le même schéma :</p>
 <p><strong>Le tarif "variable"</strong> : le serrurier annonce 200 DH au téléphone, arrive, et une fois la porte ouverte sort une facture de 1 500 DH en expliquant que "c'était une serrure compliquée". Une fois la porte ouverte, vous êtes à sa merci.</p>
 <p><strong>Le remplacement inutile</strong> : on vous dit que votre serrure est "hors d'usage" et doit être remplacée d'urgence, alors qu'un simple déblocage ou graissage aurait suffi.</p>
@@ -49,48 +49,52 @@ const content: RichPageContent = {
     {
       title: "Types de serrures au Maroc : ce que vous avez vraiment chez vous",
       content: `<p>Avant d'appeler un serrurier, il est utile de comprendre ce que vous avez comme serrure. Ça vous permettra de mieux communiquer et d'anticiper le coût.</p>
-<p><strong>La serrure à cylindre européen</strong> — la plus courante dans les appartements modernes. Vous reconnaissez au trou de serrure ovale avec le cylindre apparent. Standard, remplacable facilement, prix abordable.</p>
-<p><strong>La serrure à pompe (ou à palastre)</strong> — très présente dans les maisons anciennes de Hay Mohammadi, Derb Sultan, Aïn Chock. La clé est grosse, creuse à l'intérieur. Ces serrures sont peu sécurisées mais encore très utilisées.</p>
-<p><strong>La serrure 3 points</strong> — souvent sur les portes blindées récentes. Un seul mouvement de clé verrouille trois points en simultané (haut, milieu, bas de la porte). Bien plus sécurisée, mais l'ouverture en urgence est plus complexe et plus chère.</p>
-<p><strong>Les serrures numériques / digicodes</strong> — en plein essor dans les résidences fermées de Bouskoura, CIL, et les villas du quartier Anfa. En cas de panne ou oubli de code, il faut un serrurier spécialisé ou parfois le fabricant.</p>
-<p><strong>Les serrures multipoints (mortise locks)</strong> — présentes dans les villas et riad haut de gamme. Très sécurisées, très chères à remplacer (500 à 2 000 DH pour le mécanisme seul).</p>`,
+<p><strong>La serrure à cylindre européen</strong>, la plus courante dans les appartements modernes. Vous reconnaissez au trou de serrure ovale avec le cylindre apparent. Standard, remplacable facilement, prix abordable.</p>
+<p><strong>La serrure à pompe (ou à palastre)</strong>, très présente dans les maisons anciennes de Hay Mohammadi, Derb Sultan, Aïn Chock. La clé est grosse, creuse à l'intérieur. Ces serrures sont peu sécurisées mais encore très utilisées.</p>
+<p><strong>La serrure 3 points</strong>, souvent sur les portes blindées récentes. Un seul mouvement de clé verrouille trois points en simultané (haut, milieu, bas de la porte). Bien plus sécurisée, mais l'ouverture en urgence est plus complexe et plus chère.</p>
+<p><strong>Les serrures numériques / digicodes</strong>, en plein essor dans les résidences fermées de Bouskoura, CIL, et les villas du quartier Anfa. En cas de panne ou oubli de code, il faut un serrurier spécialisé ou parfois le fabricant.</p>
+<p><strong>Les serrures multipoints (mortise locks)</strong>, présentes dans les villas et riad haut de gamme. Très sécurisées, très chères à remplacer (500 à 2 000 DH pour le mécanisme seul).</p>`,
     },
     {
       title: "Blindage de porte : est-ce vraiment nécessaire à Casablanca ?",
       content: `<p>Beaucoup de Casablancais se posent la question, surtout après un cambriolage dans leur immeuble ou dans leur quartier. La réponse honnête : <strong>ça dépend de là où vous habitez</strong>.</p>
-<p>Dans des quartiers comme <strong>Maarif, Gauthier, Anfa</strong> — des zones résidentielles avec gardien et accès contrôlé — le blindage est un confort supplémentaire mais pas une urgence absolue. En revanche, dans des immeubles anciens à <strong>Derb Sultan, Hay Farah, Sidi Bernoussi</strong>, ou si vous avez déjà eu une tentative d'effraction, le blindage devient vraiment intéressant.</p>
+<p>Dans des quartiers comme <strong>Maarif, Gauthier, Anfa</strong>, des zones résidentielles avec gardien et accès contrôlé, le blindage est un confort supplémentaire mais pas une urgence absolue. En revanche, dans des immeubles anciens à <strong>Derb Sultan, Hay Farah, Sidi Bernoussi</strong>, ou si vous avez déjà eu une tentative d'effraction, le blindage devient vraiment intéressant.</p>
 <p>Une porte blindée à Casablanca coûte en moyenne entre <strong>3 500 et 8 000 DH</strong>, pose incluse, selon la marque (Fichet, Dierre, ou des marques locales). Cette porte peut résister à 30 minutes à 3 heures de tentative d'effraction selon la classe de résistance (RC1 à RC6).</p>
 <p>Si vous n'avez pas envie d'investir dans une porte complète, vous pouvez opter pour un <strong>renforcement de l'existant</strong> : renforts de gonds, coffre haute sécurité, cylindre antibump/antipercage. Comptez 800 à 1 500 DH pour une sécurisation intermédiaire sérieuse.</p>
-<p>Ce que les serruriers casablancais voient souvent après cambriolage : une porte solide mais des fenêtres ou une porte de service complètement négligées. La sécurité, c'est une chaîne — le maillon faible, c'est ce qui compte.</p>`,
+<p>Ce que les serruriers casablancais voient souvent après cambriolage : une porte solide mais des fenêtres ou une porte de service complètement négligées. La sécurité, c'est une chaîne, le maillon faible, c'est ce qui compte.</p>`,
     },
     {
       title: "Serrurerie automobile à Casablanca",
       content: `<p>Oui, les serruriers s'occupent aussi des voitures. C'est moins connu mais très demandé, surtout pendant les soirées au Corniche ou les matchs au Complexe Mohammed V.</p>
 <p>Les situations courantes : clé enfermée dans le coffre ou à l'intérieur du véhicule, télécommande en panne, clé cassée dans la serrure de contact.</p>
 <p>Pour les véhicules anciens (Dacia Logan, Peugeot 206, Renault Clio pré-2010), l'ouverture est simple et coûte 150 à 300 DH. Pour les véhicules récents avec clé électronique ou démarrage sans clé, il faut un serrurier automobile spécialisé avec équipement de programmation. Comptez 500 à 1 500 DH selon le modèle et si une reprogrammation est nécessaire.</p>
-<p>Attention : certains concessionnaires auto (Renault, Toyota, Hyundai à Ain Sebaa ou Casa Anfa) ont leurs propres serruriers d'astreinte. Vérifiez d'abord si votre voiture est sous garantie — l'intervention peut être couverte.</p>`,
+<p>Attention : certains concessionnaires auto (Renault, Toyota, Hyundai à Ain Sebaa ou Casa Anfa) ont leurs propres serruriers d'astreinte. Vérifiez d'abord si votre voiture est sous garantie, l'intervention peut être couverte.</p>`,
     },
     {
-      title: "Les quartiers les plus cambriolés à Casablanca — données réelles",
+      title: "Les quartiers les plus cambriolés à Casablanca, données réelles",
       content: `<p>Ce sujet est délicat mais réel. D'après les rapports de la Sûreté Nationale et les témoignages de serruriers casablancais, certains quartiers sont plus exposés :</p>
-<p><strong>Hay Mohammadi et Sidi Bernoussi</strong> — zones à forte densité, nombreux immeubles anciens sans gardien, accès facile. Les cambriolages y sont les plus fréquents statistiquement.</p>
-<p><strong>Derb Sultan, Hay Farah</strong> — tissu urbain dense avec ruelles peu éclairées, portes anciennes à cylindres datés.</p>
-<p><strong>Maarif et Gauthier</strong> — paradoxalement, ces quartiers aisés attirent aussi les cambrioleurs. La présence de biens de valeur compense la sécurité relative. Les villas sont plus ciblées que les appartements.</p>
-<p><strong>Ain Diab et Corniche</strong> — les résidences secondaires et apparts laissés vides sont des cibles. En été, beaucoup partent en vacances sans sécuriser correctement.</p>
-<p>En revanche, les quartiers avec gardiennage actif (syndic organisé, digicode d'entrée, vigile) — comme certains immeubles de <strong>Californie, Val d'Anfa, Les Princesses</strong> — présentent des taux de cambriolage très faibles.</p>
+<p><strong>Hay Mohammadi et Sidi Bernoussi</strong>, zones à forte densité, nombreux immeubles anciens sans gardien, accès facile. Les cambriolages y sont les plus fréquents statistiquement.</p>
+<p><strong>Derb Sultan, Hay Farah</strong>, tissu urbain dense avec ruelles peu éclairées, portes anciennes à cylindres datés.</p>
+<p><strong>Maarif et Gauthier</strong>, paradoxalement, ces quartiers aisés attirent aussi les cambrioleurs. La présence de biens de valeur compense la sécurité relative. Les villas sont plus ciblées que les appartements.</p>
+<p><strong>Ain Diab et Corniche</strong>, les résidences secondaires et apparts laissés vides sont des cibles. En été, beaucoup partent en vacances sans sécuriser correctement.</p>
+<p>En revanche, les quartiers avec gardiennage actif (syndic organisé, digicode d'entrée, vigile), comme certains immeubles de <strong>Californie, Val d'Anfa, Les Princesses</strong>, présentent des taux de cambriolage très faibles.</p>
 <p>La leçon : <strong>la sécurité de votre appartement commence à la porte d'entrée de l'immeuble</strong>. Parlez à votre syndic si l'interphone est en panne ou si la porte de hall reste ouverte la nuit.</p>`,
     },
     {
       title: "Serrurier de nuit à Casablanca : tarifs et ce à quoi s'attendre",
-      content: `<p>La nuit à Casablanca, entre 22h et 7h du matin, le marché de la serrurerie fonctionne différemment. Il y a moins d'artisans disponibles, donc les prix montent — c'est la loi de l'offre et de la demande, et c'est légitime.</p>
+      content: `<p>La nuit à Casablanca, entre 22h et 7h du matin, le marché de la serrurerie fonctionne différemment. Il y a moins d'artisans disponibles, donc les prix montent, c'est la loi de l'offre et de la demande, et c'est légitime.</p>
 <p>Ce que vous pouvez raisonnablement attendre :</p>
 <ul>
   <li><strong>Délai d'intervention</strong> : 20 à 45 minutes dans les quartiers centraux (Maarif, Bourgogne, Gauthier, CIL). Plus long pour Bouskoura, Dar Bouazza ou Sidi Maarouf.</li>
   <li><strong>Tarif nuit (22h-7h)</strong> : majoration de 50 à 100% par rapport aux tarifs de jour. Une ouverture à 400 DH de jour peut coûter 600-800 DH la nuit. C'est normal.</li>
   <li><strong>Frais de déplacement</strong> : souvent inclus dans le tarif ou entre 50 et 100 DH séparément. Clarifiez au téléphone.</li>
 </ul>
-<p>Astuce pratique : sauvegardez le numéro d'un serrurier de confiance <strong>avant</strong> d'en avoir besoin. Demandez à votre gardien d'immeuble (si vous en avez un) — ils ont souvent le contact d'un artisan fiable qu'ils connaissent depuis des années. C'est souvent le meilleur moyen d'éviter les arnaques.</p>
-<p>Autre ressource : votre assurance habitation. Beaucoup de contrats d'assurance habitation au Maroc (Wafa Assurance, RMA, SANAD) incluent une assistance serrurerie 24h/24. Vérifiez votre contrat — vous êtes peut-être couvert gratuitement.</p>`,
+<p>Astuce pratique : sauvegardez le numéro d'un serrurier de confiance <strong>avant</strong> d'en avoir besoin. Demandez à votre gardien d'immeuble (si vous en avez un), ils ont souvent le contact d'un artisan fiable qu'ils connaissent depuis des années. C'est souvent le meilleur moyen d'éviter les arnaques.</p>
+<p>Autre ressource : votre assurance habitation. Beaucoup de contrats d'assurance habitation au Maroc (Wafa Assurance, RMA, SANAD) incluent une assistance serrurerie 24h/24. Vérifiez votre contrat, vous êtes peut-être couvert gratuitement.</p>`,
+    },
+    {
+      title: "Scénario type : 2h du matin, Bourgogne, clés introuvables",
+      content: `<p>Il est 2h du matin, vous rentrez d'une soirée à Bourgogne. Vous fouillez vos poches, une fois, deux fois, trois fois. Rien. Les clés sont à l'intérieur, ou pire, quelque part dans la nuit casablancaise. Le quartier dort, votre téléphone est à 8% de batterie, et vous ne connaissez pas de serrurier. C'est exactement pour ces moments-là, et pour tout le reste, qu'on a rédigé ce guide complet sur la serrurerie à Casablanca.</p>`,
     },
   ],
 
@@ -107,12 +111,10 @@ const content: RichPageContent = {
     { intervention: "Ouverture de nuit (majoration)", prixMin: 300, prixMoyen: 500, prixMax: 800 },
   ],
 
-  youtubeVideoId: "x3Xhm0W5cFU",
-  youtubeVideoTitle: "Comment fonctionne une serrure à cylindre — démonstration",
 
   externalLinks: [
     {
-      label: "Sûreté Nationale Maroc — signalement cambriolage",
+      label: "Sûreté Nationale Maroc, signalement cambriolage",
       url: "https://www.police.ma",
       description: "Pour signaler une tentative d'effraction ou un cambriolage à Casablanca",
     },
@@ -122,7 +124,7 @@ const content: RichPageContent = {
       description: "Retrouver un artisan serrurier certifié au Maroc",
     },
     {
-      label: "Wafa Assurance — assistance habitation",
+      label: "Wafa Assurance, assistance habitation",
       url: "https://www.wafaassurance.ma",
       description: "Vérifier si votre assurance habitation couvre l'assistance serrurerie",
     },
@@ -167,12 +169,12 @@ const content: RichPageContent = {
     {
       question: "Quelle est la différence entre un cylindre et une serrure ?",
       answer:
-        "Le cylindre, c'est la partie dans laquelle s'insère la clé (le rond métallique visible sur la porte). La serrure, c'est le mécanisme complet incluant le cylindre, le pêne, et le boîtier. Souvent, seul le cylindre est à changer — c'est moins cher et suffit dans la plupart des cas de perte de clés.",
+        "Le cylindre, c'est la partie dans laquelle s'insère la clé (le rond métallique visible sur la porte). La serrure, c'est le mécanisme complet incluant le cylindre, le pêne, et le boîtier. Souvent, seul le cylindre est à changer, c'est moins cher et suffit dans la plupart des cas de perte de clés.",
     },
     {
       question: "Mon assurance habitation couvre-t-elle la serrurerie d'urgence ?",
       answer:
-        "Très souvent oui. Les principales assurances marocaines (Wafa, RMA, SANAD, AXA Maroc) incluent une assistance habitation qui couvre l'ouverture de porte en urgence. Vérifiez votre contrat ou appelez votre assureur avant d'appeler un serrurier payant — vous pourriez économiser la totalité du coût.",
+        "Très souvent oui. Les principales assurances marocaines (Wafa, RMA, SANAD, AXA Maroc) incluent une assistance habitation qui couvre l'ouverture de porte en urgence. Vérifiez votre contrat ou appelez votre assureur avant d'appeler un serrurier payant, vous pourriez économiser la totalité du coût.",
     },
     {
       question: "Comment reconnaître un faux serrurier arnaqueur ?",
@@ -182,7 +184,7 @@ const content: RichPageContent = {
     {
       question: "Faut-il changer la serrure après un déménagement ?",
       answer:
-        "Oui, c'est fortement recommandé. L'ancien locataire ou propriétaire a peut-être fait faire des doubles. Un nouveau cylindre coûte 200 à 400 DH — c'est un investissement minimal pour votre tranquillité d'esprit.",
+        "Oui, c'est fortement recommandé. L'ancien locataire ou propriétaire a peut-être fait faire des doubles. Un nouveau cylindre coûte 200 à 400 DH, c'est un investissement minimal pour votre tranquillité d'esprit.",
     },
     {
       question: "Peut-on ouvrir une porte sans l'endommager ?",
@@ -197,7 +199,7 @@ const content: RichPageContent = {
     {
       question: "Le serrurier peut-il intervenir sur ma voiture aussi ?",
       answer:
-        "Oui, beaucoup de serruriers à Casablanca font de la serrurerie automobile, notamment pour les clés enfermées dans le véhicule. Pour les voitures récentes avec clés électroniques ou sans contact, il faut un spécialiste avec équipement de reprogrammation — pas tous les serruriers polyvalents peuvent le faire.",
+        "Oui, beaucoup de serruriers à Casablanca font de la serrurerie automobile, notamment pour les clés enfermées dans le véhicule. Pour les voitures récentes avec clés électroniques ou sans contact, il faut un spécialiste avec équipement de reprogrammation, pas tous les serruriers polyvalents peuvent le faire.",
     },
     {
       question: "Combien coûte l'installation d'une porte blindée à Casablanca ?",
@@ -217,16 +219,16 @@ const content: RichPageContent = {
   ],
 
   tips: [
-    "Sauvegardez toujours le numéro d'un serrurier de confiance dans votre téléphone AVANT d'en avoir besoin — chercher en urgence à 3h du matin, c'est là qu'on se fait avoir.",
+    "Sauvegardez toujours le numéro d'un serrurier de confiance dans votre téléphone AVANT d'en avoir besoin, chercher en urgence à 3h du matin, c'est là qu'on se fait avoir.",
     "Vérifiez votre contrat d'assurance habitation : beaucoup couvrent l'ouverture de porte en urgence. Appelez votre assureur en premier.",
-    "Après une perte de clés, changez systématiquement votre cylindre — ne vous contentez pas de refaire des doubles. Vous ne savez pas combien de copies circulent.",
+    "Après une perte de clés, changez systématiquement votre cylindre, ne vous contentez pas de refaire des doubles. Vous ne savez pas combien de copies circulent.",
     "Graissez votre serrure une fois par an avec de la graisse au graphite ou un spray lubrifiant spécial serrure (pas d'huile de cuisine !). Ça prévient le blocage et prolonge la durée de vie.",
-    "Si une clé casse dans la serrure, n'essayez pas de l'extraire avec une pince ou un couteau — vous risquez d'enfoncer le fragment encore plus profond. Appelez un professionnel.",
+    "Si une clé casse dans la serrure, n'essayez pas de l'extraire avec une pince ou un couteau, vous risquez d'enfoncer le fragment encore plus profond. Appelez un professionnel.",
     "Pour les immeubles en copropriété, suggérez à votre syndic d'équiper la porte d'entrée d'un digicode ou d'un interphone avec caméra. C'est le meilleur investissement collectif de sécurité.",
-    "Si votre porte a des gonds apparents côté extérieur, pensez à les sécuriser avec des vis anti-dévissage ou des pivots de sécurité — sinon, votre porte blindée ne sert à rien.",
+    "Si votre porte a des gonds apparents côté extérieur, pensez à les sécuriser avec des vis anti-dévissage ou des pivots de sécurité, sinon, votre porte blindée ne sert à rien.",
   ],
 
-  localKnowledge: `<p>Casablanca est une ville de contrastes en matière de serrurerie. Les <strong>immeubles haussmanniens de Bourgogne et Gauthier</strong> ont souvent des serrures à palastre de 50 ans d'âge, difficiles à remplacer car les pièces sont introuvables. Les <strong>tours modernes de Sidi Maarouf et Marina</strong> ont des systèmes de contrôle d'accès centralisés — quand ça tombe en panne, c'est tout l'immeuble qui est bloqué. Les <strong>villas d'Anfa et Californie</strong> sont souvent équipées de systèmes multipoints et d'alarmes liées à la serrure. À <strong>Derb Sultan et Hay Farah</strong>, les portes métalliques peintes avec vieilles serrures à pompe restent très communes — elles s'ouvrent facilement mais sécurisent mal. Connaître votre type de serrure et votre quartier vous permet d'anticiper les coûts et de mieux discuter avec votre serrurier.</p>`,
+  localKnowledge: `<p>Casablanca est une ville de contrastes en matière de serrurerie. Les <strong>immeubles haussmanniens de Bourgogne et Gauthier</strong> ont souvent des serrures à palastre de 50 ans d'âge, difficiles à remplacer car les pièces sont introuvables. Les <strong>tours modernes de Sidi Maarouf et Marina</strong> ont des systèmes de contrôle d'accès centralisés, quand ça tombe en panne, c'est tout l'immeuble qui est bloqué. Les <strong>villas d'Anfa et Californie</strong> sont souvent équipées de systèmes multipoints et d'alarmes liées à la serrure. À <strong>Derb Sultan et Hay Farah</strong>, les portes métalliques peintes avec vieilles serrures à pompe restent très communes, elles s'ouvrent facilement mais sécurisent mal. Connaître votre type de serrure et votre quartier vous permet d'anticiper les coûts et de mieux discuter avec votre serrurier.</p>`,
 
   lastUpdated: "Avril 2026",
 };

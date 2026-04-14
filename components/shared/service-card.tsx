@@ -1,6 +1,8 @@
 import Link from "next/link";
+import Image from "next/image";
+import { Star } from "lucide-react";
 import { type Service } from "@/lib/data/services";
-import StarRating from "@/components/shared/star-rating";
+import { getServiceHero } from "@/lib/data/service-heroes";
 import { cn } from "@/lib/utils";
 
 type ServiceCardProps = {
@@ -10,32 +12,36 @@ type ServiceCardProps = {
 };
 
 export default function ServiceCard({ service, city, className }: ServiceCardProps) {
-  const href = city
-    ? `/${service.slug}-${city}`
-    : `/services/${service.slug}`;
+  const href = city ? `/${service.slug}-${city}` : `/services/${service.slug}`;
+  const hero = getServiceHero(service.slug);
 
   return (
     <Link
       href={href}
       className={cn(
-        "group block rounded-card shadow-card hover:shadow-card-hover transition-shadow bg-white overflow-hidden",
+        "group block bg-white border border-paper-border rounded-xl overflow-hidden hover:-translate-y-0.5 hover:shadow-card-hover transition",
         className
       )}
     >
-      {/* Gradient top with icon */}
-      <div className="h-20 bg-gradient-to-br from-primary to-primary-deep flex items-center justify-center">
-        <span className="text-4xl" role="img" aria-label={service.name}>
-          {service.icon}
-        </span>
+      <div className="aspect-[5/4] relative bg-clay overflow-hidden">
+        <Image
+          src={hero.url}
+          alt={hero.alt}
+          fill
+          sizes="(max-width: 768px) 50vw, 25vw"
+          className="object-cover group-hover:scale-105 transition duration-500"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
       </div>
 
-      {/* Content */}
       <div className="p-4">
-        <h3 className="font-semibold text-ink mb-1 group-hover:text-primary transition-colors">
-          {service.name}
-        </h3>
-        <StarRating rating={service.rating} reviewCount={service.reviewCount} className="mb-2" />
-        <p className="text-xs text-muted font-medium">{service.priceLabel}</p>
+        <h3 className="font-display text-lg font-medium text-ink mb-1">{service.name}</h3>
+        <div className="flex items-center gap-1 text-xs tab-nums text-muted mb-1">
+          <Star className="w-3 h-3 fill-saffron text-saffron" />
+          <span className="font-semibold text-ink">{service.rating.toFixed(1)}</span>
+          <span>· {service.reviewCount.toLocaleString("fr")} avis</span>
+        </div>
+        <p className="text-xs text-muted font-medium tab-nums">{service.priceLabel}</p>
       </div>
     </Link>
   );

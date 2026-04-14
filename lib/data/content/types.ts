@@ -39,8 +39,8 @@ export type RichPageContent = {
   heroText: string; // intro paragraph, 2-3 sentences, human tone
   sections: RichSection[];
   priceTable: PriceTableRow[];
-  youtubeVideoId: string | null;
-  youtubeVideoTitle: string | null;
+  youtubeVideoId?: string | null;
+  youtubeVideoTitle?: string | null;
   externalLinks: ExternalLink[];
   testimonials: RichTestimonial[];
   faqs: RichFAQ[];

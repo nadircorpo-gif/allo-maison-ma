@@ -1,39 +1,48 @@
-import { Shield } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function GuaranteeBanner() {
   return (
-    <section
-      className="py-12"
-      style={{ background: "linear-gradient(135deg, #1E3A5F 0%, #1E40AF 100%)" }}
-    >
-      <div className="max-w-4xl mx-auto px-4">
-        <div className="flex flex-col sm:flex-row items-center gap-6">
-          {/* Shield icon */}
-          <div
-            className="w-18 h-18 rounded-card flex items-center justify-center flex-shrink-0"
-            style={{ backgroundColor: "rgba(255,255,255,0.15)", width: 72, height: 72 }}
-          >
-            <Shield className="w-9 h-9 text-white" />
+    <section className="bg-zellige py-20 relative overflow-hidden">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col lg:flex-row items-center gap-10">
+          {/* Shield (V1) as the main visual */}
+          <div className="shrink-0 w-48 lg:w-56">
+            <Image
+              src="/brand/logo-shield-dark.svg"
+              alt="Garantie Allo Maison — artisans vérifiés et certifiés"
+              width={320}
+              height={400}
+              className="w-full h-auto drop-shadow-2xl"
+            />
           </div>
 
-          {/* Text block */}
-          <div className="flex-1 text-center sm:text-left">
-            <h3 className="text-xl font-bold text-white mb-2">
-              Pas satisfait ? On regle le probleme.
-            </h3>
-            <p className="text-white/80 text-sm leading-relaxed">
-              Si le travail ne correspond pas a ce qui etait convenu : remboursement jusqu&apos;a 2000 DH ou un autre pro intervient a nos frais. Zero risque pour vous.
+          <div className="flex-1 text-center lg:text-left">
+            <p className="text-saffron text-xs font-semibold tracking-[0.22em] uppercase mb-3">
+              Garantie Allo Maison
             </p>
+            <h3 className="font-display text-3xl sm:text-4xl lg:text-5xl font-[550] text-cream mb-4 tracking-tight leading-[1.05]">
+              Pas satisfait ?<br />
+              <em className="italic text-saffron">On règle le problème.</em>
+            </h3>
+            <p className="text-cream/75 text-base leading-relaxed max-w-xl mb-6">
+              Chaque artisan passe par notre process de <span className="font-semibold text-cream">certification en 7 étapes</span>. Si quelque chose ne va pas, un autre pro intervient à nos frais — zéro risque pour vous.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
+              <Link
+                href="/garantie"
+                className="inline-block bg-saffron text-ink font-bold px-6 py-3 rounded-lg hover:bg-[#E0B55C] transition-colors text-sm"
+              >
+                Voir la garantie complète →
+              </Link>
+              <Link
+                href="/comment-ca-marche"
+                className="inline-block border border-white/20 text-cream font-semibold px-6 py-3 rounded-lg hover:bg-white/5 transition-colors text-sm"
+              >
+                Comment ça marche
+              </Link>
+            </div>
           </div>
-
-          {/* CTA */}
-          <Link
-            href="#comment-ca-marche"
-            className="flex-shrink-0 inline-block bg-white text-primary font-semibold px-6 py-3 rounded-btn hover:bg-gray-50 transition-colors text-sm"
-          >
-            En savoir plus
-          </Link>
         </div>
       </div>
     </section>

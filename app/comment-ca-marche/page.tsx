@@ -1,19 +1,19 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import JsonLd from "@/components/seo/json-ld";
 import Breadcrumb from "@/components/shared/breadcrumb";
 import SearchBar from "@/components/shared/search-bar";
 import { faqJsonLd } from "@/lib/seo";
-import { CheckCircle, Search, UserCheck, CreditCard, Shield, Star, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Comment trouver un artisan de confiance au Maroc | allo-maison.ma",
   description:
-    "Decouvrez comment trouver un artisan de confiance au Maroc en 3 etapes simples. Artisans verifies et encadres. Garantie satisfaction ou remboursement.",
+    "Découvrez comment trouver un artisan de confiance au Maroc en 3 étapes simples. Artisans vérifiés et encadrés. Garantie satisfaction.",
   alternates: { canonical: "https://allo-maison.ma/comment-ca-marche" },
   openGraph: {
     title: "Comment trouver un artisan de confiance au Maroc | allo-maison.ma",
     description:
-      "Decouvrez comment trouver un artisan de confiance au Maroc en 3 etapes simples. Garantie satisfaction incluse.",
+      "Découvrez comment trouver un artisan de confiance au Maroc en 3 étapes simples. Garantie satisfaction incluse.",
     url: "https://allo-maison.ma/comment-ca-marche",
     siteName: "Allo-Maison",
     locale: "fr_MA",
@@ -23,262 +23,194 @@ export const metadata: Metadata = {
 
 const FAQ_ITEMS = [
   {
-    question: "Comment verifier qu'un artisan est bien certifie sur Allo-Maison ?",
+    question: "Comment vérifier qu'un artisan est bien certifié sur Allo-Maison ?",
     answer:
-      "Chaque profil affiche un badge 'Verifie' vert. Ce badge signifie que l'artisan a passe notre processus de verification : identite, competences, references clients et entretien. Vous pouvez cliquer sur le badge pour voir les details.",
+      "Chaque profil affiche un badge 'Vérifié' vert. Ce badge signifie que l'artisan a passé notre processus de vérification en 7 étapes. Vous pouvez cliquer sur le badge pour voir les détails.",
   },
   {
     question: "Combien de temps prend la mise en relation ?",
     answer:
-      "En moyenne, nous confirmons un artisan disponible en moins de 5 minutes via WhatsApp. Pour les urgences (plomberie, electricite, serrurerie), l'intervention peut demarrer dans les 30 minutes suivant votre demande.",
+      "En moyenne, nous confirmons un artisan disponible en moins de 5 minutes via WhatsApp. Pour les urgences (plomberie, électricité, serrurerie), l'intervention peut démarrer dans les 30 minutes suivant votre demande.",
   },
   {
     question: "Puis-je choisir mon artisan ou c'est vous qui assignez ?",
     answer:
-      "Vous choisissez ! Nous vous presentons les profils des artisans disponibles avec leurs avis, tarifs et specialites. Vous decidez ensuite avec qui vous souhaitez travailler. Nous ne forcez jamais une mise en relation.",
+      "Vous choisissez. Nous vous présentons les profils des artisans disponibles avec leurs avis, tarifs et spécialités. Vous décidez ensuite avec qui vous souhaitez travailler.",
   },
   {
-    question: "Que se passe-t-il si l'artisan ne se presente pas ?",
+    question: "Que se passe-t-il si l'artisan ne se présente pas ?",
     answer:
-      "En cas d'absence injustifiee de l'artisan, nous vous proposons immediatement un remplacant gratuitement. Votre temps est precieux et nous nous engageons a honorer chaque rendez-vous confirme.",
+      "En cas d'absence injustifiée de l'artisan, nous vous proposons immédiatement un remplaçant gratuitement. Votre temps est précieux et nous nous engageons à honorer chaque rendez-vous confirmé.",
   },
   {
     question: "Comment fonctionne le paiement ?",
     answer:
-      "Le paiement se fait directement avec l'artisan apres la realisation du travail. Pas d'avance requise. Vous pouvez payer en especes, par virement ou via mobile money selon ce qui vous convient. Allo-Maison ne prend aucune commission sur la transaction.",
+      "Le paiement se fait directement avec l'artisan après la réalisation du travail. Pas d'avance requise. Vous pouvez payer en espèces, par virement ou via mobile money selon ce qui vous convient. Allo-Maison ne prend aucune commission.",
   },
 ];
 
 const HOWTO_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  name: "Comment trouver un artisan de confiance au Maroc avec Allo-Maison",
-  description:
-    "Trouvez un artisan verifie et de confiance au Maroc en 3 etapes simples avec Allo-Maison.",
+  name: "Comment trouver un artisan de confiance au Maroc avec Allo Maison",
   totalTime: "PT5M",
   step: [
-    {
-      "@type": "HowToStep",
-      position: 1,
-      name: "Decrivez votre besoin",
-      text: "Selectionnez le service dont vous avez besoin (plomberie, electricite, menage, etc.) et indiquez votre ville. Plus votre description est precise, plus nous pouvons vous trouver le bon profil.",
-    },
-    {
-      "@type": "HowToStep",
-      position: 2,
-      name: "Choisissez votre pro",
-      text: "Consultez les profils des artisans verifies disponibles. Lisez les avis clients, comparez les tarifs et choisissez celui qui vous inspire confiance.",
-    },
-    {
-      "@type": "HowToStep",
-      position: 3,
-      name: "Payez apres satisfaction",
-      text: "L'artisan intervient a la date convenue. Vous evaluez son travail et payez directement apres satisfaction. Notre garantie couvre 7 jours si un probleme survient.",
-    },
+    { "@type": "HowToStep", position: 1, name: "Décrivez votre besoin", text: "Sélectionnez le service et votre ville." },
+    { "@type": "HowToStep", position: 2, name: "Choisissez votre pro", text: "Comparez les profils vérifiés et choisissez celui qui vous convient." },
+    { "@type": "HowToStep", position: 3, name: "Payez après satisfaction", text: "L'artisan intervient, vous validez, vous payez directement." },
   ],
 };
 
-const VERIFICATION_STEPS = [
+const STEPS = [
   {
     number: "01",
-    title: "Verification d'identite",
+    title: "Décrivez votre besoin",
     description:
-      "Nous verifions l'identite de chaque artisan. Aucun profil anonyme n'est accepte sur la plateforme.",
+      "Sélectionnez le service parmi nos 19 catégories et indiquez votre ville. Ajoutez une description précise : type de panne, surface à peindre, nombre de pièces.",
+    points: ["19 catégories de services", "6 villes couvertes", "Formulaire en 30 secondes", "Via WhatsApp ou site web"],
   },
   {
     number: "02",
-    title: "Competences professionnelles",
+    title: "Choisissez votre pro",
     description:
-      "Nous evaluons les competences de chaque artisan : experience, certifications professionnelles et maitrise du metier.",
+      "Nous vous présentons les artisans vérifiés disponibles. Chaque profil contient avis clients, certifications, photos de chantier et tarif indicatif.",
+    points: ["Profils 100 % vérifiés", "Avis clients authentiques", "Tarifs transparents", "Disponibilités en temps réel"],
   },
   {
     number: "03",
-    title: "References clients",
+    title: "Payez après satisfaction",
     description:
-      "Chaque artisan doit fournir des references de clients precedents. Nous les contactons pour verifier la qualite du travail.",
-  },
-  {
-    number: "04",
-    title: "References clients",
-    description:
-      "Nous contactons au minimum 3 anciens clients pour verifier la qualite du travail, le respect des engagements et le comportement professionnel de l'artisan.",
-  },
-  {
-    number: "05",
-    title: "Entretien individuel",
-    description:
-      "Un entretien en personne ou en video est realise par notre equipe pour evaluer le professionnalisme, les competences techniques et les valeurs de l'artisan.",
-  },
-  {
-    number: "06",
-    title: "Photo professionnelle",
-    description:
-      "Une photo recente et professionnelle est exigee pour chaque profil. Cela permet aux clients de reconnaitre l'artisan a son arrivee et renforce la confiance.",
+      "Aucune avance demandée. L'artisan intervient, vous vérifiez le travail, vous payez directement. Notre garantie de 7 jours vous protège si besoin.",
+    points: ["Zéro avance requise", "Paiement direct à l'artisan", "Garantie 7 jours", "Pros vérifiés et certifiés"],
   },
 ];
 
+const VERIFICATION_STEPS = [
+  { title: "Identité", description: "CIN et casier judiciaire contrôlés physiquement en agence." },
+  { title: "Assurance RC", description: "Attestation d'assurance responsabilité civile à jour exigée." },
+  { title: "Compétences", description: "Diplômes OFPPT ou équivalent, ou 5+ années d'expérience vérifiées." },
+  { title: "Références clients", description: "3 anciens clients minimum appelés par notre équipe." },
+  { title: "Test pratique", description: "Visite d'un chantier en cours ou test technique en conditions réelles." },
+  { title: "Briefing qualité", description: "Formation aux standards et méthodes Allo Maison avant acceptation." },
+  { title: "Contrôle continu", description: "Avis SMS après chaque mission. Note moyenne < 4,5/5 = retrait." },
+];
+
 export default function CommentCaMarchePage() {
-  const breadcrumbItems = [
-    { name: "Comment ca marche", url: "https://allo-maison.ma/comment-ca-marche" },
-  ];
+  const breadcrumbItems = [{ name: "Comment ça marche", url: "https://allo-maison.ma/comment-ca-marche" }];
 
   return (
     <>
       <JsonLd data={faqJsonLd(FAQ_ITEMS)} />
       <JsonLd data={HOWTO_SCHEMA} />
 
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <Breadcrumb items={breadcrumbItems} className="mb-6" />
+      {/* ========= HERO ========= */}
+      <section className="bg-cream border-b border-paper-border">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-12">
+          <Breadcrumb items={breadcrumbItems} className="mb-6 text-[11px]" />
 
-        {/* Hero */}
-        <div className="text-center mb-14">
-          <div className="inline-flex items-center gap-2 bg-trust-light border border-trust-border text-trust-text text-xs font-medium px-3 py-1.5 rounded-badge mb-4">
-            <CheckCircle className="w-3.5 h-3.5" />
-            Simple, rapide et securise
+          <div className="grid lg:grid-cols-12 gap-10 items-end">
+            <div className="lg:col-span-8">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="w-8 h-px bg-paper-border" />
+                <span className="eyebrow text-[10px]">Simple, rapide, sécurisé · Depuis 2017</span>
+              </div>
+              <h1 className="font-display text-[40px] sm:text-[56px] font-[550] leading-[0.96] tracking-[-0.028em] text-ink mb-5" style={{ textWrap: "balance" }}>
+                Trois gestes. <em className="italic text-terracotta">Zéro stress.</em>
+              </h1>
+              <p className="text-base sm:text-lg text-muted max-w-xl" style={{ textWrap: "pretty" }}>
+                Allo Maison simplifie la recherche d&apos;artisans vérifiés depuis 2017. Voici comment ça marche, de la demande à la facture.
+              </p>
+            </div>
+            <div className="lg:col-span-4 flex justify-start lg:justify-end">
+              <Image
+                src="/brand/logo-shield.svg"
+                alt="Allo Maison — depuis 2017"
+                width={320}
+                height={400}
+                className="w-36 h-auto drop-shadow-sm"
+              />
+            </div>
           </div>
-          <h1 className="text-4xl font-extrabold text-ink mb-4">
-            Comment trouver un artisan de confiance au Maroc
-          </h1>
-          <p className="text-lg text-muted max-w-2xl mx-auto">
-            Allo-Maison simplifie la recherche d&apos;artisans verifies depuis 2017.
-            Voici comment ca marche en 3 etapes.
-          </p>
         </div>
+      </section>
 
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         {/* 3 Steps */}
-        <section className="mb-16">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Step 1 */}
-            <div className="bg-white rounded-card shadow-card border border-gray-100 p-6">
-              <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-4">
-                <Search className="w-6 h-6 text-white" />
-              </div>
-              <div className="text-4xl font-extrabold text-primary/20 mb-2">01</div>
-              <h2 className="text-xl font-bold text-ink mb-3">Decrivez votre besoin</h2>
-              <p className="text-muted text-sm leading-relaxed mb-4">
-                Selectionnez le service dont vous avez besoin parmi nos 16 categories et
-                indiquez votre ville. Vous pouvez aussi ajouter une description detaillee :
-                type de panne, surface a peindre, nombre de pieces a nettoyer...
-              </p>
-              <ul className="space-y-2">
-                {[
-                  "16 categories de services",
-                  "6 villes couvertes",
-                  "Formulaire en 30 secondes",
-                  "Via WhatsApp ou site web",
-                ].map((item) => (
-                  <li key={item} className="flex items-center gap-2 text-sm text-ink">
-                    <CheckCircle className="w-4 h-4 text-trust flex-shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Step 2 */}
-            <div className="bg-white rounded-card shadow-card border border-gray-100 p-6">
-              <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-4">
-                <UserCheck className="w-6 h-6 text-white" />
-              </div>
-              <div className="text-4xl font-extrabold text-primary/20 mb-2">02</div>
-              <h2 className="text-xl font-bold text-ink mb-3">Choisissez votre pro</h2>
-              <p className="text-muted text-sm leading-relaxed mb-4">
-                Nous vous presentons les artisans verifies disponibles. Chaque profil
-                contient les avis clients reels, les certifications, les photos des
-                travaux precedents et les tarifs indicatifs.
-              </p>
-              <ul className="space-y-2">
-                {[
-                  "Profils 100% verifies",
-                  "Avis clients authentiques",
-                  "Tarifs transparents",
-                  "Disponibilites en temps reel",
-                ].map((item) => (
-                  <li key={item} className="flex items-center gap-2 text-sm text-ink">
-                    <CheckCircle className="w-4 h-4 text-trust flex-shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Step 3 */}
-            <div className="bg-white rounded-card shadow-card border border-gray-100 p-6">
-              <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-4">
-                <CreditCard className="w-6 h-6 text-white" />
-              </div>
-              <div className="text-4xl font-extrabold text-primary/20 mb-2">03</div>
-              <h2 className="text-xl font-bold text-ink mb-3">Payez apres satisfaction</h2>
-              <p className="text-muted text-sm leading-relaxed mb-4">
-                Aucune avance n&apos;est demandee. L&apos;artisan intervient a la date convenue,
-                realise le travail et vous payez directement apres avoir verifie la qualite.
-                Notre garantie de 7 jours vous protege en cas de probleme.
-              </p>
-              <ul className="space-y-2">
-                {[
-                  "Zero avance requise",
-                  "Paiement direct a l'artisan",
-                  "Garantie 7 jours",
-                  "Remboursement jusqu'a 2000 DH",
-                ].map((item) => (
-                  <li key={item} className="flex items-center gap-2 text-sm text-ink">
-                    <CheckCircle className="w-4 h-4 text-trust flex-shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
+        <section className="mb-20">
+          <p className="eyebrow mb-2">01 — Les 3 étapes</p>
+          <h2 className="font-display text-3xl sm:text-4xl font-[550] tracking-[-0.02em] text-ink mb-8">
+            Simple comme <em className="italic text-terracotta">bonjour.</em>
+          </h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            {STEPS.map((step) => (
+              <article key={step.number} className="bg-white border border-paper-border rounded-2xl p-6">
+                <p className="font-display text-5xl font-[500] text-terracotta tab-nums mb-4">{step.number}</p>
+                <h3 className="font-display text-2xl font-medium text-ink mb-3">{step.title}</h3>
+                <p className="text-sm text-muted leading-relaxed mb-5">{step.description}</p>
+                <ul className="space-y-2">
+                  {step.points.map((p) => (
+                    <li key={p} className="flex items-start gap-2 text-xs text-muted">
+                      <span className="w-1 h-1 rounded-full bg-terracotta mt-1.5 shrink-0" />
+                      {p}
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
           </div>
         </section>
 
-        {/* Verification process */}
-        <section className="mb-16">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl font-bold text-ink mb-3">
-              Notre processus de verification en 6 etapes
-            </h2>
-            <p className="text-muted max-w-xl mx-auto">
-              Seuls les meilleurs artisans passent notre verification. 1 candidat sur 3
-              est accepte sur notre plateforme.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {VERIFICATION_STEPS.map((step) => (
-              <div
-                key={step.number}
-                className="bg-surface rounded-card border border-gray-100 p-5"
-              >
-                <div className="text-3xl font-extrabold text-primary/30 mb-2">{step.number}</div>
-                <h3 className="font-bold text-ink mb-2">{step.title}</h3>
-                <p className="text-sm text-muted leading-relaxed">{step.description}</p>
+        {/* Verification 7 steps */}
+        <section className="mb-20">
+          <p className="eyebrow mb-2">02 — Notre process de certification</p>
+          <h2 className="font-display text-3xl sm:text-4xl font-[550] tracking-[-0.02em] text-ink mb-3">
+            Sept étapes <em className="italic">avant d&apos;être accepté.</em>
+          </h2>
+          <p className="text-muted max-w-xl mb-8">
+            Seul 1 candidat sur 3 passe notre vérification. Voici ce qu&apos;ils traversent avant d&apos;apparaître sur la plateforme.
+          </p>
+          <div className="border-t border-ink">
+            {VERIFICATION_STEPS.map((step, i) => (
+              <div key={step.title} className="grid grid-cols-12 gap-4 py-5 border-b border-paper-border">
+                <span className="col-span-2 sm:col-span-1 font-display text-2xl font-[500] text-terracotta tab-nums">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <div className="col-span-10 sm:col-span-11">
+                  <h3 className="font-display text-lg font-medium text-ink">{step.title}</h3>
+                  <p className="text-sm text-muted leading-relaxed max-w-2xl mt-0.5">{step.description}</p>
+                </div>
               </div>
             ))}
           </div>
         </section>
 
         {/* Guarantee section */}
-        <section className="mb-16 bg-gradient-to-r from-primary to-primary-deep rounded-card p-8 text-white">
-          <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
-            <div className="flex-shrink-0">
-              <Shield className="w-16 h-16 text-white/80" />
+        <section className="mb-20 bg-zellige text-cream rounded-2xl p-10 sm:p-14">
+          <div className="grid lg:grid-cols-12 gap-8 items-center">
+            <div className="lg:col-span-3 flex justify-center lg:justify-start">
+              <Image src="/brand/logo-shield-dark.svg" alt="" width={320} height={400} className="w-32 h-auto" />
             </div>
-            <div className="flex-1">
-              <h2 className="text-2xl font-bold mb-2">La Garantie Allo-Maison</h2>
-              <p className="text-white/80 mb-4">
-                Chaque prestation est couverte par notre garantie satisfaction. Si vous
-                n&apos;etes pas satisfait dans les 7 jours suivant l&apos;intervention :
+            <div className="lg:col-span-9">
+              <p className="eyebrow mb-2" style={{ color: "#D4A24C" }}>03 — La garantie</p>
+              <h2 className="font-display text-3xl sm:text-4xl font-[550] tracking-[-0.02em] mb-3">
+                Pas satisfait ? <em className="italic text-saffron">On règle.</em>
+              </h2>
+              <p className="text-cream/75 mb-6 max-w-2xl">
+                Chaque prestation est couverte par notre garantie. Si vous n&apos;êtes pas satisfait dans les 7 jours, on envoie un autre artisan gratuitement, sans discussion.
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                {[
-                  { icon: <Star className="w-5 h-5" />, text: "Remplacement gratuit d'artisan" },
-                  { icon: <CreditCard className="w-5 h-5" />, text: "Remboursement jusqu'a 2000 DH" },
-                  { icon: <Clock className="w-5 h-5" />, text: "Support disponible 7j/7" },
-                ].map((item) => (
-                  <div key={item.text} className="flex items-center gap-2 bg-white/10 rounded-btn p-3">
-                    <span className="text-amber">{item.icon}</span>
-                    <span className="text-sm font-medium">{item.text}</span>
-                  </div>
-                ))}
+              <div className="grid sm:grid-cols-3 gap-3">
+                <div className="bg-white/5 border border-white/10 rounded-lg p-3 text-sm">
+                  <p className="font-semibold text-saffron text-[10px] uppercase tracking-widest mb-1">Remplacement</p>
+                  <p className="text-cream/90">Artisan de remplacement gratuit</p>
+                </div>
+                <div className="bg-white/5 border border-white/10 rounded-lg p-3 text-sm">
+                  <p className="font-semibold text-saffron text-[10px] uppercase tracking-widest mb-1">Certifiés</p>
+                  <p className="text-cream/90">Pros vérifiés et encadrés</p>
+                </div>
+                <div className="bg-white/5 border border-white/10 rounded-lg p-3 text-sm">
+                  <p className="font-semibold text-saffron text-[10px] uppercase tracking-widest mb-1">Support</p>
+                  <p className="text-cream/90">7 j/7, 8 h 30 — 22 h</p>
+                </div>
               </div>
             </div>
           </div>
@@ -286,34 +218,31 @@ export default function CommentCaMarchePage() {
 
         {/* FAQ */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-ink mb-6 text-center">
-            Questions frequentes
+          <p className="eyebrow mb-2">04 — Questions fréquentes</p>
+          <h2 className="font-display text-3xl sm:text-4xl font-[550] tracking-[-0.02em] text-ink mb-8">
+            Tout ce que vous vous demandez.
           </h2>
-          <div className="space-y-3">
+          <div className="border-t border-ink max-w-3xl">
             {FAQ_ITEMS.map((faq, i) => (
-              <details
-                key={i}
-                className="bg-white border border-gray-200 rounded-card overflow-hidden group"
-              >
-                <summary className="flex items-center justify-between px-5 py-4 cursor-pointer font-medium text-ink text-sm list-none hover:bg-surface transition-colors">
-                  {faq.question}
-                  <span className="text-muted ml-4 flex-shrink-0 text-lg leading-none group-open:rotate-45 transition-transform duration-200">
-                    +
-                  </span>
+              <details key={i} className="border-b border-paper-border group py-5">
+                <summary className="font-display font-medium text-lg text-ink cursor-pointer list-none flex justify-between items-start gap-4">
+                  <span>{faq.question}</span>
+                  <span className="font-display italic text-2xl text-muted group-open:rotate-45 transition-transform shrink-0">+</span>
                 </summary>
-                <div className="px-5 pb-4 text-muted text-sm leading-relaxed border-t border-gray-100">
-                  {faq.answer}
-                </div>
+                <p className="text-muted text-sm mt-3 leading-relaxed">{faq.answer}</p>
               </details>
             ))}
           </div>
         </section>
 
         {/* CTA */}
-        <section className="text-center">
-          <h2 className="text-2xl font-bold text-ink mb-3">Pret a trouver votre artisan ?</h2>
-          <p className="text-muted mb-6">
-            Demarrez en 30 secondes. Reponse garantie en moins de 5 minutes.
+        <section className="bg-cream border-t border-paper-border pt-14 text-center">
+          <p className="eyebrow mb-2">Prêt ?</p>
+          <h2 className="font-display text-3xl sm:text-4xl font-[550] tracking-[-0.02em] text-ink mb-3">
+            Trouvez votre artisan <em className="italic text-terracotta">maintenant.</em>
+          </h2>
+          <p className="text-muted mb-8 max-w-xl mx-auto">
+            Démarrez en 30 secondes. Réponse humaine sous 47 min en moyenne.
           </p>
           <div className="max-w-2xl mx-auto">
             <SearchBar />

@@ -5,16 +5,16 @@ const content: RichPageContent = {
   metaTitle: "Plombier Marrakech – Urgence, Riads & Prix 2026 | Allo Maison",
   metaDescription:
     "Plombier à Marrakech disponible 24h/24. Fuite riad, calcaire, piscine, hôtel. Prix honnêtes en DH, intervention rapide Médina, Guéliz, Hivernage, Targa.",
-  h1: "Plombier à Marrakech : Urgence, Riads et Entretien Piscine",
+  h1: "Plombier à Marrakech : intervention rapide, tarifs clairs, pros vérifiés",
   heroText:
-    "C'était un mercredi soir de juillet, haute saison touristique, quand le directeur d'un riad dans le quartier Bab Doukkala a appelé en panique : une canalisation ancienne venait d'éclater sous la pression, inondant le patio central et les deux chambres du rez-de-chaussée. Douze touristes attendaient leurs clés. C'est ce genre de situation — urgente, stressante, avec des enjeux financiers énormes — qui illustre parfaitement la réalité de la plomberie à Marrakech, ville où les tuyaux ont parfois plus de 60 ans, où le calcaire attaque tout, et où la chaleur estivale n'arrange rien du tout.",
+    "Besoin d'un plombier de confiance à Marrakech ? Fuite d'eau, débouchage, installation sanitaire ou chauffe-eau, nos plombiers vérifiés interviennent rapidement dans tous les quartiers.",
 
   sections: [
     {
       title: "La plomberie dans les riads de Marrakech",
-      content: `<p>Un riad, c'est magnifique. Un riad avec des problèmes de plomberie, c'est cauchemardesque. Et malheureusement, les deux vont souvent ensemble. La Médina de Marrakech concentre plusieurs milliers de riads — dont beaucoup ont été rénovés à la va-vite pendant le boom immobilier des années 2000-2010 sans forcément respecter les normes techniques de base.</p>
+      content: `<p>Un riad, c'est magnifique. Un riad avec des problèmes de plomberie, c'est cauchemardesque. Et malheureusement, les deux vont souvent ensemble. La Médina de Marrakech concentre plusieurs milliers de riads, dont beaucoup ont été rénovés à la va-vite pendant le boom immobilier des années 2000-2010 sans forcément respecter les normes techniques de base.</p>
 <p>La première difficulté est <strong>l'accès</strong>. Dans la Médina, les ruelles font parfois moins de deux mètres de large. Impossible d'amener une camionnette avec du matériel lourd. Le plombier doit porter ses outils à la main, parfois traverser cinq ou six derbs (ruelles) pour atteindre le chantier. Ça prend du temps, et ce temps se reflète inévitablement sur la facture.</p>
-<p>La deuxième difficulté, c'est <strong>l'architecture ancienne</strong>. Les riads ont souvent plusieurs niveaux reliés par des escaliers étroits et en colimaçon. Les colonnes de plomberie ne sont pas toujours visibles ou accessibles. Trouver une fuite peut nécessiter d'ouvrir plusieurs murs avant de localiser l'origine du problème. Un bon plombier expérimenté en riads saura lire les signes — humidité sur un enduit tadelakt, tache brune qui réapparaît malgré les peintures successives, bruit de goutte dans les murs la nuit.</p>
+<p>La deuxième difficulté, c'est <strong>l'architecture ancienne</strong>. Les riads ont souvent plusieurs niveaux reliés par des escaliers étroits et en colimaçon. Les colonnes de plomberie ne sont pas toujours visibles ou accessibles. Trouver une fuite peut nécessiter d'ouvrir plusieurs murs avant de localiser l'origine du problème. Un bon plombier expérimenté en riads saura lire les signes, humidité sur un enduit tadelakt, tache brune qui réapparaît malgré les peintures successives, bruit de goutte dans les murs la nuit.</p>
 <p>La troisième problématique propre aux riads, c'est le <strong>patio central avec fontaine</strong>. Ces fontaines traditionnelles sont souvent reliées à des systèmes de recirculation d'eau anciens, avec des joints en plomb ou en caoutchouc vieilli. Une fontaine qui perd quelques litres par heure, ça paraît anodin, mais sur une année ça représente une quantité d'eau considérable et des dégâts sur la structure du patio.</p>
 <p>Pour les propriétaires de riads en location, le conseil numéro un : <strong>faire faire une inspection complète de la plomberie avant chaque saison touristique</strong> (octobre avant l'hiver, avril avant l'été). Le coût d'une inspection préventive (400-600 DH) est dérisoire comparé à une intervention d'urgence en haute saison qui peut coûter 5 à 10 fois plus.</p>`,
     },
@@ -30,28 +30,28 @@ const content: RichPageContent = {
 <li>Des pompes de piscine qui s'encrassent plus vite</li>
 </ul>
 <p>La solution : installer un <strong>adoucisseur d'eau</strong>. Un adoucisseur correctement dimensionné pour un riad de taille moyenne (6-8 chambres) coûte entre 3 500 et 6 000 DH, installation comprise. Le retour sur investissement est généralement de 2-3 ans, en comptant la durée de vie prolongée des équipements et les économies sur le sel et les produits détartrants.</p>
-<p>La <strong>chaleur estivale</strong> crée un autre problème majeur : la dilatation. Les canalisations en PVC ou en cuivre se dilatent avec la chaleur. Dans une ville où les températures peuvent dépasser 45°C en juillet-août, des tuyaux exposés (toiture-terrasse des riads, installation extérieure) peuvent se fissurer ou se désolidariser de leurs raccords si l'installation n'a pas prévu de compensateurs de dilatation. Un plombier qui connaît Marrakech sait ce détail ; un plombier qui découvrit la ville en plein été comprendra vite pourquoi c'est important.</p>
-<p>Les <strong>chauffe-eaux solaires</strong> sont très répandus à Marrakech — logique avec 300 jours de soleil par an. Mais ils nécessitent un entretien spécifique : rinçage du circuit, vérification de l'antigel (même à Marrakech, les nuits de janvier peuvent descendre sous 5°C), et détartrage annuel des panneaux collecteurs. Un chauffe-eau solaire mal entretenu peut devenir une source de problèmes de pression et de fuites.</p>`,
+<p>La <strong>chaleur estivale</strong> crée un autre problème majeur : la dilatation. Les canalisations en PVC ou en cuivre se dilatent avec la chaleur. Dans une ville où les températures peuvent dépasser 45°C en juillet-août, des tuyaux exposés (toiture-terrasse des riads, installation extérieure) peuvent se fissurer ou se désolidariser de leurs raccords si l'installation n'a pas prévu de compensateurs de dilatation. Un plombier qui connaît Marrakech sait ce détail ; un plombier qui découvre la ville en plein été comprendra vite pourquoi c'est important.</p>
+<p>Les <strong>chauffe-eaux solaires</strong> sont très répandus à Marrakech, logique avec 300 jours de soleil par an. Mais ils nécessitent un entretien spécifique : rinçage du circuit, vérification de l'antigel (même à Marrakech, les nuits de janvier peuvent descendre sous 5°C), et détartrage annuel des panneaux collecteurs. Un chauffe-eau solaire mal entretenu peut devenir une source de problèmes de pression et de fuites.</p>`,
     },
     {
       title: "Les quartiers de Marrakech et leurs défis de plomberie",
       content: `<p>Marrakech est une ville à plusieurs vitesses, et ses quartiers n'ont pas du tout les mêmes caractéristiques en termes d'infrastructure hydraulique.</p>
 <h3>La Médina : les tuyaux ont une histoire</h3>
-<p>C'est ici que se concentrent les défis les plus complexes. Le réseau d'eau de la Médina est un patchwork de canalisations posées à différentes époques — certaines remontent aux années 1950 voire avant, d'autres ont été refaites lors de rénovations privées. La cohérence est relative. On trouve parfois dans le même riad du plomb (dangereux, à remplacer impérativement), du PVC gris des années 80, du cuivre de qualité variable et du PER récent. Le tout branché ensemble avec des adaptateurs de fortune.</p>
+<p>C'est ici que se concentrent les défis les plus complexes. Le réseau d'eau de la Médina est un patchwork de canalisations posées à différentes époques, certaines remontent aux années 1950 voire avant, d'autres ont été refaites lors de rénovations privées. La cohérence est relative. On trouve parfois dans le même riad du plomb (dangereux, à remplacer impérativement), du PVC gris des années 80, du cuivre de qualité variable et du PER récent. Le tout branché ensemble avec des adaptateurs de fortune.</p>
 <p>La pression d'eau dans la Médina est souvent insuffisante aux étages supérieurs, notamment en été quand la consommation collective est au plus haut. Beaucoup de riads ont installé des surpresseurs pour pallier ce problème.</p>
 <h3>Guéliz : l'héritage colonial français</h3>
-<p>Le quartier français de Guéliz, construit au début du 20ème siècle, présente des constructions en pierre plus solides mais une plomberie également très ancienne dans les immeubles non rénovés. Les immeubles haussmanniens de l'Avenue Mohammed V cachent souvent des colonnes montantes en plomb ou en fonte grise qui fuient depuis des années. Les propriétaires repoussent la rénovation complète (coûteuse) et préfèrent les rustines — une stratégie qui finit toujours par coûter plus cher à terme.</p>
-<p>Les appartements récemment rénovés de Guéliz sont en général bien équipés, avec des installations aux normes. Le problème vient plutôt des parties communes — colonnes montantes, compteurs collectifs, arrivées d'eau en sous-sol.</p>
+<p>Le quartier français de Guéliz, construit au début du 20ème siècle, présente des constructions en pierre plus solides mais une plomberie également très ancienne dans les immeubles non rénovés. Les immeubles haussmanniens de l'Avenue Mohammed V cachent souvent des colonnes montantes en plomb ou en fonte grise qui fuient depuis des années. Les propriétaires repoussent la rénovation complète (coûteuse) et préfèrent les rustines, une stratégie qui finit toujours par coûter plus cher à terme.</p>
+<p>Les appartements récemment rénovés de Guéliz sont en général bien équipés, avec des installations aux normes. Le problème vient plutôt des parties communes, colonnes montantes, compteurs collectifs, arrivées d'eau en sous-sol.</p>
 <h3>Targa, Massira, Hay Mohammadi : le grand Marrakech moderne</h3>
 <p>Ces quartiers périphériques, développés massivement depuis les années 90, ont une infrastructure plus récente mais pas exempte de problèmes. La qualité de construction est très variable selon le promoteur et l'époque. Beaucoup d'appartements de Targa et Massira utilisent des canalisations en PVC de qualité correcte, mais les installations sanitaires sont souvent basiques et les prises d'eau non conformes.</p>
 <p>Dans les nouvelles villas de Targa et des zones résidentielles comme Amelkis ou Palmeraie, on trouve des installations modernes, mais avec des spécificités liées aux piscines et aux grands espaces extérieurs qui demandent une expertise particulière.</p>
 <h3>Hivernage et Palmeraie : le luxe à ses propres contraintes</h3>
-<p>Les hôtels et villas de l'Hivernage ou de la Palmeraie ont des systèmes de plomberie très sophistiqués — spas, hammams privatifs, grandes piscines, systèmes d'irrigation automatisés pour les jardins. L'entretien de ces installations nécessite des plombiers spécialisés qui maîtrisent les systèmes de traitement d'eau, les pompes à débit variable, les systèmes de filtration avancés.</p>`,
+<p>Les hôtels et villas de l'Hivernage ou de la Palmeraie ont des systèmes de plomberie très sophistiqués, spas, hammams privatifs, grandes piscines, systèmes d'irrigation automatisés pour les jardins. L'entretien de ces installations nécessite des plombiers spécialisés qui maîtrisent les systèmes de traitement d'eau, les pompes à débit variable, les systèmes de filtration avancés.</p>`,
     },
     {
       title: "Prix plombier Marrakech 2026",
       content: `<p>Les tarifs à Marrakech sont légèrement plus élevés que la moyenne nationale pour les interventions en Médina et en zone touristique, principalement à cause des contraintes d'accès et de la demande. Voici une fourchette réaliste :</p>
-<p>Pour les <strong>urgences nocturnes</strong> (21h-7h) ou les weekends, comptez une majoration de 50 à 100% sur le tarif normal. En haute saison touristique (juillet, août, décembre), les meilleurs plombiers sont très sollicités — pensez à avoir le contact d'un plombier de confiance avant d'en avoir besoin.</p>
+<p>Pour les <strong>urgences nocturnes</strong> (21h-7h) ou les weekends, comptez une majoration de 50 à 100% sur le tarif normal. En haute saison touristique (juillet, août, décembre), les meilleurs plombiers sont très sollicités, pensez à avoir le contact d'un plombier de confiance avant d'en avoir besoin.</p>
 <p>Un conseil pratique : demandez toujours un devis écrit avant que le plombier commence les travaux, surtout pour les interventions importantes. Un bon professionnel n'hésitera pas à mettre son estimation par écrit.</p>`,
     },
     {
@@ -79,7 +79,7 @@ const content: RichPageContent = {
     },
     {
       title: "Urgence plomberie pour les hôtels et maisons d'hôtes",
-      content: `<p>Marrakech est une destination touristique mondiale — plus de 3 millions de visiteurs par an — et son parc hôtelier est immense. Des grands hôtels 5 étoiles aux maisons d'hôtes intimistes de 4 chambres, tous ont en commun la nécessité d'une réactivité absolue en cas de problème de plomberie.</p>
+      content: `<p>Marrakech est une destination touristique mondiale, plus de 3 millions de visiteurs par an, et son parc hôtelier est immense. Des grands hôtels 5 étoiles aux maisons d'hôtes intimistes de 4 chambres, tous ont en commun la nécessité d'une réactivité absolue en cas de problème de plomberie.</p>
 <p>Pour un établissement hôtelier, une chambre hors service à cause d'une fuite, c'est une perte directe de revenus. En haute saison, une chambre à Marrakech peut se louer entre 500 et 5 000 DH la nuit selon le standing. Chaque heure compte.</p>
 <p>Les problèmes de plomberie les plus fréquents dans l'hôtellerie marrakchie :</p>
 <ul>
@@ -93,11 +93,15 @@ const content: RichPageContent = {
     {
       title: "RADEEMA et le réseau d'eau de Marrakech",
       content: `<p>La RADEEMA (Régie Autonome de Distribution d'Eau et d'Électricité de Marrakech) est le fournisseur d'eau et d'électricité de la ville. Comprendre comment fonctionne le réseau aide à mieux gérer ses installations privées.</p>
-<p>Le réseau d'eau de Marrakech est alimenté principalement par les barrages du Haut Atlas — barrage Lalla Takerkoust sur l'Oued N'Fis et les captages de l'Oued Tensift. La qualité de l'eau varie selon les périodes et les points de prélèvement. En période de crue, la turbidité peut augmenter. En été, la concentration en calcaire est généralement plus élevée.</p>
-<p><strong>Fuite sur le réseau public vs réseau privé :</strong> si vous observez une fuite d'eau sur la voie publique ou devant votre propriété, c'est la RADEEMA qui est compétente — appelez le 0524-43-56-56. En revanche, dès que la fuite est sur votre installation privée (après le compteur), c'est votre responsabilité et il faut appeler un plombier.</p>
-<p><strong>Le compteur d'eau</strong> est une source d'information précieuse : si vous partez en vacances et que votre facture suivante montre une consommation anormale, c'est signe d'une fuite sur votre installation. Le relevé se fait en coupant l'arrivée d'eau générale et en vérifiant si le compteur tourne encore — si oui, il y a une fuite côté réseau intérieur.</p>
+<p>Le réseau d'eau de Marrakech est alimenté principalement par les barrages du Haut Atlas, barrage Lalla Takerkoust sur l'Oued N'Fis et les captages de l'Oued Tensift. La qualité de l'eau varie selon les périodes et les points de prélèvement. En période de crue, la turbidité peut augmenter. En été, la concentration en calcaire est généralement plus élevée.</p>
+<p><strong>Fuite sur le réseau public vs réseau privé :</strong> si vous observez une fuite d'eau sur la voie publique ou devant votre propriété, c'est la RADEEMA qui est compétente, appelez le 0524-43-56-56. En revanche, dès que la fuite est sur votre installation privée (après le compteur), c'est votre responsabilité et il faut appeler un plombier.</p>
+<p><strong>Le compteur d'eau</strong> est une source d'information précieuse : si vous partez en vacances et que votre facture suivante montre une consommation anormale, c'est signe d'une fuite sur votre installation. Le relevé se fait en coupant l'arrivée d'eau générale et en vérifiant si le compteur tourne encore, si oui, il y a une fuite côté réseau intérieur.</p>
 <p><strong>Les coupures d'eau programmées</strong> sont annoncées par la RADEEMA sur leur site et parfois affichées dans les quartiers concernés. Ces coupures durent généralement 4-8 heures. Si vous êtes propriétaire d'un riad ou d'un hôtel, c'est impératif d'avoir un ballon de stockage d'eau (citerne) pour pallier ces interruptions. Une citerne de 2 000 à 5 000 litres pour un riad de taille moyenne coûte 3 000 à 6 000 DH, installation comprise.</p>
 <p>Pour signaler un problème ou consulter votre compte, le site RADEEMA est accessible sur <strong>radeema.ma</strong>, avec des espaces client pour suivre sa consommation et ses factures.</p>`,
+    },
+    {
+      title: "Scénario type : canalisation qui éclate un soir de juillet à Bab Doukkala",
+      content: `<p>C'était un mercredi soir de juillet, haute saison touristique, quand le directeur d'un riad dans le quartier Bab Doukkala a appelé en panique : une canalisation ancienne venait d'éclater sous la pression, inondant le patio central et les deux chambres du rez-de-chaussée. Douze touristes attendaient leurs clés. C'est ce genre de situation, urgente, stressante, avec des enjeux financiers énormes, qui illustre parfaitement la réalité de la plomberie à Marrakech, ville où les tuyaux ont parfois plus de 60 ans, où le calcaire attaque tout, et où la chaleur estivale n'arrange rien du tout.</p>`,
     },
   ],
 
@@ -200,8 +204,6 @@ const content: RichPageContent = {
     },
   ],
 
-  youtubeVideoId: "nK7j5A5GGPM",
-  youtubeVideoTitle: "Entretien plomberie riad Marrakech : les bases essentielles",
 
   externalLinks: [
     {
@@ -282,12 +284,12 @@ const content: RichPageContent = {
     {
       question: "Comment entretenir une piscine à Marrakech ?",
       answer:
-        "L'eau très calcaire de Marrakech nécessite un traitement anti-tartre régulier en plus du chlore habituel. En été, la chaleur accélère la prolifération des algues — augmentez légèrement la dose de chlore et choclez la piscine toutes les 2 semaines en juillet-août. Le filtre doit être contre-lavé toutes les 2-3 semaines. Un entretien mensuel par un professionnel est recommandé pour les piscines de riad ou villa.",
+        "L'eau très calcaire de Marrakech nécessite un traitement anti-tartre régulier en plus du chlore habituel. En été, la chaleur accélère la prolifération des algues, augmentez légèrement la dose de chlore et choclez la piscine toutes les 2 semaines en juillet-août. Le filtre doit être contre-lavé toutes les 2-3 semaines. Un entretien mensuel par un professionnel est recommandé pour les piscines de riad ou villa.",
     },
     {
       question: "Le calcaire abîme-t-il vraiment les canalisations ?",
       answer:
-        "Oui, et à Marrakech plus qu'ailleurs à cause de la dureté extrême de l'eau. Le tartre réduit progressivement le diamètre intérieur des tuyaux, ce qui diminue la pression et peut finir par les boucher complètement sur les tronçons les plus étroits. Les chauffe-eau sont particulièrement vulnérables — un chauffe-eau non détartré régulièrement peut voir sa résistance griller en 2-3 ans au lieu de 10. Un adoucisseur d'eau est un investissement rentable à long terme.",
+        "Oui, et à Marrakech plus qu'ailleurs à cause de la dureté extrême de l'eau. Le tartre réduit progressivement le diamètre intérieur des tuyaux, ce qui diminue la pression et peut finir par les boucher complètement sur les tronçons les plus étroits. Les chauffe-eau sont particulièrement vulnérables, un chauffe-eau non détartré régulièrement peut voir sa résistance griller en 2-3 ans au lieu de 10. Un adoucisseur d'eau est un investissement rentable à long terme.",
     },
     {
       question: "Faut-il un permis pour refaire la plomberie de son riad ?",
@@ -297,7 +299,7 @@ const content: RichPageContent = {
     {
       question: "Quelle est la différence entre un plombier et un fontainier à Marrakech ?",
       answer:
-        "Dans l'artisanat traditionnel marrakchi, le fontainier (maâllem de l'eau) est spécialisé dans les installations hydrauliques traditionnelles — fontaines en zellige, circuits d'eau des riads historiques, systèmes de seguia. Le plombier moderne intervient sur les installations contemporaines. Pour un riad avec des éléments patrimoniaux à préserver, il peut être utile de consulter un fontainier traditionnel en plus d'un plombier moderne.",
+        "Dans l'artisanat traditionnel marrakchi, le fontainier (maâllem de l'eau) est spécialisé dans les installations hydrauliques traditionnelles, fontaines en zellige, circuits d'eau des riads historiques, systèmes de seguia. Le plombier moderne intervient sur les installations contemporaines. Pour un riad avec des éléments patrimoniaux à préserver, il peut être utile de consulter un fontainier traditionnel en plus d'un plombier moderne.",
     },
     {
       question: "Comment trouver un bon plombier à Marrakech sans se faire arnaquer ?",
@@ -307,12 +309,12 @@ const content: RichPageContent = {
     {
       question: "Mon chauffe-eau solaire ne fonctionne plus en hiver. Normal ?",
       answer:
-        "Un chauffe-eau solaire bien dimensionné doit fonctionner toute l'année à Marrakech — même en hiver, le soleil est suffisant pour chauffer l'eau à 40-50°C les jours ensoleillés. S'il ne chauffe plus, vérifiez d'abord le circulateur (pompe de circulation du fluide), puis le régulateur de température. Si le circuit est à l'arrêt depuis longtemps, le fluide caloporteur peut être dégradé ou en quantité insuffisante.",
+        "Un chauffe-eau solaire bien dimensionné doit fonctionner toute l'année à Marrakech, même en hiver, le soleil est suffisant pour chauffer l'eau à 40-50°C les jours ensoleillés. S'il ne chauffe plus, vérifiez d'abord le circulateur (pompe de circulation du fluide), puis le régulateur de température. Si le circuit est à l'arrêt depuis longtemps, le fluide caloporteur peut être dégradé ou en quantité insuffisante.",
     },
     {
       question: "Quelle citerne d'eau choisir pour un riad à Marrakech ?",
       answer:
-        "Pour un riad de 6-8 chambres avec cuisine, une citerne de 3 000 à 5 000 litres est généralement suffisante pour pallier les coupures d'eau courantes (4-8h). Les citernes en polyéthylène sont les plus courantes — légères, résistantes et faciles à installer en toiture-terrasse. Assurez-vous que la structure du toit peut supporter le poids (1L d'eau = 1kg). Prévoyez un système de trop-plein et un filtre à l'entrée pour éviter les impuretés.",
+        "Pour un riad de 6-8 chambres avec cuisine, une citerne de 3 000 à 5 000 litres est généralement suffisante pour pallier les coupures d'eau courantes (4-8h). Les citernes en polyéthylène sont les plus courantes, légères, résistantes et faciles à installer en toiture-terrasse. Assurez-vous que la structure du toit peut supporter le poids (1L d'eau = 1kg). Prévoyez un système de trop-plein et un filtre à l'entrée pour éviter les impuretés.",
     },
     {
       question: "Les riads en location Airbnb ont-ils des obligations particulières en plomberie ?",
@@ -322,17 +324,17 @@ const content: RichPageContent = {
   ],
 
   tips: [
-    "Faites inspecter la plomberie de votre riad AVANT chaque saison touristique — le coût d'une inspection préventive (400-600 DH) est infime comparé à une urgence en juillet.",
-    "Installez un adoucisseur d'eau si vous avez des équipements sensibles au calcaire (chauffe-eau, lave-linge, cafetières) — le TH de l'eau de Marrakech dépasse souvent 40°f.",
-    "Repérez et photographiez l'emplacement de votre vanne d'arrêt générale dès que vous emménagez — en cas d'urgence, chaque minute compte.",
-    "Pour les piscines en été, choclez toutes les 2 semaines et vérifiez le pH deux fois par semaine — la chaleur marrakchie fait exploser les algues.",
-    "Méfiez-vous des fuites sur les circuits d'irrigation enterrés — elles peuvent tripler votre facture RADEEMA sans signe visible en surface.",
-    "Un surpresseur avec ballon d'expansion résout 90% des problèmes de pression insuffisante dans les riads à plusieurs étages — investissement de 1 500 à 2 500 DH bien rentabilisé.",
-    "Conservez la liste de vos équipements de plomberie (marque, modèle, date d'installation) — ça facilite énormément le travail du plombier et peut accélérer l'intervention.",
-    "En cas de fuite derrière un mur tadelakt, ne cassez pas vous-même — un bon plombier saura souvent localiser la fuite avec précision avant d'ouvrir, préservant ainsi la finition.",
+    "Faites inspecter la plomberie de votre riad AVANT chaque saison touristique, le coût d'une inspection préventive (400-600 DH) est infime comparé à une urgence en juillet.",
+    "Installez un adoucisseur d'eau si vous avez des équipements sensibles au calcaire (chauffe-eau, lave-linge, cafetières), le TH de l'eau de Marrakech dépasse souvent 40°f.",
+    "Repérez et photographiez l'emplacement de votre vanne d'arrêt générale dès que vous emménagez, en cas d'urgence, chaque minute compte.",
+    "Pour les piscines en été, choclez toutes les 2 semaines et vérifiez le pH deux fois par semaine, la chaleur marrakchie fait exploser les algues.",
+    "Méfiez-vous des fuites sur les circuits d'irrigation enterrés, elles peuvent tripler votre facture RADEEMA sans signe visible en surface.",
+    "Un surpresseur avec ballon d'expansion résout 90% des problèmes de pression insuffisante dans les riads à plusieurs étages, investissement de 1 500 à 2 500 DH bien rentabilisé.",
+    "Conservez la liste de vos équipements de plomberie (marque, modèle, date d'installation), ça facilite énormément le travail du plombier et peut accélérer l'intervention.",
+    "En cas de fuite derrière un mur tadelakt, ne cassez pas vous-même, un bon plombier saura souvent localiser la fuite avec précision avant d'ouvrir, préservant ainsi la finition.",
   ],
 
-  localKnowledge: `<p>Marrakech présente des défis de plomberie uniques au Maroc. La <strong>Médina</strong>, avec ses ruelles étroites et ses riads historiques, concentre les installations les plus anciennes et les plus complexes à maintenir — accès difficile, tuyaux centenaires, fontaines traditionnelles et patios qui nécessitent un suivi régulier. Le calcaire particulièrement agressif de l'eau (TH souvent supérieur à 40°f) attaque les équipements plus vite qu'ailleurs. La chaleur estivale intense (jusqu'à 45°C en juillet-août) provoque dilatation et stress thermique sur les canalisations exposées, notamment en toiture-terrasse. Le quartier <strong>Guéliz</strong> cache sous ses belles facades coloniales des installations souvent vétustes dans les immeubles non rénovés. Les zones modernes comme <strong>Targa</strong> et <strong>Massira</strong> ont des installations plus récentes mais une qualité très variable selon le promoteur. La <strong>Palmeraie</strong> et <strong>l'Hivernage</strong> concentrent le parc de piscines privées et de systèmes d'irrigation automatisés qui nécessitent une expertise spécifique. La forte densité hôtelière (plus de 3 millions de touristes par an) crée un marché de la plomberie d'urgence où réactivité et fiabilité valent de l'or.</p>`,
+  localKnowledge: `<p>Marrakech présente des défis de plomberie uniques au Maroc. La <strong>Médina</strong>, avec ses ruelles étroites et ses riads historiques, concentre les installations les plus anciennes et les plus complexes à maintenir, accès difficile, tuyaux centenaires, fontaines traditionnelles et patios qui nécessitent un suivi régulier. Le calcaire particulièrement agressif de l'eau (TH souvent supérieur à 40°f) attaque les équipements plus vite qu'ailleurs. La chaleur estivale intense (jusqu'à 45°C en juillet-août) provoque dilatation et stress thermique sur les canalisations exposées, notamment en toiture-terrasse. Le quartier <strong>Guéliz</strong> cache sous ses belles facades coloniales des installations souvent vétustes dans les immeubles non rénovés. Les zones modernes comme <strong>Targa</strong> et <strong>Massira</strong> ont des installations plus récentes mais une qualité très variable selon le promoteur. La <strong>Palmeraie</strong> et <strong>l'Hivernage</strong> concentrent le parc de piscines privées et de systèmes d'irrigation automatisés qui nécessitent une expertise spécifique. La forte densité hôtelière (plus de 3 millions de touristes par an) crée un marché de la plomberie d'urgence où réactivité et fiabilité valent de l'or.</p>`,
 
   lastUpdated: "Avril 2026",
 };

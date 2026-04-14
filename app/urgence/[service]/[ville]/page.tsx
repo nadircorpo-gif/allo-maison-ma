@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import Image from "next/image";
 
 import JsonLd from "@/components/seo/json-ld";
 import Breadcrumb from "@/components/shared/breadcrumb";
@@ -10,9 +11,8 @@ import { getCityBySlug } from "@/lib/data/cities";
 import { getUrgenceFAQ } from "@/lib/data/faq";
 import { generateUrgenceMetadata, faqJsonLd } from "@/lib/seo";
 import { buildUrgenceWhatsAppUrl } from "@/lib/whatsapp";
-import { Phone, Shield } from "lucide-react";
+import { Phone } from "lucide-react";
 
-// --- Static params: 3 services × 6 cities = 18 pages ---
 const URGENCE_SERVICE_SLUGS = ["plombier", "electricien", "serrurier"];
 const CITY_SLUGS = ["casablanca", "rabat", "marrakech", "tanger", "fes", "agadir"];
 
@@ -26,7 +26,6 @@ export function generateStaticParams() {
   return params;
 }
 
-// --- Metadata ---
 export async function generateMetadata({
   params,
 }: {
@@ -39,36 +38,33 @@ export async function generateMetadata({
   return generateUrgenceMetadata(service.name, city.name, service.slug, city.slug);
 }
 
-// --- Emergency steps by service ---
-const EMERGENCY_STEPS: Record<string, { icon: string; label: string }[]> = {
+const EMERGENCY_STEPS: Record<string, string[]> = {
   plombier: [
-    { icon: "1", label: "Coupez l'arrivee d'eau principale" },
-    { icon: "2", label: "Coupez l'electricite dans la zone inondee" },
-    { icon: "3", label: "Posez des serpillieres pour limiter les degats" },
-    { icon: "4", label: "Appelez un plombier d'urgence Allo-Maison" },
+    "Coupez l'arrivée d'eau principale",
+    "Coupez l'électricité dans la zone inondée",
+    "Posez des serpillières pour limiter les dégâts",
+    "Appelez un plombier d'urgence Allo Maison",
   ],
   electricien: [
-    { icon: "1", label: "Coupez le disjoncteur general immediatement" },
-    { icon: "2", label: "Ne touchez pas les fils ou appareils sous tension" },
-    { icon: "3", label: "Evacuez si vous sentez une odeur de brule" },
-    { icon: "4", label: "Appelez un electricien d'urgence Allo-Maison" },
+    "Coupez le disjoncteur général immédiatement",
+    "Ne touchez pas les fils ou appareils sous tension",
+    "Évacuez si vous sentez une odeur de brûlé",
+    "Appelez un électricien d'urgence Allo Maison",
   ],
   serrurier: [
-    { icon: "1", label: "Verifiez si vous avez un double de la cle" },
-    { icon: "2", label: "Ne forcez pas la serrure, vous risquez de la casser" },
-    { icon: "3", label: "Restez pres de la porte en attendant le pro" },
-    { icon: "4", label: "Appelez un serrurier d'urgence Allo-Maison" },
+    "Vérifiez si vous avez un double de la clé",
+    "Ne forcez pas la serrure, vous risquez de la casser",
+    "Restez près de la porte en attendant le pro",
+    "Appelez un serrurier d'urgence Allo Maison",
   ],
 };
 
-// --- Page ---
 export default async function UrgencePage({
   params,
 }: {
   params: Promise<{ service: string; ville: string }>;
 }) {
   const { service: serviceSlug, ville: citySlug } = await params;
-
   const service = getServiceBySlug(serviceSlug);
   const city = getCityBySlug(citySlug);
 
@@ -78,6 +74,7 @@ export default async function UrgencePage({
   const whatsappUrl = buildUrgenceWhatsAppUrl(service.name, city.name);
   const phoneHref = `tel:+${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "212661409190"}`;
   const steps = EMERGENCY_STEPS[serviceSlug] ?? EMERGENCY_STEPS.plombier;
+  const lowerService = service.name.toLowerCase();
 
   const breadcrumbItems = [
     { name: "Urgence", url: "https://allo-maison.ma/urgence" },
@@ -87,110 +84,156 @@ export default async function UrgencePage({
 
   return (
     <>
-      {/* JSON-LD */}
       <JsonLd data={faqJsonLd(faqs)} />
 
-      {/* Sticky amber urgency banner */}
-      <div className="sticky top-0 z-50 bg-amber border-b border-amber/60 shadow-md">
-        <div className="max-w-5xl mx-auto px-4 py-3 flex flex-col sm:flex-row items-center gap-3">
-          <p className="font-bold text-ink text-sm sm:text-base flex-1 text-center sm:text-left">
-            SOS {service.name} {city.name} : Intervention en 30 min
+      {/* ========= Sticky urgency bar (zellige) ========= */}
+      <div className="sticky top-0 z-40 bg-terracotta text-cream border-b border-primary-deep shadow-terracotta">
+        <div className="max-w-7xl mx-auto px-4 py-3 flex flex-col sm:flex-row items-center gap-3">
+          <p className="font-display text-lg font-[500] flex-1 text-center sm:text-left">
+            SOS {lowerService} · {city.name} · <em className="italic">intervention en 30 min</em>
           </p>
           <div className="flex gap-2 flex-shrink-0">
             <a
               href={phoneHref}
-              className="inline-flex items-center gap-2 px-4 py-2 bg-ink text-white font-semibold rounded-btn text-sm hover:bg-ink/80 transition-colors"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-ink text-cream font-bold rounded-lg text-sm hover:bg-[#2a2824] transition-colors uppercase tracking-wider"
             >
               <Phone className="w-4 h-4" />
-              APPELER
+              Appeler
             </a>
-            <WhatsAppButton url={whatsappUrl} label="WHATSAPP" size="sm" />
+            <WhatsAppButton url={whatsappUrl} label="WhatsApp" size="sm" />
           </div>
         </div>
       </div>
 
-      <div className="max-w-3xl mx-auto px-4 py-8">
-        {/* Breadcrumb */}
-        <Breadcrumb items={breadcrumbItems} className="mb-6" />
+      {/* ========= HERO ========= */}
+      <section className="bg-cream border-b border-paper-border">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-12">
+          <Breadcrumb items={breadcrumbItems} className="mb-6 text-[11px]" />
 
-        {/* Page title */}
-        <h1 className="text-3xl font-extrabold text-ink mb-2">
-          {service.name} Urgence {city.name}
-        </h1>
-        <p className="text-muted text-lg mb-8">
-          Intervention garantie en moins de 30 minutes. Professionnels verifies disponibles 24h/24 et 7j/7.
-        </p>
+          <div className="grid lg:grid-cols-12 gap-10 items-end">
+            <div className="lg:col-span-8">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="w-8 h-px bg-paper-border" />
+                <span className="eyebrow text-[10px]">Urgence 24 h/24 · {city.name}</span>
+              </div>
+              <h1 className="font-display text-[40px] sm:text-[56px] font-[550] leading-[0.96] tracking-[-0.028em] text-ink mb-5" style={{ textWrap: "balance" }}>
+                {service.name} urgence<br />
+                <em className="italic text-terracotta">en 30 minutes.</em>
+              </h1>
+              <p className="text-base sm:text-lg text-muted max-w-xl">
+                Un professionnel vérifié arrive chez vous sous 30 minutes à {city.name}. Disponible 7 j/7, y compris la nuit et les jours fériés.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3 mt-6">
+                <a
+                  href={phoneHref}
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-terracotta text-white font-bold rounded-lg shadow-terracotta hover:bg-primary-deep transition-colors"
+                >
+                  <Phone className="w-4 h-4" />
+                  Appeler maintenant
+                </a>
+                <WhatsAppButton url={whatsappUrl} label="WhatsApp urgence" size="lg" />
+              </div>
+            </div>
+            <div className="lg:col-span-4 flex justify-start lg:justify-end">
+              <Image
+                src="/brand/logo-shield.svg"
+                alt="Allo Maison — intervention d'urgence certifiée"
+                width={320}
+                height={400}
+                className="w-36 h-auto drop-shadow-sm"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
-        {/* Emergency steps checklist */}
-        <div className="bg-amber/10 border border-amber/40 rounded-card p-6 mb-8">
-          <h2 className="font-bold text-ink text-lg mb-4">
-            Que faire en attendant le professionnel ?
-          </h2>
-          <ol className="space-y-3">
-            {steps.map((step) => (
-              <li key={step.icon} className="flex items-start gap-3">
-                <div className="w-7 h-7 rounded-full bg-amber flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <span className="text-white font-bold text-xs">{step.icon}</span>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 grid lg:grid-cols-12 gap-10">
+        <main className="lg:col-span-8 min-w-0">
+          {/* Emergency steps */}
+          <section className="mb-16">
+            <p className="eyebrow mb-2">01 — Premiers réflexes</p>
+            <h2 className="font-display text-3xl sm:text-4xl font-[550] tracking-[-0.02em] text-ink mb-8">
+              Que faire <em className="italic text-terracotta">en attendant</em> le pro ?
+            </h2>
+            <div className="border-t border-ink">
+              {steps.map((step, i) => (
+                <div key={i} className="grid grid-cols-12 gap-4 py-6 border-b border-paper-border">
+                  <span className="col-span-2 sm:col-span-1 font-display text-3xl sm:text-4xl font-[500] text-terracotta tab-nums">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <p className="col-span-10 sm:col-span-11 text-ink text-base sm:text-lg leading-relaxed font-medium">
+                    {step}
+                  </p>
                 </div>
-                <span className="text-ink text-sm leading-relaxed font-medium">{step.label}</span>
-              </li>
-            ))}
-          </ol>
-        </div>
+              ))}
+            </div>
+          </section>
 
-        {/* Large CTA block */}
-        <div className="bg-primary-light border border-primary/20 rounded-card p-8 text-center mb-8">
-          <h2 className="text-xl font-bold text-ink mb-2">
-            Besoin d&apos;un {service.name} maintenant a {city.name} ?
-          </h2>
-          <p className="text-muted text-sm mb-6">
-            Un professionnel verifie vous rappelle en moins de 5 minutes.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-            <a
-              href={phoneHref}
-              className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-ink text-white font-semibold rounded-btn hover:bg-ink/80 transition-colors text-base"
-            >
-              <Phone className="w-5 h-5" />
-              Appeler maintenant
-            </a>
-            <WhatsAppButton url={whatsappUrl} label="WhatsApp urgence" size="lg" />
-          </div>
-        </div>
+          {/* FAQ */}
+          <section>
+            <p className="eyebrow mb-2">02 — Questions fréquentes</p>
+            <h2 className="font-display text-3xl sm:text-4xl font-[550] tracking-[-0.02em] text-ink mb-8">
+              Ce que vous nous demandez <em className="italic">le plus.</em>
+            </h2>
+            <div className="border-t border-ink">
+              {faqs.map((faq, i) => (
+                <details key={i} className="border-b border-paper-border group py-5">
+                  <summary className="font-display font-medium text-lg text-ink cursor-pointer list-none flex justify-between items-start gap-4">
+                    <span>{faq.question}</span>
+                    <span className="font-display italic text-2xl text-muted group-open:rotate-45 transition-transform shrink-0">+</span>
+                  </summary>
+                  <p className="text-muted text-sm mt-3 leading-relaxed">{faq.answer}</p>
+                </details>
+              ))}
+            </div>
+          </section>
+        </main>
 
-        {/* Dark guarantee bar */}
-        <div className="bg-ink rounded-card p-5 flex items-center gap-4 mb-8">
-          <div className="w-10 h-10 rounded-card bg-white/10 flex items-center justify-center flex-shrink-0">
-            <Shield className="w-5 h-5 text-white" />
-          </div>
-          <div>
-            <p className="text-white font-semibold text-sm">Pas satisfait ? On regle le probleme.</p>
-            <p className="text-white/60 text-xs mt-0.5">
-              Remboursement jusqu&apos;a 2000 DH ou un autre pro intervient a nos frais.
-            </p>
-          </div>
-        </div>
+        {/* Sticky sidebar */}
+        <aside className="lg:col-span-4">
+          <div className="sticky top-32 space-y-4">
+            <div className="bg-ink text-cream rounded-2xl p-6">
+              <p className="eyebrow mb-2" style={{ color: "#D4A24C" }}>Urgence 24 h/24</p>
+              <h3 className="font-display text-2xl font-[550] mb-1">
+                Un pro chez vous<br />
+                <em className="italic text-saffron">sous 30 min.</em>
+              </h3>
+              <p className="text-sm text-cream/70 mb-5">
+                Notre équipe humaine vous met en relation avec un artisan vérifié de {city.name} en moins de 5 minutes.
+              </p>
+              <div className="space-y-2">
+                <a
+                  href={phoneHref}
+                  className="flex items-center justify-center gap-2 px-5 py-3 bg-terracotta text-white font-bold rounded-lg shadow-terracotta transition-transform active:scale-[0.98]"
+                >
+                  <Phone className="w-4 h-4" />
+                  Appeler maintenant
+                </a>
+                <WhatsAppButton url={whatsappUrl} label="WhatsApp urgence" size="lg" className="w-full" />
+              </div>
+              <div className="border-t border-white/10 mt-5 pt-4 flex items-center justify-between text-[10px] text-cream/50 tab-nums">
+                <span>● 24 h/24</span>
+                <span>● Gratuit</span>
+                <span>● Pros certifiés</span>
+              </div>
+            </div>
 
-        {/* FAQ Accordion */}
-        <div>
-          <h2 className="text-xl font-bold text-ink mb-4">Questions frequentes</h2>
-          <div className="space-y-3">
-            {faqs.map((faq, i) => (
-              <details
-                key={i}
-                className="bg-white border border-gray-200 rounded-card overflow-hidden group"
-              >
-                <summary className="flex items-center justify-between px-5 py-4 cursor-pointer font-medium text-ink text-sm list-none hover:bg-surface transition-colors">
-                  {faq.question}
-                  <span className="text-muted ml-4 flex-shrink-0 text-lg leading-none group-open:rotate-45 transition-transform duration-200">+</span>
-                </summary>
-                <div className="px-5 pb-4 text-muted text-sm leading-relaxed border-t border-gray-100">
-                  {faq.answer}
-                </div>
-              </details>
-            ))}
+            <div className="bg-white border border-paper-border rounded-2xl p-5 flex items-center gap-4">
+              <Image
+                src="/brand/logo-mark.svg"
+                alt=""
+                width={320}
+                height={400}
+                className="w-10 h-12 shrink-0"
+              />
+              <div>
+                <p className="text-[10px] uppercase tracking-widest text-muted font-bold">Depuis 2017</p>
+                <p className="text-sm font-bold mt-0.5 text-ink">Pros vérifiés</p>
+                <p className="text-xs text-muted mt-0.5">Et certifiés</p>
+              </div>
+            </div>
           </div>
-        </div>
+        </aside>
       </div>
     </>
   );

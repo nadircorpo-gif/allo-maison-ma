@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Fraunces } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import Navbar from "@/components/layout/navbar";
@@ -8,6 +8,13 @@ import Footer from "@/components/layout/footer";
 const inter = Inter({
   subsets: ["latin", "latin-ext"],
   variable: "--font-inter",
+});
+
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  variable: "--font-fraunces",
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
@@ -45,7 +52,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://images.unsplash.com" />
         <link rel="preconnect" href="https://images.unsplash.com" crossOrigin="anonymous" />
       </head>
-      <body className={`${inter.variable} font-sans bg-surface text-ink antialiased`}>
+      <body className={`${inter.variable} ${fraunces.variable} font-sans bg-cream text-ink antialiased`}>
         {GA4_ID && GA4_ID !== "G-XXXXXXXXXX" && (
           <>
             <Script

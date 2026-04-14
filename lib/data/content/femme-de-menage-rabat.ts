@@ -5,9 +5,9 @@ const content: RichPageContent = {
   metaTitle: "Femme de Ménage Rabat 2026 – Tarifs & Recrutement | Allo Maison",
   metaDescription:
     "Trouvez une femme de ménage fiable à Rabat. Tarifs 2026 par quartier (Agdal, Souissi, Hay Riad), déclaration CNSS, droits et obligations. Conseils locaux.",
-  h1: "Femme de ménage à Rabat : tout ce qu'il faut savoir en 2026",
+  h1: "Femme de ménage à Rabat : pros vérifiées au meilleur prix",
   heroText:
-    "Rabat n'est pas Casablanca. Les habitants de la capitale administrative le savent bien — le rythme est différent, les attentes aussi. Dans les villas de Souissi ou les appartements d'Agdal, une femme de ménage ne se recrute pas de la même façon qu'à Hay Hassani. Le marché rbati a ses propres règles, ses propres réseaux, et ses propres prix. Si vous cherchez une aide-ménagère sérieuse dans la capitale, voici tout ce qu'il faut savoir.",
+    "Trouvez une femme de ménage de confiance à Rabat. Ménage régulier, grand nettoyage ou repassage, nos professionnelles vérifiées interviennent dans tous les quartiers.",
   sections: [
     {
       title: "Le marché du ménage à Rabat : différent de Casablanca",
@@ -15,7 +15,7 @@ const content: RichPageContent = {
 
 <p>La capitale est dominée par les fonctionnaires, les diplomates et les employés d'organismes internationaux. Ce profil de clients est stable, prévisible, et souvent plus exigeant en termes de discrétion et de professionnalisme. Une femme de ménage qui travaille dans une ambassade à Souissi ne peut pas se permettre le même niveau de désinvolture qu'une aide à domicile dans un immeuble ordinaire.</p>
 
-<p>Cette exigence se reflète dans les salaires : les employées à Rabat sont en général légèrement mieux payées qu'à Casablanca pour un travail équivalent, notamment dans les quartiers huppés. En contrepartie, la demande est moins intense et le marché moins saturé. Il est donc un peu plus facile de trouver quelqu'un de qualité — si vous savez chercher aux bons endroits.</p>
+<p>Cette exigence se reflète dans les salaires : les employées à Rabat sont en général légèrement mieux payées qu'à Casablanca pour un travail équivalent, notamment dans les quartiers huppés. En contrepartie, la demande est moins intense et le marché moins saturé. Il est donc un peu plus facile de trouver quelqu'un de qualité, si vous savez chercher aux bons endroits.</p>
 
 <p>Autre particularité rbatie : le bouche-à-oreille fonctionne extrêmement bien dans les quartiers résidentiels. Agdal, Souissi, Hay Riad forment des communautés assez homogènes où tout le monde se connaît, et une employée recommandée par une voisine de confiance vaut mieux qu'une annonce en ligne.</p>`,
     },
@@ -29,7 +29,7 @@ const content: RichPageContent = {
 
 <p><strong>Hay Riad</strong> est le quartier des nouvelles constructions, résidences fermées, classes moyennes-supérieures. Forte demande, beaucoup de femmes actives qui veulent externaliser tout ce qui peut l'être. Le profil d'employée recherché : fiable, ponctulle, capable de gérer la maison seule. Salaires entre 1 800 et 2 800 DH pour un mi-temps conséquent.</p>
 
-<p><strong>Hassan et l'Océan</strong>, plus proches du centre administratif, mélangent fonctionnaires et familles plus modestes — demande plus volatile, salaires plus bas.</p>
+<p><strong>Hassan et l'Océan</strong>, plus proches du centre administratif, mélangent fonctionnaires et familles plus modestes, demande plus volatile, salaires plus bas.</p>
 
 <p><strong>Ryad (nouveau quartier)** et les extensions vers Sala** : quartiers en développement avec une classe moyenne qui monte, demande croissante mais moindre pouvoir de négociation côté employeur.</p>`,
     },
@@ -58,27 +58,27 @@ const content: RichPageContent = {
       title: "Ménage dans les villas de Souissi : un métier à part entière",
       content: `<p>Entretenir une villa de 600 m² avec piscine à Souissi, c'est un travail à plein temps qui demande des compétences très spécifiques. Ce n'est pas de l'improvisation.</p>
 
-<p>Ces propriétés ont souvent des parquets en bois massif qui demandent des produits spécifiques, des meubles d'antiquité qui ne supportent pas les produits agressifs, des piscines qui nécessitent un entretien séparé (souvent confié à un prestataire spécialisé), et des jardins que l'employée de maison ne gère généralement pas — il y a un jardinier pour ça.</p>
+<p>Ces propriétés ont souvent des parquets en bois massif qui demandent des produits spécifiques, des meubles d'antiquité qui ne supportent pas les produits agressifs, des piscines qui nécessitent un entretien séparé (souvent confié à un prestataire spécialisé), et des jardins que l'employée de maison ne gère généralement pas, il y a un jardinier pour ça.</p>
 
-<p>Ce que fait une bonne employée dans une villa Souissi : le ménage quotidien (surfaces, sols, salle de bain, cuisine), la lessive et le repassage, parfois la cuisine simple du quotidien, la gestion des provisions, et une discrétion absolue. Dans certaines maisons diplomatiques, une vérification de casier judiciaire peut être demandée — c'est légal et courant.</p>
+<p>Ce que fait une bonne employée dans une villa Souissi : le ménage quotidien (surfaces, sols, salle de bain, cuisine), la lessive et le repassage, parfois la cuisine simple du quotidien, la gestion des provisions, et une discrétion absolue. Dans certaines maisons diplomatiques, une vérification de casier judiciaire peut être demandée, c'est légal et courant.</p>
 
 <p>Les familles qui emploient une personne dans ces conditions la traitent souvent comme membre de la maisonnée à part entière. Les relations de confiance durent parfois des décennies. Une employée recommandée dans ce milieu se retrouve rarement sans emploi.</p>`,
     },
     {
       title: "Les ambassades et la demande de personnel qualifié",
-      content: `<p>Rabat compte plus de 70 ambassades et représentations diplomatiques — une densité exceptionnelle pour une ville de cette taille. Cela crée une demande particulière pour des employées de maison avec des qualités très précises.</p>
+      content: `<p>Rabat compte plus de 70 ambassades et représentations diplomatiques, une densité exceptionnelle pour une ville de cette taille. Cela crée une demande particulière pour des employées de maison avec des qualités très précises.</p>
 
 <p>Les familles diplomatiques recherchent avant tout : la fiabilité absolue (elles voyagent souvent et laissent leur maison entre les mains de leur employée), une parfaite discrétion (ce qui se passe dans une résidence diplomatique ne se commente pas), et souvent une certaine maîtrise du français ou de l'anglais pour communiquer.</p>
 
-<p>En contrepartie, ces emplois sont extrêmement bien rémunérés — entre 3 500 et 6 000 DH par mois — avec des avantages souvent inclus : logement au domicile, repas fournis, équipements fournis. Certaines familles suivent les règles sociales européennes et déclarent leur employée selon les conventions bilatérales ou via le système CNSS marocain.</p>
+<p>En contrepartie, ces emplois sont extrêmement bien rémunérés, entre 3 500 et 6 000 DH par mois, avec des avantages souvent inclus : logement au domicile, repas fournis, équipements fournis. Certaines familles suivent les règles sociales européennes et déclarent leur employée selon les conventions bilatérales ou via le système CNSS marocain.</p>
 
-<p>Pour accéder à ces emplois, le réseau est essentiel. Certains recruteurs spécialisés dans le personnel de maison haut de gamme opèrent à Rabat, ainsi que des agences qui ont des relations avec le corps diplomatique. Présenter de bonnes références d'anciens employeurs — surtout si ce sont des noms connus dans les cercles rabatis — est souvent décisif.</p>`,
+<p>Pour accéder à ces emplois, le réseau est essentiel. Certains recruteurs spécialisés dans le personnel de maison haut de gamme opèrent à Rabat, ainsi que des agences qui ont des relations avec le corps diplomatique. Présenter de bonnes références d'anciens employeurs, surtout si ce sont des noms connus dans les cercles rabatis, est souvent décisif.</p>`,
     },
     {
       title: "CNSS et déclaration : vos droits et obligations à Rabat",
-      content: `<p>La loi 19-12 sur les travailleurs domestiques s'applique partout au Maroc, y compris à Rabat. Et pourtant, la grande majorité des employeurs ne déclarent pas leur aide de maison. C'est une erreur — morale, légale, et pratique.</p>
+      content: `<p>La loi 19-12 sur les travailleurs domestiques s'applique partout au Maroc, y compris à Rabat. Et pourtant, la grande majorité des employeurs ne déclarent pas leur aide de maison. C'est une erreur, morale, légale, et pratique.</p>
 
-<p><strong>Pourquoi déclarer ?</strong> D'abord parce que c'est la loi. Ensuite parce qu'en cas d'accident à domicile (une chute dans l'escalier, une brûlure en cuisine), si votre employée n'est pas déclarée, vous êtes personnellement responsable des frais médicaux et potentiellement poursuivable. Et enfin parce que les employées déclarées sont généralement plus stables et plus investies — elles savent qu'elles bénéficient d'une protection.</p>
+<p><strong>Pourquoi déclarer ?</strong> D'abord parce que c'est la loi. Ensuite parce qu'en cas d'accident à domicile (une chute dans l'escalier, une brûlure en cuisine), si votre employée n'est pas déclarée, vous êtes personnellement responsable des frais médicaux et potentiellement poursuivable. Et enfin parce que les employées déclarées sont généralement plus stables et plus investies, elles savent qu'elles bénéficient d'une protection.</p>
 
 <p><strong>Comment ça marche ?</strong> Via la CNSS, vous payez des cotisations patronales (environ 18-20% du salaire brut) et salariales (environ 4,5%). Le salaire minimum légal pour un travailleur domestique à temps plein est de 2 030 DH nets/mois en 2026 selon la loi 19-12. La déclaration se fait en ligne sur le portail damancom.ma ou directement à l'agence CNSS de votre arrondissement.</p>
 
@@ -92,11 +92,15 @@ const content: RichPageContent = {
 
 <p><strong>Les plateformes en ligne</strong> comme Allo Maison permettent de trouver des profils vérifiés, avec les disponibilités, les quartiers d'intervention et les références. L'avantage : un premier filtre qualité et la possibilité de comparer plusieurs profils rapidement.</p>
 
-<p><strong>Les agences de placement</strong> spécialisées dans le personnel de maison existent à Rabat — certaines sont spécialisées sur le personnel qualifié pour les villas et les maisons diplomatiques. Elles facturent en général l'équivalent d'un mois de salaire en frais de placement, mais offrent des garanties de remplacement.</p>
+<p><strong>Les agences de placement</strong> spécialisées dans le personnel de maison existent à Rabat, certaines sont spécialisées sur le personnel qualifié pour les villas et les maisons diplomatiques. Elles facturent en général l'équivalent d'un mois de salaire en frais de placement, mais offrent des garanties de remplacement.</p>
 
 <p><strong>Ce qu'il faut faire lors du premier entretien</strong> : rencontrez la personne chez vous, pas dans un café. Montrez-lui les espaces, expliquez vos attentes précisément. Posez des questions concrètes sur son expérience : quelles surfaces elle a déjà entretenues, comment elle gère les produits ménagers, si elle a des références contactables. Une personne sérieuse n'aura aucun problème avec ces questions.</p>
 
-<p><strong>La période d'essai</strong> : légalement, elle est de 45 jours pour les travailleurs domestiques selon la loi 19-12. Utilisez-la pleinement pour évaluer la fiabilité, la discrétion et la qualité du travail avant de vous engager sur le long terme.</p>`,
+<p><strong>La période d'essai</strong> : légalement, elle est de 45 jours pour les travailleurs domestiques selon la loi 19-12. Utilisez-la à fond pour évaluer la fiabilité, la discrétion et la qualité du travail avant de vous engager sur le long terme.</p>`,
+    },
+    {
+      title: "Pourquoi le marché rbati ne ressemble à aucun autre",
+      content: `<p>Rabat n'est pas Casablanca. Les habitants de la capitale administrative le savent bien, le rythme est différent, les attentes aussi. Dans les villas de Souissi ou les appartements d'Agdal, une femme de ménage ne se recrute pas de la même façon qu'à Hay Hassani. Le marché rbati a ses propres règles, ses propres réseaux, et ses propres prix. Si vous cherchez une aide-ménagère sérieuse dans la capitale, voici tout ce qu'il faut savoir.</p>`,
     },
   ],
   priceTable: [
@@ -109,8 +113,6 @@ const content: RichPageContent = {
     { intervention: "Grand ménage ponctuel (après travaux)", prixMin: 400, prixMoyen: 600, prixMax: 900 },
     { intervention: "Garde maison (absence propriétaire, semaine)", prixMin: 500, prixMoyen: 700, prixMax: 1000 },
   ],
-  youtubeVideoId: "dQw4w9WgXcQ",
-  youtubeVideoTitle: "Droits des travailleurs domestiques au Maroc – Loi 19-12 expliquée",
   externalLinks: [
     {
       label: "CNSS Maroc – Déclaration travailleurs domestiques",
@@ -134,7 +136,7 @@ const content: RichPageContent = {
       quarter: "Agdal",
       city: "Rabat",
       rating: 5,
-      text: "Je cherchais quelqu'un de fiable pour notre appartement à Agdal — mon mari et moi travaillons tous les deux et nous avons deux jeunes enfants. Allo Maison m'a mis en contact avec une femme formidable, ponctulle, efficace, et qui est devenue indispensable en quelques semaines.",
+      text: "Je cherchais quelqu'un de fiable pour notre appartement à Agdal, mon mari et moi travaillons tous les deux et nous avons deux jeunes enfants. Allo Maison m'a mis en contact avec une femme formidable, ponctulle, efficace, et qui est devenue indispensable en quelques semaines.",
       date: "Février 2026",
       service: "Ménage régulier 3x/semaine",
     },
@@ -176,7 +178,7 @@ const content: RichPageContent = {
     },
     {
       question: "Faut-il déclarer une femme de ménage qui travaille seulement 2 jours par semaine ?",
-      answer: "Oui. La loi 19-12 s'applique dès le premier jour de travail, quelle que soit la durée. Pour les temps partiels, les cotisations CNSS sont calculées au prorata des heures travaillées. Beaucoup d'employeurs pensent que les petits contrats sont dans une zone grise — c'est faux.",
+      answer: "Oui. La loi 19-12 s'applique dès le premier jour de travail, quelle que soit la durée. Pour les temps partiels, les cotisations CNSS sont calculées au prorata des heures travaillées. Beaucoup d'employeurs pensent que les petits contrats sont dans une zone grise, c'est faux.",
     },
     {
       question: "Quels sont les jours fériés et congés auxquels a droit une employée de maison à Rabat ?",
@@ -192,7 +194,7 @@ const content: RichPageContent = {
     },
     {
       question: "Comment vérifier les références d'une femme de ménage ?",
-      answer: "Demandez les coordonnées d'au moins deux anciens employeurs et appelez-les réellement — pas juste un message WhatsApp. Les questions à poser : durée de la relation, raison du départ, ponctualité, honnêteté, gestion des absences. Une bonne candidate vous donnera ces références sans hésiter.",
+      answer: "Demandez les coordonnées d'au moins deux anciens employeurs et appelez-les réellement, pas juste un message WhatsApp. Les questions à poser : durée de la relation, raison du départ, ponctualité, honnêteté, gestion des absences. Une bonne candidate vous donnera ces références sans hésiter.",
     },
     {
       question: "Y a-t-il des formations pour les femmes de ménage à Rabat ?",
@@ -200,15 +202,15 @@ const content: RichPageContent = {
     },
   ],
   tips: [
-    "À Rabat, le bouche-à-oreille dans votre résidence ou votre quartier est souvent plus fiable qu'une annonce en ligne — commencez par votre réseau proche.",
+    "À Rabat, le bouche-à-oreille dans votre résidence ou votre quartier est souvent plus fiable qu'une annonce en ligne, commencez par votre réseau proche.",
     "Pour les villas de Souissi, soyez très précis sur vos attentes lors de l'entretien : listez chaque pièce, chaque surface, chaque tâche attendue par semaine. L'ambiguïté est source de déception.",
-    "La déclaration CNSS protège autant l'employeur que l'employée — en cas d'accident, vous n'êtes pas personnellement responsable des frais médicaux si la personne est déclarée.",
-    "Prévoyez une boîte de produits ménagers que vous choisissez vous-même — certaines employées utilisent des produits trop agressifs sur les surfaces nobles (parquets, marbres).",
-    "Si vous habitez une résidence fermée, informez la sécurité à l'avance des jours de passage de votre aide ménagère — ça évite les tensions inutiles à l'entrée.",
-    "Un contrat de travail écrit, même simple, protège les deux parties. La loi 19-12 en recommande un — incluez les horaires, le salaire, les tâches et les congés.",
-    "Pour les familles avec enfants en bas âge, assurez-vous que votre employée sait ce qu'elle doit et ne doit pas faire avec les enfants — ce n'est pas une nounou sauf si c'est clairement dans son contrat.",
+    "La déclaration CNSS protège autant l'employeur que l'employée, en cas d'accident, vous n'êtes pas personnellement responsable des frais médicaux si la personne est déclarée.",
+    "Prévoyez une boîte de produits ménagers que vous choisissez vous-même, certaines employées utilisent des produits trop agressifs sur les surfaces nobles (parquets, marbres).",
+    "Si vous habitez une résidence fermée, informez la sécurité à l'avance des jours de passage de votre aide ménagère, ça évite les tensions inutiles à l'entrée.",
+    "Un contrat de travail écrit, même simple, protège les deux parties. La loi 19-12 en recommande un, incluez les horaires, le salaire, les tâches et les congés.",
+    "Pour les familles avec enfants en bas âge, assurez-vous que votre employée sait ce qu'elle doit et ne doit pas faire avec les enfants, ce n'est pas une nounou sauf si c'est clairement dans son contrat.",
   ],
-  localKnowledge: `<p>Rabat est découpée en zones très distinctes du point de vue du personnel de maison. <strong>Agdal</strong> est le quartier par excellence de la classe professionnelle — médecins, avocats, hauts fonctionnaires — avec des immeubles modernes et une demande régulière. <strong>Souissi</strong> est réservée à l'élite politique et diplomatique, avec des villas somptueuses qui nécessitent un personnel permanent et qualifié. <strong>Hay Riad</strong> est la ville nouvelle des cadres et des familles aisées — résidences sécurisées, appartements spacieux, et une forte densité de familles biactives qui externalise volontiers les tâches domestiques. <strong>L'Océan et Hassan</strong> sont des quartiers plus centraux et mixtes — demande plus volatile mais présente. À <strong>Salé</strong> et <strong>Temara</strong>, on trouve beaucoup d'employées qui traversent chaque jour pour travailler à Rabat — les horaires de transport (bus et grand taxi) sont à considérer quand vous organisez vos horaires.</p>`,
+  localKnowledge: `<p>Rabat est découpée en zones très distinctes du point de vue du personnel de maison. <strong>Agdal</strong> est le quartier par excellence de la classe professionnelle, médecins, avocats, hauts fonctionnaires, avec des immeubles modernes et une demande régulière. <strong>Souissi</strong> est réservée à l'élite politique et diplomatique, avec des villas somptueuses qui nécessitent un personnel permanent et qualifié. <strong>Hay Riad</strong> est la ville nouvelle des cadres et des familles aisées, résidences sécurisées, appartements spacieux, et une forte densité de familles biactives qui externalise volontiers les tâches domestiques. <strong>L'Océan et Hassan</strong> sont des quartiers plus centraux et mixtes, demande plus volatile mais présente. À <strong>Salé</strong> et <strong>Temara</strong>, on trouve beaucoup d'employées qui traversent chaque jour pour travailler à Rabat, les horaires de transport (bus et grand taxi) sont à considérer quand vous organisez vos horaires.</p>`,
   lastUpdated: "Avril 2026",
 };
 

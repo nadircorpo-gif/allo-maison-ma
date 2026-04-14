@@ -22,20 +22,27 @@ export default function ConfidentialitePage() {
   ];
 
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <Breadcrumb items={breadcrumbItems} className="mb-6" />
-
-      <div className="bg-white rounded-card shadow-card border border-gray-100 p-8">
-        <div className="flex items-center justify-between flex-wrap gap-3 mb-6">
-          <h1 className="text-3xl font-extrabold text-ink">
-            Politique de confidentialite
+    <>
+      <section className="bg-cream border-b border-paper-border">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-10">
+          <Breadcrumb items={breadcrumbItems} className="mb-6 text-[11px]" />
+          <div className="flex items-center gap-3 mb-4">
+            <span className="w-8 h-px bg-paper-border" />
+            <span className="eyebrow text-[10px]">Politique de confidentialité · Avril 2026</span>
+          </div>
+          <h1 className="font-display text-[40px] sm:text-5xl font-[550] leading-[0.96] tracking-[-0.025em] text-ink mb-4" style={{ textWrap: "balance" }}>
+            Vos données, <em className="italic text-terracotta">vos droits.</em>
           </h1>
-          <span className="text-xs text-muted">Derniere mise a jour : Avril 2026</span>
+          <p className="text-sm text-muted max-w-xl">
+            Conformité à la loi marocaine 09-08 relative à la protection des personnes physiques à l&apos;égard des traitements de données à caractère personnel.
+          </p>
         </div>
+      </section>
 
-        <div className="prose prose-sm text-muted max-w-none space-y-8">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+        <div className="prose prose-sm text-muted max-w-none space-y-10 [&_h2]:font-display [&_h2]:text-2xl [&_h2]:font-[550] [&_h2]:text-ink [&_h2]:mb-3 [&_h2]:tracking-tight [&_strong]:text-ink">
           <section>
-            <h2 className="text-xl font-bold text-ink mb-3">1. Introduction</h2>
+            <h2>1. Introduction</h2>
             <p>
               Allo-Maison (&quot;nous&quot;, &quot;notre&quot;) s&apos;engage a proteger votre vie privee
               conformement a la loi marocaine n° 09-08 relative a la protection des personnes
@@ -48,7 +55,7 @@ export default function ConfidentialitePage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-ink mb-3">2. Donnees collectees</h2>
+            <h2>2. Donnees collectees</h2>
             <p>Nous collectons les categories de donnees suivantes :</p>
             <ul className="list-disc list-inside space-y-2 mt-2">
               <li>
@@ -74,7 +81,7 @@ export default function ConfidentialitePage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-ink mb-3">3. Utilisation des donnees</h2>
+            <h2>3. Utilisation des donnees</h2>
             <p>Vos donnees sont utilisees exclusivement pour :</p>
             <ul className="list-disc list-inside space-y-2 mt-2">
               <li>Vous mettre en relation avec un artisan verifie</li>
@@ -91,14 +98,14 @@ export default function ConfidentialitePage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-ink mb-3">4. Cookies</h2>
+            <h2>4. Cookies</h2>
             <p>Nous utilisons les types de cookies suivants :</p>
             <div className="mt-3 space-y-3">
-              <div className="bg-surface rounded-btn p-3">
+              <div className="bg-cream border border-paper-border rounded-lg p-3">
                 <strong className="text-ink">Cookies essentiels :</strong>{" "}
                 Indispensables au fonctionnement du site. Ne peuvent pas etre refuses.
               </div>
-              <div className="bg-surface rounded-btn p-3">
+              <div className="bg-cream border border-paper-border rounded-lg p-3">
                 <strong className="text-ink">Cookies analytiques (Google Analytics) :</strong>{" "}
                 Collectent des donnees anonymes sur la navigation pour ameliorer
                 l&apos;experience utilisateur. Peuvent etre refuses.
@@ -110,7 +117,7 @@ export default function ConfidentialitePage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-ink mb-3">5. Conservation des donnees</h2>
+            <h2>5. Conservation des donnees</h2>
             <p>
               Vos donnees personnelles sont conservees pendant la duree necessaire
               a la realisation des finalites pour lesquelles elles ont ete collectees :
@@ -123,7 +130,7 @@ export default function ConfidentialitePage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-ink mb-3">6. Vos droits (Loi 09-08)</h2>
+            <h2>6. Vos droits (Loi 09-08)</h2>
             <p>
               Conformement a la loi marocaine 09-08, vous disposez des droits suivants :
             </p>
@@ -147,7 +154,7 @@ export default function ConfidentialitePage() {
             </ul>
             <p className="mt-3">
               Pour exercer ces droits, contactez-nous a{" "}
-              <a href="mailto:contact@allo-maison.ma" className="text-primary hover:underline">
+              <a href="mailto:contact@allo-maison.ma" className="text-terracotta hover:underline">
                 contact@allo-maison.ma
               </a>{" "}
               avec la mention &quot;Droits CNDP&quot; dans l&apos;objet.
@@ -155,7 +162,7 @@ export default function ConfidentialitePage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-ink mb-3">7. Securite des donnees</h2>
+            <h2>7. Securite des donnees</h2>
             <p>
               Nous mettons en place des mesures techniques et organisationnelles
               appropriees pour proteger vos donnees contre tout acces non autorise,
@@ -165,14 +172,14 @@ export default function ConfidentialitePage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-ink mb-3">8. Contact et reclamations</h2>
+            <h2>8. Contact et reclamations</h2>
             <p>
               Pour toute question relative a cette politique ou pour exercer vos droits :
             </p>
-            <div className="mt-3 bg-surface rounded-btn p-4 space-y-2">
+            <div className="mt-3 bg-cream border border-paper-border rounded-lg p-4 space-y-2">
               <div>
                 <strong className="text-ink">Email :</strong>{" "}
-                <a href="mailto:contact@allo-maison.ma" className="text-primary hover:underline">
+                <a href="mailto:contact@allo-maison.ma" className="text-terracotta hover:underline">
                   contact@allo-maison.ma
                 </a>
               </div>
@@ -189,6 +196,6 @@ export default function ConfidentialitePage() {
           </section>
         </div>
       </div>
-    </div>
+    </>
   );
 }

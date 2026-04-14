@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Search } from "lucide-react";
+import { Search, MapPin } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { SERVICES } from "@/lib/data/services";
 import { CITIES } from "@/lib/data/cities";
@@ -28,49 +28,53 @@ export default function SearchBar({ defaultService = "", defaultCity = "", class
     <form
       onSubmit={handleSubmit}
       className={cn(
-        "flex flex-col sm:flex-row gap-3 p-3 bg-white rounded-card shadow-search",
+        "bg-white border border-paper-border rounded-xl p-2 flex flex-col sm:flex-row gap-2 shadow-search",
         className
       )}
     >
-      {/* Service select */}
-      <select
-        value={service}
-        onChange={(e) => setService(e.target.value)}
-        required
-        aria-label="Choisir un service"
-        className="flex-1 px-4 py-2.5 border border-gray-200 rounded-btn text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary bg-white"
-      >
-        <option value="">Quel service ?</option>
-        {SERVICES.map((s) => (
-          <option key={s.slug} value={s.slug}>
-            {s.icon} {s.name}
-          </option>
-        ))}
-      </select>
+      <div className="flex-1 flex items-center gap-3 px-4 py-3">
+        <Search className="w-5 h-5 text-muted shrink-0" />
+        <select
+          value={service}
+          onChange={(e) => setService(e.target.value)}
+          required
+          aria-label="Choisir un service"
+          className="w-full bg-transparent outline-none text-[15px] text-ink"
+        >
+          <option value="">Un plombier, une femme de ménage…</option>
+          {SERVICES.map((s) => (
+            <option key={s.slug} value={s.slug}>
+              {s.name}
+            </option>
+          ))}
+        </select>
+      </div>
 
-      {/* City select */}
-      <select
-        value={city}
-        onChange={(e) => setCity(e.target.value)}
-        required
-        aria-label="Choisir une ville"
-        className="flex-1 px-4 py-2.5 border border-gray-200 rounded-btn text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary bg-white"
-      >
-        <option value="">Quelle ville ?</option>
-        {CITIES.map((c) => (
-          <option key={c.slug} value={c.slug}>
-            {c.name}
-          </option>
-        ))}
-      </select>
+      <div className="hidden sm:block w-px bg-paper-border" />
 
-      {/* Submit */}
+      <div className="flex items-center gap-3 px-4 py-3 sm:min-w-[180px]">
+        <MapPin className="w-5 h-5 text-muted shrink-0" />
+        <select
+          value={city}
+          onChange={(e) => setCity(e.target.value)}
+          required
+          aria-label="Choisir une ville"
+          className="w-full bg-transparent outline-none text-[15px] text-ink"
+        >
+          <option value="">Ville</option>
+          {CITIES.map((c) => (
+            <option key={c.slug} value={c.slug}>
+              {c.name}
+            </option>
+          ))}
+        </select>
+      </div>
+
       <button
         type="submit"
-        className="inline-flex items-center justify-center gap-2 px-6 py-2.5 bg-primary hover:bg-primary-deep text-white font-semibold rounded-btn transition-colors"
+        className="bg-terracotta hover:bg-primary-deep text-white rounded-lg px-6 py-3 font-semibold text-[15px] shadow-terracotta transition-colors"
       >
-        <Search className="w-4 h-4" />
-        Rechercher
+        Trouver un pro
       </button>
     </form>
   );

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 100" fill="none">
+  <title>Allo Maison — Horizontal Trust Lockup</title>
+
+  <!-- Shield mark (compact) -->
+  <g transform="translate(8 10)">
+    <path d="M 8 0
+             L 60 0
+             Q 68 0 68 8
+             L 68 42
+             Q 68 62 34 80
+             Q 0 62 0 42
+             L 0 8
+             Q 0 0 8 0 Z"
+          fill="#1F4E5F"/>
+    <!-- House inside -->
+    <path d="M 34 16 L 54 32 L 14 32 Z" fill="#F5EFE6"/>
+    <rect x="17" y="32" width="34" height="24" fill="#F5EFE6"/>
+    <rect x="29" y="40" width="10" height="16" fill="#C24D2C"/>
+    <!-- Check badge top-right corner -->
+    <circle cx="60" cy="12" r="8" fill="#F5EFE6"/>
+    <circle cx="60" cy="12" r="6.5" fill="#7FA99B"/>
+    <path d="M 57 12 L 59 14 L 63 10" stroke="#F5EFE6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <!-- Divider -->
+  <line x1="100" y1="22" x2="100" y2="78" stroke="#E6DFD3" stroke-width="1"/>
+
+  <!-- Wordmark bold sans -->
+  <text x="116" y="56" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="36" letter-spacing="-1.2" fill="#1C1A17">ALLO MAISON</text>
+  <!-- Tagline -->
+  <text x="118" y="76" font-family="Inter, system-ui, sans-serif" font-weight="600" font-size="9" letter-spacing="2.2" fill="#1F4E5F">DEPUIS 2017 · VÉRIFIÉ ET CERTIFIÉ</text>
+</svg>

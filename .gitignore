@@ -48,3 +48,9 @@ next-env.d.ts
 sa-key*.json
 .playwright-mcp/
 submitted-urls.json
+
+# local design sandbox + AI skill artifacts
+.claude/
+.skill-archive/
+design-previews/
+indexation-report.json

@@ -1,21 +1,21 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import JsonLd from "@/components/seo/json-ld";
 import Breadcrumb from "@/components/shared/breadcrumb";
 import ServiceCard from "@/components/shared/service-card";
 import SearchBar from "@/components/shared/search-bar";
 import { SERVICES } from "@/lib/data/services";
 import { faqJsonLd } from "@/lib/seo";
-import { CheckCircle, Users, Star, Shield } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Services a domicile au Maroc | Artisans Verifies | allo-maison.ma",
+  title: "Services à domicile au Maroc | Artisans vérifiés | allo-maison.ma",
   description:
-    "Tous nos services a domicile au Maroc : plomberie, electricite, menage, renovation et plus. 500+ artisans verifies et encadres. Devis gratuit via WhatsApp.",
+    "Tous nos services à domicile au Maroc : plomberie, électricité, ménage, rénovation et plus. 1 017 artisans vérifiés et encadrés. Devis gratuit via WhatsApp.",
   alternates: { canonical: "https://allo-maison.ma/services" },
   openGraph: {
-    title: "Services a domicile au Maroc | Artisans Verifies | allo-maison.ma",
+    title: "Services à domicile au Maroc | Artisans vérifiés | allo-maison.ma",
     description:
-      "Tous nos services a domicile au Maroc : plomberie, electricite, menage, renovation et plus. 500+ artisans verifies et encadres.",
+      "Tous nos services à domicile au Maroc : plomberie, électricité, ménage, rénovation et plus. 1 017 artisans vérifiés et encadrés.",
     url: "https://allo-maison.ma/services",
     siteName: "Allo-Maison",
     locale: "fr_MA",
@@ -26,45 +26,33 @@ export const metadata: Metadata = {
 const CATEGORIES = [
   {
     title: "Urgences",
-    description: "Disponibles 24h/24, intervention en 30 minutes",
+    description: "Disponibles 24 h/24, intervention en 30 minutes",
     slugs: ["plombier", "electricien", "serrurier"],
-    color: "bg-red-50 border-red-200",
-    badgeColor: "bg-red-100 text-red-700",
   },
   {
     title: "Entretien",
-    description: "Entretien regulier de votre maison",
+    description: "Entretien régulier de votre maison",
     slugs: ["jardinier"],
-    color: "bg-green-50 border-green-200",
-    badgeColor: "bg-green-100 text-green-700",
   },
   {
     title: "Travaux",
-    description: "Travaux de renovation et finition",
+    description: "Travaux de rénovation et finition",
     slugs: ["peintre", "carreleur", "menuisier", "renovation", "etancheite"],
-    color: "bg-orange-50 border-orange-200",
-    badgeColor: "bg-orange-100 text-orange-700",
   },
   {
     title: "Installations",
-    description: "Installation et maintenance d'equipements",
+    description: "Installation et maintenance d'équipements",
     slugs: ["climatisation", "vitrier", "desinsectisation"],
-    color: "bg-blue-50 border-blue-200",
-    badgeColor: "bg-blue-100 text-blue-700",
   },
   {
-    title: "Services a la personne",
-    description: "Aide a domicile, garde d'enfants, cuisine",
+    title: "Services à la personne",
+    description: "Aide à domicile, garde d'enfants, cuisine",
     slugs: ["femme-de-menage", "cuisiniere", "nounou", "concierge"],
-    color: "bg-pink-50 border-pink-200",
-    badgeColor: "bg-pink-100 text-pink-700",
   },
   {
-    title: "Autres Services",
-    description: "Bricolage, informatique, demenagement",
+    title: "Autres services",
+    description: "Bricolage, informatique, déménagement",
     slugs: ["bricoleur", "technicien-informatique", "demenagement"],
-    color: "bg-purple-50 border-purple-200",
-    badgeColor: "bg-purple-100 text-purple-700",
   },
 ];
 
@@ -72,108 +60,116 @@ const FAQ_ITEMS = [
   {
     question: "Comment fonctionne la mise en relation avec un artisan ?",
     answer:
-      "Selectionnez votre service et votre ville, puis soumettez votre demande via WhatsApp. Nous vous mettons en relation avec un artisan verifie disponible en moins de 5 minutes. Vous recevez son profil, ses avis et son tarif avant de confirmer.",
+      "Sélectionnez votre service et votre ville, puis soumettez votre demande via WhatsApp. Nous vous mettons en relation avec un artisan vérifié disponible en moins de 5 minutes. Vous recevez son profil, ses avis et son tarif avant de confirmer.",
   },
   {
-    question: "Les artisans sont-ils vraiment verifies ?",
+    question: "Les artisans sont-ils vraiment vérifiés ?",
     answer:
-      "Oui, chaque artisan passe par notre processus de verification : identite, competences, references clients et entretien individuel. Seuls 1 artisan sur 3 est accepte.",
+      "Oui, chaque artisan passe par notre processus de vérification en 7 étapes : identité, casier, assurance, compétences, références clients, test pratique et contrôle qualité continu. Seul 1 candidat sur 3 est accepté.",
   },
   {
-    question: "Quels sont les delais d'intervention ?",
+    question: "Quels sont les délais d'intervention ?",
     answer:
-      "Pour les urgences (plomberie, electricite, serrurerie), nos artisans interviennent en moins de 30 minutes dans les grandes villes. Pour les autres services, nous confirmons un rendez-vous dans les 24 heures selon votre disponibilite.",
+      "Pour les urgences (plomberie, électricité, serrurerie), nos artisans interviennent en moins de 30 minutes dans les grandes villes. Pour les autres services, nous confirmons un rendez-vous sous 24 heures selon votre disponibilité.",
   },
   {
-    question: "Comment sont fixes les tarifs ?",
+    question: "Comment sont fixés les tarifs ?",
     answer:
-      "Nos tarifs sont transparents et affiches a l'avance. Chaque service a un prix minimum indique. Vous recevez un devis precis avant toute intervention. Pas de mauvaise surprise : le prix convenu est le prix final.",
+      "Nos tarifs sont transparents et affichés à l'avance. Chaque service a un prix minimum indiqué. Vous recevez un devis précis avant toute intervention. Pas de mauvaise surprise : le prix convenu est le prix final.",
   },
   {
     question: "Que se passe-t-il si je ne suis pas satisfait ?",
     answer:
-      "Allo-Maison garantit votre satisfaction. En cas de probleme, nous envoyons gratuitement un autre artisan dans les 48 heures. Si le probleme persiste, vous etes rembourse jusqu'a 2000 DH. La garantie couvre 7 jours apres la prestation.",
+      "Allo-Maison garantit votre satisfaction. En cas de problème, nous envoyons gratuitement un autre artisan vérifié sous 48 heures. La garantie couvre 7 jours après la prestation.",
   },
 ];
 
-export default function ServicesPage() {
-  const breadcrumbItems = [
-    { name: "Services", url: "https://allo-maison.ma/services" },
-  ];
+const STATS = [
+  { value: "1 017", label: "artisans vérifiés" },
+  { value: "4.8/5", label: "note moyenne" },
+  { value: "12 847", label: "avis collectés" },
+  { value: "2017", label: "depuis" },
+];
 
-  const stats = [
-    { icon: <Users className="w-6 h-6" />, value: "500+", label: "Artisans verifies" },
-    { icon: <Star className="w-6 h-6" />, value: "4.8/5", label: "Note moyenne" },
-    { icon: <CheckCircle className="w-6 h-6" />, value: "2000+", label: "Missions realisees" },
-    { icon: <Shield className="w-6 h-6" />, value: "2017", label: "Depuis" },
-  ];
+export default function ServicesPage() {
+  const breadcrumbItems = [{ name: "Services", url: "https://allo-maison.ma/services" }];
 
   return (
     <>
       <JsonLd data={faqJsonLd(FAQ_ITEMS)} />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <Breadcrumb items={breadcrumbItems} className="mb-6" />
-
-        {/* Hero */}
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 bg-trust-light border border-trust-border text-trust-text text-xs font-medium px-3 py-1.5 rounded-badge mb-4">
-            <CheckCircle className="w-3.5 h-3.5" />
-            Depuis 2017, la confiance au service de votre maison
-          </div>
-          <h1 className="text-4xl font-extrabold text-ink mb-4">
-            Tous nos services a domicile au Maroc
-          </h1>
-          <p className="text-lg text-muted max-w-2xl mx-auto">
-            Plomberie, electricite, menage, renovation et bien plus. Des artisans verifies,
-            disponibles 7j/7 dans les 6 grandes villes du Maroc.
-          </p>
-        </div>
-
-        {/* Search bar */}
-        <div className="max-w-2xl mx-auto mb-12">
-          <SearchBar />
-        </div>
-
-        {/* Stats */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-14">
-          {stats.map((stat) => (
-            <div
-              key={stat.label}
-              className="flex flex-col items-center text-center p-5 bg-white rounded-card shadow-card border border-gray-100"
-            >
-              <div className="text-primary mb-2">{stat.icon}</div>
-              <div className="text-2xl font-extrabold text-ink">{stat.value}</div>
-              <div className="text-xs text-muted mt-1">{stat.label}</div>
+      {/* ========= HERO ========= */}
+      <section className="bg-cream border-b border-paper-border">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-12">
+          <Breadcrumb items={breadcrumbItems} className="mb-6 text-[11px]" />
+          <div className="grid lg:grid-cols-12 gap-10 items-end">
+            <div className="lg:col-span-8">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="w-8 h-px bg-paper-border" />
+                <span className="eyebrow text-[10px]">Tous nos services · Depuis 2017</span>
+              </div>
+              <h1 className="font-display text-[40px] sm:text-[56px] font-[550] leading-[0.96] tracking-[-0.028em] text-ink mb-5" style={{ textWrap: "balance" }}>
+                19 métiers,<br />
+                <em className="italic text-terracotta">une exigence.</em>
+              </h1>
+              <p className="text-base sm:text-lg text-muted max-w-xl" style={{ textWrap: "pretty" }}>
+                Plomberie, électricité, ménage, rénovation, et bien plus. Chaque artisan est vérifié, encadré, et disponible 7 j/7 dans les 6 grandes villes du Maroc.
+              </p>
+              <div className="mt-6 max-w-xl">
+                <SearchBar />
+              </div>
             </div>
-          ))}
+            <div className="lg:col-span-4 flex justify-start lg:justify-end">
+              <Image
+                src="/brand/logo-shield.svg"
+                alt="Allo Maison — services certifiés"
+                width={320}
+                height={400}
+                className="w-36 h-auto drop-shadow-sm"
+              />
+            </div>
+          </div>
         </div>
+      </section>
 
-        {/* Services by category */}
-        <div className="space-y-12">
-          {CATEGORIES.map((cat) => {
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+        {/* Stats */}
+        <section className="mb-16">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 border-t border-b border-paper-border py-10 tab-nums">
+            {STATS.map((stat) => (
+              <div key={stat.label}>
+                <p className="font-display text-4xl sm:text-5xl font-[500] text-ink leading-none">{stat.value}</p>
+                <p className="text-xs text-muted mt-2 uppercase tracking-wider">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Categories */}
+        <div className="space-y-16">
+          {CATEGORIES.map((cat, i) => {
             const services = cat.slugs
               .map((slug) => SERVICES.find((s) => s.slug === slug))
               .filter(Boolean);
 
             return (
               <section key={cat.title}>
-                <div className={`flex items-center gap-3 p-4 rounded-card border mb-6 ${cat.color}`}>
-                  <span className={`text-xs font-semibold px-2.5 py-1 rounded-badge ${cat.badgeColor}`}>
-                    {cat.title}
-                  </span>
-                  <p className="text-sm text-muted">{cat.description}</p>
+                <div className="flex items-end justify-between mb-6 flex-wrap gap-3">
+                  <div>
+                    <p className="eyebrow mb-2">{String(i + 1).padStart(2, "0")} — {cat.title}</p>
+                    <h2 className="font-display text-3xl sm:text-4xl font-[550] tracking-[-0.02em] text-ink">
+                      {cat.title}
+                    </h2>
+                    <p className="text-sm text-muted mt-2">{cat.description}</p>
+                  </div>
                 </div>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                  {services.map((service) => (
-                    service && (
-                      <ServiceCard
-                        key={service.slug}
-                        service={service}
-                        city="casablanca"
-                      />
-                    )
-                  ))}
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                  {services.map(
+                    (service) =>
+                      service && (
+                        <ServiceCard key={service.slug} service={service} city="casablanca" />
+                      )
+                  )}
                 </div>
               </section>
             );
@@ -181,46 +177,44 @@ export default function ServicesPage() {
         </div>
 
         {/* FAQ */}
-        <section className="mt-16">
-          <h2 className="text-2xl font-bold text-ink mb-6 text-center">
-            Questions frequentes sur nos services
+        <section className="mt-20">
+          <p className="eyebrow mb-2">Questions fréquentes</p>
+          <h2 className="font-display text-3xl sm:text-4xl font-[550] tracking-[-0.02em] text-ink mb-8">
+            Ce que vous nous demandez <em className="italic">le plus.</em>
           </h2>
-          <div className="max-w-3xl mx-auto space-y-3">
+          <div className="border-t border-ink max-w-3xl">
             {FAQ_ITEMS.map((faq, i) => (
-              <details
-                key={i}
-                className="bg-white border border-gray-200 rounded-card overflow-hidden group"
-              >
-                <summary className="flex items-center justify-between px-5 py-4 cursor-pointer font-medium text-ink text-sm list-none hover:bg-surface transition-colors">
-                  {faq.question}
-                  <span className="text-muted ml-4 flex-shrink-0 text-lg leading-none group-open:rotate-45 transition-transform duration-200">
-                    +
-                  </span>
+              <details key={i} className="border-b border-paper-border group py-5">
+                <summary className="font-display font-medium text-lg text-ink cursor-pointer list-none flex justify-between items-start gap-4">
+                  <span>{faq.question}</span>
+                  <span className="font-display italic text-2xl text-muted group-open:rotate-45 transition-transform shrink-0">+</span>
                 </summary>
-                <div className="px-5 pb-4 text-muted text-sm leading-relaxed border-t border-gray-100">
-                  {faq.answer}
-                </div>
+                <p className="text-muted text-sm mt-3 leading-relaxed">{faq.answer}</p>
               </details>
             ))}
           </div>
         </section>
 
-        {/* Bottom CTA */}
-        <section className="mt-14 text-center bg-gradient-to-r from-primary to-primary-deep rounded-card p-10 text-white">
-          <h2 className="text-2xl font-bold mb-3">
-            Besoin d&apos;un artisan maintenant ?
-          </h2>
-          <p className="text-white/80 mb-6">
-            Reponse garantie en moins de 5 minutes via WhatsApp.
-          </p>
-          <a
-            href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "212661409190"}?text=Bonjour%2C%20je%20cherche%20un%20artisan%20verifie.`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-3 bg-white text-primary font-bold rounded-btn hover:bg-gray-100 transition-colors"
-          >
-            Trouver un artisan →
-          </a>
+        {/* CTA */}
+        <section className="mt-20 bg-zellige text-cream rounded-2xl p-10 sm:p-14 relative overflow-hidden">
+          <div className="relative z-10 max-w-2xl">
+            <p className="eyebrow mb-3" style={{ color: "#D4A24C" }}>Besoin d&apos;un pro maintenant ?</p>
+            <h2 className="font-display text-3xl sm:text-4xl font-[550] tracking-[-0.02em] mb-4">
+              Un artisan chez vous,<br />
+              <em className="italic text-saffron">en 24 h.</em>
+            </h2>
+            <p className="text-cream/75 mb-6">
+              Réponse humaine sous 47 min en moyenne, via WhatsApp. Sans avance, sans engagement.
+            </p>
+            <a
+              href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "212661409190"}?text=Bonjour%2C%20je%20cherche%20un%20artisan%20verifie.`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-3 bg-saffron text-ink font-bold rounded-lg hover:bg-[#E0B55C] transition-colors"
+            >
+              Trouver un artisan →
+            </a>
+          </div>
         </section>
       </div>
     </>

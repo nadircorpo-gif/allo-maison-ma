@@ -3,22 +3,22 @@ import { cn } from "@/lib/utils";
 
 type BadgeType = "identite" | "competences" | "references" | "elite";
 
-const BADGE_CONFIG: Record<BadgeType, { label: string; color: string }> = {
+const BADGE_CONFIG: Record<BadgeType, { label: string; className: string }> = {
   identite: {
-    label: "Identite Verifiee",
-    color: "bg-trust-light border-trust-border text-trust-text",
+    label: "Identité vérifiée",
+    className: "bg-clay text-ink border-paper-border",
   },
   competences: {
-    label: "Competences Verifiees",
-    color: "bg-trust-light border-trust-border text-trust-text",
+    label: "Compétences certifiées",
+    className: "bg-clay text-ink border-paper-border",
   },
   references: {
-    label: "References Verifiees",
-    color: "bg-trust-light border-trust-border text-trust-text",
+    label: "Références vérifiées",
+    className: "bg-clay text-ink border-paper-border",
   },
   elite: {
-    label: "Pro Elite",
-    color: "bg-blue-50 border-blue-200 text-blue-700",
+    label: "★ Pro élite",
+    className: "bg-saffron text-ink border-saffron font-bold",
   },
 };
 
@@ -32,12 +32,12 @@ export default function TrustBadge({ type, className }: TrustBadgeProps) {
   return (
     <span
       className={cn(
-        "inline-flex items-center gap-1 px-2 py-0.5 rounded-badge border text-xs font-medium",
-        config.color,
+        "inline-flex items-center gap-1 px-2 py-0.5 rounded-full border text-[10px] font-semibold",
+        config.className,
         className
       )}
     >
-      <CheckCircle className="w-3 h-3 flex-shrink-0" />
+      {type !== "elite" && <CheckCircle className="w-2.5 h-2.5 flex-shrink-0" />}
       {config.label}
     </span>
   );

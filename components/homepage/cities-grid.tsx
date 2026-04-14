@@ -3,35 +3,26 @@ import { CITIES } from "@/lib/data/cities";
 
 export default function CitiesGrid() {
   return (
-    <section className="bg-surface py-16">
-      <div className="max-w-5xl mx-auto px-4">
-        {/* Header */}
-        <div className="text-center mb-10">
-          <h2 className="text-3xl font-extrabold text-ink mb-2">Disponible dans 6 grandes villes</h2>
-          <p className="text-muted text-lg">Et bientot dans tout le Maroc</p>
+    <section className="py-20 bg-ink text-cream">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-end justify-between mb-10 flex-wrap gap-4">
+          <div>
+            <p className="eyebrow mb-3" style={{ color: "#D4A24C" }}>05 — Couverture</p>
+            <h2 className="font-display text-4xl sm:text-5xl font-[550] tracking-[-0.02em] text-cream">
+              Six villes. <em className="italic text-saffron">Partout chez vous.</em>
+            </h2>
+          </div>
         </div>
 
-        {/* Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
           {CITIES.map((city) => (
             <Link
               key={city.slug}
               href={`/plombier-${city.slug}`}
-              className="relative block overflow-hidden"
-              style={{ height: 160, borderRadius: 16 }}
+              className="group border border-white/10 hover:border-saffron rounded-lg p-5 transition"
             >
-              {/* Background image */}
-              <div
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-300 hover:scale-[1.02]"
-                style={{ backgroundImage: `url(${city.image})` }}
-              />
-              {/* Dark gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-              {/* Text */}
-              <div className="absolute bottom-0 left-0 right-0 p-4">
-                <p className="text-white font-bold text-base leading-tight">{city.name}</p>
-                <p className="text-white/80 text-xs">{city.artisanCount}+ artisans</p>
-              </div>
+              <p className="font-display text-2xl font-medium mb-1">{city.name}</p>
+              <p className="text-xs opacity-60 tab-nums">{city.artisanCount}+ artisans</p>
             </Link>
           ))}
         </div>

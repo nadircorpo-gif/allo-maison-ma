@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" fill="none">
+  <title>Allo Maison — Certified Seal</title>
+  <defs>
+    <path id="topCurve" d="M 50 180 A 130 130 0 0 1 310 180"/>
+    <path id="bottomCurve" d="M 60 195 A 120 120 0 0 0 300 195"/>
+  </defs>
+
+  <!-- Outer ring -->
+  <circle cx="180" cy="180" r="160" fill="#1F4E5F"/>
+  <circle cx="180" cy="180" r="152" stroke="#D4A24C" stroke-width="1.2" fill="none" stroke-opacity="0.5"/>
+
+  <!-- Decorative dots ring -->
+  <g fill="#D4A24C">
+    <circle cx="180" cy="28" r="2.5"/>
+    <circle cx="180" cy="332" r="2.5"/>
+    <circle cx="28" cy="180" r="2.5"/>
+    <circle cx="332" cy="180" r="2.5"/>
+    <circle cx="72" cy="72" r="2"/>
+    <circle cx="288" cy="72" r="2"/>
+    <circle cx="72" cy="288" r="2"/>
+    <circle cx="288" cy="288" r="2"/>
+  </g>
+
+  <!-- Curved text top: ALLO MAISON -->
+  <text font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="24" letter-spacing="4" fill="#F5EFE6">
+    <textPath href="#topCurve" startOffset="50%" text-anchor="middle">· ALLO · MAISON ·</textPath>
+  </text>
+  <!-- Curved text bottom: tagline -->
+  <text font-family="Inter, system-ui, sans-serif" font-weight="600" font-size="12" letter-spacing="3" fill="#D4A24C">
+    <textPath href="#bottomCurve" startOffset="50%" text-anchor="middle">DEPUIS 2017 · CASABLANCA</textPath>
+  </text>
+
+  <!-- Inner cream disc -->
+  <circle cx="180" cy="180" r="78" fill="#F5EFE6"/>
+  <circle cx="180" cy="180" r="74" stroke="#1F4E5F" stroke-width="1.5" fill="none"/>
+
+  <!-- Center: house + checkmark -->
+  <g transform="translate(180 180)">
+    <!-- Small house -->
+    <path d="M -36 -10 L 0 -40 L 36 -10 L 36 30 L -36 30 Z" fill="#1F4E5F"/>
+    <rect x="-8" y="5" width="16" height="25" fill="#C24D2C"/>
+    <!-- Checkmark badge below -->
+    <g transform="translate(0 48)">
+      <circle r="12" fill="#7FA99B"/>
+      <path d="M -5 0 L -1 4 L 6 -4" stroke="#F5EFE6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </g>
+  </g>
+</svg>

@@ -1,26 +1,36 @@
+import Image from "next/image";
 import Link from "next/link";
 import WhatsAppButton from "@/components/shared/whatsapp-button";
 import { buildWhatsAppUrl } from "@/lib/whatsapp";
 
 export default function CtaFinal() {
-  const whatsappUrl = buildWhatsAppUrl("Bonjour, je souhaite trouver un professionnel verifie via Allo-Maison.");
+  const whatsappUrl = buildWhatsAppUrl(
+    "Bonjour, je souhaite trouver un professionnel verifie via Allo-Maison."
+  );
 
   return (
-    <section className="py-20" style={{ backgroundColor: "#0F172A" }}>
-      <div className="max-w-2xl mx-auto px-4 text-center">
-        <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4">
-          Votre prochain pro est a quelques clics
+    <section className="py-24 bg-cream">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <Image
+          src="/brand/logo-mark.svg"
+          alt="Allo Maison"
+          width={320}
+          height={400}
+          className="w-16 h-20 mx-auto mb-6"
+        />
+        <h2 className="font-display text-5xl sm:text-6xl font-[550] tracking-[-0.03em] leading-[0.95] text-ink mb-6">
+          Votre maison mérite<br />
+          <em className="italic text-terracotta">un vrai pro.</em>
         </h2>
-        <p className="text-white/60 text-lg mb-8">
-          Decrivez votre besoin, comparez les profils verifies, et reservez en toute securite.
+        <p className="text-lg text-muted mb-8 max-w-lg mx-auto">
+          Intervention en 24h, pros vérifiés et certifiés, paiement après satisfaction. Sans bullshit.
         </p>
-
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <Link
             href="/#"
-            className="inline-flex items-center justify-center px-8 py-3 bg-primary hover:bg-primary-deep text-white font-semibold rounded-btn transition-colors text-base"
+            className="inline-flex items-center justify-center px-8 py-4 bg-terracotta hover:bg-primary-deep text-white font-semibold rounded-lg shadow-terracotta transition-colors"
           >
-            Trouver mon pro
+            Décrire mon besoin
           </Link>
           <WhatsAppButton url={whatsappUrl} label="WhatsApp" size="lg" />
         </div>

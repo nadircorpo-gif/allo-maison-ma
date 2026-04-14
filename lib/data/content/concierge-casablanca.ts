@@ -5,19 +5,19 @@ const content: RichPageContent = {
   metaTitle: "Concierge & Gardien d'Immeuble Casablanca 2026 – Tarifs & Droits | Allo Maison",
   metaDescription:
     "Tout sur le concierge d'immeuble à Casablanca. Loi 18-00 copropriété, tarifs 2026, recrutement, responsabilités légales. Conseils pour syndics et copropriétaires.",
-  h1: "Concierge à Casablanca : rôle, salaire, droits et comment en recruter un bon",
+  h1: "Concierge à Casablanca : recruter un gardien sérieux au juste prix",
   heroText:
-    "L'immeuble de la rue Abdelmoumen a un problème. Le gardien est parti sans prévenir il y a trois semaines — comme il est arrivé, sans cérémonie. Depuis, les poubelles s'accumulent dans le couloir, l'entrée n'est plus nettoyée, et deux copropriétaires se plaignent que des gens entrent librement dans le parking la nuit. Ce scénario, des centaines de syndicats d'immeubles casablancais le vivent. La question n'est pas seulement de trouver un concierge — c'est de comprendre ce rôle, ses contours légaux, et comment créer une relation de travail durable.",
+    "Besoin d'un concierge de confiance à Casablanca ? Gardiennage d'immeuble, gestion de résidence ou conciergerie, nos professionnels vérifiés sont disponibles rapidement.",
   sections: [
     {
       title: "Le rôle du concierge au Maroc : bien plus qu'un gardien",
-      content: `<p>Le mot "gardien" est trompeur. Il évoque quelqu'un qui garde une porte — passif, silencieux, présent mais sans vraie valeur ajoutée. La réalité d'un bon concierge d'immeuble à Casablanca est bien différente.</p>
+      content: `<p>Le mot "gardien" est trompeur. Il évoque quelqu'un qui garde une porte, passif, silencieux, présent mais sans vraie valeur ajoutée. La réalité d'un bon concierge d'immeuble à Casablanca est bien différente.</p>
 
 <p>Un concierge professionnel est le pivot opérationnel d'un immeuble. Il est le premier point de contact pour les résidents et les visiteurs. Il gère les problèmes quotidiens avant qu'ils ne deviennent des crises. Il surveille l'état des parties communes et signale les dysfonctionnements. Il réceptionne les colis, gère les prestataires (plombiers, électriciens), et maintient une relation avec le syndic.</p>
 
-<p>Dans les immeubles modernes de Casablanca — résidences fermées avec parking souterrain, espace vert, local poubelles — le concierge gère une infrastructure complexe qui demande de la réactivité et un minimum de connaissances techniques. Un concierge qui ne sait pas couper l'eau en cas de fuite, qui ne connaît pas les coffrets électriques de l'immeuble, ou qui n'a pas les contacts des prestataires habituels est un concierge qui coûte cher sans rendre les services attendus.</p>
+<p>Dans les immeubles modernes de Casablanca, résidences fermées avec parking souterrain, espace vert, local poubelles, le concierge gère une infrastructure complexe qui demande de la réactivité et un minimum de connaissances techniques. Un concierge qui ne sait pas couper l'eau en cas de fuite, qui ne connaît pas les coffrets électriques de l'immeuble, ou qui n'a pas les contacts des prestataires habituels est un concierge qui coûte cher sans rendre les services attendus.</p>
 
-<p>Il y a aussi une dimension sociale importante. Dans les vieux quartiers de Casablanca — Maarif, Gautier, Bourgogne — le concierge est souvent un repère pour les personnes âgées, un intermédiaire de confiance dans la vie du quartier, quelqu'un qui connaît tout le monde et qui crée un tissu social dans l'immeuble. C'est une valeur qu'on ne mesure pas facilement mais qu'on ressent immédiatement quand elle est absente.</p>`,
+<p>Il y a aussi une dimension sociale importante. Dans les vieux quartiers de Casablanca, Maarif, Gautier, Bourgogne, le concierge est souvent un repère pour les personnes âgées, un intermédiaire de confiance dans la vie du quartier, quelqu'un qui connaît tout le monde et qui crée un tissu social dans l'immeuble. C'est une valeur qu'on ne mesure pas facilement mais qu'on ressent immédiatement quand elle est absente.</p>`,
     },
     {
       title: "Concierge d'immeuble vs gardien de villa : deux métiers très différents",
@@ -29,13 +29,13 @@ const content: RichPageContent = {
 
 <p><strong>Le gardien de villa</strong> travaille pour un seul employeur, dans un espace privé et familial. La relation est directe et souvent plus personnelle. Ses tâches peuvent inclure : surveillance et sécurité du périmètre, entretien du jardin, réception des livraisons, menus travaux d'entretien, parfois aide aux déplacements de la famille (porter des courses, accueillir les prestataires).</p>
 
-<p>Le gardien de villa est souvent logé sur place (loge ou chambre de service), ce qui complique les relations juridiques. Son logement fait partie de sa rémunération, mais sa valeur doit être encadrée légalement — il ne peut pas remplacer l'intégralité du salaire.</p>
+<p>Le gardien de villa est souvent logé sur place (loge ou chambre de service), ce qui complique les relations juridiques. Son logement fait partie de sa rémunération, mais sa valeur doit être encadrée légalement, il ne peut pas remplacer l'intégralité du salaire.</p>
 
 <p>En termes de salaire, le gardien de villa bien logé et bien traité peut accepter un salaire cash inférieur au concierge d'immeuble. Mais dès qu'il n'est plus logé, les salaires se rejoignent.</p>`,
     },
     {
       title: "Syndic et gestion d'immeuble : la loi 18-00 expliquée simplement",
-      content: `<p>La loi 18-00 relative au statut de la copropriété des immeubles bâtis est le texte qui régit la vie des immeubles collectifs au Maroc. Beaucoup de copropriétaires ne l'ont jamais lue — et c'est souvent là que les problèmes commencent.</p>
+      content: `<p>La loi 18-00 relative au statut de la copropriété des immeubles bâtis est le texte qui régit la vie des immeubles collectifs au Maroc. Beaucoup de copropriétaires ne l'ont jamais lue, et c'est souvent là que les problèmes commencent.</p>
 
 <p><strong>La copropriété</strong> : dans tout immeuble où plusieurs personnes sont propriétaires d'appartements distincts, il existe automatiquement une copropriété. Chaque propriétaire est copropriétaire des parties communes (hall d'entrée, escaliers, ascenseur, toiture, façade) selon un pourcentage défini dans le titre de propriété.</p>
 
@@ -57,7 +57,7 @@ const content: RichPageContent = {
 
 <p>Pour les villas et propriétés privées, le gardien est en général payé entre 1 500 et 3 500 DH selon la taille et les responsabilités, souvent avec logement inclus.</p>
 
-<p>Une chose importante : le SMIG (salaire minimum interprofessionnel garanti) au Maroc en 2026 est d'environ 3 111 DH bruts par mois pour les secteurs non agricoles. Un concierge payé 1 800 DH sans logement ne satisfait pas légalement le SMIG. Avec un logement évalué à 500 DH (ce qui est bas), ça fait 2 300 DH — encore en dessous. Beaucoup d'immeubles casablancais fonctionnent dans l'illégalité salariale sans le savoir.</p>`,
+<p>Une chose importante : le SMIG (salaire minimum interprofessionnel garanti) au Maroc en 2026 est d'environ 3 111 DH bruts par mois pour les secteurs non agricoles. Un concierge payé 1 800 DH sans logement ne satisfait pas légalement le SMIG. Avec un logement évalué à 500 DH (ce qui est bas), ça fait 2 300 DH, encore en dessous. Beaucoup d'immeubles casablancais fonctionnent dans l'illégalité salariale sans le savoir.</p>`,
     },
     {
       title: "Responsabilités légales du concierge",
@@ -69,21 +69,21 @@ const content: RichPageContent = {
 
 <p><strong>Gestion des clés</strong> : le concierge détient souvent des doubles de clés. En cas de perte ou d'utilisation frauduleuse, sa responsabilité est directement engagée. C'est pourquoi les registres de clés et les protocoles stricts sont importants dans les grands immeubles.</p>
 
-<p><strong>Ce qu'il n'est PAS responsable</strong> : les dégradations causées par des copropriétaires eux-mêmes, les pannes d'ascenseur sauf négligence de signalement, les conflits entre voisins, les décisions du syndic. Le concierge est un employé — pas le responsable juridique de l'immeuble.</p>`,
+<p><strong>Ce qu'il n'est PAS responsable</strong> : les dégradations causées par des copropriétaires eux-mêmes, les pannes d'ascenseur sauf négligence de signalement, les conflits entre voisins, les décisions du syndic. Le concierge est un employé, pas le responsable juridique de l'immeuble.</p>`,
     },
     {
       title: "Comment recruter un bon concierge à Casablanca",
-      content: `<p>Le recrutement d'un concierge est souvent bâclé par les syndicats d'immeuble — on prend la première personne disponible, souvent sur recommandation floue, sans vérifier grand-chose. Et quand ça tourne mal, tout le monde est surpris.</p>
+      content: `<p>Le recrutement d'un concierge est souvent bâclé par les syndicats d'immeuble, on prend la première personne disponible, souvent sur recommandation floue, sans vérifier grand-chose. Et quand ça tourne mal, tout le monde est surpris.</p>
 
 <p><strong>Définissez les tâches précisément avant de chercher</strong>. Faites la liste exhaustive de ce que vous attendez : horaires de présence, nettoyage des zones et fréquences, gestion des déchets, parking, courrier, sécurité nocturne (avec ou sans résidence sur place), relations avec les prestataires. Cette liste sera la base de votre contrat de travail.</p>
 
-<p><strong>Le profil physique et de santé compte</strong>. Pour un immeuble de 8 étages sans ascenseur, le concierge doit être capable de monter les poubelles régulièrement. Ce n'est pas de la discrimination — c'est une exigence fonctionnelle. Soyez direct sur ces aspects lors des entretiens.</p>
+<p><strong>Le profil physique et de santé compte</strong>. Pour un immeuble de 8 étages sans ascenseur, le concierge doit être capable de monter les poubelles régulièrement. Ce n'est pas de la discrimination, c'est une exigence fonctionnelle. Soyez direct sur ces aspects lors des entretiens.</p>
 
 <p><strong>La vérification du casier judiciaire</strong> est fortement recommandée pour quelqu'un qui aura accès permanent à votre immeuble, aux parties communes, et parfois aux doubles de clés. Demandez le bulletin numéro 3. Une personne honnête n'aura aucun problème à le fournir.</p>
 
 <p><strong>Les références des emplois précédents</strong> : appelez les anciens syndics ou employeurs. Demandez : pourquoi il est parti ? Est-ce qu'il était ponctuel ? Comment il gérait les conflits entre résidents ? Est-ce qu'il y avait des problèmes d'argent (charges non collectées, fonds manquants) ?</p>
 
-<p><strong>La période d'essai</strong> : selon le code du travail marocain, elle est de 15 jours pour les employés de catégorie ouvriers, 45 jours pour les employés, et 3 mois pour les cadres. Un concierge standard est en catégorie ouvrière — 15 jours, c'est court mais suffisant pour voir les bases.</p>`,
+<p><strong>La période d'essai</strong> : selon le code du travail marocain, elle est de 15 jours pour les employés de catégorie ouvriers, 45 jours pour les employés, et 3 mois pour les cadres. Un concierge standard est en catégorie ouvrière, 15 jours, c'est court mais suffisant pour voir les bases.</p>`,
     },
     {
       title: "Les quartiers où les concierges sont les plus demandés à Casablanca",
@@ -97,19 +97,23 @@ const content: RichPageContent = {
 
 <p><strong>Sidi Bernoussi et Ain Sebaâ</strong> : quartiers industriels et résidentiels populaires. Les immeubles sont souvent gérés de façon informelle, avec des gardiens payés de main à main. La professionnalisation est encore faible dans ces zones.</p>
 
-<p><strong>Les nouvelles extensions (Bouskoura, Casa-Anfa)</strong> : quartiers en développement avec des résidences neuves qui ont souvent des listes de prestataires recommandés par le promoteur — y compris pour le concierge. Des opportunités pour des profils jeunes et formés.</p>`,
+<p><strong>Les nouvelles extensions (Bouskoura, Casa-Anfa)</strong> : quartiers en développement avec des résidences neuves qui ont souvent des listes de prestataires recommandés par le promoteur, y compris pour le concierge. Des opportunités pour des profils jeunes et formés.</p>`,
     },
     {
       title: "Sécurité et surveillance : les limites du rôle",
       content: `<p>Beaucoup de copropriétaires confondent "concierge" et "agent de sécurité". C'est une erreur qui crée des attentes irréalistes et des risques légaux.</p>
 
-<p>Un concierge n'est pas formé à la sécurité. Il peut filtrer les visiteurs, surveiller les entrées pendant ses heures de travail, et signaler les incidents — mais il ne peut pas être tenu de s'interposer physiquement lors d'un vol ou d'une agression. Le forcer à le faire sans formation et équipement appropriés est une mise en danger d'autrui.</p>
+<p>Un concierge n'est pas formé à la sécurité. Il peut filtrer les visiteurs, surveiller les entrées pendant ses heures de travail, et signaler les incidents, mais il ne peut pas être tenu de s'interposer physiquement lors d'un vol ou d'une agression. Le forcer à le faire sans formation et équipement appropriés est une mise en danger d'autrui.</p>
 
 <p>Pour une sécurité réelle, les grandes résidences casablancaises emploient des agents de sécurité spécialisés (souvent via des sociétés de gardiennage agréées par le ministère de l'Intérieur) en plus ou à la place d'un concierge traditionnel. Ces agents sont formés, assurés, et couverts par une convention collective spécifique.</p>
 
-<p>Les systèmes de vidéosurveillance (CCTV) sont de plus en plus courants dans les immeubles casablancais. Légalement, leur installation dans les parties communes est permise à condition d'afficher des panneaux d'information (obligation du RGPD marocain équivalent — loi 09-08 sur la protection des données). Les images peuvent être utilisées comme preuve en cas d'incident.</p>
+<p>Les systèmes de vidéosurveillance (CCTV) sont de plus en plus courants dans les immeubles casablancais. Légalement, leur installation dans les parties communes est permise à condition d'afficher des panneaux d'information (obligation du RGPD marocain équivalent, loi 09-08 sur la protection des données). Les images peuvent être utilisées comme preuve en cas d'incident.</p>
 
 <p>L'interphone avec caméra à l'entrée, les badges d'accès et les portails motorisés remplacent progressivement le traditionnel "gardien qui ouvre la porte" dans les résidences modernes. Le concierge de demain à Casablanca sera autant un gestionnaire technique qu'un agent de présence physique.</p>`,
+    },
+    {
+      title: "Scénario type : le gardien parti sans prévenir, 3 semaines de chaos",
+      content: `<p>L'immeuble de la rue Abdelmoumen a un problème. Le gardien est parti sans prévenir il y a trois semaines, comme il est arrivé, sans cérémonie. Depuis, les poubelles s'accumulent dans le couloir, l'entrée n'est plus nettoyée, et deux copropriétaires se plaignent que des gens entrent librement dans le parking la nuit. Ce scénario, des centaines de syndicats d'immeubles casablancais le vivent. La question n'est pas seulement de trouver un concierge, c'est de comprendre ce rôle, ses contours légaux, et comment créer une relation de travail durable.</p>`,
     },
   ],
   priceTable: [
@@ -122,8 +126,6 @@ const content: RichPageContent = {
     { intervention: "Concierge de résidence fermée (>50 unités)", prixMin: 3500, prixMoyen: 4500, prixMax: 6000 },
     { intervention: "Prestataire nettoyage parties communes (mensuel, immeuble 20 appt.)", prixMin: 800, prixMoyen: 1200, prixMax: 1800 },
   ],
-  youtubeVideoId: "xfJJCKqYEJk",
-  youtubeVideoTitle: "Gestion de copropriété au Maroc – Droits et obligations des copropriétaires",
   externalLinks: [
     {
       label: "Loi 18-00 relative au statut de la copropriété des immeubles bâtis",
@@ -161,7 +163,7 @@ const content: RichPageContent = {
       quarter: "Maarif",
       city: "Casablanca",
       rating: 4,
-      text: "Immeuble de 25 appartements sans syndic officiel depuis des années — le chaos. On a finalement créé un syndic de copropriétaires et embauché un concierge déclaré. Ça a transformé la vie de l'immeuble. Les couloirs sont propres, les poubelles gérées, l'entrée est sûre.",
+      text: "Immeuble de 25 appartements sans syndic officiel depuis des années, le chaos. On a finalement créé un syndic de copropriétaires et embauché un concierge déclaré. Ça a transformé la vie de l'immeuble. Les couloirs sont propres, les poubelles gérées, l'entrée est sûre.",
       date: "Mars 2026",
       service: "Mise en place syndicat + concierge",
     },
@@ -190,7 +192,7 @@ const content: RichPageContent = {
     },
     {
       question: "Comment gérer un conflit entre un concierge et des copropriétaires ?",
-      answer: "Le syndic est l'interlocuteur principal dans ce cas. En cas de problème, le syndic doit entendre les deux parties, établir un compte-rendu écrit, et selon la gravité, prendre une décision (avertissement, mise à pied, rupture). Evitez les confrontations directes entre copropriétaires individuels et le concierge — ça fragilise l'autorité du syndic.",
+      answer: "Le syndic est l'interlocuteur principal dans ce cas. En cas de problème, le syndic doit entendre les deux parties, établir un compte-rendu écrit, et selon la gravité, prendre une décision (avertissement, mise à pied, rupture). Évitez les confrontations directes entre copropriétaires individuels et le concierge, ça fragilise l'autorité du syndic.",
     },
     {
       question: "Un concierge peut-il être licencié si la copropriété décide de ne plus en avoir besoin ?",
@@ -210,7 +212,7 @@ const content: RichPageContent = {
     },
     {
       question: "Comment gérer les charges du concierge en cas d'impayés de certains copropriétaires ?",
-      answer: "C'est un problème classique dans les copropriétés casablancaises. Le syndicat doit maintenir une provision pour pouvoir payer les charges courantes (y compris le salaire du concierge) même en cas d'impayés. Si les impayés sont chroniques, le syndic peut poursuivre les débiteurs en justice. Jamais ne retarder le paiement du concierge pour cette raison — c'est illégal.",
+      answer: "C'est un problème classique dans les copropriétés casablancaises. Le syndicat doit maintenir une provision pour pouvoir payer les charges courantes (y compris le salaire du concierge) même en cas d'impayés. Si les impayés sont chroniques, le syndic peut poursuivre les débiteurs en justice. Jamais ne retarder le paiement du concierge pour cette raison, c'est illégal.",
     },
     {
       question: "Un concierge peut-il refuser d'effectuer certaines tâches ?",
@@ -222,15 +224,15 @@ const content: RichPageContent = {
     },
   ],
   tips: [
-    "Avant de recruter, faites une réunion de copropriétaires pour aligner les attentes — chacun a une idée différente de ce que doit faire le concierge, et les désaccords viennent souvent de là.",
-    "Créez un carnet de bord de l'immeuble où le concierge note chaque incident, chaque intervention de prestataire, chaque visiteur inhabituel — c'est précieux en cas de litige.",
-    "Installez une boîte aux lettres fermée pour les documents importants destinés aux copropriétaires — ça professionnalise le rôle du concierge et évite que des courriers 'disparaissent'.",
+    "Avant de recruter, faites une réunion de copropriétaires pour aligner les attentes, chacun a une idée différente de ce que doit faire le concierge, et les désaccords viennent souvent de là.",
+    "Créez un carnet de bord de l'immeuble où le concierge note chaque incident, chaque intervention de prestataire, chaque visiteur inhabituel, c'est précieux en cas de litige.",
+    "Installez une boîte aux lettres fermée pour les documents importants destinés aux copropriétaires, ça professionnalise le rôle du concierge et évite que des courriers 'disparaissent'.",
     "Faites un point mensuel rapide entre le syndic et le concierge pour débloquer les petits problèmes avant qu'ils deviennent de gros conflits.",
-    "Si votre immeuble a un ascenseur, assurez-vous que le concierge a le numéro du prestataire maintenance et sait quoi faire en cas de personne bloquée — c'est une urgence qui arrive plus souvent qu'on ne le pense.",
+    "Si votre immeuble a un ascenseur, assurez-vous que le concierge a le numéro du prestataire maintenance et sait quoi faire en cas de personne bloquée, c'est une urgence qui arrive plus souvent qu'on ne le pense.",
     "Une prime annuelle de fin d'année (équivalent à un mois de salaire) fidélise un bon concierge et est souvent rentable comparé au coût de recrutement et de formation d'un remplaçant.",
-    "Pour les résidences avec vigile la nuit, assurez-vous que la société de gardiennage est agréée par la direction de la sécurité du ministère de l'Intérieur — c'est une obligation légale pour exercer ce métier.",
+    "Pour les résidences avec vigile la nuit, assurez-vous que la société de gardiennage est agréée par la direction de la sécurité du ministère de l'Intérieur, c'est une obligation légale pour exercer ce métier.",
   ],
-  localKnowledge: `<p>À Casablanca, le monde des concierges d'immeuble est structuré autour de réseaux informels mais efficaces. Dans des quartiers comme <strong>Maarif</strong>, <strong>Gauthier</strong> et <strong>Bourgogne</strong>, les immeubles anciens ont souvent des loges de gardien construites au rez-de-chaussée dès l'origine — signe que la tradition du concierge est ancienne dans ces quartiers haussmanniens. Dans les nouvelles résidences de <strong>Sidi Maarouf</strong> ou <strong>Casa-Anfa</strong>, les promoteurs intègrent dès la conception des postes de gardiennage avec accès badge, vidéosurveillance et parking sécurisé — le concierge y est davantage un opérateur technique qu'un gardien traditionnel. La <strong>FNBTP</strong> (Fédération Nationale du Bâtiment) et les associations de syndics professionnels cherchent à structurer ce secteur, mais la réalité du terrain reste très diverse.</p>`,
+  localKnowledge: `<p>À Casablanca, le monde des concierges d'immeuble est structuré autour de réseaux informels mais efficaces. Dans des quartiers comme <strong>Maarif</strong>, <strong>Gauthier</strong> et <strong>Bourgogne</strong>, les immeubles anciens ont souvent des loges de gardien construites au rez-de-chaussée dès l'origine, signe que la tradition du concierge est ancienne dans ces quartiers haussmanniens. Dans les nouvelles résidences de <strong>Sidi Maarouf</strong> ou <strong>Casa-Anfa</strong>, les promoteurs intègrent dès la conception des postes de gardiennage avec accès badge, vidéosurveillance et parking sécurisé, le concierge y est davantage un opérateur technique qu'un gardien traditionnel. La <strong>FNBTP</strong> (Fédération Nationale du Bâtiment) et les associations de syndics professionnels cherchent à structurer ce secteur, mais la réalité du terrain reste très diverse.</p>`,
   lastUpdated: "Avril 2026",
 };
 

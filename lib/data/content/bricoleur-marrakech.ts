@@ -5,25 +5,25 @@ const content: RichPageContent = {
   metaTitle: "Bricoleur Marrakech – Montage Meubles, Réparations & Prix 2026 | Allo Maison",
   metaDescription:
     "Bricoleur à Marrakech : montage meubles riad, petites réparations, pose d'étagères. Prix en DH, intervention rapide Médina, Guéliz, Targa. Artisans vérifiés.",
-  h1: "Bricoleur à Marrakech : Entre Tradition des Riads et Modernité",
+  h1: "Bricoleur à Marrakech : petits travaux et montage meubles au meilleur prix",
   heroText:
-    "Karim et sa femme venaient de finaliser l'achat d'un petit riad dans le quartier Kennaria, à deux pas de la place Jamaa El Fna. Après deux années de restauration, les murs en tadelakt brillaient, les zelliges du patio étaient parfaits — et il restait maintenant à meubler. Quarante-trois cartons de chez Ikea stockés dans la future salle à manger, des escaliers en colimaçon de 60 cm de large, une porte d'entrée en bois sculpté qui fait à peine 80 cm... La question n'était pas juste de monter des meubles, c'était un défi logistique et artisanal que seul quelqu'un connaissant les riads de la Médina pouvait relever.",
+    "Besoin d'un bricoleur de confiance à Marrakech ? Montage de meubles, petits travaux, réparations ou installations, nos bricoleurs vérifiés interviennent dans tous les quartiers.",
 
   sections: [
     {
       title: "Bricolage à Marrakech : entre tradition et modernité",
       content: `<p>Marrakech est une ville à double visage : d'un côté la Médina millénaire avec ses riads, ses artisans traditionnels et ses ruelles enchevêtrées, de l'autre Guéliz et les nouveaux quartiers avec leurs appartements modernes, leurs résidences fermées et leurs villas contemporaines. Ces deux mondes coexistent et le bricoleur à Marrakech doit maîtriser les deux registres.</p>
 <p>Dans la <strong>Médina</strong>, intervenir nécessite une vraie connaissance des matériaux traditionnels : le tadelakt (enduit à la chaux poli), le bejmat (carrelage en terre cuite), le gébs (plâtre sculpté), le bois cèdre des menuiseries. Un clou planté sans précaution dans un mur de pisé peut fissurer toute une paroi. Une perceuse utilisée sans précaution sur un mur en briques anciennes peut créer une cavité inattendue.</p>
-<p>Dans <strong>Guéliz</strong> et les immeubles modernes, on retrouve des matériaux plus standardisés — béton, carreaux céramique, cloisons en briques creuses — qui répondent aux techniques de bricolage habituelles. Mais les particularités locales subsistent : le béton marocain a souvent une texture différente du béton français, et les chevilles standard européennes ne tiennent pas toujours aussi bien.</p>
+<p>Dans <strong>Guéliz</strong> et les immeubles modernes, on retrouve des matériaux plus standardisés, béton, carreaux céramique, cloisons en briques creuses, qui répondent aux techniques de bricolage habituelles. Mais les particularités locales subsistent : le béton marocain a souvent une texture différente du béton français, et les chevilles standard européennes ne tiennent pas toujours aussi bien.</p>
 <p>La <strong>chaleur extrême de Marrakech</strong> a aussi un impact sur le bricolage : les colles et mastics ont besoin d'être adaptés à des températures pouvant dépasser 45°C en été (certaines colles standard ramollissent et perdent leur adhérence). Les bois se dilatent et se rétractent selon les saisons plus fortement qu'en Europe. Un bricoleur expérimenté à Marrakech le sait et choisit ses matériaux en conséquence.</p>`,
     },
     {
       title: "Montage de meubles dans les riads : le défi des escaliers et des portes",
-      content: `<p>Le montage de meubles dans un riad de la Médina est une discipline à part entière. Ce qui paraît simple — monter une armoire, installer une bibliothèque — devient un exercice de calcul spatial et d'ingéniosité dans un riad aux couloirs étroits et aux escaliers impossibles.</p>
+      content: `<p>Le montage de meubles dans un riad de la Médina est une discipline à part entière. Ce qui paraît simple, monter une armoire, installer une bibliothèque, devient un exercice de calcul spatial et d'ingéniosité dans un riad aux couloirs étroits et aux escaliers impossibles.</p>
 <h3>Le problème des escaliers en colimaçon</h3>
 <p>Les escaliers des riads anciens ont souvent une largeur de 60 à 75 cm et un rayon de courbure très serré. Un meuble de 80 cm de large (une armoire standard IKEA) ne peut tout simplement pas passer dans ces conditions. Les solutions :</p>
 <ul>
-<li><strong>Démontage maximal</strong> : toutes les parties démontables doivent l'être. Les tablettes, tiroirs, portes, pieds — tout monte séparément.</li>
+<li><strong>Démontage maximal</strong> : toutes les parties démontables doivent l'être. Les tablettes, tiroirs, portes, pieds, tout monte séparément.</li>
 <li><strong>Passage par la terrasse</strong> : pour les étages supérieurs, certains meubles montent par la terrasse avec des cordes et des sangles, en les hissant depuis l'extérieur. Technique courante dans la Médina, mais qui nécessite au minimum 3 personnes et du matériel adapté.</li>
 <li><strong>Les meubles sur mesure</strong> : pour les riads en location ou les maisons d'hôtes, de nombreux propriétaires font fabriquer des meubles sur mesure par des menuisiers locaux, dimensionnés précisément pour les espaces du riad. Souvent la solution la plus élégante et la plus pratique.</li>
 </ul>
@@ -34,7 +34,7 @@ const content: RichPageContent = {
     },
     {
       title: "Les artisans de la Médina : un réseau unique",
-      content: `<p>La Médina de Marrakech abrite l'un des plus grands concentrations d'artisans spécialisés au monde. Cette richesse artisanale est une ressource incomparable pour quiconque rénove ou entretient un riad — à condition de savoir comment y accéder et comment travailler avec ce réseau.</p>
+      content: `<p>La Médina de Marrakech abrite l'un des plus grands concentrations d'artisans spécialisés au monde. Cette richesse artisanale est une ressource incomparable pour quiconque rénove ou entretient un riad, à condition de savoir comment y accéder et comment travailler avec ce réseau.</p>
 <h3>Les souks d'artisans spécialisés</h3>
 <p>La Médina est organisée par corps de métier, une organisation héritée de la tradition millénaire des villes arabo-berbères :</p>
 <ul>
@@ -47,12 +47,12 @@ const content: RichPageContent = {
 <p>Ces artisans ont des tarifs généralement inférieurs aux prestataires modernes, mais la communication peut être plus complexe (certains ne parlent qu'arabe ou darija), les délais moins prévisibles et la qualité très variable d'un artisan à l'autre.</p>
 <h3>Trouver un bon artisan en Médina</h3>
 <p>Le meilleur moyen reste le bouche-à-oreille. Les autres propriétaires de riads dans votre quartier, les gérants de maisons d'hôtes voisines, ou votre "qaid" de quartier sont les meilleures sources de recommandations. Un artisan recommandé par un voisin satisfait vaut toutes les plateformes en ligne.</p>
-<p>Via Allo Maison, les bricoleurs et artisans partenaires à Marrakech sont vérifiés et évalués par les clients précédents — un gage de confiance important dans une ville où les "faux guides" et les intermédiaires opportunistes existent aussi dans le secteur des services à domicile.</p>`,
+<p>Via Allo Maison, les bricoleurs et artisans partenaires à Marrakech sont vérifiés et évalués par les clients précédents, un gage de confiance important dans une ville où les "faux guides" et les intermédiaires opportunistes existent aussi dans le secteur des services à domicile.</p>`,
     },
     {
       title: "Prix bricolage Marrakech 2026",
       content: `<p>Les tarifs des bricoleurs à Marrakech sont légèrement plus variables qu'ailleurs en raison du double marché : les prestataires "modernes" avec forfaits clairs et les artisans traditionnels qui fonctionnent plutôt au marchandage. Voici les prix du marché actuel pour les services standardisés :</p>
-<p>Les <strong>suppléments spécifiques aux riads</strong> sont courants : passage par terrasse, démontage/remontage exceptionnel d'un meuble, travail dans un espace très contraint — comptez +50 à +100% sur le tarif standard pour ces cas particuliers.</p>
+<p>Les <strong>suppléments spécifiques aux riads</strong> sont courants : passage par terrasse, démontage/remontage exceptionnel d'un meuble, travail dans un espace très contraint, comptez +50 à +100% sur le tarif standard pour ces cas particuliers.</p>
 <p>Bonne nouvelle : pour le montage de meubles simples (tables, chaises, petites étagères), les tarifs à Marrakech sont généralement dans la moyenne nationale ou légèrement inférieurs. La concurrence entre artisans est forte.</p>`,
     },
     {
@@ -89,7 +89,7 @@ const content: RichPageContent = {
 <p><strong>Brico Maroc (Boulevard Mohammed VI, Guéliz étendu)</strong> : bien approvisionné en matériaux de construction et en carrelages. Bonne sélection de produits pour la rénovation.</p>
 <h3>Les spécialistes de la Médina et du marché traditionnel</h3>
 <p><strong>Le Mellah (quartier juif historique)</strong> : autour du marché couvert du Mellah, on trouve des quincailleries traditionnelles avec visserie, serrurerie et petite quincaillerie à des prix très compétitifs.</p>
-<p><strong>Bab Doukkala</strong> : aux abords de cette porte de la Médina, des dizaines de petits vendeurs proposent tout ce qu'il faut pour la construction et la rénovation traditionnelle — chaux, pigments, tadelakt, bejmat, briques.</p>
+<p><strong>Bab Doukkala</strong> : aux abords de cette porte de la Médina, des dizaines de petits vendeurs proposent tout ce qu'il faut pour la construction et la rénovation traditionnelle, chaux, pigments, tadelakt, bejmat, briques.</p>
 <h3>Les fournisseurs de matériaux spécifiques aux riads</h3>
 <ul>
 <li>Tadelakt et chaux hydraulique : cherchez les négociants en matériaux à Bab Doukkala et dans les faubourgs de la Médina</li>
@@ -120,6 +120,10 @@ const content: RichPageContent = {
 </ul>
 <h3>Le concept de "bricoleur attitré"</h3>
 <p>Les meilleures maisons d'hôtes de Marrakech ont un artisan-bricoleur de confiance disponible rapidement, avec qui elles travaillent régulièrement. Cette relation de longue durée permet à l'artisan de connaître parfaitement les spécificités du riad, d'anticiper les problèmes, et d'intervenir plus efficacement. Certains proposent des abonnements de maintenance mensuelle tout inclus.</p>`,
+    },
+    {
+      title: "Scénario type : 43 cartons IKEA à monter dans un riad à Kennaria",
+      content: `<p>Karim et sa femme venaient de finaliser l'achat d'un petit riad dans le quartier Kennaria, à deux pas de la place Jamaa El Fna. Après deux années de restauration, les murs en tadelakt brillaient, les zelliges du patio étaient parfaits, et il restait maintenant à meubler. Quarante-trois cartons de chez Ikea stockés dans la future salle à manger, des escaliers en colimaçon de 60 cm de large, une porte d'entrée en bois sculpté qui fait à peine 80 cm... La question n'était pas juste de monter des meubles, c'était un défi logistique et artisanal que seul quelqu'un connaissant les riads de la Médina pouvait relever.</p>`,
     },
   ],
 
@@ -210,8 +214,6 @@ const content: RichPageContent = {
     },
   ],
 
-  youtubeVideoId: "yfE5N_N8awk",
-  youtubeVideoTitle: "Rénover un riad à Marrakech : conseils pratiques et artisans locaux",
 
   externalLinks: [
     {
@@ -230,7 +232,7 @@ const content: RichPageContent = {
       label: "IKEA Maroc – livraison et montage à Marrakech",
       url: "https://www.ikea.com/ma",
       description:
-        "Service de livraison et montage IKEA disponible à Marrakech — utile pour vérifier les délais et tarifs.",
+        "Service de livraison et montage IKEA disponible à Marrakech, utile pour vérifier les délais et tarifs.",
     },
   ],
 
@@ -240,7 +242,7 @@ const content: RichPageContent = {
       quarter: "Kennaria (Médina)",
       city: "Marrakech",
       rating: 5,
-      text: "Montage de 8 meubles IKEA dans mon riad — escalier en colimaçon de 65cm, portes étroites. Le bricoleur connaissait parfaitement les riads de la Médina, il a tout monté pièce par pièce, sans rien abîmer. Un vrai professionnel de la logistique des espaces étroits.",
+      text: "Montage de 8 meubles IKEA dans mon riad, escalier en colimaçon de 65cm, portes étroites. Le bricoleur connaissait parfaitement les riads de la Médina, il a tout monté pièce par pièce, sans rien abîmer. Un vrai professionnel de la logistique des espaces étroits.",
       date: "Janvier 2026",
       service: "Montage mobilier riad Médina",
     },
@@ -277,12 +279,12 @@ const content: RichPageContent = {
     {
       question: "Comment faire passer un grand meuble dans un escalier de riad ?",
       answer:
-        "Trois techniques selon la configuration. D'abord le démontage maximal — tout ce qui peut se démonter se démonter, et les pièces montent séparément. Ensuite le passage par la terrasse : pour les étages supérieurs, les meubles peuvent être hissés de l'extérieur en passant par la terrasse avec des cordes (au minimum 3 personnes). Enfin, si rien ne passe, faire appel à un menuisier local pour fabriquer le meuble directement dans la pièce à partir de bois brut est souvent la solution la plus élégante dans un riad de standing.",
+        "Trois techniques selon la configuration. D'abord le démontage maximal : tout ce qui peut se démonter doit se démonter, et les pièces montent séparément. Ensuite le passage par la terrasse : pour les étages supérieurs, les meubles peuvent être hissés de l'extérieur en passant par la terrasse avec des cordes (au minimum 3 personnes). Enfin, si rien ne passe, faire appel à un menuisier local pour fabriquer le meuble directement dans la pièce à partir de bois brut est souvent la solution la plus élégante dans un riad de standing.",
     },
     {
       question: "Peut-on fixer des étagères dans les murs en tadelakt ou en pisé d'un riad ?",
       answer:
-        "Oui, mais avec des précautions. Le pisé (terre compressée) et le tadelakt (enduit chaux) sont des matériaux différents du béton et ne réagissent pas pareil aux chevilles standard. Il faut utiliser des chevilles spéciales pour matériaux friables (chevilles à molette, chevilles Molly), percer avec un diamètre précis, et ne pas trop serrer. Un bricoleur expérimenté en riads connaît ces subtilités — un amateur peut fissurer tout un pan de mur.",
+        "Oui, mais avec des précautions. Le pisé (terre compressée) et le tadelakt (enduit chaux) sont des matériaux différents du béton et ne réagissent pas pareil aux chevilles standard. Il faut utiliser des chevilles spéciales pour matériaux friables (chevilles à molette, chevilles Molly), percer avec un diamètre précis, et ne pas trop serrer. Un bricoleur expérimenté en riads connaît ces subtilités, un amateur peut fissurer tout un pan de mur.",
     },
     {
       question: "Combien coûte un bricoleur à Marrakech pour le montage d'une cuisine IKEA ?",
@@ -302,22 +304,22 @@ const content: RichPageContent = {
     {
       question: "Quelle est la différence entre un bricoleur et un maâllem (maître artisan) ?",
       answer:
-        "Un bricoleur professionnel est polyvalent — il monte des meubles, pose des étagères, fait des petites réparations diverses. Un maâllem est un artisan spécialisé avec des années de formation dans son métier : maâllem zouakri (décoration bois), maâllem tadelakt (enduits chaux), maâllem fakhkhari (céramique), maâllem haddad (ferronnerie). Pour des travaux courants dans un appartement moderne, le bricoleur suffit. Pour des travaux sur éléments patrimoniaux d'un riad authentique, le maâllem est irremplaçable.",
+        "Un bricoleur professionnel est polyvalent, il monte des meubles, pose des étagères, fait des petites réparations diverses. Un maâllem est un artisan spécialisé avec des années de formation dans son métier : maâllem zouakri (décoration bois), maâllem tadelakt (enduits chaux), maâllem fakhkhari (céramique), maâllem haddad (ferronnerie). Pour des travaux courants dans un appartement moderne, le bricoleur suffit. Pour des travaux sur éléments patrimoniaux d'un riad authentique, le maâllem est irremplaçable.",
     },
     {
       question: "Le bricoleur peut-il aussi peindre les murs en tadelakt ?",
       answer:
-        "Non — le tadelakt est une technique d'enduit à la chaux très spécifique qui se réalise en plusieurs couches et nécessite un lustrage au savon noir et à la pierre polie. C'est le domaine exclusif du maâllem tadelakt, formé pendant des années. Un bricoleur peut faire de la peinture ordinaire ou de la peinture à la chaux simple, mais la réfection du tadelakt d'un riad doit être confiée à un artisan spécialisé.",
+        "Non, le tadelakt est une technique d'enduit à la chaux très spécifique qui se réalise en plusieurs couches et nécessite un lustrage au savon noir et à la pierre polie. C'est le domaine exclusif du maâllem tadelakt, formé pendant des années. Un bricoleur peut faire de la peinture ordinaire ou de la peinture à la chaux simple, mais la réfection du tadelakt d'un riad doit être confiée à un artisan spécialisé.",
     },
     {
       question: "Comment trouver un artisan de confiance en Médina de Marrakech ?",
       answer:
-        "Le bouche-à-oreille reste la méthode la plus fiable. Demandez à vos voisins de riad, aux gérants de maisons d'hôtes du quartier, à votre agent immobilier. Évitez les artisans qui vous abordent spontanément dans la rue — les bons artisans n'ont pas besoin de démarcher. Allo Maison dispose d'un réseau de prestataires vérifiés à Marrakech, avec avis clients contrôlés.",
+        "Le bouche-à-oreille reste la méthode la plus fiable. Demandez à vos voisins de riad, aux gérants de maisons d'hôtes du quartier, à votre agent immobilier. Évitez les artisans qui vous abordent spontanément dans la rue, les bons artisans n'ont pas besoin de démarcher. Allo Maison dispose d'un réseau de prestataires vérifiés à Marrakech, avec avis clients contrôlés.",
     },
     {
       question: "Quels travaux peut-on faire soi-même dans un riad ?",
       answer:
-        "Montage de meubles en kit, pose d'étagères légères, remplacement d'ampoules et luminaires simples, retouches peinture sur murs lisses, remplacement de poignées et serrures standard — tout cela est faisable par un bricoleur amateur. En revanche, évitez de travailler sur les murs anciens (pisé, terre crue) sans conseils d'un professionnel, et ne touchez jamais aux éléments structurels ou aux finitions tadelakt sans expertise.",
+        "Montage de meubles en kit, pose d'étagères légères, remplacement d'ampoules et luminaires simples, retouches peinture sur murs lisses, remplacement de poignées et serrures standard, tout cela est faisable par un bricoleur amateur. En revanche, évitez de travailler sur les murs anciens (pisé, terre crue) sans conseils d'un professionnel, et ne touchez jamais aux éléments structurels ou aux finitions tadelakt sans expertise.",
     },
     {
       question: "Combien de temps prend le montage d'une armoire PAX dans un riad ?",
@@ -332,17 +334,17 @@ const content: RichPageContent = {
   ],
 
   tips: [
-    "Mesurez toujours deux fois l'escalier le plus étroit de votre riad avant d'acheter un grand meuble — la largeur minimale et la hauteur du plafond aux paliers.",
-    "Pour les murs en pisé ou tadelakt, n'utilisez jamais des chevilles standard expansibles — optez pour des chevilles Molly ou des systèmes de fixation à molette adaptés aux matériaux friables.",
-    "Un contrat de maintenance mensuelle avec un bricoleur de confiance est le meilleur investissement pour une maison d'hôtes à Marrakech — les petits problèmes réglés avant l'arrivée des clients valent de l'or.",
+    "Mesurez toujours deux fois l'escalier le plus étroit de votre riad avant d'acheter un grand meuble, la largeur minimale et la hauteur du plafond aux paliers.",
+    "Pour les murs en pisé ou tadelakt, n'utilisez jamais des chevilles standard expansibles, optez pour des chevilles Molly ou des systèmes de fixation à molette adaptés aux matériaux friables.",
+    "Un contrat de maintenance mensuelle avec un bricoleur de confiance est le meilleur investissement pour une maison d'hôtes à Marrakech, les petits problèmes réglés avant l'arrivée des clients valent de l'or.",
     "Bricorama sur la Route de Casablanca est la meilleure grande surface pour le matériel standard, mais pour les matériaux traditionnels (chaux, tadelakt, bejmat), allez directement chez les fournisseurs de Bab Doukkala.",
-    "En été (juin-août), certaines colles et mastics perdent leur adhérence avec la chaleur — assurez-vous que vos produits sont certifiés pour des températures jusqu'à 50°C.",
-    "Le souk Chouari (souk des menuisiers en Médina) est une mine d'or pour tout ce qui touche au bois — réparations, fabrication sur mesure, bois cèdre brut, à des prix très compétitifs.",
-    "Pour les maisons d'hôtes, photographiez chaque chambre en détail en début de saison — ça facilite l'identification des dégâts causés par les clients et les réclamations aux assurances.",
-    "Quand vous faites appel à un artisan de la Médina, soyez précis dans votre commande et demandez un échantillon ou un croquis avant de valider — les malentendus de conception coûtent cher.",
+    "En été (juin-août), certaines colles et mastics perdent leur adhérence avec la chaleur, assurez-vous que vos produits sont certifiés pour des températures jusqu'à 50°C.",
+    "Le souk Chouari (souk des menuisiers en Médina) est une mine d'or pour tout ce qui touche au bois, réparations, fabrication sur mesure, bois cèdre brut, à des prix très compétitifs.",
+    "Pour les maisons d'hôtes, photographiez chaque chambre en détail en début de saison, ça facilite l'identification des dégâts causés par les clients et les réclamations aux assurances.",
+    "Quand vous faites appel à un artisan de la Médina, soyez précis dans votre commande et demandez un échantillon ou un croquis avant de valider, les malentendus de conception coûtent cher.",
   ],
 
-  localKnowledge: `<p>Marrakech est une ville où le bricolage prend une dimension culturelle particulière. La <strong>Médina</strong>, classée au patrimoine mondial de l'UNESCO, concentre des milliers de riads dont beaucoup sont en location touristique — créant un marché de maintenance et de rénovation spécifique, avec des contraintes uniques (escaliers en colimaçon, portes étroites, matériaux traditionnels). Le <strong>Souk Chouari</strong> (menuisiers), le <strong>Souk Haddadine</strong> (ferronniers) et les artisans de <strong>Bab Doukkala</strong> constituent un réseau artisanal sans équivalent. <strong>Guéliz</strong>, le quartier moderne avec ses appartements et résidences, a des besoins plus standards — montage de meubles, petites réparations, pose de luminaires. La <strong>Palmeraie</strong> et les villas de luxe autour de Marrakech demandent des finitions haut de gamme et des artisans capables de travailler avec des matériaux noble (marbre, bois précieux, ferronnerie forgée). La chaleur extrême de l'été marrakchi (45°C+) impose des matériaux adaptés et des colles haute température, une connaissance que les meilleurs bricoleurs locaux ont intégrée naturellement.</p>`,
+  localKnowledge: `<p>Marrakech est une ville où le bricolage prend une dimension culturelle particulière. La <strong>Médina</strong>, classée au patrimoine mondial de l'UNESCO, concentre des milliers de riads dont beaucoup sont en location touristique, créant un marché de maintenance et de rénovation spécifique, avec des contraintes uniques (escaliers en colimaçon, portes étroites, matériaux traditionnels). Le <strong>Souk Chouari</strong> (menuisiers), le <strong>Souk Haddadine</strong> (ferronniers) et les artisans de <strong>Bab Doukkala</strong> constituent un réseau artisanal sans équivalent. <strong>Guéliz</strong>, le quartier moderne avec ses appartements et résidences, a des besoins plus standards, montage de meubles, petites réparations, pose de luminaires. La <strong>Palmeraie</strong> et les villas de luxe autour de Marrakech demandent des finitions haut de gamme et des artisans capables de travailler avec des matériaux nobles (marbre, bois précieux, ferronnerie forgée). La chaleur extrême de l'été marrakchi (45°C+) impose des matériaux adaptés et des colles haute température, une connaissance que les meilleurs bricoleurs locaux ont intégrée naturellement.</p>`,
 
   lastUpdated: "Avril 2026",
 };

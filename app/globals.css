@@ -3,18 +3,29 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    font-feature-settings: "ss01", "cv11";
+  }
+
+  h1, h2 {
+    font-family: var(--font-fraunces), Georgia, serif;
+    font-variation-settings: "opsz" 144, "SOFT" 50;
+  }
+
   h1 {
-    font-size: 42px;
-    font-weight: 800;
-    letter-spacing: -0.5px;
-    line-height: 1.15;
+    font-size: 56px;
+    font-weight: 550;
+    letter-spacing: -0.03em;
+    line-height: 0.95;
+    text-wrap: balance;
   }
 
   h2 {
-    font-size: 28px;
-    font-weight: 700;
-    letter-spacing: -0.3px;
-    line-height: 1.25;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    text-wrap: balance;
   }
 
   h3 {
@@ -24,16 +35,26 @@
   }
 
   @media (max-width: 768px) {
-    h1 {
-      font-size: 28px;
-    }
-
-    h2 {
-      font-size: 22px;
-    }
-
-    h3 {
-      font-size: 18px;
-    }
+    h1 { font-size: 36px; }
+    h2 { font-size: 28px; }
+    h3 { font-size: 18px; }
   }
+}
+
+@layer utilities {
+  .tab-nums { font-variant-numeric: tabular-nums; }
+  .font-display { font-family: var(--font-fraunces), Georgia, serif; }
+  .eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #6B6459;
+  }
+  .zellige-bg {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'><g fill='none' stroke='%231F4E5F' stroke-opacity='0.08' stroke-width='1'><path d='M40 0L80 40L40 80L0 40Z'/><path d='M40 20L60 40L40 60L20 40Z'/><circle cx='40' cy='40' r='4'/></g></svg>");
+    background-size: 80px 80px;
+  }
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+  .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
 }
