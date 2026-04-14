@@ -83,7 +83,7 @@ async function phase7Rescore() {
 
   for (const pro of pros) {
     const { score, details } = calculateScoreV2(pro as SupabasePro);
-    const status = score < 1.5 ? "rejected" : "scraped";
+    const status = score < 0.5 ? "rejected" : "scraped";
 
     await updatePro(pro.id!, {
       score_maison: score,

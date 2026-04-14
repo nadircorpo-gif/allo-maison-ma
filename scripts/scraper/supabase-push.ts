@@ -63,13 +63,24 @@ export async function updatePro(id: string, fields: Record<string, any>): Promis
 }
 
 export async function getAllPros(filters?: { withPhone?: boolean; status?: string }): Promise<any[]> {
-  let query = supabase.from("professionals").select("*");
-  if (filters?.withPhone) query = query.not("phone", "is", null);
-  if (filters?.status) query = query.eq("status", filters.status);
-  const { data, error } = await query;
-  if (error) {
-    console.error("Query error:", error.message);
-    return [];
+  const all: any[] = [];
+  const PAGE_SIZE = 1000;
+  let offset = 0;
+
+  while (true) {
+    let query = supabase.from("professionals").select("*").range(offset, offset + PAGE_SIZE - 1);
+    if (filters?.withPhone) query = query.not("phone", "is", null);
+    if (filters?.status) query = query.eq("status", filters.status);
+    const { data, error } = await query;
+    if (error) {
+      console.error("Query error:", error.message);
+      break;
+    }
+    if (!data || data.length === 0) break;
+    all.push(...data);
+    if (data.length < PAGE_SIZE) break;
+    offset += PAGE_SIZE;
   }
-  return data ?? [];
+
+  return all;
 }
