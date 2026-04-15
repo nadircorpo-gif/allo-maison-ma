@@ -1,5 +1,5 @@
 /**
- * URL Inspection API — audit indexation status for all allo-maison.ma URLs
+ * URL Inspection API, audit indexation status for all allo-maison.ma URLs
  * Usage: npx tsx scripts/inspect-indexation.ts [--limit=N] [--only-errors]
  */
 
@@ -120,13 +120,13 @@ async function main() {
       results.push(r);
       if (r.error) {
         errors++;
-        console.log(`  ERROR  ${r.url} — ${r.error.slice(0, 80)}`);
+        console.log(`  ERROR  ${r.url}, ${r.error.slice(0, 80)}`);
       } else if (r.verdict === "PASS") {
         indexed++;
-        if (!onlyErrors) console.log(`  PASS   ${r.url} — ${r.coverageState} (crawled: ${r.lastCrawlTime?.slice(0, 10) || "never"})`);
+        if (!onlyErrors) console.log(`  PASS   ${r.url}, ${r.coverageState} (crawled: ${r.lastCrawlTime?.slice(0, 10) || "never"})`);
       } else {
         notIndexed++;
-        console.log(`  FAIL   ${r.url} — ${r.coverageState} | ${r.indexingState} | fetch: ${r.pageFetchState}`);
+        console.log(`  FAIL   ${r.url}, ${r.coverageState} | ${r.indexingState} | fetch: ${r.pageFetchState}`);
       }
     }
 

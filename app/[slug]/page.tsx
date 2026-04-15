@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { Play, Clock } from "lucide-react";
+import { Play, Clock, Star } from "lucide-react";
 
 import JsonLd from "@/components/seo/json-ld";
 import Breadcrumb from "@/components/shared/breadcrumb";

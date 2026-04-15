@@ -54,3 +54,6 @@ submitted-urls.json
 .skill-archive/
 design-previews/
 indexation-report.json
+
+# Local Netlify folder
+.netlify

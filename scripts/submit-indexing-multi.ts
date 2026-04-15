@@ -118,7 +118,7 @@ async function submitBatch(urls: string[], token: string): Promise<{ ok: number;
         return { ok, failed, quotaHit };
       } else {
         failed++;
-        console.error(`  FAIL: ${r.url} — ${r.error}`);
+        console.error(`  FAIL: ${r.url}, ${r.error}`);
       }
     }
   }
@@ -174,7 +174,7 @@ async function main() {
       chunk.slice(0, ok).forEach((url) => submitted.add(url));
       saveTracking(submitted);
 
-      console.log(`  OK: ${ok} | Failed: ${failed}${quotaHit ? " | QUOTA HIT — next project" : ""}`);
+      console.log(`  OK: ${ok} | Failed: ${failed}${quotaHit ? " | QUOTA HIT, next project" : ""}`);
 
       if (quotaHit) {
         // Put unsubmitted back
