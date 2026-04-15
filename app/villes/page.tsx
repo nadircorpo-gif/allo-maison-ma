@@ -5,20 +5,20 @@ import { ArrowRight, MapPin } from "lucide-react";
 
 import Breadcrumb from "@/components/shared/breadcrumb";
 import JsonLd from "@/components/seo/json-ld";
-import { breadcrumbJsonLd } from "@/lib/seo";
+import { breadcrumbJsonLd, itemListJsonLd } from "@/lib/seo";
 
 import { CITIES } from "@/lib/data/cities";
 import { SERVICES } from "@/lib/data/services";
 
 export const metadata: Metadata = {
-  title: "Artisans à domicile par ville · 6 villes au Maroc | Allo-Maison",
+  title: "Villes desservies au Maroc | Allo-Maison",
   description:
-    "Trouvez un artisan vérifié dans votre ville : Casablanca, Rabat, Marrakech, Tanger, Fès, Agadir. 19 services à domicile, 1 017 pros certifiés, devis WhatsApp en 24 h.",
+    "Artisans vérifiés à Casablanca, Rabat, Marrakech, Tanger, Fès et Agadir. 19 services à domicile, 1 017 pros certifiés, devis WhatsApp en 24 h.",
   alternates: { canonical: "https://allo-maison.ma/villes" },
   openGraph: {
-    title: "Artisans à domicile par ville · 6 villes au Maroc | Allo-Maison",
+    title: "Villes desservies au Maroc | Allo-Maison",
     description:
-      "Trouvez un artisan vérifié dans votre ville : Casablanca, Rabat, Marrakech, Tanger, Fès, Agadir. 19 services à domicile, 1 017 pros certifiés.",
+      "Artisans vérifiés à Casablanca, Rabat, Marrakech, Tanger, Fès et Agadir. 19 services à domicile, 1 017 pros certifiés.",
     url: "https://allo-maison.ma/villes",
     siteName: "Allo-Maison",
     locale: "fr_MA",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Artisans à domicile par ville · 6 villes au Maroc | Allo-Maison",
+    title: "Villes desservies au Maroc | Allo-Maison",
     description:
       "Casablanca, Rabat, Marrakech, Tanger, Fès, Agadir — 19 services, 1 017 artisans vérifiés.",
     images: ["/opengraph-image"],
@@ -37,10 +37,15 @@ export const metadata: Metadata = {
 export default function VillesPage() {
   const breadcrumbItems = [{ name: "Villes", url: "https://allo-maison.ma/villes" }];
   const totalArtisans = CITIES.reduce((acc, c) => acc + c.artisanCount, 0);
+  const cityItems = CITIES.map((c) => ({
+    name: c.name,
+    url: `https://allo-maison.ma/villes/${c.slug}`,
+  }));
 
   return (
     <>
       <JsonLd data={breadcrumbJsonLd(breadcrumbItems)} />
+      <JsonLd data={itemListJsonLd("Villes desservies", cityItems)} />
 
       {/* ======= HERO ======= */}
       <section className="bg-cream border-b border-paper-border">

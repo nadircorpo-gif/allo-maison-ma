@@ -9,7 +9,7 @@ import WhatsAppButton from "@/components/shared/whatsapp-button";
 import { getServiceBySlug } from "@/lib/data/services";
 import { getCityBySlug } from "@/lib/data/cities";
 import { getUrgenceFAQ } from "@/lib/data/faq";
-import { generateUrgenceMetadata, faqJsonLd } from "@/lib/seo";
+import { generateUrgenceMetadata, faqJsonLd, breadcrumbJsonLd, howToJsonLd, professionalServiceJsonLd } from "@/lib/seo";
 import { buildUrgenceWhatsAppUrl } from "@/lib/whatsapp";
 import { getProfessionalsByServiceAndCity } from "@/lib/data/professionals";
 import ArtisanCardV2 from "@/components/shared/artisan-card-v2";
@@ -90,6 +90,25 @@ export default async function UrgencePage({
   return (
     <>
       <JsonLd data={faqJsonLd(faqs)} />
+      <JsonLd data={breadcrumbJsonLd(breadcrumbItems)} />
+      <JsonLd data={howToJsonLd(
+        `Que faire en urgence ${lowerService} à ${city.name}`,
+        `Étapes pour gérer une urgence ${lowerService} en attendant l'arrivée du professionnel à ${city.name}.`,
+        steps,
+        "PT5M"
+      )} />
+      {topPros.map((p, i) => (
+        <JsonLd key={`urg-pro-${i}`} data={professionalServiceJsonLd({
+          id: p.id,
+          name: p.displayName,
+          serviceName: service.name,
+          cityName: city.name,
+          rating: p.rating,
+          reviewCount: p.reviewCount,
+          phone: p.phone ?? undefined,
+          yearsExperience: p.experienceYears ?? undefined,
+        })} />
+      ))}
 
       {/* ========= Sticky urgency bar (zellige) ========= */}
       <div className="sticky top-0 z-40 bg-terracotta text-cream border-b border-primary-deep shadow-terracotta">

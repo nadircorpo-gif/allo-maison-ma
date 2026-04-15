@@ -7,6 +7,13 @@ import SearchBar from "@/components/shared/search-bar";
 
 const ROTATING_JOBS = ["plombier", "électricien", "peintre", "serrurier", "climaticien"];
 
+const AVATAR_INITIALS = [
+  { initials: "YK", bg: "#C24D2C" }, // terracotta
+  { initials: "RM", bg: "#2F4A3A" }, // zellige
+  { initials: "SA", bg: "#D4A24C" }, // saffron
+  { initials: "HC", bg: "#7FB8A4" }, // mint
+];
+
 type HeroProps = {
   totalArtisans?: number;
 };
@@ -15,6 +22,9 @@ export default function Hero({ totalArtisans }: HeroProps) {
   const [jobIndex, setJobIndex] = useState(0);
 
   useEffect(() => {
+    if (typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      return;
+    }
     const id = setInterval(() => {
       setJobIndex((i) => (i + 1) % ROTATING_JOBS.length);
     }, 2200);
@@ -105,9 +115,14 @@ export default function Hero({ totalArtisans }: HeroProps) {
           {/* Floating stat card */}
           <div className="hidden lg:block absolute -left-6 bottom-10 bg-white border border-paper-border rounded-xl p-4 w-[220px] shadow-card-hover">
             <div className="flex -space-x-2 mb-3">
-              {[12, 32, 55, 65].map((n) => (
-                <div key={n} className="w-8 h-8 rounded-full border-2 border-white bg-clay overflow-hidden">
-                  <Image src={`https://i.pravatar.cc/40?img=${n}`} alt="" width={32} height={32} />
+              {AVATAR_INITIALS.map((a) => (
+                <div
+                  key={a.initials}
+                  className="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center text-white text-[10px] font-semibold"
+                  style={{ backgroundColor: a.bg }}
+                  aria-hidden
+                >
+                  {a.initials}
                 </div>
               ))}
               <span className="w-8 h-8 rounded-full border-2 border-white bg-clay text-[10px] font-semibold flex items-center justify-center text-ink">

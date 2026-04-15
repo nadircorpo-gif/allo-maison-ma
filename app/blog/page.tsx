@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Breadcrumb from "@/components/shared/breadcrumb";
+import JsonLd from "@/components/seo/json-ld";
 import WhatsAppButton from "@/components/shared/whatsapp-button";
+import { breadcrumbJsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Blog Allo-Maison | Conseils services à domicile au Maroc",
@@ -17,6 +19,8 @@ export const metadata: Metadata = {
     type: "website",
     images: ["/opengraph-image"],
   },
+  // TODO retirer noindex après publication des 4 premiers articles
+  robots: { index: false, follow: true },
 };
 
 const PLANNED_ARTICLES = [
@@ -66,6 +70,7 @@ export default function BlogPage() {
 
   return (
     <>
+      <JsonLd data={breadcrumbJsonLd(breadcrumbItems)} />
       {/* HERO */}
       <section className="bg-cream border-b border-paper-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-12">
@@ -88,7 +93,7 @@ export default function BlogPage() {
             <div className="lg:col-span-4 flex justify-start lg:justify-end">
               <Image
                 src="/brand/logo-shield.svg"
-                alt=""
+                alt="Illustration éditoriale du blog Allo Maison"
                 width={320}
                 height={400}
                 className="w-36 h-auto drop-shadow-sm"

@@ -23,6 +23,9 @@ import {
   serviceCityJsonLd,
   faqJsonLd,
   videoObjectJsonLd,
+  breadcrumbJsonLd,
+  itemListJsonLd,
+  professionalServiceJsonLd,
 } from "@/lib/seo";
 import { buildBookingWhatsAppUrl } from "@/lib/whatsapp";
 import { getRichContent } from "@/lib/data/content";
@@ -137,6 +140,33 @@ export default async function ServiceCityPage({
           )}
         />
       )}
+      <JsonLd data={breadcrumbJsonLd(breadcrumbItems)} />
+      {professionals.length > 0 && (
+        <JsonLd
+          data={itemListJsonLd(
+            `Top ${professionals.length} ${service.name}s à ${city.name}`,
+            professionals.map((p, i) => ({
+              name: p.displayName,
+              url: `https://allo-maison.ma/${slug}#pro-${p.id ?? i}`,
+            }))
+          )}
+        />
+      )}
+      {professionals.slice(0, 3).map((p, i) => (
+        <JsonLd
+          key={`pro-${i}`}
+          data={professionalServiceJsonLd({
+            id: p.id ?? i,
+            name: p.displayName,
+            serviceName: service.name,
+            cityName: city.name,
+            rating: p.rating,
+            reviewCount: p.reviewCount,
+            phone: p.phone ?? undefined,
+            yearsExperience: p.experienceYears ?? undefined,
+          })}
+        />
+      ))}
 
       {/* ============ HERO (compact editorial) ============ */}
       <section className="bg-cream border-b border-paper-border">

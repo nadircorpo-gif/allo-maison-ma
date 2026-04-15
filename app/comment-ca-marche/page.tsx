@@ -3,7 +3,7 @@ import Image from "next/image";
 import JsonLd from "@/components/seo/json-ld";
 import Breadcrumb from "@/components/shared/breadcrumb";
 import SearchBar from "@/components/shared/search-bar";
-import { faqJsonLd } from "@/lib/seo";
+import { faqJsonLd, breadcrumbJsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Comment trouver un artisan de confiance au Maroc | allo-maison.ma",
@@ -103,6 +103,7 @@ export default function CommentCaMarchePage() {
     <>
       <JsonLd data={faqJsonLd(FAQ_ITEMS)} />
       <JsonLd data={HOWTO_SCHEMA} />
+      <JsonLd data={breadcrumbJsonLd(breadcrumbItems)} />
 
       {/* ========= HERO ========= */}
       <section className="bg-cream border-b border-paper-border">
@@ -189,7 +190,7 @@ export default function CommentCaMarchePage() {
         <section className="mb-20 bg-zellige text-cream rounded-2xl p-10 sm:p-14">
           <div className="grid lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-3 flex justify-center lg:justify-start">
-              <Image src="/brand/logo-shield-dark.svg" alt="" width={320} height={400} className="w-32 h-auto" />
+              <Image src="/brand/logo-shield-dark.svg" alt="Bouclier Allo Maison — garantie satisfait ou refait" width={320} height={400} className="w-32 h-auto" />
             </div>
             <div className="lg:col-span-9">
               <p className="eyebrow mb-2" style={{ color: "#D4A24C" }}>03 — La garantie</p>

@@ -3,18 +3,18 @@ import Image from "next/image";
 import JsonLd from "@/components/seo/json-ld";
 import Breadcrumb from "@/components/shared/breadcrumb";
 import BookingForm from "@/components/shared/booking-form";
-import { faqJsonLd } from "@/lib/seo";
+import { breadcrumbJsonLd, faqJsonLd } from "@/lib/seo";
 import { Clock } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Tarifs services a domicile au Maroc 2026 | Prix reels | allo-maison.ma",
+  title: "Tarifs services à domicile 2026 | Allo-Maison",
   description:
-    "Consultez les tarifs reels des services a domicile au Maroc en 2026. Prix min, moyen et max pour plomberie, electricite, menage, peinture et 16 services. Devis gratuit.",
+    "Tarifs réels 2026 des services à domicile au Maroc. Prix min, moyen et max pour plomberie, électricité, ménage, peinture et 16 services. Devis gratuit.",
   alternates: { canonical: "https://allo-maison.ma/tarifs" },
   openGraph: {
-    title: "Tarifs services a domicile au Maroc 2026 | Prix reels | allo-maison.ma",
+    title: "Tarifs services à domicile 2026 | Allo-Maison",
     description:
-      "Prix min, moyen et max pour 16 services a domicile au Maroc. Tarifs transparents et actualises. Devis gratuit.",
+      "Prix min, moyen et max pour 16 services à domicile au Maroc. Tarifs transparents et actualisés. Devis gratuit.",
     url: "https://allo-maison.ma/tarifs",
     siteName: "Allo-Maison",
     locale: "fr_MA",
@@ -133,6 +133,7 @@ export default function TarifsPage() {
   return (
     <>
       <JsonLd data={faqJsonLd(FAQ_ITEMS)} />
+      <JsonLd data={breadcrumbJsonLd(breadcrumbItems)} />
 
       {/* ========= HERO ========= */}
       <section className="bg-cream border-b border-paper-border">
@@ -308,7 +309,7 @@ export default function TarifsPage() {
             <div className="bg-zellige text-cream rounded-2xl p-5 flex items-center gap-4">
               <Image
                 src="/brand/logo-mark.svg"
-                alt=""
+                alt="Allo Maison — artisans certifiés depuis 2017"
                 width={320}
                 height={400}
                 className="w-10 h-12 shrink-0"

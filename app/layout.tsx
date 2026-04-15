@@ -27,6 +27,10 @@ export const metadata: Metadata = {
     "Trouvez des professionnels de confiance pour tous vos services à domicile au Maroc : plomberie, électricité, ménage, peinture et plus encore.",
   alternates: {
     canonical: "/",
+    languages: {
+      "fr-MA": "/",
+      "x-default": "/",
+    },
   },
   openGraph: {
     siteName: "Allo-Maison",
@@ -46,9 +50,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/opengraph-image"],
   },
-  other: {
-    "google-site-verification": process.env.NEXT_PUBLIC_GSC_ID ?? "",
-  },
+  ...(process.env.NEXT_PUBLIC_GSC_ID
+    ? { other: { "google-site-verification": process.env.NEXT_PUBLIC_GSC_ID } }
+    : {}),
 };
 
 const GA4_ID = process.env.NEXT_PUBLIC_GA4_ID;
@@ -66,6 +70,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://images.unsplash.com" crossOrigin="anonymous" />
       </head>
       <body className={`${inter.variable} ${fraunces.variable} font-sans bg-cream text-ink antialiased`}>
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:px-4 focus:py-2 focus:bg-ink focus:text-cream focus:rounded-lg focus:shadow-lg">Aller au contenu principal</a>
         {GA4_ID && GA4_ID !== "G-XXXXXXXXXX" && (
           <>
             <Script
@@ -83,7 +88,7 @@ export default function RootLayout({
           </>
         )}
         <Navbar />
-        <main>{children}</main>
+        <main id="main-content">{children}</main>
         <Footer />
       </body>
     </html>

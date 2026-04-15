@@ -5,17 +5,17 @@ import Breadcrumb from "@/components/shared/breadcrumb";
 import ServiceCard from "@/components/shared/service-card";
 import SearchBar from "@/components/shared/search-bar";
 import { SERVICES } from "@/lib/data/services";
-import { faqJsonLd } from "@/lib/seo";
+import { breadcrumbJsonLd, faqJsonLd, itemListJsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Services à domicile au Maroc | Artisans vérifiés | allo-maison.ma",
+  title: "Services à domicile au Maroc | Allo-Maison",
   description:
-    "Tous nos services à domicile au Maroc : plomberie, électricité, ménage, rénovation et plus. 1 017 artisans vérifiés et encadrés. Devis gratuit via WhatsApp.",
+    "Plomberie, électricité, ménage, rénovation et plus. 1 017 artisans vérifiés dans 6 villes. Devis gratuit via WhatsApp en 24 h.",
   alternates: { canonical: "https://allo-maison.ma/services" },
   openGraph: {
-    title: "Services à domicile au Maroc | Artisans vérifiés | allo-maison.ma",
+    title: "Services à domicile au Maroc | Allo-Maison",
     description:
-      "Tous nos services à domicile au Maroc : plomberie, électricité, ménage, rénovation et plus. 1 017 artisans vérifiés et encadrés.",
+      "Plomberie, électricité, ménage, rénovation et plus. 1 017 artisans vérifiés dans 6 villes. Devis gratuit via WhatsApp en 24 h.",
     url: "https://allo-maison.ma/services",
     siteName: "Allo-Maison",
     locale: "fr_MA",
@@ -94,10 +94,16 @@ const STATS = [
 
 export default function ServicesPage() {
   const breadcrumbItems = [{ name: "Services", url: "https://allo-maison.ma/services" }];
+  const itemListItems = SERVICES.map((service) => ({
+    name: service.name,
+    url: `https://allo-maison.ma/${service.slug}-casablanca`,
+  }));
 
   return (
     <>
       <JsonLd data={faqJsonLd(FAQ_ITEMS)} />
+      <JsonLd data={breadcrumbJsonLd(breadcrumbItems)} />
+      <JsonLd data={itemListJsonLd("Services à domicile au Maroc", itemListItems)} />
 
       {/* ========= HERO ========= */}
       <section className="bg-cream border-b border-paper-border">

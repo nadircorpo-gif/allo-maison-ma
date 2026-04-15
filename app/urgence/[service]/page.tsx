@@ -5,10 +5,12 @@ import { notFound } from "next/navigation";
 import { Phone } from "lucide-react";
 
 import Breadcrumb from "@/components/shared/breadcrumb";
+import JsonLd from "@/components/seo/json-ld";
 import WhatsAppButton from "@/components/shared/whatsapp-button";
 import { getServiceBySlug } from "@/lib/data/services";
 import { CITIES } from "@/lib/data/cities";
 import { buildWhatsAppUrl } from "@/lib/whatsapp";
+import { breadcrumbJsonLd, itemListJsonLd } from "@/lib/seo";
 
 const URGENCE_SERVICE_SLUGS = ["plombier", "electricien", "serrurier"] as const;
 
@@ -26,7 +28,7 @@ export async function generateMetadata({
   if (!service || !service.urgenceAvailable) {
     return { title: "Service d'urgence introuvable | Allo-Maison", robots: { index: false } };
   }
-  const title = `${service.name} d'urgence au Maroc · Intervention 30 min | Allo-Maison`;
+  const title = `${service.name} d'urgence au Maroc | Allo-Maison`;
   const description = `${service.name} d'urgence vérifié chez vous en 30 minutes, 24 h/24 et 7 j/7. Disponible à Casablanca, Rabat, Marrakech, Tanger, Fès et Agadir. Sans avance.`;
   const url = `https://allo-maison.ma/urgence/${service.slug}`;
   return {
@@ -135,9 +137,15 @@ export default async function UrgenceServicePage({
     { name: "Urgence", url: "https://allo-maison.ma/urgence" },
     { name: service.name, url: `https://allo-maison.ma/urgence/${service.slug}` },
   ];
+  const cityItems = CITIES.map((city) => ({
+    name: `${service.name} d'urgence à ${city.name}`,
+    url: `https://allo-maison.ma/urgence/${service.slug}/${city.slug}`,
+  }));
 
   return (
     <>
+      <JsonLd data={breadcrumbJsonLd(breadcrumbItems)} />
+      <JsonLd data={itemListJsonLd(`${service.name} d'urgence par ville`, cityItems)} />
       {/* ========= Sticky urgency bar ========= */}
       <div className="sticky top-0 z-40 bg-terracotta text-cream border-b border-primary-deep shadow-terracotta">
         <div className="max-w-7xl mx-auto px-4 py-3 flex flex-col sm:flex-row items-center gap-3">

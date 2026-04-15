@@ -6,7 +6,7 @@ import { ArrowRight, MapPin, Siren, Star } from "lucide-react";
 
 import Breadcrumb from "@/components/shared/breadcrumb";
 import JsonLd from "@/components/seo/json-ld";
-import { breadcrumbJsonLd } from "@/lib/seo";
+import { breadcrumbJsonLd, itemListJsonLd } from "@/lib/seo";
 
 import { CITIES, getCityBySlug } from "@/lib/data/cities";
 import { SERVICES, URGENCE_SERVICES } from "@/lib/data/services";
@@ -26,8 +26,8 @@ export async function generateMetadata({
   const city = getCityBySlug(ville);
   if (!city) return {};
 
-  const title = `Artisans à ${city.name} · ${SERVICES.length} services à domicile | Allo-Maison`;
-  const description = `Tous les artisans vérifiés à ${city.name} : plomberie, électricité, ménage, rénovation et ${SERVICES.length - 4} autres services. ${city.artisanCount}+ pros certifiés, ${city.neighborhoods.length} quartiers couverts.`;
+  const title = `Artisans à ${city.name} | Allo-Maison`;
+  const description = `Artisans vérifiés à ${city.name} : plomberie, électricité, ménage et ${SERVICES.length - 3} autres services. ${city.artisanCount}+ pros, ${city.neighborhoods.length} quartiers.`;
 
   return {
     title,
@@ -65,10 +65,15 @@ export default async function VilleHubPage({
     { name: "Villes", url: "https://allo-maison.ma/villes" },
     { name: city.name, url: `https://allo-maison.ma/villes/${ville}` },
   ];
+  const serviceItems = SERVICES.map((s) => ({
+    name: s.name,
+    url: `https://allo-maison.ma/${s.slug}-${city.slug}`,
+  }));
 
   return (
     <>
       <JsonLd data={breadcrumbJsonLd(breadcrumbItems)} />
+      <JsonLd data={itemListJsonLd(`Services à ${city.name}`, serviceItems)} />
 
       {/* ======= HERO ======= */}
       <section className="bg-cream border-b border-paper-border">

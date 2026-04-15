@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import JsonLd from "@/components/seo/json-ld";
 import Breadcrumb from "@/components/shared/breadcrumb";
+import { breadcrumbJsonLd } from "@/lib/seo";
 import WhatsAppButton from "@/components/shared/whatsapp-button";
 import ContactForm from "@/components/shared/contact-form";
 import { MessageCircle, Mail, Phone, MapPin, Clock } from "lucide-react";
@@ -40,6 +41,12 @@ const LOCAL_BUSINESS_SCHEMA = {
   geo: { "@type": "GeoCoordinates", latitude: 33.5731, longitude: -7.5898 },
   telephone: "+212661409190",
   email: "contact@allo-maison.ma",
+  priceRange: "MAD 50-5000",
+  image: "https://allo-maison.ma/opengraph-image",
+  sameAs: [
+    "https://www.facebook.com/allomaison.ma",
+    "https://www.instagram.com/allomaison.ma",
+  ],
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
@@ -75,6 +82,7 @@ export default function ContactPage() {
   return (
     <>
       <JsonLd data={LOCAL_BUSINESS_SCHEMA} />
+      <JsonLd data={breadcrumbJsonLd(breadcrumbItems)} />
 
       {/* HERO */}
       <section className="bg-cream border-b border-paper-border">
@@ -98,7 +106,7 @@ export default function ContactPage() {
             <div className="lg:col-span-4 flex justify-start lg:justify-end">
               <Image
                 src="/brand/logo-shield.svg"
-                alt=""
+                alt="Équipe Allo Maison joignable par WhatsApp, email ou téléphone"
                 width={320}
                 height={400}
                 className="w-36 h-auto drop-shadow-sm"

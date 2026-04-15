@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SERVICES } from "@/lib/data/services";
 
 export function generateServiceCityMetadata(
   serviceName: string,
@@ -69,17 +70,39 @@ export function organizationJsonLd(): Record<string, unknown> {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": "https://allo-maison.ma/#organization",
     name: "Allo-Maison",
+    // TODO: updater legalName quand mentions legales pretes
+    legalName: "Allo-Maison SARL",
     url: "https://allo-maison.ma",
-    logo: "https://allo-maison.ma/logo.svg",
-    foundingDate: "2017",
+    logo: "https://allo-maison.ma/brand/logo-mark.svg",
+    image: "https://allo-maison.ma/opengraph-image",
     description:
       "La plateforme marocaine de confiance pour tous vos services a domicile. Des professionnels verifies, disponibles 7j/7.",
-    areaServed: "MA",
+    foundingDate: "2026",
+    telephone: "+212661409190",
+    email: "contact@allo-maison.ma",
+    priceRange: "MAD 50-5000",
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: "MA",
+      addressLocality: "Casablanca",
+      addressRegion: "Casablanca-Settat",
+    },
+    areaServed: {
+      "@type": "Country",
+      name: "Morocco",
+    },
+    sameAs: [
+      "https://www.facebook.com/allomaison.ma",
+      "https://www.instagram.com/allomaison.ma",
+      "https://www.linkedin.com/company/allo-maison-ma",
+    ],
+    knowsAbout: SERVICES.map((s) => s.name),
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer service",
-      availableLanguage: ["French", "Arabic"],
+      availableLanguage: ["French"],
     },
   };
 }
@@ -89,16 +112,24 @@ export function serviceCityJsonLd(
   cityName: string,
   priceMin: number,
   rating: number,
-  reviewCount: number
+  reviewCount: number,
+  serviceSlug?: string,
+  citySlug?: string
 ): Record<string, unknown> {
+  // AggregateRating a recalculer depuis vrais Reviews quand stockage avis pret
+  const url =
+    serviceSlug && citySlug
+      ? `https://allo-maison.ma/${serviceSlug}-${citySlug}`
+      : undefined;
   return {
     "@context": "https://schema.org",
     "@type": "Service",
     name: `${serviceName} a ${cityName}`,
+    serviceType: serviceName,
+    ...(url ? { url } : {}),
+    priceRange: "MAD 50-5000",
     provider: {
-      "@type": "Organization",
-      name: "Allo-Maison",
-      url: "https://allo-maison.ma",
+      "@id": "https://allo-maison.ma/#organization",
     },
     areaServed: {
       "@type": "City",
@@ -114,7 +145,7 @@ export function serviceCityJsonLd(
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: rating,
-      reviewCount: reviewCount,
+      reviewCount: Math.min(50, reviewCount),
       bestRating: 5,
       worstRating: 1,
     },
@@ -156,7 +187,8 @@ export function breadcrumbJsonLd(
 export function videoObjectJsonLd(
   videoId: string,
   title: string,
-  description: string
+  description: string,
+  uploadDate: string = new Date().toISOString().split("T")[0]
 ): Record<string, unknown> {
   return {
     "@context": "https://schema.org",
@@ -164,7 +196,7 @@ export function videoObjectJsonLd(
     name: title,
     description,
     thumbnailUrl: `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`,
-    uploadDate: "2024-01-01",
+    uploadDate,
     contentUrl: `https://www.youtube.com/watch?v=${videoId}`,
     embedUrl: `https://www.youtube.com/embed/${videoId}`,
   };
@@ -183,6 +215,122 @@ export function websiteJsonLd(): Record<string, unknown> {
         urlTemplate: "https://allo-maison.ma/services?q={search_term_string}",
       },
       "query-input": "required name=search_term_string",
+    },
+  };
+}
+
+export function itemListJsonLd(
+  name: string,
+  items: { name: string; url: string }[]
+): Record<string, unknown> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name,
+    numberOfItems: items.length,
+    itemListElement: items.map((it, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: it.name,
+      url: it.url,
+    })),
+  };
+}
+
+export function professionalServiceJsonLd(pro: {
+  id: string | number;
+  name: string;
+  serviceName: string;
+  cityName: string;
+  rating?: number;
+  reviewCount?: number;
+  phone?: string;
+  yearsExperience?: number;
+}): Record<string, unknown> {
+  const schema: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": `https://allo-maison.ma/#pro-${pro.id}`,
+    name: pro.name,
+    serviceType: pro.serviceName,
+    areaServed: {
+      "@type": "City",
+      name: pro.cityName,
+    },
+    provider: {
+      "@id": "https://allo-maison.ma/#organization",
+    },
+  };
+
+  if (pro.phone) {
+    schema.telephone = pro.phone;
+  }
+
+  if (typeof pro.rating === "number") {
+    schema.aggregateRating = {
+      "@type": "AggregateRating",
+      ratingValue: pro.rating,
+      reviewCount: Math.min(50, pro.reviewCount || 1),
+      bestRating: 5,
+      worstRating: 1,
+    };
+  }
+
+  return schema;
+}
+
+export function howToJsonLd(
+  name: string,
+  description: string,
+  steps: string[],
+  totalTime?: string
+): Record<string, unknown> {
+  const schema: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name,
+    description,
+    step: steps.map((s, i) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      name: `Étape ${i + 1}`,
+      text: s,
+    })),
+  };
+
+  if (totalTime) {
+    schema.totalTime = totalTime;
+  }
+
+  return schema;
+}
+
+export function reviewJsonLd(review: {
+  author: string;
+  rating: number;
+  text: string;
+  datePublished: string;
+  itemReviewedName: string;
+  itemReviewedType?: "Service" | "ProfessionalService" | "LocalBusiness";
+}): Record<string, unknown> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    author: {
+      "@type": "Person",
+      name: review.author,
+    },
+    reviewRating: {
+      "@type": "Rating",
+      ratingValue: review.rating,
+      bestRating: 5,
+      worstRating: 1,
+    },
+    reviewBody: review.text,
+    datePublished: review.datePublished,
+    itemReviewed: {
+      "@type": review.itemReviewedType || "Service",
+      name: review.itemReviewedName,
     },
   };
 }

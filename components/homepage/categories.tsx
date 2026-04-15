@@ -2,13 +2,13 @@ import Link from "next/link";
 import Image from "next/image";
 
 const CATEGORIES = [
-  { name: "Plomberie", slug: "plombier", count: 184, price: "dès 150 MAD", seed: "plomb-casa" },
-  { name: "Électricité", slug: "electricien", count: 142, price: "dès 120 MAD", seed: "elec-casa" },
-  { name: "Ménage", slug: "femme-de-menage", count: 268, price: "dès 100 MAD/h", seed: "menage-rab" },
-  { name: "Climatisation", slug: "climatisation", count: 91, price: "dès 250 MAD", seed: "clim-mar" },
-  { name: "Peinture", slug: "peintre", count: 76, price: "dès 60 MAD/m²", seed: "peint-tan" },
-  { name: "Serrurerie", slug: "serrurier", count: 54, price: "dès 200 MAD", seed: "serr-fes" },
-  { name: "Nounou", slug: "nounou", count: 63, price: "dès 80 MAD/h", seed: "nounou-agd" },
+  { name: "Plomberie", slug: "plombier", count: 184, price: "dès 150 MAD", emoji: "🔧", bg: "#C24D2C" },
+  { name: "Électricité", slug: "electricien", count: 142, price: "dès 120 MAD", emoji: "⚡", bg: "#D4A24C" },
+  { name: "Ménage", slug: "femme-de-menage", count: 268, price: "dès 100 MAD/h", emoji: "🧹", bg: "#7FB8A4" },
+  { name: "Climatisation", slug: "climatisation", count: 91, price: "dès 250 MAD", emoji: "❄️", bg: "#2F4A3A" },
+  { name: "Peinture", slug: "peintre", count: 76, price: "dès 60 MAD/m²", emoji: "🖌️", bg: "#8B5A3C" },
+  { name: "Serrurerie", slug: "serrurier", count: 54, price: "dès 200 MAD", emoji: "🔑", bg: "#3A3A3A" },
+  { name: "Nounou", slug: "nounou", count: 63, price: "dès 80 MAD/h", emoji: "👶", bg: "#B8506A" },
 ];
 
 export default function Categories() {
@@ -48,14 +48,16 @@ export default function Categories() {
               href={`/${cat.slug}-casablanca`}
               className="group bg-white border border-paper-border rounded-xl overflow-hidden transition hover:-translate-y-0.5 hover:shadow-card-hover relative"
             >
-              <div className="aspect-[4/3] relative overflow-hidden bg-clay">
-                <Image
-                  src={`https://picsum.photos/seed/${cat.seed}/500/400`}
-                  alt={cat.name}
-                  fill
-                  sizes="(max-width: 768px) 50vw, 25vw"
-                  className="object-cover group-hover:scale-105 transition duration-500"
-                />
+              <div
+                className="aspect-[4/3] relative overflow-hidden flex items-center justify-center"
+                style={{ backgroundColor: cat.bg }}
+              >
+                <span
+                  aria-hidden
+                  className="text-6xl transition-transform duration-500 group-hover:scale-110 drop-shadow-sm"
+                >
+                  {cat.emoji}
+                </span>
                 <span className="absolute top-3 left-3 inline-flex items-center gap-1 text-[11px] font-semibold bg-white/95 text-ink px-2.5 py-1 rounded-full tab-nums">
                   {cat.count} artisans
                 </span>

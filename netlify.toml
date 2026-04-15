@@ -6,7 +6,7 @@
   NODE_VERSION = "22"
   NEXT_PUBLIC_SITE_URL = "https://allo-maison.ma"
   NEXT_PUBLIC_WHATSAPP_NUMBER = "212661409190"
-  RESEND_API_KEY = "re_pUrso5Vr_5Zqep6YyLxpS1b2FToGc6kFv"
+  # RESEND_API_KEY → set in Netlify UI (Site settings > Environment variables)
   RESEND_FROM = "noreply@notification.allo-maison.ma"
 
 [[plugins]]

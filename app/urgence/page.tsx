@@ -4,18 +4,20 @@ import Image from "next/image";
 import { Phone } from "lucide-react";
 
 import Breadcrumb from "@/components/shared/breadcrumb";
+import JsonLd from "@/components/seo/json-ld";
 import WhatsAppButton from "@/components/shared/whatsapp-button";
 import { SERVICES } from "@/lib/data/services";
 import { CITIES } from "@/lib/data/cities";
 import { buildWhatsAppUrl } from "@/lib/whatsapp";
+import { breadcrumbJsonLd, itemListJsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Urgence 24/7 au Maroc — Plombier, Électricien, Serrurier | Allo-Maison",
+  title: "Urgence à domicile 24/7 au Maroc | Allo-Maison",
   description:
     "Un artisan vérifié chez vous en 30 minutes, 24 h/24 et 7 j/7. Plombier, électricien ou serrurier d'urgence dans 6 grandes villes du Maroc. Sans avance, sans engagement.",
   alternates: { canonical: "https://allo-maison.ma/urgence" },
   openGraph: {
-    title: "Urgence 24/7 au Maroc — Plombier, Électricien, Serrurier | Allo-Maison",
+    title: "Urgence à domicile 24/7 au Maroc | Allo-Maison",
     description:
       "Un artisan vérifié chez vous en 30 minutes, 24 h/24 et 7 j/7. Plombier, électricien ou serrurier d'urgence dans 6 grandes villes du Maroc.",
     url: "https://allo-maison.ma/urgence",
@@ -62,9 +64,17 @@ export default function UrgenceHubPage() {
   const phoneHref = `tel:+${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "212661409190"}`;
 
   const breadcrumbItems = [{ name: "Urgence", url: "https://allo-maison.ma/urgence" }];
+  const urgenceItems = urgenceServices.flatMap((service) =>
+    CITIES.map((city) => ({
+      name: `${service.name} d'urgence à ${city.name}`,
+      url: `https://allo-maison.ma/urgence/${service.slug}/${city.slug}`,
+    }))
+  );
 
   return (
     <>
+      <JsonLd data={breadcrumbJsonLd(breadcrumbItems)} />
+      <JsonLd data={itemListJsonLd("Services d'urgence 24/7", urgenceItems)} />
       {/* ========= Sticky urgency bar ========= */}
       <div className="sticky top-0 z-40 bg-terracotta text-cream border-b border-primary-deep shadow-terracotta">
         <div className="max-w-7xl mx-auto px-4 py-3 flex flex-col sm:flex-row items-center gap-3">

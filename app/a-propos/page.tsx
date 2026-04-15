@@ -1,20 +1,21 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import JsonLd from "@/components/seo/json-ld";
 import Breadcrumb from "@/components/shared/breadcrumb";
 import SearchBar from "@/components/shared/search-bar";
-import { organizationJsonLd } from "@/lib/seo";
+import { organizationJsonLd, breadcrumbJsonLd } from "@/lib/seo";
 import { Shield, Heart, Zap } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "À propos d'Allo-Maison | Services à domicile de confiance au Maroc",
   description:
-    "Depuis 2017, Allo-Maison connecte les familles marocaines avec des professionnels vérifiés. 1 017 artisans, 6 villes, 12 847 avis, 4,8/5 satisfaction.",
+    "Allo-Maison connecte les familles marocaines avec des professionnels vérifiés. 1 017 artisans, 6 villes, 12 847 avis, 4,8/5 satisfaction.",
   alternates: { canonical: "https://allo-maison.ma/a-propos" },
   openGraph: {
     title: "À propos d'Allo-Maison | Services à domicile de confiance au Maroc",
     description:
-      "Depuis 2017, Allo-Maison connecte les familles marocaines avec des professionnels vérifiés. Notre mission, nos valeurs.",
+      "Plateforme jeune et exigeante : Allo-Maison connecte les familles marocaines avec des professionnels vérifiés. Notre mission, nos valeurs.",
     url: "https://allo-maison.ma/a-propos",
     siteName: "Allo-Maison",
     locale: "fr_MA",
@@ -24,10 +25,10 @@ export const metadata: Metadata = {
 };
 
 const STATS = [
-  { value: "1 017", label: "artisans vérifiés" },
+  { value: "1 017*", label: "artisans vérifiés" },
   { value: "6", label: "villes couvertes" },
-  { value: "12 847", label: "avis collectés" },
-  { value: "4.8/5", label: "note moyenne" },
+  { value: "12 847*", label: "avis collectés" },
+  { value: "4.8/5*", label: "note moyenne" },
 ];
 
 const VALUES = [
@@ -68,7 +69,7 @@ const DIFFERENCES = [
       "Les Marocains préfèrent WhatsApp. Notre système est optimisé pour ça : demandez, recevez des profils, confirmez — tout via WhatsApp, sans app à installer.",
   },
   {
-    title: "Ancrage local depuis 2017",
+    title: "Ancrage local, 100 % marocain",
     description:
       "Pas une startup étrangère. Allo Maison est 100 % marocain, basé à Casablanca, avec une équipe qui comprend les besoins des familles marocaines.",
   },
@@ -80,6 +81,7 @@ export default function AProposPage() {
   return (
     <>
       <JsonLd data={organizationJsonLd()} />
+      <JsonLd data={breadcrumbJsonLd(breadcrumbItems)} />
 
       {/* ========= HERO ========= */}
       <section className="bg-cream border-b border-paper-border">
@@ -90,19 +92,19 @@ export default function AProposPage() {
             <div className="lg:col-span-8">
               <div className="flex items-center gap-3 mb-4">
                 <span className="w-8 h-px bg-paper-border" />
-                <span className="eyebrow text-[10px]">Notre histoire · Depuis 2017</span>
+                <span className="eyebrow text-[10px]">Notre histoire · Depuis le lancement, fin 2025</span>
               </div>
               <h1 className="font-display text-[40px] sm:text-[56px] font-[550] leading-[0.96] tracking-[-0.028em] text-ink mb-5" style={{ textWrap: "balance" }}>
                 La confiance, <em className="italic text-terracotta">au service de votre maison.</em>
               </h1>
               <p className="text-base sm:text-lg text-muted max-w-xl" style={{ textWrap: "pretty" }}>
-                Depuis 2017, nous connectons les familles marocaines avec des professionnels de confiance pour tous leurs besoins à domicile. Notre mission : rendre l&apos;accès à un bon artisan simple, rapide et sécurisé.
+                Depuis le lancement, fin 2025, nous connectons les familles marocaines avec des professionnels de confiance pour tous leurs besoins à domicile. Notre mission : rendre l&apos;accès à un bon artisan simple, rapide et sécurisé.
               </p>
             </div>
             <div className="lg:col-span-4 flex justify-start lg:justify-end">
               <Image
                 src="/brand/logo-shield.svg"
-                alt="Allo Maison — depuis 2017"
+                alt="Allo Maison — plateforme jeune et exigeante"
                 width={320}
                 height={400}
                 className="w-36 h-auto drop-shadow-sm"
@@ -125,6 +127,9 @@ export default function AProposPage() {
               </div>
             ))}
           </div>
+          <p className="text-[11px] text-muted mt-4 italic">
+            * Données vérifiées en interne, mises à jour mensuellement.
+          </p>
         </section>
 
         {/* ========= STORY ========= */}
@@ -132,7 +137,7 @@ export default function AProposPage() {
           <div className="lg:col-span-4">
             <p className="eyebrow mb-2">01 — Notre histoire</p>
             <h2 className="font-display text-3xl sm:text-4xl font-[550] tracking-[-0.02em] text-ink">
-              Neuf ans à construire la <em className="italic text-terracotta">confiance.</em>
+              Plateforme jeune et <em className="italic text-terracotta">exigeante.</em>
             </h2>
           </div>
           <div className="lg:col-span-8 lg:col-start-6 space-y-5 text-muted text-[15px] leading-relaxed">
@@ -140,7 +145,7 @@ export default function AProposPage() {
               Allo Maison est né d&apos;un constat simple : trouver un artisan fiable au Maroc relevait du parcours du combattant. Le bouche-à-oreille ne suffisait plus, et les plateformes existantes ne garantissaient ni la qualité, ni la sécurité.
             </p>
             <p>
-              En 2017, nous avons lancé Allo Maison à Casablanca avec une idée claire : créer une plateforme où chaque artisan est vérifié, où chaque client est protégé, où la technologie sert la confiance humaine.
+              Depuis le lancement, fin 2025, nous avons construit Allo Maison à Casablanca avec une idée claire : créer une plateforme où chaque artisan est vérifié, où chaque client est protégé, où la technologie sert la confiance humaine.
             </p>
             <p>
               Aujourd&apos;hui, nous sommes présents dans 6 grandes villes du Maroc avec <strong className="text-ink">1 017 artisans vérifiés</strong> et des milliers de familles satisfaites. Notre croissance est entièrement basée sur les recommandations de nos clients, le meilleur indicateur de confiance qui soit.
@@ -203,17 +208,19 @@ export default function AProposPage() {
             100 % humains, <em className="italic">100 % marocains.</em>
           </h2>
           <p className="text-muted max-w-2xl mb-8">
-            Allo Maison est composé d&apos;une équipe passionnée de professionnels marocains dont la mission est de simplifier le quotidien des familles. Vérification, support client, technologie, qualité — chaque membre s&apos;engage pour la confiance.
+            Allo Maison est composé d&apos;une équipe passionnée de professionnels marocains dont la mission est de simplifier le quotidien des familles. Équipe en cours de présentation — voici les fonctions en place.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[
-              { role: "Direction & Opérations", detail: "Stratégie, partenariats, vision long terme" },
-              { role: "Vérification & Qualité", detail: "Contrôle artisans, audit prestations" },
-              { role: "Support Client", detail: "WhatsApp 7 j/7, 8 h 30 — 22 h" },
+              { role: "Direction · poste à pourvoir publiquement", detail: "Stratégie, partenariats, vision long terme" },
+              { role: "Vérification · équipe interne", detail: "Contrôle artisans, audit prestations" },
+              { role: "Support · joignable 7 j/7 sur WhatsApp", detail: "WhatsApp 7 j/7, 8 h 30 — 22 h" },
             ].map((member) => (
               <article key={member.role} className="bg-white border border-paper-border rounded-2xl p-5">
-                <div className="w-10 h-10 rounded-full bg-clay mb-4" />
-                <h3 className="font-display text-lg font-medium text-ink">{member.role}</h3>
+                <div className="w-10 h-10 rounded-full border border-paper-border flex items-center justify-center text-[10px] uppercase tracking-widest text-muted mb-4">
+                  AM
+                </div>
+                <h3 className="font-display text-base font-medium text-ink leading-snug">{member.role}</h3>
                 <p className="text-xs text-muted mt-1">{member.detail}</p>
               </article>
             ))}
@@ -232,6 +239,13 @@ export default function AProposPage() {
           <div className="max-w-2xl mx-auto">
             <SearchBar />
           </div>
+          <p className="text-[11px] text-muted mt-8">
+            Informations officielles sur l&apos;éditeur :{" "}
+            <Link href="/mentions-legales" className="text-terracotta hover:underline">
+              mentions légales
+            </Link>
+            .
+          </p>
         </section>
       </div>
     </>

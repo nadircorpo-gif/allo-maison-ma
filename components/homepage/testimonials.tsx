@@ -1,6 +1,17 @@
-import Image from "next/image";
 import { Star } from "lucide-react";
 import { TESTIMONIALS } from "@/lib/data/testimonials";
+
+const TESTIMONIAL_AVATARS = [
+  { bg: "#C24D2C" }, // terracotta
+  { bg: "#D4A24C" }, // saffron
+  { bg: "#7FB8A4" }, // mint
+];
+
+function getInitials(name: string): string {
+  const parts = name.trim().split(/\s+/);
+  if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
+  return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+}
 
 export default function Testimonials() {
   return (
@@ -36,13 +47,12 @@ export default function Testimonials() {
                 « {t.text} »
               </p>
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-clay overflow-hidden shrink-0">
-                  <Image
-                    src={`https://i.pravatar.cc/80?img=${20 + i * 13}`}
-                    alt={t.name}
-                    width={40}
-                    height={40}
-                  />
+                <div
+                  className="w-10 h-10 rounded-full shrink-0 flex items-center justify-center text-white text-xs font-semibold"
+                  style={{ backgroundColor: TESTIMONIAL_AVATARS[i % TESTIMONIAL_AVATARS.length].bg }}
+                  aria-hidden
+                >
+                  {getInitials(t.name)}
                 </div>
                 <div>
                   <p className="text-sm font-semibold">{t.name}</p>

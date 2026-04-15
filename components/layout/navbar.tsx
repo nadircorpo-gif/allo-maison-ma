@@ -109,15 +109,6 @@ export default function Navbar() {
                 <Phone className="w-4 h-4" />
               </a>
 
-              {/* FR · AR language */}
-              <button
-                type="button"
-                className="hidden lg:inline-flex items-center text-[11px] font-bold tracking-[0.18em] text-muted hover:text-ink transition-colors uppercase"
-                aria-label="Changer de langue"
-              >
-                FR <span className="text-paper-border mx-1">·</span> AR
-              </button>
-
               {/* Espace Pro — ghost */}
               <Link
                 href="/espace-pro"

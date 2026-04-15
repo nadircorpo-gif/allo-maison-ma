@@ -3,11 +3,11 @@ import Image from "next/image";
 import JsonLd from "@/components/seo/json-ld";
 import Breadcrumb from "@/components/shared/breadcrumb";
 import SearchBar from "@/components/shared/search-bar";
-import { faqJsonLd } from "@/lib/seo";
+import { faqJsonLd, breadcrumbJsonLd } from "@/lib/seo";
 import { CheckCircle, XCircle, Star } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Garantie Allo-Maison : zero risque pour vous | allo-maison.ma",
+  title: "Garantie satisfait ou refait | Allo-Maison",
   description:
     "Decouvrez la Garantie Allo-Maison : pros verifies et certifies, remplacement gratuit d'artisan, support 7j/7. Aucun risque pour vos services a domicile au Maroc.",
   alternates: { canonical: "https://allo-maison.ma/garantie" },
@@ -133,6 +133,7 @@ export default function GarantiePage() {
   return (
     <>
       <JsonLd data={faqJsonLd(FAQ_ITEMS)} />
+      <JsonLd data={breadcrumbJsonLd(breadcrumbItems)} />
 
       {/* ========= HERO ========= */}
       <section className="bg-cream border-b border-paper-border">
