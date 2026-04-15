@@ -113,3 +113,47 @@ export async function countProfessionalsByServiceAndCity(
   if (error) return 0;
   return count ?? 0;
 }
+
+/**
+ * Returns total count of verified professionals, optionally filtered by city slug.
+ * Used for homepage stats and city cards.
+ */
+export async function getArtisanCount(city?: string): Promise<number> {
+  let query = supabase
+    .from("professionals")
+    .select("id", { count: "exact", head: true });
+  if (city) query = query.eq("city", city);
+  const { count, error } = await query;
+  if (error) {
+    console.error("[getArtisanCount] error:", error.message);
+    return 0;
+  }
+  return count ?? 0;
+}
+
+/**
+ * Returns a paginated slice of professionals for a service+city combo.
+ * Used exclusively by the /api/pros API route.
+ */
+export async function getProfessionalsPage(
+  serviceSlug: string,
+  citySlug: string,
+  offset = 0,
+  limit = 20
+): Promise<Professional[]> {
+  const { data, error } = await supabase
+    .from("professionals")
+    .select(
+      "id, first_name, last_name, phone, photo, gender, services, city, quartier, description, verified, score_maison, experience, google_rating, google_reviews_count"
+    )
+    .eq("city", citySlug)
+    .contains("services", [serviceSlug])
+    .order("score_maison", { ascending: false })
+    .range(offset, offset + limit - 1);
+
+  if (error) {
+    console.error(`[getProfessionalsPage] ${serviceSlug}_${citySlug}:`, error.message);
+    return [];
+  }
+  return (data ?? []).map(mapRow);
+}
