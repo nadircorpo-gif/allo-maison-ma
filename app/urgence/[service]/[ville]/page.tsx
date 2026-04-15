@@ -11,6 +11,8 @@ import { getCityBySlug } from "@/lib/data/cities";
 import { getUrgenceFAQ } from "@/lib/data/faq";
 import { generateUrgenceMetadata, faqJsonLd } from "@/lib/seo";
 import { buildUrgenceWhatsAppUrl } from "@/lib/whatsapp";
+import { getProfessionalsByServiceAndCity } from "@/lib/data/professionals";
+import ArtisanCardV2 from "@/components/shared/artisan-card-v2";
 import { Phone } from "lucide-react";
 
 const URGENCE_SERVICE_SLUGS = ["plombier", "electricien", "serrurier"];
@@ -70,7 +72,10 @@ export default async function UrgencePage({
 
   if (!service || !city || !service.urgenceAvailable) notFound();
 
-  const faqs = getUrgenceFAQ(service.name, city.name);
+  const [faqs, topPros] = await Promise.all([
+    Promise.resolve(getUrgenceFAQ(service.name, city.name)),
+    getProfessionalsByServiceAndCity(serviceSlug, citySlug, 3),
+  ]);
   const whatsappUrl = buildUrgenceWhatsAppUrl(service.name, city.name);
   const phoneHref = `tel:+${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "212661409190"}`;
   const steps = EMERGENCY_STEPS[serviceSlug] ?? EMERGENCY_STEPS.plombier;
@@ -169,9 +174,30 @@ export default async function UrgencePage({
             </div>
           </section>
 
+          {/* Top 3 pros */}
+          {topPros.length > 0 && (
+            <section className="mb-16">
+              <p className="eyebrow mb-2">02 — Pros disponibles maintenant</p>
+              <h2 className="font-display text-3xl sm:text-4xl font-[550] tracking-[-0.02em] text-ink mb-8">
+                {topPros.length} {lowerService}s disponibles à{" "}
+                <em className="italic text-terracotta">{city.name}.</em>
+              </h2>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {topPros.map((pro) => (
+                  <ArtisanCardV2
+                    key={pro.id}
+                    pro={pro}
+                    serviceName={service.name}
+                    cityName={city.name}
+                  />
+                ))}
+              </div>
+            </section>
+          )}
+
           {/* FAQ */}
           <section>
-            <p className="eyebrow mb-2">02 — Questions fréquentes</p>
+            <p className="eyebrow mb-2">{topPros.length > 0 ? "03" : "02"} — Questions fréquentes</p>
             <h2 className="font-display text-3xl sm:text-4xl font-[550] tracking-[-0.02em] text-ink mb-8">
               Ce que vous nous demandez <em className="italic">le plus.</em>
             </h2>
