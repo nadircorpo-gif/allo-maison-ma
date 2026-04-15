@@ -1,12 +1,13 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { Play, Clock, Star } from "lucide-react";
+import { Play, Clock } from "lucide-react";
 
 import JsonLd from "@/components/seo/json-ld";
 import Breadcrumb from "@/components/shared/breadcrumb";
 import BookingForm from "@/components/shared/booking-form";
 import WhatsAppButton from "@/components/shared/whatsapp-button";
+import ArtisanList from "@/components/shared/artisan-list";
 
 import { getServiceBySlug } from "@/lib/data/services";
 import { getCityBySlug } from "@/lib/data/cities";
@@ -254,97 +255,15 @@ export default async function ServiceCityPage({
               </span>
             </div>
 
-            {professionals.length > 0 ? (
-              <ol className="border-t border-ink">
-                {professionals.map((pro, i) => {
-                  const proWhatsApp = pro.phone
-                    ? `https://wa.me/${pro.phone.replace(/[^\d]/g, "")}`
-                    : whatsappUrl;
-                  return (
-                    <li
-                      key={pro.id}
-                      className="grid grid-cols-12 gap-3 sm:gap-4 py-5 border-b border-paper-border group hover:bg-white/60 transition"
-                    >
-                      <span className="col-span-1 tab-nums text-xs text-muted font-display mt-1">
-                        {String(i + 1).padStart(2, "0")}
-                      </span>
-                      <div className="col-span-3 sm:col-span-2 aspect-square rounded-lg overflow-hidden relative flex items-center justify-center" style={{ background: i % 2 === 0 ? "#E8D5C4" : "#EAF0F2" }}>
-                        <span className="font-display text-3xl sm:text-4xl text-zellige font-[500]">
-                          {pro.displayName
-                            .split(" ")
-                            .map((n) => n[0])
-                            .join("")
-                            .slice(0, 2)}
-                        </span>
-                        {pro.verified && (
-                          <span className="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-mint border-2 border-cream flex items-center justify-center">
-                            <svg className="w-2.5 h-2.5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-                          </span>
-                        )}
-                      </div>
-                      <div className="col-span-8 sm:col-span-6 min-w-0">
-                        <p className="font-display text-xl font-medium text-ink leading-tight">
-                          {pro.displayName}
-                        </p>
-                        <p className="text-[11px] text-muted mt-1 tab-nums">
-                          {pro.quartier ? `${pro.quartier} · ` : ""}
-                          {city.name}
-                          {pro.experienceYears ? ` · ${pro.experienceYears} ans d'exp.` : ""}
-                        </p>
-                        <div className="flex items-center gap-1 mt-1.5 text-xs tab-nums">
-                          <Star className="w-3.5 h-3.5 fill-saffron text-saffron" />
-                          <span className="font-bold text-ink">{pro.rating.toFixed(1)}</span>
-                          <span className="text-muted">· {pro.reviewCount} avis</span>
-                        </div>
-                        {pro.description && (
-                          <p className="text-[11px] text-muted mt-2 line-clamp-1 italic">
-                            « {pro.description.slice(0, 90)}
-                            {pro.description.length > 90 ? "…" : ""} »
-                          </p>
-                        )}
-                        <div className="flex gap-1.5 mt-2 flex-wrap">
-                          <span className="text-[10px] bg-clay text-ink px-2 py-0.5 rounded-full font-semibold">
-                            Identité ✓
-                          </span>
-                          {pro.phone && (
-                            <span className="text-[10px] bg-clay text-ink px-2 py-0.5 rounded-full font-semibold">
-                              Contact direct ✓
-                            </span>
-                          )}
-                          {pro.scoreMaison >= 3 && (
-                            <span className="text-[10px] bg-saffron text-ink px-2 py-0.5 rounded-full font-bold">
-                              ★ Top pro
-                            </span>
-                          )}
-                        </div>
-                      </div>
-                      <div className="col-span-12 sm:col-span-3 text-left sm:text-right tab-nums flex sm:flex-col items-center sm:items-end gap-3 sm:gap-1 pt-2 sm:pt-0">
-                        <p className="font-display text-sm font-medium text-ink whitespace-nowrap">
-                          {service.priceLabel}
-                        </p>
-                        <WhatsAppButton url={proWhatsApp} label="Contacter" size="sm" />
-                      </div>
-                    </li>
-                  );
-                })}
-              </ol>
-            ) : (
-              <div className="bg-white border border-paper-border rounded-xl p-8 text-center">
-                <p className="font-display text-xl text-ink font-medium mb-2">
-                  Des pros sont disponibles à {city.name}.
-                </p>
-                <p className="text-muted text-sm mb-5">
-                  Contactez-nous sur WhatsApp, on vous met en relation en moins d&apos;une heure.
-                </p>
-                <WhatsAppButton url={whatsappUrl} label="Trouver un pro" size="md" />
-              </div>
-            )}
-
-            {totalPros > professionals.length && (
-              <p className="text-sm text-muted italic mt-6">
-                + {totalPros - professionals.length} autres {lowerService}s vérifiés à {city.name}.
-              </p>
-            )}
+            <ArtisanList
+              initialPros={professionals}
+              service={service.slug}
+              serviceName={service.name}
+              city={city.slug}
+              cityName={city.name}
+              totalCount={totalPros}
+              whatsappUrl={whatsappUrl}
+            />
           </section>
 
           {/* ===== RICH SECTIONS (from content registry) ===== */}
