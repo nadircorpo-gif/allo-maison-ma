@@ -1,7 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { Play, Clock, Star } from "lucide-react";
+import { Play, Clock, Star, ArrowRight, Siren } from "lucide-react";
 
 import JsonLd from "@/components/seo/json-ld";
 import Breadcrumb from "@/components/shared/breadcrumb";
@@ -9,8 +10,8 @@ import BookingForm from "@/components/shared/booking-form";
 import WhatsAppButton from "@/components/shared/whatsapp-button";
 import ArtisanList from "@/components/shared/artisan-list";
 
-import { getServiceBySlug } from "@/lib/data/services";
-import { getCityBySlug } from "@/lib/data/cities";
+import { SERVICES, getServiceBySlug } from "@/lib/data/services";
+import { CITIES, getCityBySlug } from "@/lib/data/cities";
 import {
   getProfessionalsByServiceAndCity,
   countProfessionalsByServiceAndCity,
@@ -443,6 +444,105 @@ export default async function ServiceCityPage({
                   {q}
                 </span>
               ))}
+            </div>
+          </section>
+
+          {/* ===== LIENS CONNEXES (internal linking) ===== */}
+          <section className="mb-16">
+            <p className="eyebrow mb-2">Aller plus loin</p>
+            <h2 className="font-display text-3xl sm:text-4xl font-[550] tracking-[-0.02em] text-ink mb-8">
+              Liens <em className="italic text-terracotta">connexes.</em>
+            </h2>
+
+            {service.urgenceAvailable && (
+              <Link
+                href={`/urgence/${service.slug}/${city.slug}`}
+                className="group mb-8 flex items-center gap-4 rounded-2xl border border-terracotta/30 bg-terracotta/5 p-5 transition-colors hover:bg-terracotta/10"
+              >
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-terracotta text-cream">
+                  <Siren className="h-5 w-5" />
+                </span>
+                <div className="flex-1">
+                  <p className="eyebrow text-[10px] text-terracotta">Urgence 24/7</p>
+                  <p className="font-display text-lg font-medium text-ink">
+                    Intervention urgente ? SOS {service.name} 24/7 à {city.name}
+                  </p>
+                  <p className="text-xs text-muted mt-0.5">
+                    Artisan dispo en moins de 30 minutes, jour et nuit.
+                  </p>
+                </div>
+                <ArrowRight className="h-5 w-5 text-terracotta transition-transform group-hover:translate-x-1" />
+              </Link>
+            )}
+
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              <div>
+                <p className="eyebrow mb-3 text-[10px]">{service.name} dans d&apos;autres villes</p>
+                <ul className="space-y-2">
+                  {CITIES.filter((c) => c.slug !== city.slug).map((otherCity) => (
+                    <li key={otherCity.slug}>
+                      <Link
+                        href={`/${service.slug}-${otherCity.slug}`}
+                        className="group flex items-center justify-between gap-2 rounded-lg border border-paper-border bg-white px-4 py-2.5 text-sm text-ink transition-colors hover:border-ink hover:bg-cream"
+                      >
+                        <span>
+                          {service.name} à <span className="font-medium">{otherCity.name}</span>
+                        </span>
+                        <ArrowRight className="h-3.5 w-3.5 text-muted transition-transform group-hover:translate-x-1 group-hover:text-ink" />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div>
+                <p className="eyebrow mb-3 text-[10px]">Autres services à {city.name}</p>
+                <ul className="space-y-2">
+                  {SERVICES.filter((s) => s.slug !== service.slug)
+                    .slice(0, 8)
+                    .map((otherService) => (
+                      <li key={otherService.slug}>
+                        <Link
+                          href={`/${otherService.slug}-${city.slug}`}
+                          className="group flex items-center justify-between gap-2 rounded-lg border border-paper-border bg-white px-4 py-2.5 text-sm text-ink transition-colors hover:border-ink hover:bg-cream"
+                        >
+                          <span>
+                            <span aria-hidden className="mr-1.5">{otherService.icon}</span>
+                            {otherService.name} à <span className="font-medium">{city.name}</span>
+                          </span>
+                          <ArrowRight className="h-3.5 w-3.5 text-muted transition-transform group-hover:translate-x-1 group-hover:text-ink" />
+                        </Link>
+                      </li>
+                    ))}
+                </ul>
+              </div>
+            </div>
+
+            <div className="grid sm:grid-cols-2 gap-3 border-t border-paper-border pt-6">
+              <Link
+                href={`/villes/${city.slug}`}
+                className="group flex items-center justify-between gap-2 rounded-lg bg-cream border border-paper-border px-5 py-4 transition-colors hover:border-ink"
+              >
+                <div>
+                  <p className="eyebrow text-[10px]">Hub ville</p>
+                  <p className="font-display text-base font-medium text-ink">
+                    Voir tous les artisans à {city.name}
+                  </p>
+                </div>
+                <ArrowRight className="h-4 w-4 text-muted transition-transform group-hover:translate-x-1 group-hover:text-ink" />
+              </Link>
+              <Link
+                href="/services"
+                className="group flex items-center justify-between gap-2 rounded-lg bg-cream border border-paper-border px-5 py-4 transition-colors hover:border-ink"
+              >
+                <div>
+                  <p className="eyebrow text-[10px]">Catalogue</p>
+                  <p className="font-display text-base font-medium text-ink">
+                    Tous nos services à domicile au Maroc
+                  </p>
+                </div>
+                <ArrowRight className="h-4 w-4 text-muted transition-transform group-hover:translate-x-1 group-hover:text-ink" />
+              </Link>
             </div>
           </section>
 

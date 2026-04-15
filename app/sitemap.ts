@@ -45,5 +45,35 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
+  entries.push({
+    url: `${BASE_URL}/urgence`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.9,
+  });
+  for (const s of URGENCE_SLUGS) {
+    entries.push({
+      url: `${BASE_URL}/urgence/${s}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    });
+  }
+
+  entries.push({
+    url: `${BASE_URL}/villes`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.85,
+  });
+  for (const c of MVP_CITIES) {
+    entries.push({
+      url: `${BASE_URL}/villes/${c}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    });
+  }
+
   return entries;
 }

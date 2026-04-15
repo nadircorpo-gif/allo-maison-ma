@@ -19,7 +19,7 @@ export default function Footer() {
   return (
     <footer className="bg-ink text-cream">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Brand + ribbon badge */}
           <div className="sm:col-span-2 lg:col-span-1">
             <Link href="/" aria-label="Allo Maison — Artisans vérifiés et certifiés depuis 2017" className="block mb-5">
@@ -36,9 +36,9 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Services */}
+          {/* Services à Casablanca */}
           <div>
-            <h3 className="text-[11px] font-semibold text-saffron uppercase tracking-[0.18em] mb-4">Services</h3>
+            <h3 className="text-[11px] font-semibold text-saffron uppercase tracking-[0.18em] mb-4">Services à Casablanca</h3>
             <ul className="space-y-2.5">
               {FOOTER_SERVICES.map((service) => (
                 <li key={service.slug}>
@@ -46,16 +46,16 @@ export default function Footer() {
                     href={`/${service.slug}-casablanca`}
                     className="text-sm text-white/65 hover:text-cream transition-colors"
                   >
-                    {service.name}
+                    {service.name} à Casablanca
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Villes */}
+          {/* Plombiers par ville */}
           <div>
-            <h3 className="text-[11px] font-semibold text-saffron uppercase tracking-[0.18em] mb-4">Villes</h3>
+            <h3 className="text-[11px] font-semibold text-saffron uppercase tracking-[0.18em] mb-4">Plombiers par ville</h3>
             <ul className="space-y-2.5">
               {FOOTER_CITIES.map((city) => (
                 <li key={city.slug}>
@@ -63,7 +63,24 @@ export default function Footer() {
                     href={`/plombier-${city.slug}`}
                     className="text-sm text-white/65 hover:text-cream transition-colors"
                   >
-                    {city.name}
+                    Plombier à {city.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Urgence 24/7 */}
+          <div>
+            <h3 className="text-[11px] font-semibold text-saffron uppercase tracking-[0.18em] mb-4">Urgence 24/7</h3>
+            <ul className="space-y-2.5">
+              {FOOTER_CITIES.map((city) => (
+                <li key={city.slug}>
+                  <Link
+                    href={`/urgence/plombier/${city.slug}`}
+                    className="text-sm text-white/65 hover:text-cream transition-colors"
+                  >
+                    SOS Plombier {city.name}
                   </Link>
                 </li>
               ))}
