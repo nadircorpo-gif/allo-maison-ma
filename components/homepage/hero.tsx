@@ -7,7 +7,11 @@ import SearchBar from "@/components/shared/search-bar";
 
 const ROTATING_JOBS = ["plombier", "électricien", "peintre", "serrurier", "climaticien"];
 
-export default function Hero() {
+type HeroProps = {
+  totalArtisans?: number;
+};
+
+export default function Hero({ totalArtisans }: HeroProps) {
   const [jobIndex, setJobIndex] = useState(0);
 
   useEffect(() => {
@@ -57,7 +61,8 @@ export default function Hero() {
           </h1>
 
           <p className="text-lg text-muted max-w-lg mb-8">
-            Plombier, électricien, femme de ménage, peintre. 1 017 artisans
+            Plombier, électricien, femme de ménage, peintre.{" "}
+            {totalArtisans ? totalArtisans.toLocaleString("fr") : "1 017"} artisans
             vérifiés, intervention en 24h, paiement après satisfaction.
           </p>
 
@@ -109,7 +114,9 @@ export default function Hero() {
                 +1K
               </span>
             </div>
-            <p className="font-display text-3xl font-[500] tab-nums tracking-tight">1 017</p>
+            <p className="font-display text-3xl font-[500] tab-nums tracking-tight">
+              {totalArtisans ? totalArtisans.toLocaleString("fr") : "1 017"}
+            </p>
             <p className="text-xs text-muted -mt-1">artisans certifiés</p>
           </div>
 
