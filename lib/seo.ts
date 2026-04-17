@@ -1,6 +1,32 @@
 import type { Metadata } from "next";
 import { SERVICES } from "@/lib/data/services";
 
+// Metier name per slug + gender article, so fallback copy reads naturally in French.
+// services.ts uses the domain form ("Plomberie", "Electricite") which breaks
+// "Trouvez un plomberie..." - here we use the metier form ("un plombier", "une femme de menage").
+type MetierMapping = { label: string; article: "un" | "une"; participle: string };
+const METIER_BY_SLUG: Record<string, MetierMapping> = {
+  plombier: { label: "plombier", article: "un", participle: "vérifié" },
+  electricien: { label: "électricien", article: "un", participle: "vérifié" },
+  serrurier: { label: "serrurier", article: "un", participle: "vérifié" },
+  "femme-de-menage": { label: "femme de ménage", article: "une", participle: "vérifiée" },
+  peintre: { label: "peintre", article: "un", participle: "vérifié" },
+  climatisation: { label: "climaticien", article: "un", participle: "vérifié" },
+  bricoleur: { label: "bricoleur", article: "un", participle: "vérifié" },
+  renovation: { label: "artisan rénovation", article: "un", participle: "vérifié" },
+  jardinier: { label: "jardinier", article: "un", participle: "vérifié" },
+  "technicien-informatique": { label: "technicien informatique", article: "un", participle: "vérifié" },
+  demenagement: { label: "déménageur", article: "un", participle: "vérifié" },
+  carreleur: { label: "carreleur", article: "un", participle: "vérifié" },
+  menuisier: { label: "menuisier", article: "un", participle: "vérifié" },
+  etancheite: { label: "pro étanchéité", article: "un", participle: "vérifié" },
+  desinsectisation: { label: "pro désinsectisation", article: "un", participle: "vérifié" },
+  vitrier: { label: "vitrier", article: "un", participle: "vérifié" },
+  cuisiniere: { label: "cuisinière", article: "une", participle: "vérifiée" },
+  concierge: { label: "concierge", article: "un", participle: "vérifié" },
+  nounou: { label: "nounou", article: "une", participle: "vérifiée" },
+};
+
 export function generateServiceCityMetadata(
   serviceName: string,
   serviceSlug: string,
@@ -8,8 +34,13 @@ export function generateServiceCityMetadata(
   citySlug: string,
   priceMin: number
 ): Metadata {
-  const title = `${serviceName} a ${cityName} | Pros verifies | Allo-Maison`;
-  const description = `Trouvez un ${serviceName.toLowerCase()} verifie a ${cityName} a partir de ${priceMin} DH. Pros verifies et encadres. Disponible 7j/7. Devis gratuit via WhatsApp.`;
+  const metier = METIER_BY_SLUG[serviceSlug];
+  const title = metier
+    ? `${serviceName} à ${cityName} · Pros vérifiés · Dès ${priceMin} DH | Allo Maison`
+    : `${serviceName} à ${cityName} · Pros vérifiés | Allo Maison`;
+  const description = metier
+    ? `Trouvez ${metier.article} ${metier.label} ${metier.participle} à ${cityName} à partir de ${priceMin} DH. Pros encadrés, disponibles 7j/7. Devis gratuit via WhatsApp.`
+    : `Trouvez un pro vérifié pour ${serviceName.toLowerCase()} à ${cityName} à partir de ${priceMin} DH. Pros encadrés, disponibles 7j/7. Devis gratuit via WhatsApp.`;
   const url = `https://allo-maison.ma/${serviceSlug}-${citySlug}`;
 
   return {
@@ -34,14 +65,25 @@ export function generateServiceCityMetadata(
   };
 }
 
+// Mapping slug urgence -> nom du metier (genre masculin) pour grammaire correcte
+// "Besoin d'un plombier" / "d'un electricien" / "d'un serrurier" vs "d'un plomberie" KO
+const URGENCE_METIER_BY_SLUG: Record<string, string> = {
+  plombier: "Plombier",
+  electricien: "Electricien",
+  serrurier: "Serrurier",
+};
+
 export function generateUrgenceMetadata(
   serviceName: string,
   cityName: string,
   serviceSlug: string,
   citySlug: string
 ): Metadata {
-  const title = `${serviceName} Urgence ${cityName} | Intervention 30 min | Allo-Maison`;
-  const description = `Besoin d'un ${serviceName.toLowerCase()} en urgence a ${cityName} ? Intervention en moins de 30 minutes. Professionnels verifies disponibles 24h/24 et 7j/7.`;
+  // Les services.ts exposent "Plomberie" / "Electricite" / "Serrurerie" (noms de domaine).
+  // Pour les pages urgence on utilise le nom du metier ("Plombier", etc.) pour une grammaire correcte.
+  const metier = URGENCE_METIER_BY_SLUG[serviceSlug] ?? serviceName;
+  const title = `${metier} d'urgence ${cityName} · Intervention 30 min · 24/7 | Allo Maison`;
+  const description = `Besoin d'un ${metier.toLowerCase()} en urgence à ${cityName} ? Intervention en moins de 30 minutes. Professionnels vérifiés disponibles 24h/24 et 7j/7. Devis clair, sans surprise.`;
   const url = `https://allo-maison.ma/urgence/${serviceSlug}/${citySlug}`;
 
   return {
@@ -111,12 +153,14 @@ export function serviceCityJsonLd(
   serviceName: string,
   cityName: string,
   priceMin: number,
-  rating: number,
-  reviewCount: number,
+  // rating/reviewCount gardes dans la signature pour compat avec les appelants existants,
+  // mais non utilises : aucun aggregateRating emis tant qu'on n'a pas de vrais Reviews visibles
+  // sur la page (Google Structured Data Guidelines = risque de Manual Action).
+  _rating: number,
+  _reviewCount: number,
   serviceSlug?: string,
   citySlug?: string
 ): Record<string, unknown> {
-  // AggregateRating a recalculer depuis vrais Reviews quand stockage avis pret
   const url =
     serviceSlug && citySlug
       ? `https://allo-maison.ma/${serviceSlug}-${citySlug}`
@@ -141,13 +185,6 @@ export function serviceCityJsonLd(
       priceCurrency: "MAD",
       price: priceMin,
       availability: "https://schema.org/InStock",
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: rating,
-      reviewCount: Math.min(50, reviewCount),
-      bestRating: 5,
-      worstRating: 1,
     },
   };
 }
@@ -266,15 +303,9 @@ export function professionalServiceJsonLd(pro: {
     schema.telephone = pro.phone;
   }
 
-  if (typeof pro.rating === "number") {
-    schema.aggregateRating = {
-      "@type": "AggregateRating",
-      ratingValue: pro.rating,
-      reviewCount: Math.min(50, pro.reviewCount || 1),
-      bestRating: 5,
-      worstRating: 1,
-    };
-  }
+  // Pas d'aggregateRating sans avis visibles sur la page (Google Structured Data Guidelines).
+  // Les champs pro.rating / pro.reviewCount restent disponibles dans la signature pour
+  // compat avec les appelants existants, mais ne sont plus emis dans le schema.
 
   return schema;
 }
@@ -300,6 +331,68 @@ export function howToJsonLd(
 
   if (totalTime) {
     schema.totalTime = totalTime;
+  }
+
+  return schema;
+}
+
+/**
+ * Schema Service + EmergencyService pour les pages /urgence/[service]/[ville].
+ * Signale a Google un service d'urgence 24/7 avec zone desservie, telephone et horaires.
+ * A inclure en plus de FAQPage + BreadcrumbList + HowTo sur les pages urgence.
+ */
+export function urgenceServiceJsonLd(
+  serviceName: string,
+  cityName: string,
+  serviceSlug: string,
+  citySlug: string,
+  priceFrom?: number
+): Record<string, unknown> {
+  const url = `https://allo-maison.ma/urgence/${serviceSlug}/${citySlug}`;
+  const metier = URGENCE_METIER_BY_SLUG[serviceSlug] ?? serviceName;
+  const schema: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": ["Service", "EmergencyService"],
+    "@id": `${url}#service`,
+    name: `${metier} d'urgence à ${cityName}`,
+    serviceType: `${metier} urgence 24/7`,
+    url,
+    provider: {
+      "@id": "https://allo-maison.ma/#organization",
+    },
+    areaServed: {
+      "@type": "City",
+      name: cityName,
+      addressCountry: "MA",
+    },
+    availableChannel: {
+      "@type": "ServiceChannel",
+      serviceUrl: url,
+      servicePhone: "+212661409190",
+    },
+    hoursAvailable: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ],
+      opens: "00:00",
+      closes: "23:59",
+    },
+  };
+
+  if (typeof priceFrom === "number") {
+    schema.offers = {
+      "@type": "Offer",
+      priceCurrency: "MAD",
+      price: priceFrom,
+      availability: "https://schema.org/InStock",
+    };
   }
 
   return schema;

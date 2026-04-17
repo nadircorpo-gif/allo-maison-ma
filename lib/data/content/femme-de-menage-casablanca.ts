@@ -2,9 +2,9 @@ import { registerRichContent, type RichPageContent } from "./types";
 
 const content: RichPageContent = {
   slug: "femme-de-menage-casablanca",
-  metaTitle: "Femme de Ménage Casablanca – Tarifs & Loi 19-12 | Allo Maison",
+  metaTitle: "Agence de Femme de Ménage Casablanca · Vérifiée & Loi 19-12",
   metaDescription:
-    "Trouvez une femme de ménage à Casablanca. Droits Loi 19-12, tarifs 2026, déclaration CNSS, conseils pratiques. Service vérifié, références contrôlées.",
+    "Agence de femme de ménage à Casablanca. Profils vérifiés, Loi 19-12 respectée, tarifs 2026 transparents. Prise en charge CNSS, garantie satisfaction.",
   h1: "Femme de ménage à Casablanca : pros vérifiés au meilleur prix",
   heroText:
     "Trouvez une femme de ménage de confiance à Casablanca. Ménage régulier, grand nettoyage ou repassage, nos professionnelles vérifiées interviennent dans tous les quartiers.",

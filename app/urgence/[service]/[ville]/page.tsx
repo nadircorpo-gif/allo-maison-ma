@@ -9,7 +9,7 @@ import WhatsAppButton from "@/components/shared/whatsapp-button";
 import { getServiceBySlug } from "@/lib/data/services";
 import { getCityBySlug } from "@/lib/data/cities";
 import { getUrgenceFAQ } from "@/lib/data/faq";
-import { generateUrgenceMetadata, faqJsonLd, breadcrumbJsonLd, howToJsonLd, professionalServiceJsonLd } from "@/lib/seo";
+import { generateUrgenceMetadata, faqJsonLd, breadcrumbJsonLd, howToJsonLd, professionalServiceJsonLd, urgenceServiceJsonLd } from "@/lib/seo";
 import { buildUrgenceWhatsAppUrl } from "@/lib/whatsapp";
 import { getProfessionalsByServiceAndCity } from "@/lib/data/professionals";
 import ArtisanCardV2 from "@/components/shared/artisan-card-v2";
@@ -91,6 +91,13 @@ export default async function UrgencePage({
     <>
       <JsonLd data={faqJsonLd(faqs)} />
       <JsonLd data={breadcrumbJsonLd(breadcrumbItems)} />
+      <JsonLd data={urgenceServiceJsonLd(
+        service.name,
+        city.name,
+        serviceSlug,
+        citySlug,
+        service.priceMin
+      )} />
       <JsonLd data={howToJsonLd(
         `Que faire en urgence ${lowerService} à ${city.name}`,
         `Étapes pour gérer une urgence ${lowerService} en attendant l'arrivée du professionnel à ${city.name}.`,

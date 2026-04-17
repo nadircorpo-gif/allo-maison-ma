@@ -2,9 +2,9 @@ import { registerRichContent, type RichPageContent } from "./types";
 
 const content: RichPageContent = {
   slug: "femme-de-menage-rabat",
-  metaTitle: "Femme de Ménage Rabat 2026 – Tarifs & Recrutement | Allo Maison",
+  metaTitle: "Agence de Femme de Ménage Rabat · Vérifiée & Loi 19-12",
   metaDescription:
-    "Trouvez une femme de ménage fiable à Rabat. Tarifs 2026 par quartier (Agdal, Souissi, Hay Riad), déclaration CNSS, droits et obligations. Conseils locaux.",
+    "Agence de femme de ménage à Rabat. Profils vérifiés, Loi 19-12 respectée, tarifs 2026 transparents. Prise en charge CNSS, garantie satisfaction.",
   h1: "Femme de ménage à Rabat : pros vérifiées au meilleur prix",
   heroText:
     "Trouvez une femme de ménage de confiance à Rabat. Ménage régulier, grand nettoyage ou repassage, nos professionnelles vérifiées interviennent dans tous les quartiers.",

@@ -60,6 +60,22 @@ function parseSlug(slug: string) {
   return { service: undefined, city: undefined };
 }
 
+// Services where the search intent includes "agence" — Google shows these pages
+// for queries like "agence femme de ménage casablanca" but with 0% CTR because
+// "Agence" doesn't appear in the title. We override the title here to capture clicks.
+const AGENCY_SERVICE_SLUGS: Record<string, { title: (city: string) => string; description: (city: string) => string }> = {
+  "femme-de-menage": {
+    title: (city) => `Agence de Femme de Ménage ${city} · Vérifiée & Loi 19-12`,
+    description: (city) =>
+      `Agence de femme de ménage à ${city}. Profils vérifiés, Loi 19-12 respectée, tarifs 2026 transparents. Prise en charge CNSS, garantie satisfaction.`,
+  },
+  "nounou": {
+    title: (city) => `Agence de Nounou ${city} · Profils Vérifiés & Tarifs 2026`,
+    description: (city) =>
+      `Agence de nounou à ${city}. Profils vérifiés et encadrés, tarifs 2026 clairs, références contrôlées. Loi 19-12, CNSS, conseils parents.`,
+  },
+};
+
 export async function generateMetadata({
   params,
 }: {
@@ -88,6 +104,34 @@ export async function generateMetadata({
         card: "summary_large_image",
         title: rich.metaTitle,
         description: rich.metaDescription,
+        images: ["/opengraph-image"],
+      },
+    };
+  }
+
+  // Agency-intent override for services where users search "agence {service} {city}"
+  const agencyOverride = AGENCY_SERVICE_SLUGS[service.slug];
+  if (agencyOverride) {
+    const title = agencyOverride.title(city.name);
+    const description = agencyOverride.description(city.name);
+    const url = `https://allo-maison.ma/${slug}`;
+    return {
+      title,
+      description,
+      alternates: { canonical: url },
+      openGraph: {
+        title,
+        description,
+        url,
+        siteName: "Allo-Maison",
+        locale: "fr_MA",
+        type: "website",
+        images: ["/opengraph-image"],
+      },
+      twitter: {
+        card: "summary_large_image",
+        title,
+        description,
         images: ["/opengraph-image"],
       },
     };

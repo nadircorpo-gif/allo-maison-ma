@@ -2,9 +2,9 @@ import { registerRichContent, type RichPageContent } from "./types";
 
 const content: RichPageContent = {
   slug: "nounou-casablanca",
-  metaTitle: "Nounou à Casablanca 2026 – Tarifs, Droits & Conseils | Allo Maison",
+  metaTitle: "Agence de Nounou Casablanca · Profils Vérifiés & Tarifs 2026",
   metaDescription:
-    "Trouvez une nounou de confiance à Casablanca. Tarifs 2026, vérification des références, loi 19-12, caméra, crèche vs nounou. Conseils pour parents.",
+    "Agence de nounou à Casablanca. Profils vérifiés et encadrés, tarifs 2026 clairs, références contrôlées. Loi 19-12, CNSS, conseils parents.",
   h1: "Nounou à Casablanca : profils vérifiés, tarifs honnêtes, esprit tranquille",
   heroText:
     "Besoin d'une nounou de confiance à Casablanca ? Garde d'enfants à domicile, sortie d'école ou baby-sitting, nos nounous vérifiées sont disponibles dans tous les quartiers.",
