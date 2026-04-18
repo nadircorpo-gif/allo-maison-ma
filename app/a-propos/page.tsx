@@ -8,14 +8,14 @@ import { organizationJsonLd, breadcrumbJsonLd } from "@/lib/seo";
 import { Shield, Heart, Zap } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "À propos d'Allo-Maison | Services à domicile de confiance au Maroc",
+  title: "À propos d'Allo Maison | Notre mission, nos valeurs",
   description:
-    "Allo-Maison connecte les familles marocaines avec des professionnels vérifiés. 1 017 artisans, 6 villes, 12 847 avis, 4,8/5 satisfaction.",
+    "Allo Maison connecte les familles marocaines avec 1 000+ artisans vérifiés dans 6 villes. Notre mission, nos valeurs, notre équipe 100 % marocaine.",
   alternates: { canonical: "https://allo-maison.ma/a-propos" },
   openGraph: {
-    title: "À propos d'Allo-Maison | Services à domicile de confiance au Maroc",
+    title: "À propos d'Allo Maison — Notre mission et nos valeurs",
     description:
-      "Plateforme jeune et exigeante : Allo-Maison connecte les familles marocaines avec des professionnels vérifiés. Notre mission, nos valeurs.",
+      "Plateforme jeune et exigeante : Allo Maison connecte les familles marocaines avec 1 000+ artisans vérifiés. Notre mission, nos valeurs, notre équipe.",
     url: "https://allo-maison.ma/a-propos",
     siteName: "Allo-Maison",
     locale: "fr_MA",

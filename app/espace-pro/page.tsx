@@ -4,9 +4,9 @@ import Breadcrumb from "@/components/shared/breadcrumb";
 import WhatsAppButton from "@/components/shared/whatsapp-button";
 
 export const metadata: Metadata = {
-  title: "Espace Pro | Rejoignez Allo Maison en tant qu'artisan",
+  title: "Espace Pro — Rejoignez Allo Maison comme artisan",
   description:
-    "Rejoignez notre réseau de plus de 1 017 artisans vérifiés. Recevez des clients qualifiés, utilisez nos outils CRM gratuits et développez votre activité.",
+    "Rejoignez un réseau de 1 000+ artisans vérifiés. Clients qualifiés, outils CRM gratuits, zéro abonnement : développez votre activité au Maroc.",
   alternates: { canonical: "https://allo-maison.ma/espace-pro" },
   robots: { index: false, follow: false },
   openGraph: {

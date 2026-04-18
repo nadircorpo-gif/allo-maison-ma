@@ -66,12 +66,39 @@ export function generateServiceCityMetadata(
 }
 
 // Mapping slug urgence -> nom du metier (genre masculin) pour grammaire correcte
-// "Besoin d'un plombier" / "d'un electricien" / "d'un serrurier" vs "d'un plomberie" KO
+// "Besoin d'un plombier" / "d'un électricien" / "d'un serrurier" vs "d'un plomberie" KO
 const URGENCE_METIER_BY_SLUG: Record<string, string> = {
   plombier: "Plombier",
-  electricien: "Electricien",
+  electricien: "Électricien",
   serrurier: "Serrurier",
 };
+
+// Plurals for "nos plombiers couvrent...", "3 électriciens disponibles..."
+const URGENCE_METIER_PLURAL_BY_SLUG: Record<string, string> = {
+  plombier: "plombiers",
+  electricien: "électriciens",
+  serrurier: "serruriers",
+};
+
+/**
+ * Retourne le nom du metier pour un slug d'urgence, avec les formes capitalisee,
+ * minuscule et plurielle. Resout le probleme de grammaire cause par SERVICES qui
+ * expose le nom de domaine ("Plomberie", "Electricite", "Serrurerie") au lieu du
+ * nom du metier (personne) necessaire pour "un plombier", "un electricien", etc.
+ */
+export function getUrgenceMetier(
+  serviceSlug: string,
+  fallbackName?: string
+): { label: string; lowerLabel: string; pluralLabel: string } {
+  const label = URGENCE_METIER_BY_SLUG[serviceSlug] ?? fallbackName ?? serviceSlug;
+  const pluralLabel =
+    URGENCE_METIER_PLURAL_BY_SLUG[serviceSlug] ?? `${label.toLowerCase()}s`;
+  return {
+    label,
+    lowerLabel: label.toLowerCase(),
+    pluralLabel,
+  };
+}
 
 export function generateUrgenceMetadata(
   serviceName: string,
@@ -120,7 +147,7 @@ export function organizationJsonLd(): Record<string, unknown> {
     logo: "https://allo-maison.ma/brand/logo-mark.svg",
     image: "https://allo-maison.ma/opengraph-image",
     description:
-      "La plateforme marocaine de confiance pour tous vos services a domicile. Des professionnels verifies, disponibles 7j/7.",
+      "La plateforme marocaine de confiance pour tous vos services à domicile. Des professionnels vérifiés, disponibles 7j/7.",
     foundingDate: "2026",
     telephone: "+212661409190",
     email: "contact@allo-maison.ma",
@@ -168,7 +195,7 @@ export function serviceCityJsonLd(
   return {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: `${serviceName} a ${cityName}`,
+    name: `${serviceName} à ${cityName}`,
     serviceType: serviceName,
     ...(url ? { url } : {}),
     priceRange: "MAD 50-5000",

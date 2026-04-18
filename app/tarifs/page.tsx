@@ -7,12 +7,12 @@ import { breadcrumbJsonLd, faqJsonLd } from "@/lib/seo";
 import { Clock } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Tarifs services à domicile 2026 | Allo-Maison",
+  title: "Tarifs services à domicile 2026 au Maroc | Allo Maison",
   description:
-    "Tarifs réels 2026 des services à domicile au Maroc. Prix min, moyen et max pour plomberie, électricité, ménage, peinture et 16 services. Devis gratuit.",
+    "Tarifs réels 2026 des services à domicile au Maroc. Prix min, moyen, max pour plombier, électricien, ménage, peinture et 16 services. Devis gratuit.",
   alternates: { canonical: "https://allo-maison.ma/tarifs" },
   openGraph: {
-    title: "Tarifs services à domicile 2026 | Allo-Maison",
+    title: "Tarifs services à domicile 2026 au Maroc | Allo Maison",
     description:
       "Prix min, moyen et max pour 16 services à domicile au Maroc. Tarifs transparents et actualisés. Devis gratuit.",
     url: "https://allo-maison.ma/tarifs",

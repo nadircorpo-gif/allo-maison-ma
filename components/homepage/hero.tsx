@@ -107,7 +107,7 @@ export default function Hero({ totalArtisans }: HeroProps) {
                 <svg className="w-3.5 h-3.5 text-saffron fill-saffron" viewBox="0 0 24 24" aria-hidden>
                   <path d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.3 5.5 22l1.7-7.4L1.5 9.6 9 8.9z" />
                 </svg>
-                4.9
+                Vérifié
               </div>
             </div>
           </div>

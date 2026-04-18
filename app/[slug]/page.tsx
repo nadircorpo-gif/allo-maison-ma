@@ -249,10 +249,9 @@ export default async function ServiceCityPage({
                 </div>
                 <div>
                   <p className="font-display text-xl sm:text-2xl font-[500] leading-none">
-                    {service.rating.toFixed(1)}
-                    <span className="text-xs text-muted">/5</span>
+                    24/7
                   </p>
-                  <p className="text-[10px] text-muted mt-1">{service.reviewCount.toLocaleString("fr")} avis</p>
+                  <p className="text-[10px] text-muted mt-1">disponibilité</p>
                 </div>
                 <div>
                   <p className="font-display text-xl sm:text-2xl font-[500] leading-none">

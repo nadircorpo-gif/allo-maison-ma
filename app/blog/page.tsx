@@ -62,7 +62,7 @@ const PLANNED_ARTICLES = [
   },
 ];
 
-const WHATSAPP_NOTIF_URL = `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "212661409190"}?text=${encodeURIComponent("Bonjour, je souhaite etre notifie des nouveaux articles du blog Allo Maison.")}`;
+const WHATSAPP_NOTIF_URL = `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "212661409190"}?text=${encodeURIComponent("Bonjour, je souhaite être notifié des nouveaux articles du blog Allo Maison.")}`;
 
 export default function BlogPage() {
   const breadcrumbItems = [{ name: "Blog", url: "https://allo-maison.ma/blog" }];

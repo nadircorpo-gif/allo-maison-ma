@@ -90,11 +90,10 @@ export default function ArtisanCardV2({
           <p className="font-display text-base font-medium text-ink leading-tight truncate">
             {displayName}
           </p>
-          {/* Score Maison stars */}
+          {/* Score Maison label (no rating until we have real reviews) */}
           <div className={cn("flex items-center gap-1 text-xs tab-nums mt-0.5", scoreColor)}>
             <Star className="w-3 h-3 fill-current" />
-            <span className="font-semibold">{pro.rating.toFixed(1)}</span>
-            <span className="text-muted">· {pro.reviewCount} avis</span>
+            <span className="font-semibold">Pro vérifié</span>
           </div>
         </div>
       </div>

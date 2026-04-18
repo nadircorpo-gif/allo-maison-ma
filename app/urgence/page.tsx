@@ -12,12 +12,12 @@ import { buildWhatsAppUrl } from "@/lib/whatsapp";
 import { breadcrumbJsonLd, itemListJsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Urgence à domicile 24/7 au Maroc | Allo-Maison",
+  title: "Urgence à domicile 24/7 au Maroc | Allo Maison",
   description:
-    "Un artisan vérifié chez vous en 30 minutes, 24 h/24 et 7 j/7. Plombier, électricien ou serrurier d'urgence dans 6 grandes villes du Maroc. Sans avance, sans engagement.",
+    "Un artisan vérifié chez vous en 30 minutes, 24/7. Plombier, électricien, serrurier d'urgence à Casablanca, Rabat, Marrakech, Tanger, Fès, Agadir.",
   alternates: { canonical: "https://allo-maison.ma/urgence" },
   openGraph: {
-    title: "Urgence à domicile 24/7 au Maroc | Allo-Maison",
+    title: "Urgence à domicile 24/7 au Maroc | Allo Maison",
     description:
       "Un artisan vérifié chez vous en 30 minutes, 24 h/24 et 7 j/7. Plombier, électricien ou serrurier d'urgence dans 6 grandes villes du Maroc.",
     url: "https://allo-maison.ma/urgence",
@@ -59,7 +59,7 @@ export default function UrgenceHubPage() {
     .filter((s): s is NonNullable<typeof s> => Boolean(s));
 
   const whatsappUrl = buildWhatsAppUrl(
-    "URGENCE : j'ai besoin d'un artisan immediatement. Pouvez-vous m'aider ?"
+    "URGENCE : j'ai besoin d'un artisan immédiatement. Pouvez-vous m'aider ?"
   );
   const phoneHref = `tel:+${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "212661409190"}`;
 

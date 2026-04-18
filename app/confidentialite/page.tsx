@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import Breadcrumb from "@/components/shared/breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Politique de confidentialite | allo-maison.ma",
+  title: "Politique de confidentialité | allo-maison.ma",
   description:
-    "Politique de confidentialite d'Allo-Maison. Collecte de donnees, utilisation, cookies, droits des utilisateurs. Conformite loi 09-08 marocaine.",
+    "Politique de confidentialité d'Allo-Maison. Collecte de données, utilisation, cookies, droits des utilisateurs. Conformité loi 09-08 marocaine.",
   alternates: { canonical: "https://allo-maison.ma/confidentialite" },
   openGraph: {
-    title: "Politique de confidentialite | allo-maison.ma",
-    description: "Politique de confidentialite d'Allo-Maison.",
+    title: "Politique de confidentialité | allo-maison.ma",
+    description: "Politique de confidentialité d'Allo-Maison.",
     url: "https://allo-maison.ma/confidentialite",
     siteName: "Allo-Maison",
     locale: "fr_MA",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
 export default function ConfidentialitePage() {
   const breadcrumbItems = [
-    { name: "Confidentialite", url: "https://allo-maison.ma/confidentialite" },
+    { name: "Confidentialité", url: "https://allo-maison.ma/confidentialite" },
   ];
 
   return (
@@ -45,33 +45,33 @@ export default function ConfidentialitePage() {
           <section>
             <h2>1. Introduction</h2>
             <p>
-              Allo-Maison (&quot;nous&quot;, &quot;notre&quot;) s&apos;engage a proteger votre vie privee
-              conformement a la loi marocaine n° 09-08 relative a la protection des personnes
-              physiques a l&apos;egard des traitements de donnees a caractere personnel.
+              Allo-Maison (&quot;nous&quot;, &quot;notre&quot;) s&apos;engage à protéger votre vie privée
+              conformément à la loi marocaine n° 09-08 relative à la protection des personnes
+              physiques à l&apos;égard des traitements de données à caractère personnel.
             </p>
             <p>
-              Cette politique de confidentialite explique comment nous collectons, utilisons
-              et protecons vos donnees lorsque vous utilisez notre site allo-maison.ma.
+              Cette politique de confidentialité explique comment nous collectons, utilisons
+              et protégeons vos données lorsque vous utilisez notre site allo-maison.ma.
             </p>
           </section>
 
           <section>
-            <h2>2. Donnees collectees</h2>
-            <p>Nous collectons les categories de donnees suivantes :</p>
+            <h2>2. Données collectées</h2>
+            <p>Nous collectons les catégories de données suivantes :</p>
             <ul className="list-disc list-inside space-y-2 mt-2">
               <li>
-                <strong className="text-ink">Donnees de contact :</strong> nom, numero de
-                telephone, email lorsque vous soumettez une demande via notre formulaire
+                <strong className="text-ink">Données de contact :</strong> nom, numéro de
+                téléphone, email lorsque vous soumettez une demande via notre formulaire
                 ou WhatsApp.
               </li>
               <li>
-                <strong className="text-ink">Donnees de navigation :</strong> adresse IP,
-                type de navigateur, pages visitees, via Google Analytics (donnees
-                anonymisees).
+                <strong className="text-ink">Données de navigation :</strong> adresse IP,
+                type de navigateur, pages visitées, via Google Analytics (données
+                anonymisées).
               </li>
               <li>
-                <strong className="text-ink">Donnees de service :</strong> type de service
-                demande, ville, description du besoin, pour vous mettre en relation avec
+                <strong className="text-ink">Données de service :</strong> type de service
+                demandé, ville, description du besoin, pour vous mettre en relation avec
                 un artisan.
               </li>
               <li>
@@ -82,19 +82,19 @@ export default function ConfidentialitePage() {
           </section>
 
           <section>
-            <h2>3. Utilisation des donnees</h2>
-            <p>Vos donnees sont utilisees exclusivement pour :</p>
+            <h2>3. Utilisation des données</h2>
+            <p>Vos données sont utilisées exclusivement pour :</p>
             <ul className="list-disc list-inside space-y-2 mt-2">
-              <li>Vous mettre en relation avec un artisan verifie</li>
-              <li>Traiter vos demandes et reclamations</li>
-              <li>Ameliorer notre plateforme (via donnees anonymisees)</li>
+              <li>Vous mettre en relation avec un artisan vérifié</li>
+              <li>Traiter vos demandes et réclamations</li>
+              <li>Améliorer notre plateforme (via données anonymisées)</li>
               <li>Vous envoyer des communications si vous y avez consenti</li>
-              <li>Respecter nos obligations legales</li>
+              <li>Respecter nos obligations légales</li>
             </ul>
             <p className="mt-3">
-              Nous ne vendons pas et ne partageons pas vos donnees personnelles avec des
-              tiers a des fins commerciales. Vos donnees sont partagees uniquement avec
-              les artisans concernes pour realiser votre demande.
+              Nous ne vendons pas et ne partageons pas vos données personnelles avec des
+              tiers à des fins commerciales. Vos données sont partagées uniquement avec
+              les artisans concernés pour réaliser votre demande.
             </p>
           </section>
 
@@ -104,57 +104,57 @@ export default function ConfidentialitePage() {
             <div className="mt-3 space-y-3">
               <div className="bg-cream border border-paper-border rounded-lg p-3">
                 <strong className="text-ink">Cookies essentiels :</strong>{" "}
-                Indispensables au fonctionnement du site. Ne peuvent pas etre refuses.
+                Indispensables au fonctionnement du site. Ne peuvent pas être refusés.
               </div>
               <div className="bg-cream border border-paper-border rounded-lg p-3">
                 <strong className="text-ink">Cookies analytiques (Google Analytics) :</strong>{" "}
-                Collectent des donnees anonymes sur la navigation pour ameliorer
-                l&apos;experience utilisateur. Peuvent etre refuses.
+                Collectent des données anonymes sur la navigation pour améliorer
+                l&apos;expérience utilisateur. Peuvent être refusés.
               </div>
             </div>
             <p className="mt-3">
-              Vous pouvez gerer vos preferences de cookies via les parametres de votre navigateur.
+              Vous pouvez gérer vos préférences de cookies via les paramètres de votre navigateur.
             </p>
           </section>
 
           <section>
-            <h2>5. Conservation des donnees</h2>
+            <h2>5. Conservation des données</h2>
             <p>
-              Vos donnees personnelles sont conservees pendant la duree necessaire
-              a la realisation des finalites pour lesquelles elles ont ete collectees :
+              Vos données personnelles sont conservées pendant la durée nécessaire
+              à la réalisation des finalités pour lesquelles elles ont été collectées :
             </p>
             <ul className="list-disc list-inside space-y-2 mt-2">
-              <li>Donnees de contact : 3 ans apres votre derniere interaction</li>
-              <li>Donnees de navigation : 26 mois (conformement aux recommandations CNDP)</li>
-              <li>Donnees de facturation : 10 ans (obligation legale)</li>
+              <li>Données de contact : 3 ans après votre dernière interaction</li>
+              <li>Données de navigation : 26 mois (conformément aux recommandations CNDP)</li>
+              <li>Données de facturation : 10 ans (obligation légale)</li>
             </ul>
           </section>
 
           <section>
             <h2>6. Vos droits (Loi 09-08)</h2>
             <p>
-              Conformement a la loi marocaine 09-08, vous disposez des droits suivants :
+              Conformément à la loi marocaine 09-08, vous disposez des droits suivants :
             </p>
             <ul className="list-disc list-inside space-y-2 mt-2">
               <li>
-                <strong className="text-ink">Droit d&apos;acces :</strong> obtenir une copie
-                de vos donnees personnelles que nous detenons.
+                <strong className="text-ink">Droit d&apos;accès :</strong> obtenir une copie
+                de vos données personnelles que nous détenons.
               </li>
               <li>
                 <strong className="text-ink">Droit de rectification :</strong> corriger
-                des donnees inexactes ou incompletes.
+                des données inexactes ou incomplètes.
               </li>
               <li>
                 <strong className="text-ink">Droit d&apos;opposition :</strong> vous opposer
-                au traitement de vos donnees pour des raisons legitimes.
+                au traitement de vos données pour des raisons légitimes.
               </li>
               <li>
                 <strong className="text-ink">Droit de suppression :</strong> demander la
-                suppression de vos donnees dans certains cas.
+                suppression de vos données dans certains cas.
               </li>
             </ul>
             <p className="mt-3">
-              Pour exercer ces droits, contactez-nous a{" "}
+              Pour exercer ces droits, contactez-nous à{" "}
               <a href="mailto:contact@allo-maison.ma" className="text-terracotta hover:underline">
                 contact@allo-maison.ma
               </a>{" "}
@@ -163,19 +163,19 @@ export default function ConfidentialitePage() {
           </section>
 
           <section>
-            <h2>7. Securite des donnees</h2>
+            <h2>7. Sécurité des données</h2>
             <p>
               Nous mettons en place des mesures techniques et organisationnelles
-              appropriees pour proteger vos donnees contre tout acces non autorise,
-              toute divulgation ou destruction. Notre site est protege par un certificat
+              appropriées pour protéger vos données contre tout accès non autorisé,
+              toute divulgation ou destruction. Notre site est protégé par un certificat
               SSL (HTTPS).
             </p>
           </section>
 
           <section>
-            <h2>8. Contact et reclamations</h2>
+            <h2>8. Contact et réclamations</h2>
             <p>
-              Pour toute question relative a cette politique ou pour exercer vos droits :
+              Pour toute question relative à cette politique ou pour exercer vos droits :
             </p>
             <div className="mt-3 bg-cream border border-paper-border rounded-lg p-4 space-y-2">
               <div>
@@ -190,8 +190,8 @@ export default function ConfidentialitePage() {
               </div>
             </div>
             <p className="mt-3">
-              Vous avez egalement le droit de deposer une plainte aupres de la Commission
-              Nationale de Controle de la Protection des Donnees a Caractere Personnel
+              Vous avez également le droit de déposer une plainte auprès de la Commission
+              Nationale de Contrôle de la Protection des Données à Caractère Personnel
               (CNDP) : www.cndp.ma
             </p>
           </section>

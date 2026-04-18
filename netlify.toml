@@ -12,9 +12,239 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-# www → non-www redirect
+# Canonicalization redirects (fallback — Cloudflare Always HTTPS + www->root may already handle these at the edge).
+# Goal: a single 301 from any variant (http, www, http+www) straight to https://allo-maison.ma/*
+# Keeps redirect chains at 1 hop and preserves PageRank.
+
+# http + www → https root
+[[redirects]]
+  from = "http://www.allo-maison.ma/*"
+  to = "https://allo-maison.ma/:splat"
+  status = 301
+  force = true
+
+# https + www → https root
 [[redirects]]
   from = "https://www.allo-maison.ma/*"
   to = "https://allo-maison.ma/:splat"
+  status = 301
+  force = true
+
+# http (no www) → https
+[[redirects]]
+  from = "http://allo-maison.ma/*"
+  to = "https://allo-maison.ma/:splat"
+  status = 301
+  force = true
+
+# --------------------------------------------------------------------
+# Legacy WordPress redirects (mirror of next.config.ts `redirects`).
+# These run at the Netlify edge BEFORE the Next.js runtime, which lets
+# us collapse the "/foo/ -> /foo -> /final" 2-hop chain (caused by
+# Next.js `trailingSlash: false` normalization) into a single 301.
+# Must stay in sync with next.config.ts.
+# --------------------------------------------------------------------
+
+[[redirects]]
+  from = "/cuisiniere"
+  to = "/cuisiniere-casablanca"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/cuisiniere/"
+  to = "/cuisiniere-casablanca"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/cuisinierere/"
+  to = "/cuisiniere-casablanca"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/cuisiniere-au-maroc/"
+  to = "/cuisiniere-casablanca"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/concierge"
+  to = "/concierge-casablanca"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/concierge/"
+  to = "/concierge-casablanca"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/concierge-agent-de-securite/"
+  to = "/concierge-casablanca"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/concierge-agent-de-securite-au-maroc/"
+  to = "/concierge-casablanca"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/agent-de-securite"
+  to = "/concierge-casablanca"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/agent-de-securite/"
+  to = "/concierge-casablanca"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/nounou-ou-educatrice"
+  to = "/nounou-casablanca"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/nounou-ou-educatrice/"
+  to = "/nounou-casablanca"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/femme-de-menage"
+  to = "/femme-de-menage-casablanca"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/femme-de-menage/"
+  to = "/femme-de-menage-casablanca"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/femme-de-menage-maroc-casablanca"
+  to = "/femme-de-menage-casablanca"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/femme-de-menage-maroc-casablanca/"
+  to = "/femme-de-menage-casablanca"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/femme-homme-menage-allo-maison/"
+  to = "/femme-de-menage-casablanca"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/employe-polyvalente"
+  to = "/femme-de-menage-casablanca"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/employe-polyvalente/"
+  to = "/femme-de-menage-casablanca"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/chauffeur-coursier-au-maroc-casablanca/"
+  to = "/services"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/chauffeur-coursier-allo-maison/"
+  to = "/services"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/coursier"
+  to = "/services"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/coursier/"
+  to = "/services"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/infirmieres-et-garde-malade-au-maroc-casablanca/"
+  to = "/services"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/infirmieres-garde-malade/"
+  to = "/services"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services-a-la-personne-maroc-casablanca/"
+  to = "/services"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/entreprise-allo-maison-au-maroc/"
+  to = "/services"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/engagement-charte/"
+  to = "/garantie"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contact-allo-maison/"
+  to = "/contact"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/nos-processus"
+  to = "/comment-ca-marche"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/nos-processus/"
+  to = "/comment-ca-marche"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2020/10/21/bonjour-tout-le-monde"
+  to = "/blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2020/10/21/bonjour-tout-le-monde/"
+  to = "/blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/author/*"
+  to = "/a-propos"
   status = 301
   force = true

@@ -214,7 +214,7 @@ export default function ServicesPage() {
               Réponse humaine sous 47 min en moyenne, via WhatsApp. Sans avance, sans engagement.
             </p>
             <a
-              href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "212661409190"}?text=Bonjour%2C%20je%20cherche%20un%20artisan%20verifie.`}
+              href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "212661409190"}?text=${encodeURIComponent("Bonjour, je cherche un artisan vérifié.")}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-3 bg-saffron text-ink font-bold rounded-lg hover:bg-[#E0B55C] transition-colors"

@@ -7,14 +7,14 @@ import { faqJsonLd, breadcrumbJsonLd } from "@/lib/seo";
 import { CheckCircle, XCircle, Star } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Garantie satisfait ou refait | Allo-Maison",
+  title: "Garantie satisfait ou refait | Allo Maison",
   description:
-    "Decouvrez la Garantie Allo-Maison : pros verifies et certifies, remplacement gratuit d'artisan, support 7j/7. Aucun risque pour vos services a domicile au Maroc.",
+    "Garantie Allo Maison : pros vérifiés et certifiés, remplacement gratuit d'artisan sous 48 h, support WhatsApp 7 j/7. Zéro risque au Maroc.",
   alternates: { canonical: "https://allo-maison.ma/garantie" },
   openGraph: {
-    title: "Garantie Allo-Maison : zero risque pour vous | allo-maison.ma",
+    title: "Garantie Allo Maison — Zéro risque pour vous",
     description:
-      "Pros verifies et certifies, remplacement gratuit, support 7j/7. La garantie totale pour vos services a domicile au Maroc.",
+      "Pros vérifiés et certifiés, remplacement gratuit, support 7 j/7. La garantie totale pour vos services à domicile au Maroc.",
     url: "https://allo-maison.ma/garantie",
     siteName: "Allo-Maison",
     locale: "fr_MA",

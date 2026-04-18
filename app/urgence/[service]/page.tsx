@@ -10,7 +10,7 @@ import WhatsAppButton from "@/components/shared/whatsapp-button";
 import { getServiceBySlug } from "@/lib/data/services";
 import { CITIES } from "@/lib/data/cities";
 import { buildWhatsAppUrl } from "@/lib/whatsapp";
-import { breadcrumbJsonLd, itemListJsonLd } from "@/lib/seo";
+import { breadcrumbJsonLd, itemListJsonLd, getUrgenceMetier } from "@/lib/seo";
 
 const URGENCE_SERVICE_SLUGS = ["plombier", "electricien", "serrurier"] as const;
 
@@ -28,8 +28,8 @@ export async function generateMetadata({
   if (!service || !service.urgenceAvailable) {
     return { title: "Service d'urgence introuvable | Allo-Maison", robots: { index: false } };
   }
-  const title = `${service.name} d'urgence au Maroc | Allo-Maison`;
-  const description = `${service.name} d'urgence vérifié chez vous en 30 minutes, 24 h/24 et 7 j/7. Disponible à Casablanca, Rabat, Marrakech, Tanger, Fès et Agadir. Sans avance.`;
+  const title = `${service.name} d'urgence 24/7 au Maroc | Allo Maison`;
+  const description = `${service.name} d'urgence vérifié chez vous en 30 minutes, 24/7. Casablanca, Rabat, Marrakech, Tanger, Fès, Agadir. Sans avance, devis WhatsApp.`;
   const url = `https://allo-maison.ma/urgence/${service.slug}`;
   return {
     title,
@@ -126,12 +126,13 @@ export default async function UrgenceServicePage({
 
   if (!service || !service.urgenceAvailable) notFound();
 
+  const metier = getUrgenceMetier(service.slug, service.name);
   const whatsappUrl = buildWhatsAppUrl(
-    `URGENCE : j'ai besoin d'un ${service.name.toLowerCase()} immediatement. Pouvez-vous m'aider ?`
+    `URGENCE : j'ai besoin d'un ${metier.lowerLabel} immédiatement. Pouvez-vous m'aider ?`
   );
   const phoneHref = `tel:+${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "212661409190"}`;
   const cases = WHEN_TO_CALL[service.slug] ?? [];
-  const lowerService = service.name.toLowerCase();
+  const lowerService = metier.lowerLabel;
 
   const breadcrumbItems = [
     { name: "Urgence", url: "https://allo-maison.ma/urgence" },

@@ -6,14 +6,14 @@ import SearchBar from "@/components/shared/search-bar";
 import { faqJsonLd, breadcrumbJsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Comment trouver un artisan de confiance au Maroc | allo-maison.ma",
+  title: "Comment ça marche — Artisan en 3 étapes | Allo Maison",
   description:
-    "Découvrez comment trouver un artisan de confiance au Maroc en 3 étapes simples. Artisans vérifiés et encadrés. Garantie satisfaction.",
+    "Trouvez un artisan vérifié au Maroc en 3 étapes : décrivez votre besoin, recevez des profils via WhatsApp, confirmez. Garantie satisfaction incluse.",
   alternates: { canonical: "https://allo-maison.ma/comment-ca-marche" },
   openGraph: {
-    title: "Comment trouver un artisan de confiance au Maroc | allo-maison.ma",
+    title: "Comment ça marche — Artisan en 3 étapes | Allo Maison",
     description:
-      "Découvrez comment trouver un artisan de confiance au Maroc en 3 étapes simples. Garantie satisfaction incluse.",
+      "Trouvez un artisan vérifié au Maroc en 3 étapes simples via WhatsApp. Garantie satisfaction incluse.",
     url: "https://allo-maison.ma/comment-ca-marche",
     siteName: "Allo-Maison",
     locale: "fr_MA",

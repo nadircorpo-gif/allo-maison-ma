@@ -5,7 +5,7 @@ import { buildWhatsAppUrl } from "@/lib/whatsapp";
 
 export default function CtaFinal() {
   const whatsappUrl = buildWhatsAppUrl(
-    "Bonjour, je souhaite trouver un professionnel verifie via Allo-Maison."
+    "Bonjour, je souhaite trouver un professionnel vérifié via Allo-Maison."
   );
 
   return (

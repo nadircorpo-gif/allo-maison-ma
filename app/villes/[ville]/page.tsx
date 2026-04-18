@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowRight, MapPin, Siren, Star } from "lucide-react";
+import { ArrowRight, MapPin, Siren } from "lucide-react";
 
 import Breadcrumb from "@/components/shared/breadcrumb";
 import JsonLd from "@/components/seo/json-ld";
@@ -166,9 +166,7 @@ export default async function VilleHubPage({
                 </p>
                 <div className="mt-auto flex items-center justify-between text-xs tab-nums">
                   <span className="flex items-center gap-1 text-muted">
-                    <Star className="h-3 w-3 fill-saffron text-saffron" />
-                    <span className="font-medium text-ink">{service.rating.toFixed(1)}</span>
-                    <span>({service.reviewCount})</span>
+                    <span className="font-medium text-ink">Pros vérifiés</span>
                   </span>
                   <span className="font-medium text-terracotta">
                     dès {service.priceMin} MAD

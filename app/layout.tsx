@@ -20,19 +20,22 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://allo-maison.ma"),
   title: {
-    default: "allo-maison.ma | Services à domicile de confiance au Maroc",
+    default: "Allo Maison · 1 000+ Artisans Vérifiés au Maroc | WhatsApp",
     template: "%s",
   },
   description:
-    "Trouvez des professionnels de confiance pour tous vos services à domicile au Maroc : plomberie, électricité, ménage, peinture et plus encore.",
+    "Marketplace marocaine des services à domicile. 1 000+ pros vérifiés : plombier, électricien, ménage, peintre. Devis WhatsApp 24/7 — Casa, Rabat, Marrakech.",
   alternates: {
-    canonical: "/",
+    canonical: "https://allo-maison.ma",
     languages: {
-      "fr-MA": "/",
-      "x-default": "/",
+      "fr-MA": "https://allo-maison.ma",
+      "x-default": "https://allo-maison.ma",
     },
   },
   openGraph: {
+    title: "Allo Maison — 1 000+ artisans vérifiés au Maroc, devis WhatsApp 24/7",
+    description:
+      "La marketplace marocaine des services à domicile. Plombier, électricien, ménage, peintre : 1 000+ pros vérifiés à Casablanca, Rabat, Marrakech, Tanger. Devis gratuit WhatsApp.",
     siteName: "Allo-Maison",
     locale: "fr_MA",
     type: "website",
